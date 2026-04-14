@@ -21,6 +21,8 @@ public class KanMove : MonoBehaviour
 
     public bool isGrounded = true;
 
+    public int coin = 0;
+
     public SyakaSyaka isFly;
 
      
