@@ -36,7 +36,7 @@ public class KanMove : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.W))
         {
-            if(Speed <= MaxSpeed)
+            if(Speed <= 2)
             {
                 Speed += 0.05f;
             }
@@ -48,7 +48,7 @@ public class KanMove : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
         {
-            if (Speed >= -MaxSpeed)
+            if (Speed >= -2)
             {
                 Speed -= 0.05f;
             }
@@ -101,7 +101,8 @@ public class KanMove : MonoBehaviour
         forward.y = 0;
         forward = forward.normalized;
 
-
+     
+        if(body.linearVelocity.magnitude < MaxSpeed)
         this.body.AddForce(forward * Speed);
 
        
