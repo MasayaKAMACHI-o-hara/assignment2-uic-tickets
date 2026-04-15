@@ -3,33 +3,33 @@ using System.Collections;
 
 public class Coinscript : MonoBehaviour
 {
-    [Header("æ“¾‚Ìƒp[ƒeƒBƒNƒ‹")]
+    [Header("å–å¾—æ™‚ã®ãƒ‘ãƒ¼ãƒ†ã‚£ã‚¯ãƒ«")]
     public GameObject getEffectPrefab;
 
     private void OnTriggerEnter(Collider other)
     {
-        // Kan‚Æ‚¢‚¤Tag‚ÌƒIƒuƒWƒFƒNƒg‚ª“–‚½‚é‚ÆÁ‚¦‚é
+        // Kanã¨ã„ã†Tagã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå½“ãŸã‚‹ã¨æ¶ˆãˆã‚‹
         if (other.CompareTag("Kan"))
         {
-            // ƒXƒRƒA‚ğ‘‚â‚·ƒvƒƒOƒ‰ƒ€
-            Debug.Log("ƒXƒRƒA‚ğ‘‚â‚·");
+            // ã‚¹ã‚³ã‚¢ã‚’å¢—ã‚„ã™ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
+            Debug.Log("ã‚¹ã‚³ã‚¢ã‚’å¢—ã‚„ã™");
 
-            // ‚±‚±‚©‚ç‰º ‰‰o
+            // ã“ã“ã‹ã‚‰ä¸‹ æ¼”å‡º
 
-            // ƒp[ƒeƒBƒNƒ‹‚Ì”­¶
+            // ãƒ‘ãƒ¼ãƒ†ã‚£ã‚¯ãƒ«ã®ç™ºç”Ÿ
             if (getEffectPrefab != null)
             {
                 GameObject effect = Instantiate(getEffectPrefab, transform.position, Quaternion.identity);
             }
 
-            // ƒAƒjƒ[ƒVƒ‡ƒ“
+            // ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³
             StartCoroutine(GetAnime());
         }
     }
 
     IEnumerator GetAnime()
     {
-        // Šl“¾‚ÉƒRƒCƒ“‚ª’µ‚Ë‚ÄÁ‚¦‚é‰‰o‚ÌƒAƒjƒ[ƒVƒ‡ƒ“
+        // ç²å¾—æ™‚ã«ã‚³ã‚¤ãƒ³ãŒè·³ã­ã¦æ¶ˆãˆã‚‹æ¼”å‡ºã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³
 
         float time = 0f;
 
