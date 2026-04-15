@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\",
+  "WorkspaceRootPath": "C:\\Users\\student\\Desktop\\tickets\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|c:\\users\\student\\documents\\github\\assignment2-uic-tickets\\project\\tickets\\assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\tickets\\Library\\PackageCache\\com.unity.render-pipelines.universal@2a2241f53fcd\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@2a2241f53fcd\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Desktop\\tickets\\assets\\btm_assets\\btm_items_gems\\scripts\\coinscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\btm_assets\\btm_items_gems\\scripts\\coinscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SyakaSyaka.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\SyakaSyaka.cs",
-              "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\SyakaSyaka.cs",
-              "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\SyakaSyaka.cs",
-              "RelativeToolTip": "Assets\\object\\Kan\\script\\SyakaSyaka.cs",
-              "ViewState": "AQIAANAAAAAAAAAAAAAAAOUAAAAwAAAA",
+              "Title": "AdditionalLightsShadowCasterPass.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\tickets\\Library\\PackageCache\\com.unity.render-pipelines.universal@2a2241f53fcd\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@2a2241f53fcd\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\tickets\\Library\\PackageCache\\com.unity.render-pipelines.universal@2a2241f53fcd\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@2a2241f53fcd\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs",
+              "ViewState": "AQIAAIoBAAAAAAAAAADwv54BAAB7AQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T06:09:23.753Z",
+              "WhenOpened": "2026-04-15T03:33:23.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CameraMove.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\CameraMove.cs",
-              "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\CameraMove.cs",
-              "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\CameraMove.cs",
-              "RelativeToolTip": "Assets\\object\\Kan\\script\\CameraMove.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvxMAAAAGAAAA",
+              "Title": "Coinscript.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\tickets\\Assets\\BTM_Assets\\BTM_Items_Gems\\Scripts\\Coinscript.cs",
+              "RelativeDocumentMoniker": "Assets\\BTM_Assets\\BTM_Items_Gems\\Scripts\\Coinscript.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\tickets\\Assets\\BTM_Assets\\BTM_Items_Gems\\Scripts\\Coinscript.cs",
+              "RelativeToolTip": "Assets\\BTM_Assets\\BTM_Items_Gems\\Scripts\\Coinscript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T06:05:08.028Z"
+              "WhenOpened": "2026-04-14T05:53:23.858Z"
             }
           ]
         }
