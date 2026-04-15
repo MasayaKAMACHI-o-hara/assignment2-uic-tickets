@@ -17,7 +17,7 @@ public class CameraMove : MonoBehaviour
     void Start()
     {
       // カーソルを画面の中央に固定し、さらに非表示にする
-    //Cursor.lockState = CursorLockMode.Locked;
+    Cursor.lockState = CursorLockMode.Locked;
     }
 
     void LateUpdate()

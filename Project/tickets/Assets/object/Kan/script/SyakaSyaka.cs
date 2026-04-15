@@ -1,7 +1,7 @@
-
+using System.Collections;
 using UnityEngine;
 using TMPro;
-
+using Unity.VisualScripting;
 
 public class SyakaSyaka : MonoBehaviour
 {
@@ -9,11 +9,9 @@ public class SyakaSyaka : MonoBehaviour
     public bool Syaka = false;
     public bool SyakaFly = false;
     public bool SyakaStart = false;
-    public bool ChargeStart = false;
-    public bool ChargeEnd = false;
+    public bool SyakaEnd = false;
     public bool JumpUp = false;
     public bool IsActiveFly = false;
-    public bool IsActiveFall = false;
 
 
     public float SyakaPoint;
@@ -21,15 +19,9 @@ public class SyakaSyaka : MonoBehaviour
     public float SyakaCharge;
     public float SyakaRemove;
     public float SyakaE = 1.0f;//シャカシャカゲージ獲得倍率
-    private float timer = 0f;
-    private float ignoreTime = 0.1f; // 0.1秒間は判定しない
 
     public GameObject SyakaUI;
     public GameObject houkou;
-
-    public GameObject ChargeP;
-    public GameObject ColaP;
-    public GameObject BubbleP;
 
     public Transform Camera;
     public Rigidbody Rb;
@@ -115,61 +107,37 @@ public class SyakaSyaka : MonoBehaviour
 
             float MathQ = (mathX /2)+ mathY + (mathZ /2);
 
-            if (MathQ < 0)
-            {
-                MathQ = 0;
-            }
-
             SyakaPoint += MathQ * SyakaE;//ポイントに獲得倍率の数値を掛けた数を総計する。
             if (SyakaPoint > 100)//ゲージの最大値は100
             {
                 SyakaPoint = 100;
             }
-            SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
-            SyakaStart = false;//シャカシャカゲージのUI表示
+            
+
         }
 
         // 最後の引数に layerMask を入れることで、自分（Player）を無視して光線を飛ばせる
         SyakaFly = Physics.Raycast(transform.position, Vector3.down, 0.5f, layerMask);
 
- 
-        if(IsActiveFly)
+        if (!SyakaFly && IsActiveFly && !SyakaEnd)
         {
-            timer += Time.deltaTime;
+            SyakaEnd = true;
+
+        }
+        if (SyakaFly && IsActiveFly && SyakaEnd)
+        {
+            IsActiveFly = false;
+            SyakaEnd = false;
         }
 
-
-        if (SyakaFly && IsActiveFly )
-        {
-
-        if (timer < ignoreTime) return; // まだ無視する時間ならここで処理を抜ける
-
-        if (Physics.Raycast(transform.position, Vector3.down, 1.0f))
-        {
-         IsActiveFly = false;
-            IsActiveFall = false;
-            ColaP.SetActive(false);
-            BubbleP.SetActive(false);
-            
-        }
-           
-        }
-       
-
-        
-
-        if (Input.GetMouseButtonDown(0) && !IsActiveFly && SyakaPoint > 1)
+        if (Input.GetMouseButtonDown(0) && !IsActiveFly && SyakaPoint > 0)
         {
             SyakaPos = transform.position;
             SyakaCharge = 0;
-            ChargeP.SetActive(true);
-            ChargeStart = true;
-            ChargeEnd = true;
         }
       
-        
 
-        if (ChargeStart && Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !IsActiveFly && SyakaPoint > 0)
         {
             SyakaPos.y = transform.position.y;
             transform.position = SyakaPos;
@@ -193,7 +161,7 @@ public class SyakaSyaka : MonoBehaviour
             if(SyakaPoint > 1)
             {
                 SyakaRemove++;
-                if (SyakaRemove > 10)
+                if (SyakaRemove > 5)
                 {
                     SyakaPoint--;
                     SyakaCharge++;
@@ -201,59 +169,27 @@ public class SyakaSyaka : MonoBehaviour
                     SyakaRemove = 0;
                 }
             }
-            else
-            {
-                ChargeP.SetActive(false);
-            }
 
            
         }
         else
         {
             houkou.SetActive(false);
-            ChargeStart = false;
         }
         
-        if(Input.GetMouseButtonUp(0) && !IsActiveFly && ChargeEnd)
+        if(Input.GetMouseButtonUp(0) && !IsActiveFly && SyakaPoint > 0)
         {
-            ChargeEnd = false;
-            ChargeP.SetActive(false);
-            ColaP.SetActive(true);
-            BubbleP.SetActive(true);
-
-            timer = 0;
-
             IsActiveFly = true;
 
             var For = Camera.forward;
 
-            var syakaPower = (SyakaCharge * 100);
+            var syakaPower = (SyakaCharge * 100)/2;
 
             // 「上」と「前」を足すと、45度の斜め上になります
             Vector3 slantDirection = (Vector3.up + For).normalized;
 
             // これに強さを掛けるて弾き飛ばす
             Rb.AddForce(slantDirection * syakaPower);
-        }
-
-        // 飛んでいる最中にスペースキーが押されたら
-        if (Input.GetKeyDown(KeyCode.Space) && IsActiveFly && !IsActiveFall)
-        {
-           
-
-            if (Rb != null)
-            {
-                // 最新のプロパティで速度をリセット
-                Rb.linearVelocity = Vector3.zero;
-
-                // 回転速度も新しいやつがあるよ
-                Rb.angularVelocity = Vector3.zero;
-
-                // 3. (オプション) 勢いよく落としたいなら下向きに力を加える
-                Rb.AddForce(Vector3.down * 10f, ForceMode.Impulse);
-            }
-
-            IsActiveFall = true;
         }
 
     }
