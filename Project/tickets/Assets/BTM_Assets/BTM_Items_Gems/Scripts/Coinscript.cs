@@ -3,33 +3,33 @@ using System.Collections;
 
 public class Coinscript : MonoBehaviour
 {
-    [Header("取得時のパーティクル")]
+    [Header("�擾���̃p�[�e�B�N��")]
     public GameObject getEffectPrefab;
 
     private void OnTriggerEnter(Collider other)
     {
-        // KanというTagのオブジェクトが当たると消える
+        // Kan�Ƃ���Tag�̃I�u�W�F�N�g��������Ə�����
         if (other.CompareTag("Kan"))
         {
-            // スコアを増やすプログラム
-            Debug.Log("スコアを増やす");
+            // �X�R�A�𑝂₷�v���O����
+            Debug.Log("�X�R�A�𑝂₷");
 
-            // ここから下 演出
+            // �������牺 ���o
 
-            // パーティクルの発生
+            // �p�[�e�B�N���̔���
             if (getEffectPrefab != null)
             {
                 GameObject effect = Instantiate(getEffectPrefab, transform.position, Quaternion.identity);
             }
 
-            // アニメーション
+            // �A�j���[�V����
             StartCoroutine(GetAnime());
         }
     }
 
     IEnumerator GetAnime()
     {
-        // 獲得時にコインが跳ねて消える演出のアニメーション
+        // �l�����ɃR�C�������˂ď����鉉�o�̃A�j���[�V����
 
         float time = 0f;
 
