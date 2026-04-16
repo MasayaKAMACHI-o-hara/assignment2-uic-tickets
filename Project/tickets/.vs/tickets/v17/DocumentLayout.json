@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|c:\\users\\student\\documents\\github\\assignment2-uic-tickets\\project\\tickets\\assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|c:\\users\\student\\documents\\github\\assignment2-uic-tickets\\project\\tickets\\assets\\object\\kan\\script\\kanmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\kanmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\kanmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|c:\\users\\student\\documents\\github\\assignment2-uic-tickets\\project\\tickets\\assets\\scenes\\judging board_test\\judging board_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\scenes\\judging board_test\\judging board_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\judging board_test\\judging board_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Assets\\Scenes\\judging board_test\\judging board_script.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAADwvxsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T06:09:09.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T06:09:09.971Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Assets\\object\\Kan\\script\\KanMove.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T05:07:59.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T05:07:59.673Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\CameraMove.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\CameraMove.cs",
               "RelativeToolTip": "Assets\\object\\Kan\\script\\CameraMove.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAGAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAIwAUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T05:15:51.245Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Assets\\object\\Kan\\script\\SyakaSyaka.cs",
               "ViewState": "AQIAAMYAAAAAAAAAAAAAwOsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T05:11:19.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T05:11:19.774Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Assets\\BTM_Assets\\BTM_Items_Gems\\Scripts\\Coinscript.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T05:53:23.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T05:53:23.858Z"
             }
           ]
         }

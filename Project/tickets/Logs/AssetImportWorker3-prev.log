@@ -1,0 +1,1373 @@
+Using pre-set license
+Built from '6000.0/respin/6000.0.59f1-063c55f2fd0f' branch; Version is '6000.0.59f2 (ef281c76c3c1) revision 15673372'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'ja' Physical Memory: 32486 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-04-15T05:04:12Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.59f2-x86_64\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/student/Documents/GitHub/assignment2-uic-tickets/Project/tickets
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+63071
+-job-worker-count
+11
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/student/Documents/GitHub/assignment2-uic-tickets/Project/tickets
+C:/Users/student/Documents/GitHub/assignment2-uic-tickets/Project/tickets
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [35708]  Target information:
+
+Player connection [35708]  * "[IP] 10.204.97.26 [Port] 0 [Flags] 2 [Guid] 571721038 [EditorId] 571721038 [Version] 1048832 [Id] WindowsEditor(7,PC-U24-G15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [35708] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35708] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.59f2 (ef281c76c3c1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.59f2-x86_64/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/student/Documents/GitHub/assignment2-uic-tickets/Project/tickets/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
+    Vendor:   NVIDIA
+    VRAM:     7949 MB
+    Driver:   32.0.15.8195
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
+Shader 'Hidden/Universal Render Pipeline/StencilDeferred': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/FallbackError': fallback shader 'Hidden/Core/FallbackError' not found
+Shader 'Universal Render Pipeline/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Particles/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Complex Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/VR/SpatialMapping/Occlusion': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/VR/SpatialMapping/Wireframe': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Particles/Simple Lit': fallback shader 'Universal Render Pipeline/Particles/Unlit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/Simple Lit' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree8': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Unlit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2-x86_64/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2-x86_64/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2-x86_64/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2-x86_64/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001847 seconds.
+- Loaded All Assemblies, in  0.270 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.277 seconds
+Domain Reload Profiling: 546ms
+	BeginReloadAssembly (75ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (122ms)
+		LoadAssemblies (74ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (118ms)
+				TypeCache.ScanAssembly (108ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (235ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (119ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.839 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 4 plugins.
+Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 4 plugins.
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.846 seconds
+Domain Reload Profiling: 1681ms
+	BeginReloadAssembly (158ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (584ms)
+		LoadAssemblies (375ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (284ms)
+			TypeCache.Refresh (213ms)
+				TypeCache.ScanAssembly (198ms)
+			BuildScriptInfoCaches (54ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (846ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (609ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (408ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6385 unused Assets / (3.9 MB). Loaded Objects now: 7082.
+Memory consumption went from 139.5 MB to 135.6 MB.
+Total: 10.296300 ms (FindLiveObjects: 0.954300 ms CreateObjectMapping: 0.566500 ms MarkObjects: 6.958800 ms  DeleteObjects: 1.815000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9109.400722 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIToggleHistory.prefab
+  artifactKey: Guid(5088d0220f0c4df439cf06c5c270eacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIToggleHistory.prefab using Guid(5088d0220f0c4df439cf06c5c270eacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5df32211ae8a63860215779848194adf') in 0.046201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Hexagon.prefab
+  artifactKey: Guid(feec2bd3b82c34243b4e7b55a9ee64b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Hexagon.prefab using Guid(feec2bd3b82c34243b4e7b55a9ee64b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d2d610ae1d67640f9e5a071a67d1602') in 2.7932203 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_single_orange.prefab
+  artifactKey: Guid(8dd0dd541acaff5418f32652ee44b2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_single_orange.prefab using Guid(8dd0dd541acaff5418f32652ee44b2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96697814f49e81ba9422f7f2ed4e138e') in 5.5257183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/object/coin/Coin.prefab
+  artifactKey: Guid(0ef11c7543405a0438670644814822fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/object/coin/Coin.prefab using Guid(0ef11c7543405a0438670644814822fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c573ca2e22cff73ed805523b96976ac') in 0.0257997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/BluePotion.prefab
+  artifactKey: Guid(67ebebe313b325b49a8c33c825bdabe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/BluePotion.prefab using Guid(67ebebe313b325b49a8c33c825bdabe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '057b1c2ced471f843b47f46b46655f2e') in 0.0228013 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector3.prefab
+  artifactKey: Guid(94afea5f242d72547979595ba963f335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector3.prefab using Guid(94afea5f242d72547979595ba963f335) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3205db402c8d2abeda03dfea45ca790d') in 0.0079753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Battery.prefab
+  artifactKey: Guid(b1dcde6e675915e46beef84becea3234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Battery.prefab using Guid(b1dcde6e675915e46beef84becea3234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '317cf5600bbf5430033ebe1ab0a8a1cd') in 0.0278785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 1.prefab
+  artifactKey: Guid(4f0e50d40447a6b4aa8b2659489842ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 1.prefab using Guid(4f0e50d40447a6b4aa8b2659489842ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a455523a2b78cfe07c847a28953aee99') in 5.6019415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 227
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Prefab/KAN.prefab
+  artifactKey: Guid(606b875db68a25f45b43414e3f3bc34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/KAN.prefab using Guid(606b875db68a25f45b43414e3f3bc34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f73a80839e99733a8661dd5a967a6395') in 0.028233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 58
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/DoubleDiamond.prefab
+  artifactKey: Guid(1e4916ec0aa669648804ed196ece8fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/DoubleDiamond.prefab using Guid(1e4916ec0aa669648804ed196ece8fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a734f25f7e8cbe1432d8cf39e0c15ad1') in 0.0191998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIRow.prefab
+  artifactKey: Guid(2d019437ff89b8d44949727731cd9357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIRow.prefab using Guid(2d019437ff89b8d44949727731cd9357) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b882707266eb5442092d20de5a33a6b') in 0.0054543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/factory_building_big.prefab
+  artifactKey: Guid(9bb7d850f09915e418ad6c2416757b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/factory_building_big.prefab using Guid(9bb7d850f09915e418ad6c2416757b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '693dc11ea0ac6e30173b254803567817') in 9.0279403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.098027 seconds.
+  path: Assets/DefaultVolumeProfile.asset
+  artifactKey: Guid(875f97cff90c4c245a3242d2b3447f5f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/DefaultVolumeProfile.asset using Guid(875f97cff90c4c245a3242d2b3447f5f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e63621e972e88d629f59478c0ef6d92b') in 0.1235249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/コインの処理など.unity
+  artifactKey: Guid(a4f4092ca9006004da7a6c1a6c0f55c5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/コインの処理など.unity using Guid(a4f4092ca9006004da7a6c1a6c0f55c5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3dddab692d07e5695ff4ba45a0f14e07') in 0.0106914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Mesh/Car_NO.1201.fbx
+  artifactKey: Guid(1e4c2f610722651479daaae54d817d84) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Mesh/Car_NO.1201.fbx using Guid(1e4c2f610722651479daaae54d817d84) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6750ae18a232c7be574716ba14191bde') in 0.0739489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 109
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  artifactKey: Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader using Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ce3200e2dd2665c7b549f7edd380e6c2') in 0.0097692 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+  artifactKey: Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader using Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '81de20f8af368b31999ed7958e0ec623') in 0.0088255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/object/car/Car 1.prefab
+  artifactKey: Guid(8258fdccd226b584b8dc1c7ac1652db0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/object/car/Car 1.prefab using Guid(8258fdccd226b584b8dc1c7ac1652db0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '08e2584d38bd918d2e027b4976e9e538') in 0.0398456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 212
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Material/BodyMat 4.mat
+  artifactKey: Guid(a4e6922f48c28e645b166a6e87c82b19) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Material/BodyMat 4.mat using Guid(a4e6922f48c28e645b166a6e87c82b19) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd5971b2d714716c5f219763342994c0f') in 0.0103377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/object/car/Car 5.prefab
+  artifactKey: Guid(ed7795f4883cb97468521311f1be4e22) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/object/car/Car 5.prefab using Guid(ed7795f4883cb97468521311f1be4e22) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd936e3643fbf8fe14ec70bcb388b8f87') in 0.0114759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 212
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
+  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ce797ab20f9d592fff5bf0f39061a746') in 0.0469231 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Material/BlacksMat.mat
+  artifactKey: Guid(15ff4ba6789dd814a802a627b0fe38ca) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Material/BlacksMat.mat using Guid(15ff4ba6789dd814a802a627b0fe38ca) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a5691209ac9ed6c749060a4a7edd8f06') in 0.0084506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Material/RimMat.mat
+  artifactKey: Guid(e5a36a49f7e66f9438772de96f10495c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Material/RimMat.mat using Guid(e5a36a49f7e66f9438772de96f10495c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c6ed04918481b844b7b9145c7a64fea1') in 0.0075291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TutorialInfo/Icons/URP.png
+  artifactKey: Guid(727a75301c3d24613a3ebcec4a24c2c8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TutorialInfo/Icons/URP.png using Guid(727a75301c3d24613a3ebcec4a24c2c8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e85e21fd2211911c7eab9f491dd62bd') in 0.0269084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/object/coin/Particle System.prefab
+  artifactKey: Guid(f63bd48c6a0c06841b92838d95e74116) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/object/coin/Particle System.prefab using Guid(f63bd48c6a0c06841b92838d95e74116) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'df836fff990c0a16b2cc05304c37d10c') in 0.0518607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/object/effect/Point3 light.prefab
+  artifactKey: Guid(7959140646dbb3145b92926f53ab0e8c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/object/effect/Point3 light.prefab using Guid(7959140646dbb3145b92926f53ab0e8c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'faa96f4c3216b6d700977d148dd7981e') in 0.021814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Material/BodyMat 1.mat
+  artifactKey: Guid(707eb7b790aaa214bb421203de68536d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Material/BodyMat 1.mat using Guid(707eb7b790aaa214bb421203de68536d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a960e4be6da8f8850163adfc63dd5b9e') in 0.0101882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TutorialInfo/Scripts/Readme.cs
+  artifactKey: Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TutorialInfo/Scripts/Readme.cs using Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '73943d6900f8443f7eb57118c98825e5') in 0.0125327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Azerilo/Demo Assets/GroundMaterial.mat
+  artifactKey: Guid(595dd5aee4a95634385fd1fbf7216b7c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Demo Assets/GroundMaterial.mat using Guid(595dd5aee4a95634385fd1fbf7216b7c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '261973aee22e7eef36a5728d8ce9ffd6') in 0.0171176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/Mobile_Renderer.asset
+  artifactKey: Guid(65bc7dbf4170f435aa868c779acfb082) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Settings/Mobile_Renderer.asset using Guid(65bc7dbf4170f435aa868c779acfb082) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bc3a816f94ecbdab51aecb2c26d3369b') in 0.0248312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/material/ColaMaterial.mat
+  artifactKey: Guid(d04068d4c2427b746b5c87af6ff9472c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/material/ColaMaterial.mat using Guid(d04068d4c2427b746b5c87af6ff9472c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f2fea423f41708f14d4602131cd8050f') in 0.0104319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 3.prefab
+  artifactKey: Guid(7d796acada1b6ed49a00171f56244479) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 3.prefab using Guid(7d796acada1b6ed49a00171f56244479) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c9360465957ea271648630ed2cf0f8de') in 0.0142165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 212
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/material/AwaMaterial.mat
+  artifactKey: Guid(e4f573b6138c1d0409924a007d440202) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/material/AwaMaterial.mat using Guid(e4f573b6138c1d0409924a007d440202) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bec6d6f8bb77f291cb281d553b3ca7cf') in 0.0122336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/BluePotion.fbx
+  artifactKey: Guid(85c36c7b89cce1e48bfb44ae5c1fdc84) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/BluePotion.fbx using Guid(85c36c7b89cce1e48bfb44ae5c1fdc84) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1e1a1ea02b77b9c4af7158a89f0e0fbb') in 0.0161486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/GoldBar.fbx
+  artifactKey: Guid(b595019e353f6c64196dd301530f35a4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/GoldBar.fbx using Guid(b595019e353f6c64196dd301530f35a4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '842f3fed0a05823ce6a7a9fcef2cda29') in 0.0166405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/GreenPill.fbx
+  artifactKey: Guid(4cf0ddf15379a1e4683e83a660034947) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/GreenPill.fbx using Guid(4cf0ddf15379a1e4683e83a660034947) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e7ec2b2af4d9243f93845108742e8598') in 0.017055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Materials/BaseMaterial_Orange.mat
+  artifactKey: Guid(7669597e2cd68b246afed9abf2c0d93f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Materials/BaseMaterial_Orange.mat using Guid(7669597e2cd68b246afed9abf2c0d93f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '762ec03507b47b7d2d2c7b1bb606f1ab') in 0.0119514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Material/RearLightMat.mat
+  artifactKey: Guid(d8f48f6b71290cc4c90811f5f54d2ab1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Material/RearLightMat.mat using Guid(d8f48f6b71290cc4c90811f5f54d2ab1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '23d033b59097d18b9e45ecae726cbb5a') in 0.0115473 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 4.prefab
+  artifactKey: Guid(cf2f9fb8bd651bd408d8113555a13ab3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 4.prefab using Guid(cf2f9fb8bd651bd408d8113555a13ab3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '88b14b66a3d3eb4c41c6d19be2fadebf') in 0.0134329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 212
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+  artifactKey: Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc using Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dd9cabea9510c65284f36305e6bf6719') in 0.0106953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/PC_Renderer.asset
+  artifactKey: Guid(f288ae1f4751b564a96ac7587541f7a2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Settings/PC_Renderer.asset using Guid(f288ae1f4751b564a96ac7587541f7a2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '82d82418525bc717ef6c409293e98af1') in 0.0172327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Mesh/Wheel.fbx
+  artifactKey: Guid(2edc132688aefb645888fe640561c1e8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Mesh/Wheel.fbx using Guid(2edc132688aefb645888fe640561c1e8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f02d922ba24479e42f93973d9a6d004c') in 0.0200387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/GreenVial.fbx
+  artifactKey: Guid(78c3a76a813d69f4eadc66502083509a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/GreenVial.fbx using Guid(78c3a76a813d69f4eadc66502083509a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '03f7dcc5c49eba9329a372958aad5fd8') in 0.0170455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+  artifactKey: Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF.shader using Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b9ccce4b929ff3854a03e612d55ca207') in 0.0137108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+  artifactKey: Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader using Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a0e0344ea74a7c02ceb736cc66aebcf9') in 0.0125193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Materials/BaseMaterial_Teal.mat
+  artifactKey: Guid(20893d5872b396849be6d600f7d2d333) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Materials/BaseMaterial_Teal.mat using Guid(20893d5872b396849be6d600f7d2d333) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4257062e262f5fafdd53353b7c86f114') in 0.0111518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/Spiral.fbx
+  artifactKey: Guid(4da415d70811ed54e812bd16bb0e8247) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/Spiral.fbx using Guid(4da415d70811ed54e812bd16bb0e8247) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '202ef3a3a0614f84a50ab8cf0d19e859') in 0.0169776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/Key.fbx
+  artifactKey: Guid(8903becf9bb9b124099407630c637d16) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/Key.fbx using Guid(8903becf9bb9b124099407630c637d16) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8e5b06e8c96bdcfb5d13e5ed284cc522') in 0.0185827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/StarGem1.fbx
+  artifactKey: Guid(d9cb743b0a3cd534d914c3021e8c4020) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/StarGem1.fbx using Guid(d9cb743b0a3cd534d914c3021e8c4020) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4836cd6c2f6e53b62f4afd057ebaff22') in 0.0179147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/StarGem2.fbx
+  artifactKey: Guid(5139e0164226e30489a3d299aba7e4b2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/StarGem2.fbx using Guid(5139e0164226e30489a3d299aba7e4b2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c03d43d4e8f36e02949dde269846df78') in 0.0183154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/SphereGem.fbx
+  artifactKey: Guid(5ae72abb4f5c0814e98a001acc1127bf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/SphereGem.fbx using Guid(5ae72abb4f5c0814e98a001acc1127bf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9eed48c4d6fa4cd92d1d827e054bd262') in 0.0163095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/Magnet.fbx
+  artifactKey: Guid(e9f10851f5b79d94db00a34dbfa7afa9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/Magnet.fbx using Guid(e9f10851f5b79d94db00a34dbfa7afa9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8a0695bae05da28af7aff432f0d476a6') in 0.0176996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/Coin.fbx
+  artifactKey: Guid(7545b41dcb5e9bc429013a8c2378c942) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/Coin.fbx using Guid(7545b41dcb5e9bc429013a8c2378c942) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8c29de3ec23bc664dcf35e983835d90b') in 0.0187209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/object/Title/start.cs
+  artifactKey: Guid(78f4d79d0f0d0524ebaa7335269bced7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/object/Title/start.cs using Guid(78f4d79d0f0d0524ebaa7335269bced7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '159c7ff48a861a161b0f47ab2958bc56') in 0.0100758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+  artifactKey: Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc using Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7f685f03b7eeebf4a637e99d3b47860a') in 0.009862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Materials/Gradient Pallete.png
+  artifactKey: Guid(fdc9284e7f7d7be488f34ed803e0c9af) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Materials/Gradient Pallete.png using Guid(fdc9284e7f7d7be488f34ed803e0c9af) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6de6d6075640ce255898d9a4c84108c5') in 0.014746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/GreenPotion.fbx
+  artifactKey: Guid(905f72ca98139284d856e235054cf139) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/GreenPotion.fbx using Guid(905f72ca98139284d856e235054cf139) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '052edcfb4db65166d4f9fdd7c1a84fc0') in 0.0195884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+  artifactKey: Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader using Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b745833b90f6d3edd577897271c335fe') in 0.0099605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Heart.prefab
+  artifactKey: Guid(af9d1131c788d454fa7dae4544fa99d2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Heart.prefab using Guid(af9d1131c788d454fa7dae4544fa99d2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b55ff1f37ebf7ca7ffbf3776272668c5') in 0.0147957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/BluePill.prefab
+  artifactKey: Guid(48853cd3cc24c284d8a5333395c20ba3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/BluePill.prefab using Guid(48853cd3cc24c284d8a5333395c20ba3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '934f7483760938b9bbe448fbd473e5d7') in 0.0185887 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Diamondo.prefab
+  artifactKey: Guid(5a2ef7db5b7c1db4a8adf9e71ea2e879) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Diamondo.prefab using Guid(5a2ef7db5b7c1db4a8adf9e71ea2e879) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5bb7c1b6252e3ee0d4324cd9e79f2a54') in 0.0155626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/GreenPotion.prefab
+  artifactKey: Guid(a610c52de611e244dbe9b6a800cf193b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/GreenPotion.prefab using Guid(a610c52de611e244dbe9b6a800cf193b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ed4ccf8f6c2201c3d1a03dc520002157') in 0.0145165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/4SideDiamond.prefab
+  artifactKey: Guid(8b222146fa41a324789772470d2d6e3d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/4SideDiamond.prefab using Guid(8b222146fa41a324789772470d2d6e3d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5a082c18692a04dbccdab7a1452a81fb') in 0.014184 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/FirstAid.prefab
+  artifactKey: Guid(e5c1443d2315194448b2e377f622f871) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/FirstAid.prefab using Guid(e5c1443d2315194448b2e377f622f871) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b95e19c217dc92714b5d9ccce6803d6e') in 0.0172481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Materials/BaseMaterial_Pink.mat
+  artifactKey: Guid(20c593a79fdf4ef428dca41cc02d4628) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Materials/BaseMaterial_Pink.mat using Guid(20c593a79fdf4ef428dca41cc02d4628) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a11b6b63dbecdd8c3cce4a5fbf6562ab') in 0.012046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/BlueVial.fbx
+  artifactKey: Guid(d43530ba94306194c8c70bc5f43645c0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/BlueVial.fbx using Guid(d43530ba94306194c8c70bc5f43645c0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'aa637eb3ca5f77dc1e4809b6d076d285') in 0.0235699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '25955fdbb154b12f99fb20fa8d42136c') in 0.0095748 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 2.prefab
+  artifactKey: Guid(b40145a3e04378e4c884260831003e49) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 2.prefab using Guid(b40145a3e04378e4c884260831003e49) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '39a7c1cf5ef143c5cf16a4022aad70df') in 0.0119566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 212
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/RedPill.fbx
+  artifactKey: Guid(15d91f53302e333468b01c993b22cad7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/RedPill.fbx using Guid(15d91f53302e333468b01c993b22cad7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '898dd788eac25f0b061a9fb2bb41cd8f') in 0.0130525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Material/SeamsMat 4.mat
+  artifactKey: Guid(022f817192f82864a956f7ccd727ef3d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Material/SeamsMat 4.mat using Guid(022f817192f82864a956f7ccd727ef3d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fb355745354daa3ad9141cdb5d5d0630') in 0.0119565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/SphereGem2.prefab
+  artifactKey: Guid(50e7064084f724541b538851733cd3ce) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/SphereGem2.prefab using Guid(50e7064084f724541b538851733cd3ce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ab1dde815598857ac6a81fd74a3166cc') in 0.0136883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Key.prefab
+  artifactKey: Guid(e360d8d16d87ca544b56a603ea831f2f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Key.prefab using Guid(e360d8d16d87ca544b56a603ea831f2f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6bbd4b8fc2eda31097a260d1e4c18ed7') in 0.0145775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/SphereGem.prefab
+  artifactKey: Guid(d8b39e1612b32b94d84dfe14087815b2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/SphereGem.prefab using Guid(d8b39e1612b32b94d84dfe14087815b2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1948053fe0117b81a565029ebc2de8af') in 0.0145416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Lock.prefab
+  artifactKey: Guid(1b3904c27daf8ec40998027dcc750477) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Lock.prefab using Guid(1b3904c27daf8ec40998027dcc750477) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bca15d021550afaf0bd54e3c8861e9fa') in 0.0164585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Shield.prefab
+  artifactKey: Guid(a1614f0cf649e3a4e894d20bda9008e7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Shield.prefab using Guid(a1614f0cf649e3a4e894d20bda9008e7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9ef70805b9fef94c69bbf07eb23cc236') in 0.0146109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/SphereGem3.prefab
+  artifactKey: Guid(2231e242ec531e44caa03826addc9302) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/SphereGem3.prefab using Guid(2231e242ec531e44caa03826addc9302) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3618795c54027401d6936d43d08eb877') in 0.015683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/StarCoin.prefab
+  artifactKey: Guid(a73eca55382651c449497eca9a2be0be) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/StarCoin.prefab using Guid(a73eca55382651c449497eca9a2be0be) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '87ad5a4616917c14dd461e08d23ca493') in 0.0125069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/RedVial.fbx
+  artifactKey: Guid(9224df7f5efccbc42af35f984ded95cf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/RedVial.fbx using Guid(9224df7f5efccbc42af35f984ded95cf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7b3452d0ccc7093f93d7bc5d17d5cf6d') in 0.0190698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/Trophy.fbx
+  artifactKey: Guid(d0958d2a40711a441af583beb71f5bf1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/Trophy.fbx using Guid(d0958d2a40711a441af583beb71f5bf1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5e1226ee06930f2cf704635196b62e89') in 0.0181435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TutorialInfo/Layout.wlt
+  artifactKey: Guid(eabc9546105bf4accac1fd62a63e88e6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TutorialInfo/Layout.wlt using Guid(eabc9546105bf4accac1fd62a63e88e6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1966d48182756a092118c22a804e6839') in 0.0097298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(bb0ea29352a8f8f448977821e9f68e0b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(bb0ea29352a8f8f448977821e9f68e0b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5a2528c69311266eeab4e94415a4dcaa') in 0.0641733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/Time.fbx
+  artifactKey: Guid(0136abae75221dc4e8e1ba4f9d24c63b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/Time.fbx using Guid(0136abae75221dc4e8e1ba4f9d24c63b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'aeb9e171b20c5cc6453e9677f5a7e334') in 0.0159973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/NPC/2.NPC Model/2.Materials/NPC_Male.mat
+  artifactKey: Guid(a53b5cf10715ebd49b6eb951b3b62c7a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/NPC/2.NPC Model/2.Materials/NPC_Male.mat using Guid(a53b5cf10715ebd49b6eb951b3b62c7a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '24b0d29fff47cde303ea36b6fb7954d2') in 0.0162487 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/StarGem3.prefab
+  artifactKey: Guid(c51c431c1c28a7b4082c610fc0aa0a46) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/StarGem3.prefab using Guid(c51c431c1c28a7b4082c610fc0aa0a46) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '68cc1c18b43d43408c085276dc6215b7') in 0.0130141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Trophy.prefab
+  artifactKey: Guid(3f2245bee0a16594fa5461000f35ddc4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Trophy.prefab using Guid(3f2245bee0a16594fa5461000f35ddc4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '343254cb1c853b512d48905129f0281b') in 0.0128521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/NPC/2.NPC Model/1.Textures/NPC.png
+  artifactKey: Guid(9ffdc8b7919d763478da45016239eace) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/NPC/2.NPC Model/1.Textures/NPC.png using Guid(9ffdc8b7919d763478da45016239eace) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '65524ec3b3ba6ffd116dbe38f48ef80d') in 0.0124266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/NPC/2.NPC Model/1.Textures/NPC metal_gloss.png
+  artifactKey: Guid(3238c744c76be29449996e23b350a82d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/NPC/2.NPC Model/1.Textures/NPC metal_gloss.png using Guid(3238c744c76be29449996e23b350a82d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '17bef16bdd2587244446e989d6d1b1cd') in 0.0133334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/NPC/2.NPC Model/4.Animation/idle_male.anim
+  artifactKey: Guid(7abe3aede7445954bb44b2d58626b2eb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/NPC/2.NPC Model/4.Animation/idle_male.anim using Guid(7abe3aede7445954bb44b2d58626b2eb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9180760f2e7a8899ccd7da04f57ed863') in 0.0279827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6239e2d40149402fffaa87e806887199') in 0.0121592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/4SideDiamond.fbx
+  artifactKey: Guid(05224ec7e4d85c14dbf345dd08810e67) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/4SideDiamond.fbx using Guid(05224ec7e4d85c14dbf345dd08810e67) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2822f5310812d1c1910614a96f1f9e66') in 0.0184444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Material/TireMat.mat
+  artifactKey: Guid(7bd837ab56783b44baa20d3e543a6342) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Material/TireMat.mat using Guid(7bd837ab56783b44baa20d3e543a6342) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3f003dd60f0bf88c6e599935cb23633c') in 0.0121931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Materials/Backdrop.mat
+  artifactKey: Guid(124674cf07a479740871e01a76336390) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Materials/Backdrop.mat using Guid(124674cf07a479740871e01a76336390) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd4b6d803882bc33fa005233b12b655ec') in 0.0113968 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/5SideDiamond.fbx
+  artifactKey: Guid(7d7b6793cdd278a4084fd1e487655b7e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/5SideDiamond.fbx using Guid(7d7b6793cdd278a4084fd1e487655b7e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd8dbecfac8cfbd7bb3574a6f50e73bb7') in 0.0160424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/Cubie.fbx
+  artifactKey: Guid(246fb11fab76bc041a0f4c7e7a6cf407) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/Cubie.fbx using Guid(246fb11fab76bc041a0f4c7e7a6cf407) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd69d3b8d7bde1afa648a9275aea49e5a') in 0.0163761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2_tracks.mat
+  artifactKey: Guid(f96faff657ba0a54d8392a93c22371a9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2_tracks.mat using Guid(f96faff657ba0a54d8392a93c22371a9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8a161f42d5343b5f994e7b8f94e9d2c9') in 0.0169024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat
+  artifactKey: Guid(48bf040ff1590a74782bf0210962cdee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat using Guid(48bf040ff1590a74782bf0210962cdee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '37972075c5cc4fad6c435f9c47e95691') in 0.0170121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/vegetation_non_tp.mat
+  artifactKey: Guid(5efcc5a40dd64b14eb818cf6750a395c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/vegetation_non_tp.mat using Guid(5efcc5a40dd64b14eb818cf6750a395c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e4de43b07b7c5a721eac4a6784b0b7b3') in 0.0118913 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_interior.mat
+  artifactKey: Guid(c7040db656dd78e4db434fd7330def51) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_interior.mat using Guid(c7040db656dd78e4db434fd7330def51) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f42df121a64730c822dd3a41c526f350') in 0.0112844 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/sideway_tile.mat
+  artifactKey: Guid(e343388f0f8c8714ca3e19bc022d8f1f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/sideway_tile.mat using Guid(e343388f0f8c8714ca3e19bc022d8f1f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4f57d7bde239b03d09492ee55b128bdf') in 0.0148945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/mid_house_3.fbx
+  artifactKey: Guid(b415aacfae9c097419b5859e99bc6899) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/mid_house_3.fbx using Guid(b415aacfae9c097419b5859e99bc6899) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '926594da6ada71f99f887689dd115492') in 0.0165459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_highway.mat
+  artifactKey: Guid(efba80df10aeb624e82f4d1d32902613) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_highway.mat using Guid(efba80df10aeb624e82f4d1d32902613) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e0d8fbe0d43a6dea6b4611f31b1241ee') in 0.0144119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_bases.mat
+  artifactKey: Guid(7304ae2ab1b71784c9b6e3e785e4d869) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_bases.mat using Guid(7304ae2ab1b71784c9b6e3e785e4d869) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f7ae96f07c3efc0d50b588f74b87ddca') in 0.0127984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_big.fbx
+  artifactKey: Guid(13faf7475aac74a418597eaf9c203dc8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_big.fbx using Guid(13faf7475aac74a418597eaf9c203dc8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2a58cfd504c1f93ede8500d131a938bb') in 0.0154052 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/mid_house_1.fbx
+  artifactKey: Guid(84cdbd9dcb4f91c49b95316c72e1aa80) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/mid_house_1.fbx using Guid(84cdbd9dcb4f91c49b95316c72e1aa80) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fd3da92d8c84f34db3243c35e994fdb2') in 0.0155295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/lamp_pole_small.fbx
+  artifactKey: Guid(4c8c8ac362caa3842a97f75923d9f36d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/lamp_pole_small.fbx using Guid(4c8c8ac362caa3842a97f75923d9f36d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '78c7b065842d33d90dcfcf4461622900') in 0.0139399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Ruby.prefab
+  artifactKey: Guid(e61c9a4b7ad4e684f9866d27135607f5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Ruby.prefab using Guid(e61c9a4b7ad4e684f9866d27135607f5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a92651bd8f03e7a6fa3326cafb7edb39') in 0.014014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Models/SpeedChev.fbx
+  artifactKey: Guid(64a927c80033db0409b71cfd8df5461a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Models/SpeedChev.fbx using Guid(64a927c80033db0409b71cfd8df5461a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c5e066626e4521f3012995dda253981e') in 0.013605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/bench.prefab
+  artifactKey: Guid(e3cdcd01b3ecc3b4da788a3ff03a9e28) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/bench.prefab using Guid(e3cdcd01b3ecc3b4da788a3ff03a9e28) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1bf2aa8c80164f9960fd460ec8efcf0e') in 0.013622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra_nm.png
+  artifactKey: Guid(08026d19e978cb44daea84c1a4fd4cb9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra_nm.png using Guid(08026d19e978cb44daea84c1a4fd4cb9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e72516d6275e26fe4614bc3c4a86a757') in 0.0149681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_2.prefab
+  artifactKey: Guid(b0f4bfab0bbc4714d90f5a03e7be3225) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_2.prefab using Guid(b0f4bfab0bbc4714d90f5a03e7be3225) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e2135d9d7e9ad9400c53840576b92c7c') in 0.0146201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_2.prefab
+  artifactKey: Guid(bb2fbe10985b8584aae4b5849c7a5ee1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_2.prefab using Guid(bb2fbe10985b8584aae4b5849c7a5ee1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '298de428a97935e0ab01f45fdf86a96a') in 0.0163864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 55
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/basement_big.prefab
+  artifactKey: Guid(2a006ed40b93cf842b1dc6ad5a4cd5bb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/basement_big.prefab using Guid(2a006ed40b93cf842b1dc6ad5a4cd5bb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '83a15b248ead01bb3ee131257ac20674') in 0.0123637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_4_2.prefab
+  artifactKey: Guid(3329082d61256954d934428d2d1c7b71) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/mid_house_4_2.prefab using Guid(3329082d61256954d934428d2d1c7b71) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '98e1f7f38b80a0bd3762c0cac42b9cef') in 0.0158505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_2_bgr.prefab
+  artifactKey: Guid(6757f292accaf4645a20a11f84be58fe) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/office_building_2_bgr.prefab using Guid(6757f292accaf4645a20a11f84be58fe) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bb0e86629d710a1484c17a16c7e62774') in 0.0134171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_single_pink.prefab
+  artifactKey: Guid(ee320aa63aada0e44b3c3a900180121b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/lamp_pole_single_pink.prefab using Guid(ee320aa63aada0e44b3c3a900180121b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eb9966660ae2d04bfa697f98e8564e91') in 0.01374 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/factory_chimney-stalk.prefab
+  artifactKey: Guid(ff40f4bb80a592a449bd5dc020a38fc0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/factory_chimney-stalk.prefab using Guid(ff40f4bb80a592a449bd5dc020a38fc0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '55c82942f1cebe3c672aaf1bcfe26d63') in 0.0158853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/building_lamp_orange.prefab
+  artifactKey: Guid(15f5ac9ecdce3de4db7286c24974c77f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Prefabs/building_lamp_orange.prefab using Guid(15f5ac9ecdce3de4db7286c24974c77f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'db4c260bd4a5dc5617d28f0f0cae38a7') in 0.0140422 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/tree_1.fbx
+  artifactKey: Guid(dda42447d741e5c49b0a5461669fdc99) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/tree_1.fbx using Guid(dda42447d741e5c49b0a5461669fdc99) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'aca895079812e593414b310d5b868509') in 0.0160737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2-5_tracks_oc.png
+  artifactKey: Guid(4f5f5a0560eba0742947e46a123c71be) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2-5_tracks_oc.png using Guid(4f5f5a0560eba0742947e46a123c71be) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '732dbc78e3810cfa69bc211121758f67') in 0.0153241 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Bomb.prefab
+  artifactKey: Guid(e02b31792a067c74a81e275fcda3930b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Bomb.prefab using Guid(e02b31792a067c74a81e275fcda3930b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '312ae8b1ed19b0f629e3fef5401a9b53') in 0.0121863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/highrise_facades_em.png
+  artifactKey: Guid(63bd55654816cf744a276f50c1210d19) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/highrise_facades_em.png using Guid(63bd55654816cf744a276f50c1210d19) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '77376dfa5daa61692ce3960c3fceee80') in 0.0164778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/Lightmap-4_comp_light.exr
+  artifactKey: Guid(57eaa8f9a09df71468f5e29ceadf5957) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/Lightmap-4_comp_light.exr using Guid(57eaa8f9a09df71468f5e29ceadf5957) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5295dc174a79912ae5b37210e8d285c8') in 0.0494564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat
+  artifactKey: Guid(3411f94e3a532654884762b61b7a4d8d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat using Guid(3411f94e3a532654884762b61b7a4d8d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '96bf7c8d984911f5bcd1e9312a2f36fe') in 0.0118833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/OcclusionCullingData.asset
+  artifactKey: Guid(a88c2f2cca199624db19d78b0a471501) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/OcclusionCullingData.asset using Guid(a88c2f2cca199624db19d78b0a471501) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd87eda915ace7d01f2b338ee19e01c94') in 0.1234792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square_oc.png
+  artifactKey: Guid(c76dc866139651e489ed4cac1d146e6f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square_oc.png using Guid(c76dc866139651e489ed4cac1d146e6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b6d38b17021ab0a6c88afa983bf0b7ef') in 0.0159034 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/ReflectionProbe-12.png
+  artifactKey: Guid(acb6b6d7c15766a4d8d178b7b9298988) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/ReflectionProbe-12.png using Guid(acb6b6d7c15766a4d8d178b7b9298988) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ffb3c7025b84eabfebb9f81dc257279d') in 0.013157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene/ReflectionProbe-0.exr
+  artifactKey: Guid(fab106c77e99e5e4aa5240e0900692ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene/ReflectionProbe-0.exr using Guid(fab106c77e99e5e4aa5240e0900692ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fd6bf78be2dd809f47642ebee36a00ae') in 0.0122975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/ReflectionProbe-6.png
+  artifactKey: Guid(1a0bab7143c6ac04497ead708e204e56) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/ReflectionProbe-6.png using Guid(1a0bab7143c6ac04497ead708e204e56) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dc0529b294786b4e7cef780fc3179af9') in 0.0156162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square.png
+  artifactKey: Guid(d9e79842697afca42aa92641c075d086) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square.png using Guid(d9e79842697afca42aa92641c075d086) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1e39ea8603cbf260229f9fd997d93391') in 0.0180186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Mesh/Materials/blinn17.mat
+  artifactKey: Guid(b82da7b737aae9042836619304e92905) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Mesh/Materials/blinn17.mat using Guid(b82da7b737aae9042836619304e92905) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd33b7cc7f43194847b458d3acde8c63c') in 0.0139399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/LightingData.asset
+  artifactKey: Guid(98a20dfe0755490468581b4e910c8a66) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/LightingData.asset using Guid(98a20dfe0755490468581b4e910c8a66) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6f9748136d01dbd90b023bd2846a607d') in 0.0195519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/BlueVial.prefab
+  artifactKey: Guid(9ef27024e68e3994ba87ef97f467881f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/BlueVial.prefab using Guid(9ef27024e68e3994ba87ef97f467881f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a334018879e9220295441f543aac998c') in 0.0132827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/props_main_nm.png
+  artifactKey: Guid(8ae1f7cdebfaae34fbcfe2f7a85b942b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/props_main_nm.png using Guid(8ae1f7cdebfaae34fbcfe2f7a85b942b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1afe4af7add5a4ae7ab1d1e010031f78') in 0.0142679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.450245 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_big.fbx
+  artifactKey: Guid(14a3f32c76f649d47812dbec6c810180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_big.fbx using Guid(14a3f32c76f649d47812dbec6c810180) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ecb514fe0d46517415c574014ca77b3') in 0.3143211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.810838 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_big.fbx
+  artifactKey: Guid(13faf7475aac74a418597eaf9c203dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/factory_building_big.fbx using Guid(13faf7475aac74a418597eaf9c203dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77019bd68e083de5a9caf30cd0ad1049') in 0.0333272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.510 seconds
+Refreshing native plugins compatible for Editor in 1.63 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.513 seconds
+Domain Reload Profiling: 1024ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (310ms)
+		LoadAssemblies (226ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (110ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (513ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (396ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (246ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6385 unused Assets / (4.7 MB). Loaded Objects now: 7139.
+Memory consumption went from 164.1 MB to 159.5 MB.
+Total: 7.739700 ms (FindLiveObjects: 0.809700 ms CreateObjectMapping: 0.385000 ms MarkObjects: 4.618700 ms  DeleteObjects: 1.925000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.770598 seconds.
+  path: Assets/object/effect/Point2 light.prefab
+  artifactKey: Guid(c6e88d5e8d9f2ba43b16d9924d5d0dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/object/effect/Point2 light.prefab using Guid(c6e88d5e8d9f2ba43b16d9924d5d0dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd498aa9aabf4a0c67f8567e24449e4f9') in 0.4019573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Penta.prefab
+  artifactKey: Guid(57377efc0a877474ab0478d4ce8180c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BTM_Assets/BTM_Items_Gems/Prefabs/Penta.prefab using Guid(57377efc0a877474ab0478d4ce8180c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9abd107f875c1d95783399e47b65ee2') in 0.0348144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

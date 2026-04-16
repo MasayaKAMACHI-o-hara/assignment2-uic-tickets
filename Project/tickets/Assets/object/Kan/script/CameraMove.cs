@@ -4,7 +4,6 @@ using static UnityEngine.GraphicsBuffer;
 
 public class CameraMove : MonoBehaviour
 {
-    public GameObject KanPos;
 
     public Transform target;     // 追いかける主人公
     public float distance = 5.0f; // キャラとの距離
