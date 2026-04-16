@@ -1,35 +1,37 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Coinscript : MonoBehaviour
 {
-    [Header("ï¿½æ“¾ï¿½ï¿½ï¿½Ìƒpï¿½[ï¿½eï¿½Bï¿½Nï¿½ï¿½")]
+    [Header("æ“¾‚Ìƒp[ƒeƒBƒNƒ‹")]
     public GameObject getEffectPrefab;
 
     private void OnTriggerEnter(Collider other)
     {
-        // Kanï¿½Æ‚ï¿½ï¿½ï¿½Tagï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æï¿½ï¿½ï¿½ï¿½ï¿½
+        // Kan‚Æ‚¢‚¤Tag‚ÌƒIƒuƒWƒFƒNƒg‚ª“–‚½‚é‚ÆÁ‚¦‚é
         if (other.CompareTag("Kan"))
         {
-            // ï¿½Xï¿½Rï¿½Aï¿½ğ‘‚â‚·ï¿½vï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½
-            Debug.Log("ï¿½Xï¿½Rï¿½Aï¿½ğ‘‚â‚·");
+            // ƒXƒRƒA‚ğ‘‚â‚·ƒvƒƒOƒ‰ƒ€
+            Debug.Log("ƒXƒRƒA‚ğ‘‚â‚·");
 
-            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç‰º ï¿½ï¿½ï¿½o
+            
 
-            // ï¿½pï¿½[ï¿½eï¿½Bï¿½Nï¿½ï¿½ï¿½Ì”ï¿½ï¿½ï¿½
+            // ‚±‚±‚©‚ç‰º ‰‰o
+            // ƒp[ƒeƒBƒNƒ‹‚Ì”­¶
             if (getEffectPrefab != null)
             {
                 GameObject effect = Instantiate(getEffectPrefab, transform.position, Quaternion.identity);
             }
 
-            // ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½
+            // ƒAƒjƒ[ƒVƒ‡ƒ“
             StartCoroutine(GetAnime());
         }
     }
 
     IEnumerator GetAnime()
     {
-        // ï¿½lï¿½ï¿½ï¿½ï¿½ï¿½ÉƒRï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‚Äï¿½ï¿½ï¿½ï¿½é‰‰ï¿½oï¿½ÌƒAï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½
+        // Šl“¾‚ÉƒRƒCƒ“‚ª’µ‚Ë‚ÄÁ‚¦‚é‰‰o‚ÌƒAƒjƒ[ƒVƒ‡ƒ“
 
         float time = 0f;
 
