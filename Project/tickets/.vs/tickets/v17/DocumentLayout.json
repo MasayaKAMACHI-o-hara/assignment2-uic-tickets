@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\kanmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\kanmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\scenes\\judging board_test\\judging board_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\judging board_test\\judging board_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\btm_assets\\btm_items_gems\\scripts\\coinscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,27 +34,29 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "judging board_script.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\Scenes\\judging board_test\\judging board_script.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\judging board_test\\judging board_script.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\Scenes\\judging board_test\\judging board_script.cs",
               "RelativeToolTip": "Assets\\Scenes\\judging board_test\\judging board_script.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAADwvxsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T06:09:09.971Z"
+              "WhenOpened": "2026-04-15T06:09:09.971Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "KanMove.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\KanMove.cs",
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\KanMove.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\KanMove.cs",
               "RelativeToolTip": "Assets\\object\\Kan\\script\\KanMove.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAFAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAQwGcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T05:07:59.673Z"
+              "WhenOpened": "2026-04-15T05:07:59.673Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,22 +66,23 @@
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\CameraMove.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\CameraMove.cs",
               "RelativeToolTip": "Assets\\object\\Kan\\script\\CameraMove.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAIwAUAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T05:15:51.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SyakaSyaka.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\SyakaSyaka.cs",
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\SyakaSyaka.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\SyakaSyaka.cs",
               "RelativeToolTip": "Assets\\object\\Kan\\script\\SyakaSyaka.cs",
-              "ViewState": "AQIAAMYAAAAAAAAAAAAAwOsAAAAyAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAALoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T05:11:19.774Z"
+              "WhenOpened": "2026-04-15T05:11:19.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -10034,7 +10034,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: -7113631319887564079, guid: c61f62438f1fcef498c8b2411e2b67bb, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10329,7 +10329,6 @@ MonoBehaviour:
   MaxSpeed: 2
   JumpPower: 10
   isGrounded: 1
-  coin: 0
   isFly: {fileID: 523658111241069574}
 --- !u!114 &523658111241069574
 MonoBehaviour:

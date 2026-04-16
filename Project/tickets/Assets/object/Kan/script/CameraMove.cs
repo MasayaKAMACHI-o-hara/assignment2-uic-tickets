@@ -39,7 +39,6 @@ public class CameraMove : MonoBehaviour
             distance = newDis;
         }
 
-        
 
         // 角度をクォータニオン（回転）に変換
         Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
@@ -49,8 +48,22 @@ public class CameraMove : MonoBehaviour
         Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
         Vector3 position = rotation * negDistance + target.position;
 
+
         // カメラの位置と向きを更新
         transform.rotation = rotation;
         transform.position = position;
+
+        if (transform.position.y < target.position.y)
+        {
+            var CameraYPos = transform.position;
+            CameraYPos.y = target.position.y;
+            transform.position = CameraYPos;
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("カメラの位置" + transform.position.y);
+            Debug.Log("缶の位置" + target.position.y);
+        }
     }
 }
