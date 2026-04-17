@@ -3,16 +3,23 @@ using UnityEngine.UI;
 
 public class start : MonoBehaviour
 {
-    [Header("ƒ^ƒCƒgƒ‹ƒƒS")]
+    [Header("ï¿½^ï¿½Cï¿½gï¿½ï¿½ï¿½ï¿½ï¿½S")]
     public GameObject TiteleLogo;
 
-    [Header("ƒQ[ƒ€UI")]
+    [Header("ï¿½Qï¿½[ï¿½ï¿½UI")]
     public GameObject GameUI;
 
     public static bool GameNow = false;
 
+    public KanMove Kan;
+    public CameraMove Camera;
+
     public void Onclick()
     {
+
+        Kan.ActiveMove = true;
+        Camera.ActiveMove = true;
+
         GameNow = true;
         TiteleLogo.SetActive(false);
         GameUI.SetActive(true);

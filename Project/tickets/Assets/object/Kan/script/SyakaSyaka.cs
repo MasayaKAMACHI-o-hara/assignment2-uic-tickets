@@ -64,7 +64,7 @@ public class SyakaSyaka : MonoBehaviour
         // 最後の引数に layerMask を入れることで、自分（Player）を無視して光線を飛ばせる
         Syaka = Physics.Raycast(transform.position, Vector3.down, 1.1f, layerMask);
 
-        if (!Syaka && !SyakaStart && !IsActiveFly)//もし現在自分の下にオブジェクトがないなら
+        if (!Syaka && !SyakaStart && !IsActiveFly && !ChargeStart) //もし現在自分の下にオブジェクトがないなら
         {
             StartPos = transform.position;//現在の座標を開始地点に設定する
             lastPos = transform.position;//現在の座標を記録する
@@ -73,7 +73,7 @@ public class SyakaSyaka : MonoBehaviour
 
         }
 
-        if (SyakaStart && !Syaka && !IsActiveFly)//もし自分の下にオブジェクトがないなら
+        if (SyakaStart && !Syaka && !IsActiveFly && !ChargeStart)//もし自分の下にオブジェクトがないなら
         {
             nowPos = transform.position;//現在の座標を記録する
 
@@ -87,7 +87,7 @@ public class SyakaSyaka : MonoBehaviour
 
         }
 
-        if (SyakaStart && Syaka && !IsActiveFly)//もしオブジェクトが下についたら
+        if (SyakaStart && Syaka && !IsActiveFly && !ChargeStart)//もしオブジェクトが下についたら
         {
             float mathX;
             float mathY;
@@ -120,6 +120,7 @@ public class SyakaSyaka : MonoBehaviour
                 MathQ = 0;
             }
 
+
             SyakaPoint += MathQ * SyakaE;//ポイントに獲得倍率の数値を掛けた数を総計する。
             if (SyakaPoint > 100)//ゲージの最大値は100
             {
@@ -130,7 +131,7 @@ public class SyakaSyaka : MonoBehaviour
         }
 
         // 最後の引数に layerMask を入れることで、自分（Player）を無視して光線を飛ばせる
-        SyakaFly = Physics.Raycast(transform.position, Vector3.down, 0.5f, layerMask);
+        SyakaFly = Physics.Raycast(transform.position, Vector3.down, 0.2f, layerMask);
 
 
         if (IsActiveFly)
