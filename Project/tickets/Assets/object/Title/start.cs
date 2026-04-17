@@ -5,23 +5,17 @@ public class start : MonoBehaviour
 {
     [Header("タイトルロゴ")]
     public GameObject TiteleLogo;
-    public GameObject TiteleLogo2;
+
+    [Header("ゲームUI")]
+    public GameObject GameUI;
 
     public static bool GameNow = false;
-
-    private void Start()
-    {
-        GameNow = false;
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-    }
 
     public void Onclick()
     {
         GameNow = true;
-
         TiteleLogo.SetActive(false);
-        TiteleLogo2.SetActive(false);
+        GameUI.SetActive(true);
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -29,3 +23,4 @@ public class start : MonoBehaviour
         gameObject.SetActive(false);
     }
 }
+

@@ -67,6 +67,7 @@
     <Compile Include="Assets\object\Kan\script\CameraMove.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\BTM_Assets\BTM_Items_Gems\Scripts\SimpleGemsAnim.cs" />
+    <Compile Include="Assets\object\Title\ExitGame.cs" />
     <Compile Include="Assets\NPC\2.NPC Model\6.Script\KickSensor.cs" />
     <Compile Include="Assets\object\Title\start.cs" />
     <Compile Include="Assets\object\Kan\script\SyakaSyaka.cs" />
