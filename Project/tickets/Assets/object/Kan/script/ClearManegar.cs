@@ -30,7 +30,7 @@ public class ClearManegar : MonoBehaviour
     public KanMove Kan;
     public CameraMove Camera;
 
-    IEnumerator GameFinish(int score)
+    public IEnumerator GameFinish(int score)
     {
       Kan.ActiveMove = false;
       Camera.ActiveMove = false;
