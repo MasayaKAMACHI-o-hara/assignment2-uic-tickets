@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
-public class script_test : MonoBehaviour
+public class script_test_1 : MonoBehaviour
 {
     public Transform targetTran;
 
@@ -12,3 +12,5 @@ public class script_test : MonoBehaviour
         targetTran.position + Vector3.up);
     }
 }
+
+
