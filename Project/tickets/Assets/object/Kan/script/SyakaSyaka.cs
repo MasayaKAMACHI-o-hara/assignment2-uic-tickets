@@ -20,6 +20,11 @@ public class SyakaSyaka : MonoBehaviour
     public float Syakacount;
     public float SyakaCharge;
     public float SyakaRemove;
+
+    [Range(0, 5)]
+    public int GetSyakaLv = 0;//ゲージ倍率レベル
+
+    [Range(1, 2)]
     public float SyakaE = 1.0f;//シャカシャカゲージ獲得倍率
     private float timer = 0f;
     private float ignoreTime = 0.1f; // 0.1秒間は判定しない
@@ -51,7 +56,26 @@ public class SyakaSyaka : MonoBehaviour
 
     }
 
+    public void GageUp(int L)//自販機によって、ゲージ獲得倍率Lvが上昇する際に実行
+    {
+        if(GetSyakaLv < 5)
+        {
+            GetSyakaLv += L;
+            if (GetSyakaLv > 5)
+                GetSyakaLv = 5;
+            SyakaE = 1 + (GetSyakaLv*2)/10;//現在のジャンプレベルに合わせてジャンプ力を上昇させる
+        }
+    }
 
+    public void SyakaGageHeal(int value)//シャカシャカゲージを回復する際に実行
+    {
+        SyakaPoint += value;//ゲージにvalue分数値を加える
+        if (SyakaPoint > 100)//ゲージの最大値は100
+        {
+            SyakaPoint = 100;
+        }
+        SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
+    }
 
     // Update is called once per frame
     void Update()
@@ -127,7 +151,7 @@ public class SyakaSyaka : MonoBehaviour
                 SyakaPoint = 100;
             }
             SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
-            SyakaStart = false;//シャカシャカゲージのUI表示
+            SyakaStart = false;//シャカシャカゲージ貯め終了
         }
 
         // 最後の引数に layerMask を入れることで、自分（Player）を無視して光線を飛ばせる

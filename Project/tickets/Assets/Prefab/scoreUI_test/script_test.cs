@@ -8,7 +8,7 @@ public class script_test : MonoBehaviour
     void Update()
     {
         transform.position = RectTransformUtility.WorldToScreenPoint(
-             Camera.main,
-             targetTran.position + Vector3.up);
+        Camera.main,
+        targetTran.position + Vector3.up);
     }
 }

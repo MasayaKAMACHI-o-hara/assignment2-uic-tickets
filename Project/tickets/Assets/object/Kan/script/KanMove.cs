@@ -15,9 +15,11 @@ public class KanMove : MonoBehaviour
 
     public float Speed = 0;
 
-    public float MaxSpeed = 0.5f;
+    [Range(2, 10)]
+    public float MaxSpeed = 2f;
 
-    public float JumpPower = 30;
+    [Range(10, 15)]
+    public float JumpPower = 10;
 
     public bool isGrounded = true;
 
@@ -25,12 +27,41 @@ public class KanMove : MonoBehaviour
 
     public bool ActiveMove = false;
 
+    public int coin = 0;//所持コイン
+
+    [Range(0, 5)]
+    public int SpeedLv = 0;//スピードレベル
+    [Range(0, 5)]
+    public int JumpLv = 0;//ジャンプレベル
+
      
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
+    }
+
+    public　void SpeedUp(int L)//自販機によって、スピードLvが上昇する際に実行
+    {
+        if (SpeedLv < 5)
+        {
+            SpeedLv += L;
+            if (SpeedLv > 5)
+                SpeedLv = 5;
+            MaxSpeed = 10 + ((SpeedLv / 5)*10);//現在のスピードレベルに合わせて最高速度を上昇させる
+        }
+    }
+
+    public void JumpUp(int L)//自販機によって、ジャンプLvが上昇する際に実行
+    {
+        if (JumpLv < 5)
+        {
+            JumpLv += L;
+            if (JumpLv > 5)
+                JumpLv = 5;
+            JumpPower = 10 + JumpLv;//現在のジャンプレベルに合わせてジャンプ力を上昇させる
+        }
     }
 
     // Update is called once per frame

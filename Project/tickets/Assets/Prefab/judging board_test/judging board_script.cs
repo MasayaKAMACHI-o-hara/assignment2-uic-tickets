@@ -2,36 +2,19 @@ using UnityEngine;
 
 public class judgingboard_script : MonoBehaviour
 {
-    public string judgingboard = "judging board"; // ï¿½ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½Âƒ^ï¿½O
-    public string judgingboard_100 = "judging board_100"; // ï¿½ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½Âƒ^ï¿½O
-    public string judgingboard_200 = "judging board_200"; // ï¿½ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½Âƒ^ï¿½O
-    public string judgingboard_300 = "judging board_300"; // ï¿½ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½Âƒ^ï¿½O
-
-    public int score = 0;
+    public string judgingboard = "can"; // “–‚½‚è”»’è”Âƒ^ƒO
+    public int scoreValue = 10;
 
     private bool hasScored = false;
 
     void OnCollisionEnter(Collision collision)
     {
-        if (hasScored) return; // ï¿½ï¿½ï¿½ÉƒXï¿½Rï¿½Aï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½çƒï¿½Oï¿½ï¿½oï¿½ï¿½ï¿½È‚ï¿½
+        if (hasScored) return; // Šù‚ÉƒXƒRƒA‚ª•\¦‚³‚ê‚Ä‚¢‚½‚çƒƒO‚ğo‚³‚È‚¢
         
-        if (collision.gameObject.CompareTag("Kan"))
+        if (collision.gameObject.CompareTag("can"))
         {
-            Debug.Log("Goal"); // judging boardï¿½eï¿½Xï¿½g
+            Debug.Log("Goal!ƒXƒRƒA: " + scoreValue); // judging boardƒeƒXƒg
             hasScored = true;
         }
-       
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

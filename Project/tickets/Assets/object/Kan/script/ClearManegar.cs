@@ -30,7 +30,7 @@ public class ClearManegar : MonoBehaviour
     public KanMove Kan;
     public CameraMove Camera;
 
-    IEnumerator GameFinish(int score)
+    public IEnumerator GameFinish(int score)
     {
       Kan.ActiveMove = false;
       Camera.ActiveMove = false;
@@ -88,6 +88,7 @@ public class ClearManegar : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
