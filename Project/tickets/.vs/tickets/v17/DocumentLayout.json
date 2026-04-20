@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\title\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\title\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|c:\\users\\student\\documents\\github\\assignment2-uic-tickets\\project\\tickets\\assets\\object\\kan\\script\\clearmanegar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\clearmanegar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\syakasyaka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\kanmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\clearmanegar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\clearmanegar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\prefab\\judging board_test\\judging board_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\prefab\\judging board_test\\judging board_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|c:\\users\\student\\documents\\github\\assignment2-uic-tickets\\project\\tickets\\assets\\object\\title\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\title\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BB91044-0DDD-4D6D-27D3-54F5604168EA}|Assembly-CSharp.csproj|solutionrelative:assets\\object\\kan\\script\\cameramove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "start.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Title\\start.cs",
               "RelativeDocumentMoniker": "Assets\\object\\Title\\start.cs",
@@ -51,46 +51,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ClearManegar.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\ClearManegar.cs",
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\ClearManegar.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\ClearManegar.cs",
               "RelativeToolTip": "Assets\\object\\Kan\\script\\ClearManegar.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAADwvyQAAAAAAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAwFoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T01:58:55.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "KanMove.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\KanMove.cs",
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\KanMove.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\KanMove.cs",
               "RelativeToolTip": "Assets\\object\\Kan\\script\\KanMove.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAwCYAAAAVAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAwwCEAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T06:01:45.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SyakaSyaka.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\SyakaSyaka.cs",
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\SyakaSyaka.cs",
               "ToolTip": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\SyakaSyaka.cs",
               "RelativeToolTip": "Assets\\object\\Kan\\script\\SyakaSyaka.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAADwvwIAAAAAAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAADwv0cAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T06:01:44.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CameraMove.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\object\\Kan\\script\\CameraMove.cs",
               "RelativeDocumentMoniker": "Assets\\object\\Kan\\script\\CameraMove.cs",
@@ -98,12 +98,11 @@
               "RelativeToolTip": "Assets\\object\\Kan\\script\\CameraMove.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAADwvxgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T06:01:46.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T06:01:46.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "judging board_script.cs",
               "DocumentMoniker": "C:\\Users\\student\\Documents\\GitHub\\assignment2-uic-tickets\\Project\\tickets\\Assets\\Prefab\\judging board_test\\judging board_script.cs",
               "RelativeDocumentMoniker": "Assets\\Prefab\\judging board_test\\judging board_script.cs",
@@ -111,7 +110,8 @@
               "RelativeToolTip": "Assets\\Prefab\\judging board_test\\judging board_script.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T06:56:27.672Z"
+              "WhenOpened": "2026-04-16T06:56:27.672Z",
+              "EditorCaption": ""
             }
           ]
         }

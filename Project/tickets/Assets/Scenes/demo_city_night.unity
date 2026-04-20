@@ -50160,6 +50160,10 @@ PrefabInstance:
       propertyPath: Camera
       value: 
       objectReference: {fileID: 810326558}
+    - target: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: MaxSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8366870683834519928, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
