@@ -15702,6 +15702,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: visibleDistance
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5190891632955453772, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_Name
       value: Point4 light
@@ -19267,6 +19275,14 @@ PrefabInstance:
     - target: {fileID: 5793347960703717608, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: visibleDistance
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51686,15 +51702,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 136.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.195354
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -98.22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -51723,6 +51739,14 @@ PrefabInstance:
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: visibleDistance
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5190891632955453772, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_Name
@@ -61436,6 +61460,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: visibleDistance
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5190891632955453772, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_Name
       value: Point3 light
@@ -62657,6 +62689,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: visibleDistance
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63125,6 +63165,14 @@ PrefabInstance:
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: visibleDistance
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5190891632955453772, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_Name
@@ -77300,6 +77348,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: visibleDistance
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79459,6 +79515,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: visibleDistance
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5190891632955453772, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_Name
       value: Point4 light
@@ -80652,15 +80716,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 136.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.195354
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -98.22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -80689,6 +80753,14 @@ PrefabInstance:
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 4893450992515492833, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
+      propertyPath: visibleDistance
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5190891632955453772, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_Name
@@ -85559,6 +85631,14 @@ PrefabInstance:
     - target: {fileID: 5793347960703717608, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 583123403}
+    - target: {fileID: 8877606734496500707, guid: 703f6ebf4b982664188218f04b6d08d8, type: 3}
+      propertyPath: visibleDistance
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
