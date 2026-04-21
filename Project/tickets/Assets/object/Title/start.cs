@@ -13,12 +13,14 @@ public class start : MonoBehaviour
 
     public KanMove Kan;
     public CameraMove Camera;
+    public PauseSistem Pause;
 
     public void Onclick()
     {
 
         Kan.ActiveMove = true;
         Camera.ActiveMove = true;
+        Pause.canPause();
 
         GameNow = true;
         TiteleLogo.SetActive(false);
