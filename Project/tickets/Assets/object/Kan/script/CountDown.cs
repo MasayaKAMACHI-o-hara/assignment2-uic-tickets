@@ -12,8 +12,8 @@ public class CountDown : MonoBehaviour
 
     void Start()
     {
-       
-            currentTime = timeLimit;
+
+        currentTime = timeLimit;
     }
 
     public void TimerStart()
@@ -21,24 +21,29 @@ public class CountDown : MonoBehaviour
         TimerOn = true;
     }
 
+    public void TimerStop()
+    {
+        TimerOn = false;
+    }
+
     void Update()
     {
-        if(TimerOn)
+        if (TimerOn)
         {
             currentTime -= Time.deltaTime;
             if (currentTime <= 0)
             {
                 currentTime = 0;
-            // ここに「タイムアップ！」の処理を書けるよ
+                // ここに「タイムアップ！」の処理を書けるよ
             }
 
-        // UIへの表示（ToStringの"F2"は小数点以下2桁まで出すという意味）
-        if (timerText != null)
-        {
-            timerText.text = "" + currentTime.ToString("F0"); ;
-        }
+            // UIへの表示（ToStringの"F2"は小数点以下2桁まで出すという意味）
+            if (timerText != null)
+            {
+                timerText.text = "" + currentTime.ToString("F0"); ;
+            }
 
         }
-         
+
     }
 }

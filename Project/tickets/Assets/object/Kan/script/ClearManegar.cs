@@ -23,50 +23,52 @@ public class ClearManegar : MonoBehaviour
     public int Totalscore;
 
     public int[] Mathscore;
-    public int[] Showscore = {0,0,0};
+    public int[] Showscore = { 0, 0, 0 };
 
-    public int Time = 180;
+    public int time = 180;
     public int Coin = 0;
     public KanMove Kan;
     public CameraMove Camera;
     public PauseSistem Pause;
+    public CountDown Timer;
 
     public IEnumerator GameFinish(int score)
     {
-      Kan.ActiveMove = false;
-      Camera.ActiveMove = false;
+        Timer.TimerStop();
+        Kan.ActiveMove = false;
+        Camera.ActiveMove = false;
 
         ClearUI.transform.position -= new Vector3(0, 2000, 0);
         KanUI.SetActive(true);
         Mathscore[0] = score;
-        Mathscore[1] = Time;
+        Mathscore[1] = time;
         Mathscore[2] = Coin;
 
 
-        for(int i= 0;i<500;i++)
+        for (int i = 0; i < 500; i++)
         {
             yield return null;
         }
-       
 
-        for(int i= 0; i<3;i++)
+
+        for (int i = 0; i < 3; i++)
         {
-             ScoreUI[i].SetActive(true);
+            ScoreUI[i].SetActive(true);
 
             yield return new WaitForSeconds(0.5f); ;
 
-            for(int j= Mathscore[i];j>0;j--)
+            for (int j = Mathscore[i]; j > 0; j--)
             {
                 Showscore[i]++;
                 ScoreText[i].text = Showscore[i] + "pt";
                 yield return null;
             }
 
-            for(int j=0;j<100;j++)
+            for (int j = 0; j < 100; j++)
             {
                 yield return null;
             }
-            
+
         }
 
         var Mix = Mathscore[0] + Mathscore[1] + Mathscore[2];
@@ -86,16 +88,17 @@ public class ClearManegar : MonoBehaviour
 
     public void BuckTitle()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
         Pause.cantPause();
     }
 
-   
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

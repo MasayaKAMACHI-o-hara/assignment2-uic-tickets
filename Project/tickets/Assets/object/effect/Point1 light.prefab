@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5793347960703717608}
   - component: {fileID: 2907975023990128072}
   - component: {fileID: 8106260190326655878}
+  - component: {fileID: 8877606734496500707}
   m_Layer: 0
   m_Name: Point1 light
   m_TagString: Untagged
@@ -4833,3 +4834,17 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &8877606734496500707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284678831669480424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c2d7f5780613f43a3e739a27bfc9fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  visibleDistance: 50
