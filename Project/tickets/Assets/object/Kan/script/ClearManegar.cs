@@ -29,6 +29,7 @@ public class ClearManegar : MonoBehaviour
     public int Coin = 0;
     public KanMove Kan;
     public CameraMove Camera;
+    public PauseSistem Pause;
 
     public IEnumerator GameFinish(int score)
     {
@@ -86,6 +87,7 @@ public class ClearManegar : MonoBehaviour
     public void BuckTitle()
     {
         SceneManager.LoadScene(0);
+        Pause.cantPause();
     }
 
    
