@@ -7337,6 +7337,10 @@ PrefabInstance:
       value: Trash box 2 AL 2
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
       objectReference: {fileID: 7195583929617353574}
@@ -38425,6 +38429,10 @@ PrefabInstance:
       value: Trash box 2 AL 3
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
       objectReference: {fileID: 7195583929617353574}
@@ -39351,6 +39359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash box 2 AL
       objectReference: {fileID: 0}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
@@ -44822,6 +44834,7 @@ GameObject:
   - component: {fileID: 1027255765}
   - component: {fileID: 1027255767}
   - component: {fileID: 1027255766}
+  - component: {fileID: 1027255768}
   m_Layer: 5
   m_Name: 'SpeelevelText '
   m_TagString: Untagged
@@ -44947,6 +44960,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027255764}
   m_CullTransparentMesh: 1
+--- !u!114 &1027255768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027255764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091e8396e56c29f45a34010cded42104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 583123405}
+  coinText: {fileID: 1027255766}
 --- !u!1001 &1028005726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50842,6 +50869,10 @@ PrefabInstance:
       value: Trash box 2 AL 2
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
       objectReference: {fileID: 7195583929617353574}
@@ -53113,6 +53144,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8341256281682481771, guid: 6a50252fe16070d4d80368d9503346fa, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
     - target: {fileID: 8341256281682481771, guid: 6a50252fe16070d4d80368d9503346fa, type: 3}
       propertyPath: Clear
       value: 
@@ -60682,6 +60717,10 @@ PrefabInstance:
       value: Trash box 2 AL 3
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
       objectReference: {fileID: 7195583929617353574}
@@ -60930,6 +60969,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8341256281682481771, guid: 6a50252fe16070d4d80368d9503346fa, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+    - target: {fileID: 8341256281682481771, guid: 6a50252fe16070d4d80368d9503346fa, type: 3}
       propertyPath: Clear
       value: 
       objectReference: {fileID: 7195583929617353574}
@@ -61127,6 +61170,7 @@ GameObject:
   - component: {fileID: 1438387931}
   - component: {fileID: 1438387933}
   - component: {fileID: 1438387932}
+  - component: {fileID: 1438387934}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -61252,6 +61296,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438387930}
   m_CullTransparentMesh: 1
+--- !u!114 &1438387934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438387930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a280db60b9b4c0148a12d32e05a89b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScoreText: {fileID: 1438387932}
 --- !u!1001 &1438905762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65570,6 +65627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash box 2 AL
       objectReference: {fileID: 0}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
@@ -77150,6 +77211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash box 2 AL
       objectReference: {fileID: 0}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
@@ -89573,6 +89638,10 @@ PrefabInstance:
       value: Trash box 2 AL 3
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
+      propertyPath: Kan
+      value: 
+      objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+    - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Clear
       value: 
       objectReference: {fileID: 7195583929617353574}
@@ -92045,7 +92114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &2951809579598657225
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -92108,7 +92177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3673925516296987558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -92537,7 +92606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &5042047914297222571
 GameObject:
   m_ObjectHideFlags: 0
@@ -92617,7 +92686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &5510488019286797645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92960,7 +93029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &6971963686938880447
 GameObject:
   m_ObjectHideFlags: 0
@@ -93051,8 +93120,8 @@ MonoBehaviour:
   Totalscore: 0
   Mathscore: 000000000000000000000000
   Showscore: 000000000000000000000000
+  Coin: 0
   time: 180
-  Coin: 100
   Kan: {fileID: 583123405}
   Camera: {fileID: 970514505}
   Pause: {fileID: 518705767}
@@ -93237,7 +93306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8421150371121138713
 RectTransform:
   m_ObjectHideFlags: 0

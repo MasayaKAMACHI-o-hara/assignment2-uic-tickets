@@ -25,8 +25,8 @@ public class ClearManegar : MonoBehaviour
     public int[] Mathscore;
     public int[] Showscore = { 0, 0, 0 };
 
-    public int time = 180;
     public int Coin = 0;
+    public int time = 180;
     public KanMove Kan;
     public CameraMove Camera;
     public PauseSistem Pause;
@@ -41,8 +41,8 @@ public class ClearManegar : MonoBehaviour
         ClearUI.transform.position -= new Vector3(0, 2000, 0);
         KanUI.SetActive(true);
         Mathscore[0] = score;
-        Mathscore[1] = time;
-        Mathscore[2] = Coin;
+        Mathscore[1] = Kan.coin * 100;
+        Mathscore[2] = (int)Timer.currentTime * 100;
 
 
         for (int i = 0; i < 500; i++)
@@ -55,13 +55,29 @@ public class ClearManegar : MonoBehaviour
         {
             ScoreUI[i].SetActive(true);
 
-            yield return new WaitForSeconds(0.5f); ;
+            yield return new WaitForSeconds(0.5f);
 
             for (int j = Mathscore[i]; j > 0; j--)
             {
                 Showscore[i]++;
-                ScoreText[i].text = Showscore[i] + "pt";
+                ScoreText[i].text = Showscore[i].ToString("D6") + "pt";
                 yield return null;
+
+                if (j > 100)
+                {
+                    Showscore[i] += 10;
+                    ScoreText[i].text = Showscore[i].ToString("D6") + "pt";
+                    j -= 10;
+                    yield return null;
+                }
+
+                if (j > 10000)
+                {
+                    Showscore[i] += 100;
+                    ScoreText[i].text = Showscore[i].ToString("D6") + "pt";
+                    j -= 100;
+                    yield return null;
+                }
             }
 
             for (int j = 0; j < 100; j++)
@@ -73,7 +89,10 @@ public class ClearManegar : MonoBehaviour
 
         var Mix = Mathscore[0] + Mathscore[1] + Mathscore[2];
         ScoreUI[3].SetActive(true);
-        ScoreText[3].text = Mix + "pt";
+        ScoreText[3].text = Mix.ToString("D6") + "pt";
+
+        // ハイスコア保存
+        HighScore.SaveHighScore(Mix);
 
         for (int j = 0; j < 100; j++)
         {
@@ -98,7 +117,6 @@ public class ClearManegar : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
     }
 
     // Update is called once per frame

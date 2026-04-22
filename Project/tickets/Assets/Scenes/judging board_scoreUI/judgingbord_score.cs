@@ -27,6 +27,8 @@ public class judgingbord_score : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Kan")) //can���������Ƃ�
         {
+            Debug.Log("a");
+
             if(Kan.ActiveMove)
             {
                 StartCoroutine(Clear.GameFinish(scoreValue));
