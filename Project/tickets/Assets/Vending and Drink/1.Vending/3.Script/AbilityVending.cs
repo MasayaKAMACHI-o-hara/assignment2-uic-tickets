@@ -60,11 +60,6 @@ public class AbilityVending : MonoBehaviour
         //センサーエリア外
         InKanSensorArea = false;
 
-        Debug.Log("コイン枚数：" + kanMove.coin + "枚");
-
-        //カーソル非表示---------------Debug
-        Cursor.visible = false;
-
         // カーソルを画面内で動かせる
         Cursor.lockState = CursorLockMode.Confined;
 
@@ -85,28 +80,33 @@ public class AbilityVending : MonoBehaviour
                 //Fキーを押したら
                 if (Input.GetKeyDown(KeyCode.F))
                 {
-                    //自販機UI非表示
-                    AVUI.SetActive(false);
+                    //缶停止
+                    kanMove.ActiveMove = false;
 
                     //コイン投入音再生
                     audioSource.PlayOneShot(audioClip);
 
+                    //コイン消費
+                    kanMove.coin -= Cost;
+
                     //選択UIのスピーカーをこの自販機に指定
                     ChoiceScript.audioSource = audioSource;
+
+                    //強化を購入したことを伝える
+                    ChoiceScript.BuyUpgrade = true;
+
+                    // カーソル表示
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+
+                    //自販機UI非表示
+                    AVUI.SetActive(false);
 
                     //選択肢UIを表示に
                     ChoiceUI.SetActive(true);
 
-                    //強化を購入したことを伝える
-                    ChoiceScript.BuyAbility = true;
-
-                    // カーソル表示
-                    Cursor.visible = true;
-
-                    //センサーをオフに
+                    //センサーをオフにして破壊
                     InKanSensorArea = false;
-
-                    //センサーを破壊
                     Destroy(gameObject);
                 }
             }
@@ -121,8 +121,6 @@ public class AbilityVending : MonoBehaviour
     {
         if (Sensor.CompareTag("Kan"))
         {
-            Debug.Log("能力自販機に触れた");
-
             //自販機UI表示
             AVUI.SetActive(true);
 
@@ -135,8 +133,6 @@ public class AbilityVending : MonoBehaviour
     {
         if (Sensor.CompareTag("Kan"))
         {
-            Debug.Log("能力自販機を離れた");
-
             //自販機UI非表示
             AVUI.SetActive(false);
 

@@ -35,6 +35,9 @@ public class ChoiceUI : MonoBehaviour
     [Header("飲料データ")]
     [SerializeField] public DrinkManager Data;
 
+    [Header("缶スクリプト")]
+    [SerializeField] public KanMove kanMove;
+
     //現在画面に表示されている3つのデータを保持するリスト
     private List<UpgradeData> currentDisplayedUpgrades = new List<UpgradeData>();
     private List<AbilityData> currentDisplayedAbilities = new List<AbilityData>();
@@ -328,6 +331,9 @@ public class ChoiceUI : MonoBehaviour
         //ジュース購入音再生
         audioSource.PlayOneShot(audioClip);
 
+        //缶動作
+        kanMove.ActiveMove = true;
+
         //選択中非表示
         Choosing1.SetActive(false);
         Choosing2.SetActive(false);
@@ -335,6 +341,7 @@ public class ChoiceUI : MonoBehaviour
 
         //カーソル非表示
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
         //UI非表示
         UI.SetActive(false);
