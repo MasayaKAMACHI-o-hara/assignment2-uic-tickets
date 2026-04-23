@@ -2,31 +2,40 @@ using UnityEngine;
 
 public class judgingbord_score : MonoBehaviour
 {
-    public int scoreValue = 10; // •ÏXNGQŒ³X‚Ì•\‹L(ƒXƒRƒAEƒƒO)
+    public int scoreValue = 10; // ï¿½ÏXNGï¿½Qï¿½ï¿½ï¿½Xï¿½Ì•\ï¿½L(ï¿½Xï¿½Rï¿½Aï¿½Eï¿½ï¿½ï¿½O)
 
     [SerializeField]
-    RectTransform canvasRect; //Canvas‚ğw’è‚·‚é•Ï”
+    RectTransform canvasRect; //Canvasï¿½ï¿½wï¿½è‚·ï¿½ï¿½Ïï¿½
 
     [SerializeField]
     judgingbord_score_UI scoreUIPrefab; //UIprefab
 
-    private judgingbord_score_UI scoreUI; //UI‚Ì•Ï”
+    private judgingbord_score_UI scoreUI; //UIï¿½Ì•Ïï¿½
     public ClearManegar Clear;
+    public KanMove Kan;
 
     void Start()
     {
-        scoreUI = Instantiate(scoreUIPrefab, canvasRect);//ƒQ[ƒ€ŠJn‚ÉUI‚ğ•\¦
+        scoreUI = Instantiate(scoreUIPrefab, canvasRect);//ï¿½Qï¿½[ï¿½ï¿½ï¿½Jï¿½nï¿½ï¿½ï¿½ï¿½UIï¿½ï¿½\ï¿½ï¿½
 
-        scoreUI.targetTran = transform; //UI‚ª’Ç]‚·‚é‘ÎÛ(”»’è”Â)
+        scoreUI.targetTran = transform; //UIï¿½ï¿½ï¿½Ç]ï¿½ï¿½ï¿½ï¿½Îï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½)
 
-        scoreUI.SetScore(scoreValue); //UI‚É“n‚·ƒXƒRƒA’l
+        scoreUI.SetScore(scoreValue); //UIï¿½É“nï¿½ï¿½ï¿½Xï¿½Rï¿½Aï¿½l
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Kan")) //can‚ª“ü‚Á‚½‚Æ‚«
+        if (collision.gameObject.CompareTag("Kan")) //canï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½
         {
-            StartCoroutine(Clear.GameFinish(scoreValue));
+            Debug.Log("a");
+
+            if(Kan.ActiveMove)
+            {
+                StartCoroutine(Clear.GameFinish(scoreValue));
+
+            }
+
+            
         }
     }
 }

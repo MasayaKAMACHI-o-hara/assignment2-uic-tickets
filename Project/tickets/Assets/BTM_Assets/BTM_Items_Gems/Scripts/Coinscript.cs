@@ -13,9 +13,8 @@ public class Coinscript : MonoBehaviour
         if (other.CompareTag("Kan"))
         {
             // スコアを増やすプログラム
-            Debug.Log("スコアを増やす");
-
-            
+            KanMove kan = other.GetComponent<KanMove>();
+            kan.coin += 10;
 
             // ここから下 演出
             // パーティクルの発生

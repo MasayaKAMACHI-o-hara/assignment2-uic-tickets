@@ -14,6 +14,7 @@ public class start : MonoBehaviour
     public KanMove Kan;
     public CameraMove Camera;
     public PauseSistem Pause;
+    public CountDown Timer;
 
     public void Onclick()
     {
@@ -26,6 +27,7 @@ public class start : MonoBehaviour
         TiteleLogo.SetActive(false);
         GameUI.SetActive(true);
 
+        Timer.TimerStart();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
