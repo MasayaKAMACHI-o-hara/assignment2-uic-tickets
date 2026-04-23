@@ -108,7 +108,7 @@ MonoBehaviour:
   rotationSpeed: 200
   isFloating: 1
   useEasingForFloating: 1
-  floatHeight: 0.5
+  floatHeight: 0
   floatSpeed: 0.4
   startScale: {x: 1, y: 1, z: 1}
   endScale: {x: 0.3, y: 0.3, z: 0.3}

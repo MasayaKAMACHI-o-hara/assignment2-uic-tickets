@@ -1,4 +1,4 @@
-
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
@@ -48,12 +48,14 @@ public class SyakaSyaka : MonoBehaviour
     public Vector3 nowPos;
     public Vector3 SyakaPos;
 
+    // syakasyakaUIのゲージを動かすためのやつ
+    public Image cola;
+    public Image flashcola;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SyakaE = 1.0f;
-
-
     }
 
     public void GageUp(int L)//自販機によって、ゲージ獲得倍率Lvが上昇する際に実行
@@ -180,9 +182,6 @@ public class SyakaSyaka : MonoBehaviour
 
         }
 
-
-
-
         if (Input.GetMouseButtonDown(0) && !IsActiveFly && SyakaPoint > 1)
         {
             SyakaPos = transform.position;
@@ -285,6 +284,13 @@ public class SyakaSyaka : MonoBehaviour
             }
 
             IsActiveFall = true;
+        }
+
+        // コーラのゲージ変動
+        if (cola != null && flashcola != null)
+        {
+            cola.fillAmount = SyakaPoint / 100f;
+            flashcola.fillAmount = SyakaPoint / 100f;
         }
 
     }
