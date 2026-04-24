@@ -3,26 +3,19 @@ using UnityEngine;
 public class PauseSistem : MonoBehaviour
 {
 
-    private bool IsActiveESC = false;
+    public bool IsActiveESC = false;
     private bool IsActivePause = false;
 
     public GameObject PauseUI;
     public CountDown Timer;
+    public CameraMove Camera;
+    public KanMove Kan;
+    public SyakaSyaka Syaka;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-    }
-
-    public void canPause()
-    {
-        IsActiveESC = true;
-    }
-
-    public void cantPause()
-    {
-        IsActiveESC = false;
     }
 
 
@@ -36,6 +29,9 @@ public class PauseSistem : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             Timer.TimerStart();
+            Kan.ActiveMove = true;
+            Camera.ActiveMove = true;
+            Syaka.ActiveSyaka = true;
         }
         else
         {
@@ -45,6 +41,9 @@ public class PauseSistem : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             Timer.TimerStop();
+            Kan.ActiveMove = false;
+            Camera.ActiveMove = false;
+            Syaka.ActiveSyaka = false;
         }
     }
 
