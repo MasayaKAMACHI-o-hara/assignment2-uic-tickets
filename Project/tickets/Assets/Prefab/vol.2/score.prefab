@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 413644144889621270}
   - component: {fileID: 3451054716975898563}
   - component: {fileID: 8686817049448948994}
+  - component: {fileID: 1229814562439267555}
   m_Layer: 0
   m_Name: score
   m_TagString: Untagged
@@ -75,8 +76,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1506456236
-  m_fontColor: {r: 0.6745098, g: 0.6989061, b: 0.7921569, a: 0.34901962}
+    rgba: 1650715720
+  m_fontColor: {r: 0.28346387, g: 0.9245283, b: 0.3882306, a: 0.38431373}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -93,8 +94,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 0.3
+  m_fontSizeBase: 0.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -149,6 +150,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771d23a074a2f2e4ebc1964bda056c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  worldCanvas: {fileID: 0}
   rotatespeed: 80
   targetTran: {fileID: 0}
   scoreText: {fileID: 3451054716975898563}
+  canvasGroup: {fileID: 1229814562439267555}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!225 &1229814562439267555
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3316768920245826346}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

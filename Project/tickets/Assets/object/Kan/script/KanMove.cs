@@ -13,10 +13,12 @@ public class KanMove : MonoBehaviour
 
     public Transform Camera;
 
+    public ClearManegar ClearUI;
+
     public float Speed = 0;
 
-    [Range(2, 10)]
-    public float MaxSpeed = 2f;
+    [Range(4, 10)]
+    public float MaxSpeed = 4f;
 
     [Range(10, 15)]
     public float JumpPower = 10;
@@ -49,7 +51,7 @@ public class KanMove : MonoBehaviour
             SpeedLv += L;
             if (SpeedLv > 5)
                 SpeedLv = 5;
-            MaxSpeed = 10 + ((SpeedLv / 5)*10);//現在のスピードレベルに合わせて最高速度を上昇させる
+            MaxSpeed = 2*SpeedLv;//現在のスピードレベルに合わせて最高速度を上昇させる
         }
     }
 
@@ -140,6 +142,11 @@ public class KanMove : MonoBehaviour
             if (body.linearVelocity.magnitude < MaxSpeed)
                 this.body.AddForce(forward * Speed);
 
+
+            if(transform.position.y < -10)
+            {
+                StartCoroutine(ClearUI.GameEnd());
+            }
 
 
         }

@@ -125,7 +125,6 @@ MonoBehaviour:
   scoreValue: 300
   canvasRect: {fileID: 9184637100745763797}
   scoreUIPrefab: {fileID: 8686817049448948994, guid: e55eee1eddcc2b64ea9fc553e0cad8ea, type: 3}
-  Clear: {fileID: 0}
 --- !u!1 &5715847172184390956
 GameObject:
   m_ObjectHideFlags: 0
