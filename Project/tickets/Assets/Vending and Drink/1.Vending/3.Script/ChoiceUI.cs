@@ -38,6 +38,9 @@ public class ChoiceUI : MonoBehaviour
     [SerializeField] private GameObject Choosing2;
     [SerializeField] private GameObject Choosing3;
 
+    [Header("残り時間UI")]
+    [SerializeField] private AbilityTimeUI abilityTime;
+
     [Header("飲料データ")]
     [SerializeField] public DrinkManager Data;
 
@@ -283,6 +286,7 @@ public class ChoiceUI : MonoBehaviour
     public void Choices1Button()
     {
         Debug.Log("選択 : "+ Name1.text);
+        abilityTime.StartAbility(Image1.sprite);
         //UIを閉じる
         CloseUI();
     }
@@ -303,6 +307,7 @@ public class ChoiceUI : MonoBehaviour
     public void Choices2Button()
     {
         Debug.Log("選択 : "+ Name2.text);
+        abilityTime.StartAbility(Image2.sprite);
         //UIを閉じる
         CloseUI();
     }
@@ -323,6 +328,7 @@ public class ChoiceUI : MonoBehaviour
     public void Choices3Button()
     {
         Debug.Log("選択 : "+ Name3.text);
+        abilityTime.StartAbility(Image3.sprite);
         //UIを閉じる
         CloseUI();
     }
