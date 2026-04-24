@@ -285,7 +285,7 @@ public class ChoiceUI : MonoBehaviour
     //選択肢1ボタン関数
     public void Choices1Button()
     {
-        Debug.Log("選択 : "+ Name1.text);
+        Debug.Log("選択 : " + Name1.text);
         abilityTime.StartAbility(Image1.sprite);
         //UIを閉じる
         CloseUI();
@@ -306,7 +306,7 @@ public class ChoiceUI : MonoBehaviour
     //選択肢2ボタン関数
     public void Choices2Button()
     {
-        Debug.Log("選択 : "+ Name2.text);
+        Debug.Log("選択 : " + Name2.text);
         abilityTime.StartAbility(Image2.sprite);
         //UIを閉じる
         CloseUI();
@@ -327,7 +327,7 @@ public class ChoiceUI : MonoBehaviour
     //選択肢3ボタン関数
     public void Choices3Button()
     {
-        Debug.Log("選択 : "+ Name3.text);
+        Debug.Log("選択 : " + Name3.text);
         abilityTime.StartAbility(Image3.sprite);
         //UIを閉じる
         CloseUI();
