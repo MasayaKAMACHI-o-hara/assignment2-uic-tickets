@@ -83,9 +83,15 @@ public class SyakaSyaka : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
         if (ActiveSyaka)
         {
 
+=======
+
+        if (ActiveSyaka)
+        {
+>>>>>>> Stashed changes
             Debug.DrawRay(transform.position, Vector3.down * 0.2f, Color.red);
 
             // 「Player」レイヤー以外すべてを対象にするための設定（ビット演算っていうのを使う）

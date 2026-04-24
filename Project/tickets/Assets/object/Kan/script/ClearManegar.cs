@@ -100,10 +100,17 @@ public class ClearManegar : MonoBehaviour
         ScoreUI[3].SetActive(true);
         ScoreText[3].text = Mix.ToString("D6") + "pt";
 
+
+
         // �n�C�X�R�A�ۑ�
         HighScore.SaveHighScore(Mix);
+<<<<<<< Updated upstream
 
         for (int j = 0; j < 200; j++)
+=======
+        
+        for (int j = 0; j < 100; j++)
+>>>>>>> Stashed changes
         {
             yield return null;
         }

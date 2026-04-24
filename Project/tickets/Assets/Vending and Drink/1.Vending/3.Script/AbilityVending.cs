@@ -45,7 +45,17 @@ public class AbilityVending : MonoBehaviour
     [Header("ï¿½Vï¿½ï¿½ï¿½Jï¿½Vï¿½ï¿½ï¿½J")]
     [SerializeField] public SyakaSyaka syakaSyaka;
 
+<<<<<<< Updated upstream
     //ï¿½ÊƒZï¿½ï¿½ï¿½Tï¿½[ï¿½Gï¿½ï¿½ï¿½Aboolï¿½Öï¿½
+=======
+    [Header("ƒ|[ƒY")]
+    [SerializeField] public PauseSistem pauseSistem;
+
+    [Header("§ŒÀŠÔ")]
+    [SerializeField] public CountDown countDown;
+
+    //ŠÊƒZƒ“ƒT[ƒGƒŠƒAboolŠÖ”
+>>>>>>> Stashed changes
     bool InKanSensorArea;
 
     //ï¿½ï¿½ï¿½ï¿½ï¿½İ’ï¿½
@@ -89,6 +99,8 @@ public class AbilityVending : MonoBehaviour
                     //ï¿½Ê’ï¿½~
                     kanMove.ActiveMove = false;
                     syakaSyaka.ActiveSyaka = false;
+                    pauseSistem.IsActiveESC = false;
+                    countDown.TimerOn = false;
 
                     //ï¿½Rï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½
                     audioSource.PlayOneShot(audioClip);
@@ -99,8 +111,13 @@ public class AbilityVending : MonoBehaviour
                     //ï¿½Iï¿½ï¿½UIï¿½ÌƒXï¿½sï¿½[ï¿½Jï¿½[ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½Ì‹@ï¿½Éwï¿½ï¿½
                     ChoiceScript.audioSource = audioSource;
 
+<<<<<<< Updated upstream
                     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½`ï¿½ï¿½ï¿½ï¿½
                     ChoiceScript.BuyUpgrade = true;
+=======
+                    //‹­‰»‚ğw“ü‚µ‚½‚±‚Æ‚ğ“`‚¦‚é
+                    ChoiceScript.BuyAbility();
+>>>>>>> Stashed changes
 
                     // ï¿½Jï¿½[ï¿½\ï¿½ï¿½ï¿½\ï¿½ï¿½
                     Cursor.visible = true;

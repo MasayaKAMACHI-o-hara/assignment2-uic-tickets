@@ -46,6 +46,12 @@ public class UpgradeVending : MonoBehaviour
     [Header("シャカシャカ")]
     [SerializeField] public SyakaSyaka syakaSyaka;
 
+    [Header("ポーズ")]
+    [SerializeField] public PauseSistem pauseSistem;
+
+    [Header("制限時間")]
+    [SerializeField] public CountDown countDown;
+
     //缶センサーエリアbool関数
     bool InKanSensorArea;
 
@@ -90,6 +96,8 @@ public class UpgradeVending : MonoBehaviour
                     //缶停止
                     kanMove.ActiveMove = false;
                     syakaSyaka.ActiveSyaka = false;
+                    pauseSistem.IsActiveESC = false;
+                    countDown.TimerOn = false;
 
                     //コイン投入音再生
                     audioSource.PlayOneShot(audioClip);
@@ -101,7 +109,7 @@ public class UpgradeVending : MonoBehaviour
                     ChoiceScript.audioSource = audioSource;
 
                     //強化を購入したことを伝える
-                    ChoiceScript.BuyUpgrade = true;
+                    ChoiceScript.BuyUpgrade();
 
                     // カーソル表示
                     Cursor.visible = true;

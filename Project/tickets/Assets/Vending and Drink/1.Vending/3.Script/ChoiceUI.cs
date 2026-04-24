@@ -12,6 +12,9 @@ public class ChoiceUI : MonoBehaviour
     [Header("缶シャカシャカ")]
     [SerializeField] public SyakaSyaka syakaSyaka;
 
+    [Header("ポーズ")]
+    [SerializeField] public PauseSistem pauseSistem;
+
     [Header("ジュース購入音")]
     [SerializeField] private AudioClip audioClip;
 
@@ -44,14 +47,20 @@ public class ChoiceUI : MonoBehaviour
     [Header("飲料データ")]
     [SerializeField] public DrinkManager Data;
 
+    [Header("制限時間")]
+    [SerializeField] public CountDown countDown;
+
     //現在画面に表示されている3つのデータを保持するリスト
     private List<UpgradeData> currentDisplayedUpgrades = new List<UpgradeData>();
     private List<AbilityData> currentDisplayedAbilities = new List<AbilityData>();
 
-    //どの自販機で購入したか
-    [NonSerialized] public bool BuyUpgrade = false;
-    [NonSerialized] public bool BuyAbility = false;
+    //どれを購入したか
+    private int UDrinkNum1,UDrinkNum2, UDrinkNum3;
+    private int ADrinkNum1,ADrinkNum2, ADrinkNum3;
 
+    //どの自販機で購入したか
+    private bool BoughtUpgrade = false;
+    private bool BoughtAbility = false;
     //スピーカーの指定
     [NonSerialized] public AudioSource audioSource;
 
@@ -69,19 +78,17 @@ public class ChoiceUI : MonoBehaviour
     }
     void Update()
     {
-        if (BuyUpgrade)//強化自販機を使用したら
-        {
-            PickRandomUpgrades();//強化データをランダムに選ぶ
-            BuyUpgrade = false;//強化自販機使用状況リセット
-        }
-        if (BuyAbility)//能力自販機を使用したら
-        {
-            PickRandomAbilities();//能力データをランダムに選ぶ
-            BuyAbility = false;//能力自販機使用状況リセット
-        }
+
     }
 
+
     #region 強化飲料選出関数
+    //強化自販機を使用したら
+    public void BuyUpgrade()
+    {
+        PickRandomUpgrades();
+        BoughtUpgrade = true;
+    }
     //強化データを確率と制約に基づいて3つ選ぶ
     public void PickRandomUpgrades()
     {
@@ -176,14 +183,17 @@ public class ChoiceUI : MonoBehaviour
     {
         if (currentDisplayedUpgrades.Count < 3) return;
 
+        UDrinkNum1= currentDisplayedUpgrades[0].DrinkNumber;
         Name1.text = currentDisplayedUpgrades[0].Name;
         Image1.sprite = currentDisplayedUpgrades[0].Image;
         Explanation1.text = currentDisplayedUpgrades[0].Explanation;
 
+        UDrinkNum2 = currentDisplayedUpgrades[1].DrinkNumber;
         Name2.text = currentDisplayedUpgrades[1].Name;
         Image2.sprite = currentDisplayedUpgrades[1].Image;
         Explanation2.text = currentDisplayedUpgrades[1].Explanation;
 
+        UDrinkNum3 = currentDisplayedUpgrades[2].DrinkNumber;
         Name3.text = currentDisplayedUpgrades[2].Name;
         Image3.sprite = currentDisplayedUpgrades[2].Image;
         Explanation3.text = currentDisplayedUpgrades[2].Explanation;
@@ -191,6 +201,12 @@ public class ChoiceUI : MonoBehaviour
     #endregion
 
     #region 能力飲料選出関数
+    //能力自販機を使用したら
+    public void BuyAbility()
+    {
+        PickRandomAbilities();
+        BoughtAbility = true;
+    }
     //能力データを確率に基づいて3つ選ぶ
     public void PickRandomAbilities()
     {
@@ -255,21 +271,24 @@ public class ChoiceUI : MonoBehaviour
     {
         if (currentDisplayedAbilities.Count < 3) return;
 
+        ADrinkNum1= currentDisplayedAbilities[0].DrinkNumber;
         Name1.text = currentDisplayedAbilities[0].Name;
         Image1.sprite = currentDisplayedAbilities[0].Image;
         Explanation1.text = currentDisplayedAbilities[0].Explanation;
 
+        ADrinkNum2 = currentDisplayedAbilities[1].DrinkNumber;
         Name2.text = currentDisplayedAbilities[1].Name;
         Image2.sprite = currentDisplayedAbilities[1].Image;
         Explanation2.text = currentDisplayedAbilities[1].Explanation;
 
+        ADrinkNum3 = currentDisplayedAbilities[2].DrinkNumber;
         Name3.text = currentDisplayedAbilities[2].Name;
         Image3.sprite = currentDisplayedAbilities[2].Image;
         Explanation3.text = currentDisplayedAbilities[2].Explanation;
     }
     #endregion
 
-    #region イベントトリガー・ボタン関数
+    #region イベントトリガー関数
     //選択肢1にカーソルが乗った時の関数
     public void Choosing1PointerEnter()
     {
@@ -282,6 +301,7 @@ public class ChoiceUI : MonoBehaviour
         //選択中非表示
         Choosing1.SetActive(false);
     }
+<<<<<<< Updated upstream
     //選択肢1ボタン関数
     public void Choices1Button()
     {
@@ -291,6 +311,8 @@ public class ChoiceUI : MonoBehaviour
         CloseUI();
     }
 
+=======
+>>>>>>> Stashed changes
     //選択肢2にカーソルが乗った時の関数
     public void Choosing2PointerEnter()
     {
@@ -303,6 +325,7 @@ public class ChoiceUI : MonoBehaviour
         //選択中非表示
         Choosing2.SetActive(false);
     }
+<<<<<<< Updated upstream
     //選択肢2ボタン関数
     public void Choices2Button()
     {
@@ -312,6 +335,8 @@ public class ChoiceUI : MonoBehaviour
         CloseUI();
     }
 
+=======
+>>>>>>> Stashed changes
     //選択肢3にカーソルが乗った時の関数
     public void Choosing3PointerEnter()
     {
@@ -324,11 +349,196 @@ public class ChoiceUI : MonoBehaviour
         //選択中非表示
         Choosing3.SetActive(false);
     }
+    #endregion
+
+    #region ボタン関数
+    //選択肢1ボタン関数
+    public void Choices1Button()
+    {
+        Debug.Log("選択 : "+ Name1.text);
+        //強化購入時
+        if (BoughtUpgrade){
+            switch (UDrinkNum1){
+                case 0:
+                    countDown.AddTime(30); UDrinkNum1 = -1; break;
+                case 1:
+                    syakaSyaka.SyakaGageHeal(20); UDrinkNum1 = -1; break;
+                case 2:
+                    kanMove.JumpUp(1); UDrinkNum1 = -1; break;
+                case 3:
+                    kanMove.JumpUp(2); UDrinkNum1 = -1; break;
+                case 4:
+                    syakaSyaka.SyakaGageHeal(100); UDrinkNum1 = -1; break;
+                case 5:
+                    countDown.AddTime(60); break;
+                case 6:
+                    syakaSyaka.GageUp(1); break;
+                case 7:
+                    syakaSyaka.GageUp(2); break;
+                case 8:
+                    kanMove.SpeedUp(1); break;
+                case 9:
+                    kanMove.SpeedUp(2); break;
+                case 10:
+                    Debug.Log("スコア上昇"); break;
+                default:
+                    break;
+            }
+        }
+        //能力購入時
+        else if(BoughtAbility){
+            switch (ADrinkNum1){
+                case 0:
+                    Debug.Log("ゴミ箱の位置察知"); break;
+                case 1:
+                    Debug.Log("人に当たっても飛ばされない"); break;
+                case 2:
+                    Debug.Log("車に当たってもやられない"); break;
+                case 3:
+                    Debug.Log("コインの取得範囲上昇"); break;
+                case 4:
+                    Debug.Log("コインの取得倍増"); break;
+                case 5:
+                    Debug.Log("発射中にSPACEを押すと降下ができる"); break;
+                case 6:
+                    kanMove.coin += 210; break;
+                default:
+                    break;
+            }
+        }
+        BoughtUpgrade = false;
+        BoughtAbility = false;
+        //UIを閉じる
+        CloseUI();
+    }
+    //選択肢2ボタン関数
+    public void Choices2Button()
+    {
+        Debug.Log("選択 : "+ Name2.text);
+        //強化購入時
+        if (BoughtUpgrade)
+        {
+            switch (UDrinkNum2)
+            {
+                case 0:
+                    countDown.AddTime(30); UDrinkNum1 = -1; break;
+                case 1:
+                    syakaSyaka.SyakaGageHeal(20); UDrinkNum1 = -1; break;
+                case 2:
+                    kanMove.JumpUp(1); UDrinkNum1 = -1; break;
+                case 3:
+                    kanMove.JumpUp(2); UDrinkNum1 = -1; break;
+                case 4:
+                    syakaSyaka.SyakaGageHeal(100); UDrinkNum1 = -1; break;
+                case 5:
+                    countDown.AddTime(60); break;
+                case 6:
+                    syakaSyaka.GageUp(1); break;
+                case 7:
+                    syakaSyaka.GageUp(2); break;
+                case 8:
+                    kanMove.SpeedUp(1); break;
+                case 9:
+                    kanMove.SpeedUp(2); break;
+                case 10:
+                    Debug.Log("スコア上昇"); break;
+                default:
+                    break;
+            }
+        }
+        //能力購入時
+        else if (BoughtAbility)
+        {
+            switch (ADrinkNum2)
+            {
+                case 0:
+                    Debug.Log("ゴミ箱の位置察知"); break;
+                case 1:
+                    Debug.Log("人に当たっても飛ばされない"); break;
+                case 2:
+                    Debug.Log("車に当たってもやられない"); break;
+                case 3:
+                    Debug.Log("コインの取得範囲上昇"); break;
+                case 4:
+                    Debug.Log("コインの取得倍増"); break;
+                case 5:
+                    Debug.Log("発射中にSPACEを押すと降下ができる"); break;
+                case 6:
+                    kanMove.coin += 210; break;
+                default:
+                    break;
+            }
+        }
+        BoughtUpgrade = false;
+        BoughtAbility = false;
+        //UIを閉じる
+        CloseUI();
+    }
     //選択肢3ボタン関数
     public void Choices3Button()
     {
+<<<<<<< Updated upstream
         Debug.Log("選択 : " + Name3.text);
         abilityTime.StartAbility(Image3.sprite);
+=======
+        Debug.Log("選択 : "+ Name3.text);
+        //強化購入時
+        if (BoughtUpgrade)
+        {
+            switch (UDrinkNum3)
+            {
+                case 0:
+                    countDown.AddTime(30); UDrinkNum1 = -1; break;
+                case 1:
+                    syakaSyaka.SyakaGageHeal(20); UDrinkNum1 = -1; break;
+                case 2:
+                    kanMove.JumpUp(1); UDrinkNum1 = -1; break;
+                case 3:
+                    kanMove.JumpUp(2); UDrinkNum1 = -1; break;
+                case 4:
+                    syakaSyaka.SyakaGageHeal(100); UDrinkNum1 = -1; break;
+                case 5:
+                    countDown.AddTime(60); break;
+                case 6:
+                    syakaSyaka.GageUp(1); break;
+                case 7:
+                    syakaSyaka.GageUp(2); break;
+                case 8:
+                    kanMove.SpeedUp(1); break;
+                case 9:
+                    kanMove.SpeedUp(2); break;
+                case 10:
+                    Debug.Log("スコア上昇"); break;
+                default:
+                    break;
+            }
+        }
+        //能力購入時
+        else if (BoughtAbility)
+        {
+            switch (ADrinkNum3)
+            {
+                case 0:
+                    Debug.Log("ゴミ箱の位置察知"); break;
+                case 1:
+                    Debug.Log("人に当たっても飛ばされない"); break;
+                case 2:
+                    Debug.Log("車に当たってもやられない"); break;
+                case 3:
+                    Debug.Log("コインの取得範囲上昇"); break;
+                case 4:
+                    Debug.Log("コインの取得倍増"); break;
+                case 5:
+                    Debug.Log("発射中にSPACEを押すと降下ができる"); break;
+                case 6:
+                    kanMove.coin += 210; break;
+                default:
+                    break;
+            }
+        }
+        BoughtUpgrade = false;
+        BoughtAbility = false;
+>>>>>>> Stashed changes
         //UIを閉じる
         CloseUI();
     }
@@ -343,6 +553,8 @@ public class ChoiceUI : MonoBehaviour
         //缶動作再開
         kanMove.ActiveMove = true;
         syakaSyaka.ActiveSyaka = true;
+        pauseSistem.IsActiveESC = true;
+        countDown.TimerOn = true;
 
         //選択中非表示
         Choosing1.SetActive(false);
