@@ -6,6 +6,12 @@ using System.Linq;
 using System;
 public class ChoiceUI : MonoBehaviour
 {
+    [Header("缶スクリプト")]
+    [SerializeField] public KanMove kanMove;
+
+    [Header("缶シャカシャカ")]
+    [SerializeField] public SyakaSyaka syakaSyaka;
+
     [Header("ジュース購入音")]
     [SerializeField] private AudioClip audioClip;
 
@@ -34,9 +40,6 @@ public class ChoiceUI : MonoBehaviour
 
     [Header("飲料データ")]
     [SerializeField] public DrinkManager Data;
-
-    [Header("缶スクリプト")]
-    [SerializeField] public KanMove kanMove;
 
     //現在画面に表示されている3つのデータを保持するリスト
     private List<UpgradeData> currentDisplayedUpgrades = new List<UpgradeData>();
@@ -331,8 +334,9 @@ public class ChoiceUI : MonoBehaviour
         //ジュース購入音再生
         audioSource.PlayOneShot(audioClip);
 
-        //缶動作
+        //缶動作再開
         kanMove.ActiveMove = true;
+        syakaSyaka.ActiveSyaka = true;
 
         //選択中非表示
         Choosing1.SetActive(false);

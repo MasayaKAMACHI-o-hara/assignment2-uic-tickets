@@ -31,12 +31,15 @@ public class ClearManegar : MonoBehaviour
     public CameraMove Camera;
     public PauseSistem Pause;
     public CountDown Timer;
+    public SyakaSyaka syaka;
 
     public IEnumerator GameFinish(int score)
     {
         Timer.TimerStop();
         Kan.ActiveMove = false;
         Camera.ActiveMove = false;
+        syaka.ActiveSyaka = false;
+        Pause.IsActiveESC = false;
 
         ClearUI.transform.position -= new Vector3(0, 2000, 0);
         KanUI.SetActive(true);
@@ -45,7 +48,7 @@ public class ClearManegar : MonoBehaviour
         Mathscore[2] = (int)Timer.currentTime * 100;
 
 
-        for (int i = 0; i < 500; i++)
+        for (int i = 0; i < 750; i++)
         {
             yield return null;
         }
@@ -65,17 +68,17 @@ public class ClearManegar : MonoBehaviour
 
                 if (j > 100)
                 {
-                    Showscore[i] += 10;
+                    Showscore[i] += 100;
                     ScoreText[i].text = Showscore[i].ToString("D6") + "pt";
-                    j -= 10;
+                    j -= 100;
                     yield return null;
                 }
 
                 if (j > 10000)
                 {
-                    Showscore[i] += 100;
+                    Showscore[i] += 1000;
                     ScoreText[i].text = Showscore[i].ToString("D6") + "pt";
-                    j -= 100;
+                    j -= 1000;
                     yield return null;
                 }
             }
@@ -91,7 +94,7 @@ public class ClearManegar : MonoBehaviour
         ScoreUI[3].SetActive(true);
         ScoreText[3].text = Mix.ToString("D6") + "pt";
 
-        // ƒnƒCƒXƒRƒA•Û‘¶
+        // ï¿½nï¿½Cï¿½Xï¿½Rï¿½Aï¿½Û‘ï¿½
         HighScore.SaveHighScore(Mix);
 
         for (int j = 0; j < 100; j++)
@@ -109,7 +112,6 @@ public class ClearManegar : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
-        Pause.cantPause();
     }
 
 

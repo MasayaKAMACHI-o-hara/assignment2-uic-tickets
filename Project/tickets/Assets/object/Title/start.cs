@@ -15,17 +15,19 @@ public class start : MonoBehaviour
     public CameraMove Camera;
     public PauseSistem Pause;
     public CountDown Timer;
+    public SyakaSyaka Syaka;
 
     public void Onclick()
     {
 
         Kan.ActiveMove = true;
         Camera.ActiveMove = true;
-        Pause.canPause();
+        Pause.IsActiveESC = true;
 
         GameNow = true;
         TiteleLogo.SetActive(false);
         GameUI.SetActive(true);
+        Syaka.ActiveSyaka = true;
 
         Timer.TimerStart();
         Cursor.visible = false;

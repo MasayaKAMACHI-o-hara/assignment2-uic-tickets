@@ -43,6 +43,9 @@ public class UpgradeVending : MonoBehaviour
     [Header("スクリプト")]
     [SerializeField] public KanMove kanMove;
 
+    [Header("シャカシャカ")]
+    [SerializeField] public SyakaSyaka syakaSyaka;
+
     //缶センサーエリアbool関数
     bool InKanSensorArea;
 
@@ -60,6 +63,9 @@ public class UpgradeVending : MonoBehaviour
 
         //センサーエリア外
         InKanSensorArea = false;
+
+        //カーソル非表示---------------Debug
+        Cursor.visible = false;
 
         // カーソルを画面内で動かせる
         Cursor.lockState = CursorLockMode.Confined;
@@ -83,6 +89,7 @@ public class UpgradeVending : MonoBehaviour
                 {
                     //缶停止
                     kanMove.ActiveMove = false;
+                    syakaSyaka.ActiveSyaka = false;
 
                     //コイン投入音再生
                     audioSource.PlayOneShot(audioClip);
@@ -94,7 +101,7 @@ public class UpgradeVending : MonoBehaviour
                     ChoiceScript.audioSource = audioSource;
 
                     //強化を購入したことを伝える
-                    ChoiceScript.BuyUpgrade =true;
+                    ChoiceScript.BuyUpgrade = true;
 
                     // カーソル表示
                     Cursor.visible = true;
