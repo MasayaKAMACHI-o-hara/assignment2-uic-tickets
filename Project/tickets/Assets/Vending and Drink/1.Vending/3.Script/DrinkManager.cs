@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class DrinkManager : MonoBehaviour
 {
-    [Header("‹­‰»ƒf[ƒ^")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^")]
     [SerializeField]public UpgradeData[] upgradeData;
-    [Header("”\—Íƒf[ƒ^")]
+    [Header("ï¿½fï¿½[ï¿½^")]
     [SerializeField] public AbilityData[] abilityData;
 }

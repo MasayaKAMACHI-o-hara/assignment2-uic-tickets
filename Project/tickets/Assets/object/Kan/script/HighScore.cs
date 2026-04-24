@@ -5,13 +5,13 @@ public class HighScore : MonoBehaviour
 {
     public TextMeshProUGUI highScoreText;
 
-    // ƒnƒCƒXƒRƒAŽæ“¾
+    // ï¿½nï¿½Cï¿½Xï¿½Rï¿½Aï¿½æ“¾
     public static int GetHighScore()
     {
         return PlayerPrefs.GetInt("HighScore", 0);
     }
 
-    // ƒnƒCƒXƒRƒA•Û‘¶
+    // ï¿½nï¿½Cï¿½Xï¿½Rï¿½Aï¿½Û‘ï¿½
     public static void SaveHighScore(int score)
     {
         int highScore = GetHighScore();
@@ -23,7 +23,7 @@ public class HighScore : MonoBehaviour
         }
     }
 
-    // ƒnƒCƒXƒRƒA•\Ž¦
+    // ï¿½nï¿½Cï¿½Xï¿½Rï¿½Aï¿½\ï¿½ï¿½
     void Start()
     {
         if (highScoreText != null)
@@ -32,7 +32,7 @@ public class HighScore : MonoBehaviour
         }
     }
 
-    // ƒŠƒZƒbƒg‚µ‚½‚¢Žž—p
+    // ï¿½ï¿½ï¿½Zï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½p
     public static void ResetHighScore()
     {
         PlayerPrefs.DeleteKey("HighScore");
