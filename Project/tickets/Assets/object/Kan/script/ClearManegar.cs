@@ -11,14 +11,10 @@ public class ClearManegar : MonoBehaviour
     public GameObject ClearUI;
 
     public GameObject KanUI;
-    public GameObject KanOverUI;
-    public GameObject GameUI;
-    public GameObject OverUI;
     public GameObject[] ScoreUI;
     public TextMeshProUGUI[] ScoreText;
 
     public GameObject TitleBuckButton;
-    public GameObject OverBuckButton;
 
     public int test;
     public int Goalscore;
@@ -40,18 +36,16 @@ public class ClearManegar : MonoBehaviour
     public IEnumerator GameFinish(int score)
     {
         Timer.TimerStop();
-        GameUI.SetActive(false);
         Kan.ActiveMove = false;
         Camera.ActiveMove = false;
         syaka.ActiveSyaka = false;
         Pause.IsActiveESC = false;
-        Camera.IsActiveClear = true;
 
         ClearUI.transform.position -= new Vector3(0, 2000, 0);
         KanUI.SetActive(true);
         Mathscore[0] = score;
         Mathscore[1] = Kan.coin * 100;
-        Mathscore[2] = (int)(Timer.currentTime * 100);
+        Mathscore[2] = (int)Timer.currentTime * 100;
 
 
         for (int i = 0; i < 750; i++)
@@ -89,7 +83,7 @@ public class ClearManegar : MonoBehaviour
                 }
             }
 
-            for (int j = 0; j < 200; j++)
+            for (int j = 0; j < 100; j++)
             {
                 yield return null;
             }
@@ -104,13 +98,8 @@ public class ClearManegar : MonoBehaviour
 
         // �n�C�X�R�A�ۑ�
         HighScore.SaveHighScore(Mix);
-<<<<<<< Updated upstream
-
-        for (int j = 0; j < 200; j++)
-=======
         
         for (int j = 0; j < 100; j++)
->>>>>>> Stashed changes
         {
             yield return null;
         }
@@ -127,27 +116,7 @@ public class ClearManegar : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public IEnumerator GameEnd()
-    {
-        Timer.TimerStop();
-        GameUI.SetActive(false);
-        Kan.ActiveMove = false;
-        Camera.ActiveMove = false;
-        syaka.ActiveSyaka = false;
-        Pause.IsActiveESC = false;
 
-        OverUI.transform.position -= new Vector3(0, 2000, 0);
-        KanOverUI.SetActive(true);
-
-        for(int i = 0;i < 200;i++)
-        {
-            yield return null;
-        }
-
-        OverBuckButton.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

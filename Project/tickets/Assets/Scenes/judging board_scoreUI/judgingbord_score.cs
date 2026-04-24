@@ -2,34 +2,40 @@ using UnityEngine;
 
 public class judgingbord_score : MonoBehaviour
 {
-    public int scoreValue = 10;
+    public int scoreValue = 10; // �ύXNG�Q���X�̕\�L(�X�R�A�E���O)
 
-    [SerializeField] RectTransform canvasRect;
-    [SerializeField] judgingbord_score_UI scoreUIPrefab;
+    [SerializeField]
+    RectTransform canvasRect; //Canvas��w�肷��ϐ�
 
-    [SerializeField] ClearManegar clearManegar;
+    [SerializeField]
+    judgingbord_score_UI scoreUIPrefab; //UIprefab
 
-    private judgingbord_score_UI scoreUI;
-    private bool hasScored = false;
+    private judgingbord_score_UI scoreUI; //UI�̕ϐ�
+    public ClearManegar Clear;
+    public KanMove Kan;
 
     void Start()
     {
-        scoreUI = Instantiate(scoreUIPrefab, canvasRect);
-        scoreUI.targetTran = transform;
-        scoreUI.SetScore(scoreValue);
-        scoreUI.transform.localPosition = new Vector3(0, 100, 0);
-        scoreUI.transform.localScale = Vector3.one;
+        scoreUI = Instantiate(scoreUIPrefab, canvasRect);//�Q�[���J�n����UI��\��
+
+        scoreUI.targetTran = transform; //UI���Ǐ]����Ώ�(�����)
+
+        scoreUI.SetScore(scoreValue); //UI�ɓn���X�R�A�l
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (hasScored) return;
-
-        if (collision.gameObject.CompareTag("Kan"))
+        if (collision.gameObject.CompareTag("Kan")) //can���������Ƃ�
         {
-            hasScored = true;
+            Debug.Log("a");
 
-            clearManegar.StartCoroutine(clearManegar.GameFinish(scoreValue));
+            if(Kan.ActiveMove)
+            {
+                StartCoroutine(Clear.GameFinish(scoreValue));
+
+            }
+
+            
         }
     }
 }

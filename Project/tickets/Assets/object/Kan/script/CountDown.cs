@@ -10,8 +10,6 @@ public class CountDown : MonoBehaviour
 
     public TextMeshProUGUI timerText; // 画面に表示するためのUI
 
-    public ClearManegar ClearUI;
-
     void Start()
     {
 
@@ -39,7 +37,7 @@ public class CountDown : MonoBehaviour
             if (currentTime <= 0)
             {
                 currentTime = 0;
-                StartCoroutine(ClearUI.GameEnd());
+                // ここに「タイムアップ！」の処理を書けるよ
             }
 
             // UIへの表示（ToStringの"F2"は小数点以下2桁まで出すという意味）

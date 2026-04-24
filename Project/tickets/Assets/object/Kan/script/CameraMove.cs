@@ -1,6 +1,5 @@
 // Github
 
-using System.Collections;
 using UnityEngine;
 
 public class CameraMove : MonoBehaviour
@@ -16,38 +15,11 @@ public class CameraMove : MonoBehaviour
     private float distance = 0.0f;
 
     public bool ActiveMove = false;
-    public bool ActiveU = false;
-    public bool ActiveD = false;
-    public bool IsActiveClear = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
    
-    }
-
-    IEnumerator MoveUp()
-    {
-        for (int i = 0; i < 15; i++) 
-        {
-            yield return null;
-        }
-
-        currentY++;
-        ActiveU = false;
-
-    }
-
-    IEnumerator MoveDistance()
-    {
-        for (int i = 0; i < 15; i++)
-        {
-            yield return null;
-        }
-
-        distance += 0.1f;
-        ActiveD = false;
-
     }
 
     void LateUpdate()
@@ -92,37 +64,7 @@ public class CameraMove : MonoBehaviour
                 CameraYPos.y = target.position.y + PreventingIndentation;
                 transform.position = CameraYPos;
             }
-        }  
-        
-        if(IsActiveClear)
-        {
-            if(currentY < 60 && !ActiveU)
-            {
-                ActiveU = true;
-                StartCoroutine(MoveUp());
-            }
-
-            if(distance < 3 && !ActiveD)
-            {
-                ActiveD = true;
-                StartCoroutine(MoveDistance());
-            }
-
-
-            // 角度をクォータニオン（回転）に変換
-            Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
-
-            // キャラクターの位置から、回転させた方向へ distance 分だけ離れた位置を計算
-            // (0, 0, -distance) を回転させて target.position を足すイメージ
-            Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-            Vector3 position = rotation * negDistance + target.position;
-
-
-            // カメラの位置と向きを更新
-            transform.rotation = rotation;
-            transform.position = position;
-        }
-
+        }   
     }
 }
 

@@ -41,9 +41,6 @@ public class ChoiceUI : MonoBehaviour
     [SerializeField] private GameObject Choosing2;
     [SerializeField] private GameObject Choosing3;
 
-    [Header("残り時間UI")]
-    [SerializeField] private AbilityTimeUI abilityTime;
-
     [Header("飲料データ")]
     [SerializeField] public DrinkManager Data;
 
@@ -301,18 +298,6 @@ public class ChoiceUI : MonoBehaviour
         //選択中非表示
         Choosing1.SetActive(false);
     }
-<<<<<<< Updated upstream
-    //選択肢1ボタン関数
-    public void Choices1Button()
-    {
-        Debug.Log("選択 : " + Name1.text);
-        abilityTime.StartAbility(Image1.sprite);
-        //UIを閉じる
-        CloseUI();
-    }
-
-=======
->>>>>>> Stashed changes
     //選択肢2にカーソルが乗った時の関数
     public void Choosing2PointerEnter()
     {
@@ -325,18 +310,6 @@ public class ChoiceUI : MonoBehaviour
         //選択中非表示
         Choosing2.SetActive(false);
     }
-<<<<<<< Updated upstream
-    //選択肢2ボタン関数
-    public void Choices2Button()
-    {
-        Debug.Log("選択 : " + Name2.text);
-        abilityTime.StartAbility(Image2.sprite);
-        //UIを閉じる
-        CloseUI();
-    }
-
-=======
->>>>>>> Stashed changes
     //選択肢3にカーソルが乗った時の関数
     public void Choosing3PointerEnter()
     {
@@ -477,10 +450,6 @@ public class ChoiceUI : MonoBehaviour
     //選択肢3ボタン関数
     public void Choices3Button()
     {
-<<<<<<< Updated upstream
-        Debug.Log("選択 : " + Name3.text);
-        abilityTime.StartAbility(Image3.sprite);
-=======
         Debug.Log("選択 : "+ Name3.text);
         //強化購入時
         if (BoughtUpgrade)
@@ -538,7 +507,6 @@ public class ChoiceUI : MonoBehaviour
         }
         BoughtUpgrade = false;
         BoughtAbility = false;
->>>>>>> Stashed changes
         //UIを閉じる
         CloseUI();
     }

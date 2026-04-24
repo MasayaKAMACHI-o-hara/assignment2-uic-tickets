@@ -1,42 +1,24 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class judgingbord_score_UI : MonoBehaviour
 {
-    public Transform worldCanvas;
+    public float rotatespeed = 80f; //‰ñ“]‚·‚é‘¬“x
+    public Transform targetTran; //”»’è”Â‚ÌˆÊ’u
+    public TextMeshProUGUI scoreText; //UI‚ÌƒeƒLƒXƒg
 
-    public float rotatespeed = 80f; // å›è»¢é€Ÿåº¦
-    public Transform targetTran;    // è¿½å¾“å¯¾è±¡
-    public TextMeshProUGUI scoreText;
-    public CanvasGroup canvasGroup;
-    public LayerMask obstacleMask;
-
-    public void SetScore(int score)
+    public void SetScore(int score) //”»’è”Â‚ÌƒXƒRƒA‚ğó‚¯æ‚é
     {
-        scoreText.text = score.ToString();
+        scoreText.text = score.ToString(); //UI‚É”š(ƒXƒRƒA)‚ğ•\¦
     }
 
     void Update()
     {
-        if (targetTran == null) return;
+        transform.position = RectTransformUtility.WorldToScreenPoint(
+            Camera.main,
+            targetTran.position + Vector3.up); //”»’è”Â‚Ìã‚ÉUI‚ğ’Ç]
 
-        // ä½ç½®ã‚’é ­ä¸Šã«å›ºå®š
-        transform.position = targetTran.position + new Vector3(0, 0.8f, 0);
-
-        // ã‚«ãƒ¡ãƒ©æ–¹å‘ã‚’å‘ãï¼ˆåè»¢ã—ãªã„ï¼‰
-        Vector3 lookDir = transform.position - Camera.main.transform.position;
-        transform.rotation = Quaternion.LookRotation(lookDir);
-
-        // å›è»¢
-        transform.Rotate(0, rotatespeed * Time.deltaTime, 0);
-
-        // éšœå®³ç‰©ã§é€æ˜åŒ–
-        Vector3 dir = (Camera.main.transform.position - targetTran.position).normalized;
-        float dist = Vector3.Distance(Camera.main.transform.position, targetTran.position);
-
-        if (Physics.Raycast(Camera.main.transform.position, -dir, out RaycastHit hit, dist, obstacleMask))
-            canvasGroup.alpha = 0;
-        else
-            canvasGroup.alpha = 1;
+        transform.Rotate(0, rotatespeed * Time.deltaTime, 0); //UI‚ğ‰ñ“]‚³‚¹‚é
     }
 }

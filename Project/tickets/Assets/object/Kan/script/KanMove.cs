@@ -13,8 +13,6 @@ public class KanMove : MonoBehaviour
 
     public Transform Camera;
 
-    public ClearManegar ClearUI;
-
     public float Speed = 0;
 
     [Range(2, 10)]
@@ -142,11 +140,6 @@ public class KanMove : MonoBehaviour
             if (body.linearVelocity.magnitude < MaxSpeed)
                 this.body.AddForce(forward * Speed);
 
-
-            if(transform.position.y < -10)
-            {
-                StartCoroutine(ClearUI.GameEnd());
-            }
 
 
         }

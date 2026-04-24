@@ -3,51 +3,48 @@ using UnityEngine.UI;
 using TMPro;
 public class AbilityVending : MonoBehaviour
 {
-    [Header("ï¿½`ï¿½ï¿½ï¿½Ì‹@ï¿½`")]
+    [Header("`”\—Í©”Ì‹@`")]
 
-    [Header("ï¿½lï¿½i")]
+    [Header("’l’i")]
     [SerializeField] private int Cost;
 
-    [Header("ï¿½Xï¿½sï¿½[ï¿½Jï¿½[")]
+    [Header("ƒXƒs[ƒJ[")]
     [SerializeField] private AudioSource audioSource;
 
-    [Header("ï¿½Rï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
+    [Header("ƒRƒCƒ““Š“ü‰¹")]
     [SerializeField] private AudioClip audioClip;
 
-    [Header("ï¿½`ï¿½ï¿½ï¿½Ì‹@UIï¿½`")]
+    [Header("`©”Ì‹@UI`")]
 
     [Header("UI")]
     [SerializeField] private GameObject AVUI;
 
-    [Header("ï¿½lï¿½iï¿½eï¿½Lï¿½Xï¿½g")]
+    [Header("’l’iƒeƒLƒXƒg")]
     [SerializeField] private TextMeshProUGUI CostText;
 
-    [Header("UIï¿½wï¿½i")]
+    [Header("UI”wŒi")]
     [SerializeField] private Image AVUIBG;
 
-    [Header("UIï¿½Jï¿½ï¿½ï¿½[")]
-    [SerializeField] private Color NotEnoughColor = new Color(0.7f, 0, 0, 0.7f); // ï¿½ï¿½
-    [SerializeField] private Color EnoughColor = new Color(0, 0.7f, 0, 0.7f);  // ï¿½ï¿½#
+    [Header("UIƒJƒ‰[")]
+    [SerializeField] private Color NotEnoughColor = new Color(0.7f, 0, 0, 0.7f); // Ô
+    [SerializeField] private Color EnoughColor = new Color(0, 0.7f, 0, 0.7f);  // —Î#
 
-    [Header("ï¿½`ï¿½Iï¿½ï¿½ï¿½UIï¿½`")]
+    [Header("`‘I‘ğˆUI`")]
 
-    [Header("ï¿½Xï¿½Nï¿½ï¿½ï¿½vï¿½g")]
+    [Header("ƒXƒNƒŠƒvƒg")]
     [SerializeField] private ChoiceUI ChoiceScript;
 
     [Header("UI")]
     [SerializeField] private GameObject ChoiceUI;
 
-    [Header("ï¿½`ï¿½Ê`")]
+    [Header("`ŠÊ`")]
 
-    [Header("ï¿½Xï¿½Nï¿½ï¿½ï¿½vï¿½g")]
+    [Header("ƒXƒNƒŠƒvƒg")]
     [SerializeField] public KanMove kanMove;
 
-    [Header("ï¿½Vï¿½ï¿½ï¿½Jï¿½Vï¿½ï¿½ï¿½J")]
+    [Header("ƒVƒƒƒJƒVƒƒƒJ")]
     [SerializeField] public SyakaSyaka syakaSyaka;
 
-<<<<<<< Updated upstream
-    //ï¿½ÊƒZï¿½ï¿½ï¿½Tï¿½[ï¿½Gï¿½ï¿½ï¿½Aboolï¿½Öï¿½
-=======
     [Header("ƒ|[ƒY")]
     [SerializeField] public PauseSistem pauseSistem;
 
@@ -55,28 +52,27 @@ public class AbilityVending : MonoBehaviour
     [SerializeField] public CountDown countDown;
 
     //ŠÊƒZƒ“ƒT[ƒGƒŠƒAboolŠÖ”
->>>>>>> Stashed changes
     bool InKanSensorArea;
 
-    //ï¿½ï¿½ï¿½ï¿½ï¿½İ’ï¿½
+    //‰Šúİ’è
     void Start()
     {
-        //ï¿½ï¿½ï¿½Ì‹@UIï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½
+        //©”Ì‹@UI‚ğ”ñ•\¦‚É
         AVUI.SetActive(false);
 
-        //ï¿½lï¿½iï¿½ï¿½UIï¿½É”ï¿½ï¿½f
-        CostText.text = Cost + "å††";
+        //’l’i‚ğUI‚É”½‰f
+        CostText.text = Cost + "ƒRƒCƒ“";
 
-        //ï¿½Iï¿½ï¿½ï¿½UIï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½
+        //‘I‘ğˆUI‚ğ”ñ•\¦‚É
         ChoiceUI.SetActive(false);
 
-        //ï¿½Zï¿½ï¿½ï¿½Tï¿½[ï¿½Gï¿½ï¿½ï¿½Aï¿½O
+        //ƒZƒ“ƒT[ƒGƒŠƒAŠO
         InKanSensorArea = false;
 
-        //ï¿½Jï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½---------------Debug
+        //ƒJ[ƒ\ƒ‹”ñ•\¦---------------Debug
         Cursor.visible = false;
 
-        // ï¿½Jï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Ê“ï¿½Å“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // ƒJ[ƒ\ƒ‹‚ğ‰æ–Ê“à‚Å“®‚©‚¹‚é
         Cursor.lockState = CursorLockMode.Confined;
 
     }
@@ -84,83 +80,78 @@ public class AbilityVending : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ï¿½Zï¿½ï¿½ï¿½Tï¿½[ï¿½Gï¿½ï¿½ï¿½Aï¿½ï¿½È‚ï¿½
+        //ƒZƒ“ƒT[ƒGƒŠƒA“à‚È‚ç
         if (InKanSensorArea)
         {
-            //ï¿½Rï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            //ƒRƒCƒ“‚ª‘«‚è‚ê‚Î
             if (Cost <= kanMove.coin)
             {
-                //ï¿½ï¿½ï¿½Ì‹@UIï¿½ï¿½Î‚ï¿½
+                //©”Ì‹@UI‚ğ—Î‚É
                 AVUIBG.color = EnoughColor;
 
-                //Fï¿½Lï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                //FƒL[‚ğ‰Ÿ‚µ‚½‚ç
                 if (Input.GetKeyDown(KeyCode.F))
                 {
-                    //ï¿½Ê’ï¿½~
+                    //ŠÊ’â~
                     kanMove.ActiveMove = false;
                     syakaSyaka.ActiveSyaka = false;
                     pauseSistem.IsActiveESC = false;
                     countDown.TimerOn = false;
 
-                    //ï¿½Rï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½
+                    //ƒRƒCƒ““Š“ü‰¹Ä¶
                     audioSource.PlayOneShot(audioClip);
 
-                    //ï¿½Rï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    //ƒRƒCƒ“Á”ï
                     kanMove.coin -= Cost;
 
-                    //ï¿½Iï¿½ï¿½UIï¿½ÌƒXï¿½sï¿½[ï¿½Jï¿½[ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½Ì‹@ï¿½Éwï¿½ï¿½
+                    //‘I‘ğUI‚ÌƒXƒs[ƒJ[‚ğ‚±‚Ì©”Ì‹@‚Éw’è
                     ChoiceScript.audioSource = audioSource;
 
-<<<<<<< Updated upstream
-                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½`ï¿½ï¿½ï¿½ï¿½
-                    ChoiceScript.BuyUpgrade = true;
-=======
                     //‹­‰»‚ğw“ü‚µ‚½‚±‚Æ‚ğ“`‚¦‚é
                     ChoiceScript.BuyAbility();
->>>>>>> Stashed changes
 
-                    // ï¿½Jï¿½[ï¿½\ï¿½ï¿½ï¿½\ï¿½ï¿½
+                    // ƒJ[ƒ\ƒ‹•\¦
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.None;
 
-                    //ï¿½ï¿½ï¿½Ì‹@UIï¿½ï¿½\ï¿½ï¿½
+                    //©”Ì‹@UI”ñ•\¦
                     AVUI.SetActive(false);
 
-                    //ï¿½Iï¿½ï¿½ï¿½UIï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½
+                    //‘I‘ğˆUI‚ğ•\¦‚É
                     ChoiceUI.SetActive(true);
 
-                    //ï¿½Zï¿½ï¿½ï¿½Tï¿½[ï¿½ï¿½Iï¿½tï¿½É‚ï¿½ï¿½Ä”jï¿½ï¿½
+                    //ƒZƒ“ƒT[‚ğƒIƒt‚É‚µ‚Ä”j‰ó
                     InKanSensorArea = false;
                     Destroy(gameObject);
                 }
             }
-            //ï¿½Rï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½
+            //ƒRƒCƒ“‚ª‘«‚è‚È‚¯‚ê‚Î
             else
-                //ï¿½ï¿½ï¿½Ì‹@UIï¿½ï¿½Ô‚ï¿½
+                //©”Ì‹@UI‚ğÔ‚É
                 AVUIBG.color = NotEnoughColor;
         }
     }
-    //ï¿½Zï¿½ï¿½ï¿½Tï¿½[ï¿½É“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌŠÖï¿½
+    //ƒZƒ“ƒT[‚É“ü‚Á‚½‚ÌŠÖ”
     private void OnTriggerEnter(Collider Sensor)
     {
         if (Sensor.CompareTag("Kan"))
         {
-            //ï¿½ï¿½ï¿½Ì‹@UIï¿½\ï¿½ï¿½
+            //©”Ì‹@UI•\¦
             AVUI.SetActive(true);
 
-            //ï¿½Zï¿½ï¿½ï¿½Tï¿½[ï¿½Gï¿½ï¿½ï¿½Aï¿½ï¿½
+            //ƒZƒ“ƒT[ƒGƒŠƒA“à
             InKanSensorArea = true;
         }
     }
-    //ï¿½Zï¿½ï¿½ï¿½Tï¿½[ï¿½ï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ÌŠÖï¿½
+    //ƒZƒ“ƒT[‚©‚ço‚½‚ÌŠÖ”
     private void OnTriggerExit(Collider Sensor)
     {
         if (Sensor.CompareTag("Kan"))
         {
-            //ï¿½ï¿½ï¿½Ì‹@UIï¿½ï¿½\ï¿½ï¿½
+            //©”Ì‹@UI”ñ•\¦
             AVUI.SetActive(false);
 
-            //ï¿½Zï¿½ï¿½ï¿½Tï¿½[ï¿½Gï¿½ï¿½ï¿½Aï¿½O
+            //ƒZƒ“ƒT[ƒGƒŠƒAŠO
             InKanSensorArea = false;
         }
     }
