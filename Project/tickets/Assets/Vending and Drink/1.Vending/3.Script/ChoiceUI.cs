@@ -6,169 +6,172 @@ using System.Linq;
 using System;
 public class ChoiceUI : MonoBehaviour
 {
-    [Header("ŠÊƒXƒNƒŠƒvƒg")]
+    [Header("ï¿½ÊƒXï¿½Nï¿½ï¿½ï¿½vï¿½g")]
     [SerializeField] public KanMove kanMove;
 
-    [Header("ŠÊƒVƒƒƒJƒVƒƒƒJ")]
+    [Header("ï¿½ÊƒVï¿½ï¿½ï¿½Jï¿½Vï¿½ï¿½ï¿½J")]
     [SerializeField] public SyakaSyaka syakaSyaka;
 
-    [Header("ƒWƒ…[ƒXw“ü‰¹")]
+    [Header("ï¿½Wï¿½ï¿½ï¿½[ï¿½Xï¿½wï¿½ï¿½ï¿½ï¿½")]
     [SerializeField] private AudioClip audioClip;
 
-    [Header("‘I‘ğUI")]
+    [Header("ï¿½Iï¿½ï¿½UI")]
     [SerializeField] private GameObject UI;
 
-    [Header("‘I‘ğˆ‚Ì–¼‘O")]
+    [Header("ï¿½Iï¿½ï¿½ï¿½ï¿½Ì–ï¿½ï¿½O")]
     [SerializeField] private TextMeshProUGUI Name1;
     [SerializeField] private TextMeshProUGUI Name2;
     [SerializeField] private TextMeshProUGUI Name3;
 
-    [Header("‘I‘ğˆ‚Ì‰æ‘œ")]
+    [Header("ï¿½Iï¿½ï¿½ï¿½ï¿½Ì‰æ‘œ")]
     [SerializeField] private Image Image1;
     [SerializeField] private Image Image2;
     [SerializeField] private Image Image3;
 
-    [Header("‘I‘ğˆ‚Ìà–¾")]
+    [Header("ï¿½Iï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½")]
     [SerializeField] private TextMeshProUGUI Explanation1;
     [SerializeField] private TextMeshProUGUI Explanation2;
     [SerializeField] private TextMeshProUGUI Explanation3;
 
-    [Header("‘I‘ğ’†UI")]
+    [Header("ï¿½Iï¿½ï¿½UI")]
     [SerializeField] private GameObject Choosing1;
     [SerializeField] private GameObject Choosing2;
     [SerializeField] private GameObject Choosing3;
 
-    [Header("ˆù—¿ƒf[ƒ^")]
+    [Header("ï¿½cï¿½èï¿½ï¿½UI")]
+    [SerializeField] private AbilityTimeUI abilityTime;
+
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^")]
     [SerializeField] public DrinkManager Data;
 
-    //Œ»İ‰æ–Ê‚É•\¦‚³‚ê‚Ä‚¢‚é3‚Â‚Ìƒf[ƒ^‚ğ•Û‚·‚éƒŠƒXƒg
+    //ï¿½ï¿½ï¿½İ‰ï¿½Ê‚É•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½3ï¿½Â‚Ìƒfï¿½[ï¿½^ï¿½ï¿½Ûï¿½ï¿½ï¿½ï¿½éƒŠï¿½Xï¿½g
     private List<UpgradeData> currentDisplayedUpgrades = new List<UpgradeData>();
     private List<AbilityData> currentDisplayedAbilities = new List<AbilityData>();
 
-    //‚Ç‚Ì©”Ì‹@‚Åw“ü‚µ‚½‚©
+    //ï¿½Ç‚Ìï¿½ï¿½Ì‹@ï¿½Åwï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     [NonSerialized] public bool BuyUpgrade = false;
     [NonSerialized] public bool BuyAbility = false;
 
-    //ƒXƒs[ƒJ[‚Ìw’è
+    //ï¿½Xï¿½sï¿½[ï¿½Jï¿½[ï¿½Ìwï¿½ï¿½
     [NonSerialized] public AudioSource audioSource;
 
 
-    //”r‘¼ƒyƒA‚Ì’è‹`‚Å {A, B} ‚Ì‚Ç‚¿‚ç‚©ˆê•û‚ª‘I‚Î‚ê‚½‚ç‚à‚¤ˆê•û‚Ío‚³‚È‚¢
+    //ï¿½rï¿½ï¿½ï¿½yï¿½Aï¿½Ì’ï¿½`ï¿½ï¿½ {A, B} ï¿½Ì‚Ç‚ï¿½ï¿½ç‚©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½Î‚ê‚½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íoï¿½ï¿½ï¿½È‚ï¿½
     private readonly int[,] exclusivePairs = { { 2, 3 }, { 6, 7 }, { 8, 9 } };
 
-    //‰Šúİ’è
+    //ï¿½ï¿½ï¿½ï¿½ï¿½İ’ï¿½
     void Start()
     {
-        //‘I‘ğ’†‚ğ”ñ•\¦
+        //ï¿½Iï¿½ğ’†‚ï¿½ï¿½\ï¿½ï¿½
         Choosing1.SetActive(false);
         Choosing2.SetActive(false);
         Choosing3.SetActive(false);
     }
     void Update()
     {
-        if (BuyUpgrade)//‹­‰»©”Ì‹@‚ğg—p‚µ‚½‚ç
+        if (BuyUpgrade)//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‹@ï¿½ï¿½gï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         {
-            PickRandomUpgrades();//‹­‰»ƒf[ƒ^‚ğƒ‰ƒ“ƒ_ƒ€‚É‘I‚Ô
-            BuyUpgrade = false;//‹­‰»©”Ì‹@g—pó‹µƒŠƒZƒbƒg
+            PickRandomUpgrades();//ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½É‘Iï¿½ï¿½
+            BuyUpgrade = false;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‹@ï¿½gï¿½pï¿½ó‹µƒï¿½ï¿½Zï¿½bï¿½g
         }
-        if (BuyAbility)//”\—Í©”Ì‹@‚ğg—p‚µ‚½‚ç
+        if (BuyAbility)//ï¿½\ï¿½Íï¿½ï¿½Ì‹@ï¿½ï¿½gï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         {
-            PickRandomAbilities();//”\—Íƒf[ƒ^‚ğƒ‰ƒ“ƒ_ƒ€‚É‘I‚Ô
-            BuyAbility = false;//”\—Í©”Ì‹@g—pó‹µƒŠƒZƒbƒg
+            PickRandomAbilities();//ï¿½\ï¿½Íƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½É‘Iï¿½ï¿½
+            BuyAbility = false;//ï¿½\ï¿½Íï¿½ï¿½Ì‹@ï¿½gï¿½pï¿½ó‹µƒï¿½ï¿½Zï¿½bï¿½g
         }
     }
 
-    #region ‹­‰»ˆù—¿‘IoŠÖ”
-    //‹­‰»ƒf[ƒ^‚ğŠm—¦‚Æ§–ñ‚ÉŠî‚Ã‚¢‚Ä3‚Â‘I‚Ô
+    #region ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½oï¿½Öï¿½
+    //ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½ï¿½mï¿½ï¿½ï¿½Æï¿½ï¿½ï¿½ÉŠï¿½Ã‚ï¿½ï¿½ï¿½3ï¿½Â‘Iï¿½ï¿½
     public void PickRandomUpgrades()
     {
-        //Å’áŒÀ•K—v‚Èƒf[ƒ^‚ª‚ ‚é‚©ƒ`ƒFƒbƒN
+        //ï¿½Å’ï¿½ï¿½ï¿½Kï¿½vï¿½Èƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½é‚©ï¿½`ï¿½Fï¿½bï¿½N
         if (Data.upgradeData.Length < 3) return;
 
-        //‘O‰ñ‚Ìƒf[ƒ^‚ğÁ‚·
+        //ï¿½Oï¿½ï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½
         currentDisplayedUpgrades.Clear();
         List<int> selectedNumbers = new List<int>();
 
-        //3‚ÂŒˆ‚Ü‚é‚Ü‚Å‚Ğ‚½‚·‚çŒJ‚è•Ô‚·
+        //3ï¿½ÂŒï¿½ï¿½Ü‚ï¿½Ü‚Å‚Ğ‚ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½Ô‚ï¿½
         while (selectedNumbers.Count < 3)
         {
-            //Šm—¦‚©‚çŒó•â‚ğˆê‚Â‘I‚Ô
+            //ï¿½mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â‘Iï¿½ï¿½
             int candidate = GetUpgradeNumberByProbability();
 
-            //Šù‚É‘I‚Î‚ê‚Ä‚¢‚ê‚Î‚â‚è’¼‚µ
+            //ï¿½ï¿½ï¿½É‘Iï¿½Î‚ï¿½Ä‚ï¿½ï¿½ï¿½Î‚ï¿½è’¼ï¿½ï¿½
             if (selectedNumbers.Contains(candidate)) continue;
 
-            //“Á’è‚ÌƒyƒA‚É‚È‚Á‚½‚ç‚â‚è’¼‚µ
+            //ï¿½ï¿½ï¿½ï¿½Ìƒyï¿½Aï¿½É‚È‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è’¼ï¿½ï¿½
             if (IsExclusiveUpgradePair(candidate, selectedNumbers)) continue;
 
-            //—¼•ûOK‚¾‚Á‚½‚ç‘I‘ğˆ‚É“ü‚ê‚é
+            //ï¿½ï¿½ï¿½ï¿½OKï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½É“ï¿½ï¿½ï¿½ï¿½
             selectedNumbers.Add(candidate);
         }
 
-        // ”Ô†‚©‚çƒXƒNƒŠƒ^ƒuƒ‹ƒIƒuƒWƒFƒNƒg‚ğ•R‚Ã‚¯‚·‚é
+        // ï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½Nï¿½ï¿½ï¿½^ï¿½uï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½Rï¿½Ã‚ï¿½ï¿½ï¿½ï¿½ï¿½
         foreach (int num in selectedNumbers)
         {
-            //ˆù—¿ŠÇ—‚©‚çˆù—¿”Ô†‚ªˆê’v‚·‚é•¨‚ğ’T‚·
+            //ï¿½ï¿½ï¿½ï¿½ï¿½Ç—ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½é•¨ï¿½ï¿½Tï¿½ï¿½
             UpgradeData d = Data.upgradeData.FirstOrDefault(x => x.DrinkNumber == num);
             if (d != null) currentDisplayedUpgrades.Add(d);
         }
 
-        // UI”½‰f
+        // UIï¿½ï¿½ï¿½f
         UpdateUpgradeUI();
 
         UI.SetActive(true);
         Cursor.visible = true;
     }
-    //‹­‰»‚ğŠm—¦‚ÅŒˆ’è‚·‚éŠÖ”
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mï¿½ï¿½ï¿½ÅŒï¿½ï¿½è‚·ï¿½ï¿½Öï¿½
     private int GetUpgradeNumberByProbability()
     {
-        //’áŠm—¦—p—”ì¬
+        //ï¿½ï¿½mï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ì¬
         int roll1 = UnityEngine.Random.Range(1, 101);
 
-        //20ˆÈ‰º‚È‚ç’áŠm—¦
+        //20ï¿½È‰ï¿½ï¿½È‚ï¿½ï¿½mï¿½ï¿½
         if (roll1 <= 20)
         {
-            // ’áŠm—¦: 4”Ô
+            // ï¿½ï¿½mï¿½ï¿½: 4ï¿½ï¿½
             return 4;
         }
-        //20ˆÈ‰ºˆÈŠO
+        //20ï¿½È‰ï¿½ï¿½ÈŠO
         else
         {
-            //’†E‚Šm—¦—p—”ì¬
+            //ï¿½ï¿½ï¿½Eï¿½ï¿½ï¿½mï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ì¬
             int roll2 = UnityEngine.Random.Range(1, 101);
 
-            //40ˆÈ‰º‚È‚ç’†Šm—¦
+            //40ï¿½È‰ï¿½ï¿½È‚ç’†ï¿½mï¿½ï¿½
             if (roll2 <= 40)
             {
-                // ’†Šm—¦: 3, 5, 7, 9
+                // ï¿½ï¿½ï¿½mï¿½ï¿½: 3, 5, 7, 9
                 int[] mid = { 3, 5, 7, 9 };
                 return mid[UnityEngine.Random.Range(0, mid.Length)];
             }
-            //40ˆÈ‰ºˆÈŠO‚È‚ç‚Šm—¦
+            //40ï¿½È‰ï¿½ï¿½ÈŠOï¿½È‚ç‚ï¿½mï¿½ï¿½
             else
             {
-                // ‚Šm—¦: 0, 1, 2, 6, 8, 10
+                // ï¿½ï¿½ï¿½mï¿½ï¿½: 0, 1, 2, 6, 8, 10
                 int[] high = { 0, 1, 2, 6, 8, 10 };
                 return high[UnityEngine.Random.Range(0, high.Length)];
             }
         }
     }
-    //‹­‰»ƒyƒA‹Ö~”»’èŠÖ”
+    //ï¿½ï¿½ï¿½ï¿½ï¿½yï¿½Aï¿½Ö~ï¿½ï¿½ï¿½ï¿½Öï¿½
     private bool IsExclusiveUpgradePair(int candidate, List<int> currentList)
     {
-        //‹Ö~ƒŠƒXƒg‚ğƒ`ƒFƒbƒN
+        //ï¿½Ö~ï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½`ï¿½Fï¿½bï¿½N
         for (int i = 0; i < exclusivePairs.GetLength(0); i++)
         {
-            int p1 = exclusivePairs[i, 0]; // ƒyƒA‚Ì•Ğ•û
-            int p2 = exclusivePairs[i, 1]; // ƒyƒA‚Ì‚à‚¤•Ğ•û
+            int p1 = exclusivePairs[i, 0]; // ï¿½yï¿½Aï¿½Ì•Ğ•ï¿½
+            int p2 = exclusivePairs[i, 1]; // ï¿½yï¿½Aï¿½Ì‚ï¿½ï¿½ï¿½Ğ•ï¿½
 
-            //‹Ö~ƒyƒA‚ª‚»‚ë‚Á‚Ä‚¢‚½‚ç‚â‚è’¼‚µ
+            //ï¿½Ö~ï¿½yï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è’¼ï¿½ï¿½
             if (candidate == p1 && currentList.Contains(p2)) return true;
             if (candidate == p2 && currentList.Contains(p1)) return true;
         }
-        return false;//‚Ç‚Ì‹Ö~ƒyƒA‚É‚àŠY“–‚µ‚È‚¯‚ê‚ÎOK
+        return false;//ï¿½Ç‚Ì‹Ö~ï¿½yï¿½Aï¿½É‚ï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½OK
     }
-    //‹­‰»ˆù—¿‚ÅUIXV
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½UIï¿½Xï¿½V
     private void UpdateUpgradeUI()
     {
         if (currentDisplayedUpgrades.Count < 3) return;
@@ -187,67 +190,67 @@ public class ChoiceUI : MonoBehaviour
     }
     #endregion
 
-    #region ”\—Íˆù—¿‘IoŠÖ”
-    //”\—Íƒf[ƒ^‚ğŠm—¦‚ÉŠî‚Ã‚¢‚Ä3‚Â‘I‚Ô
+    #region ï¿½\ï¿½Íˆï¿½ï¿½ï¿½ï¿½Iï¿½oï¿½Öï¿½
+    //ï¿½\ï¿½Íƒfï¿½[ï¿½^ï¿½ï¿½mï¿½ï¿½ï¿½ÉŠï¿½Ã‚ï¿½ï¿½ï¿½3ï¿½Â‘Iï¿½ï¿½
     public void PickRandomAbilities()
     {
-        //Å’áŒÀ•K—v‚Èƒf[ƒ^‚ª‚ ‚é‚©ƒ`ƒFƒbƒN
+        //ï¿½Å’ï¿½ï¿½ï¿½Kï¿½vï¿½Èƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½é‚©ï¿½`ï¿½Fï¿½bï¿½N
         if (Data.abilityData.Length < 3) return;
 
-        //‘O‰ñ‚Ìƒf[ƒ^‚ğÁ‚·
+        //ï¿½Oï¿½ï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½
         currentDisplayedAbilities.Clear();
         List<int> selectedNumbers = new List<int>();
 
-        //3‚ÂŒˆ‚Ü‚é‚Ü‚Å‚Ğ‚½‚·‚çŒJ‚è•Ô‚·
+        //3ï¿½ÂŒï¿½ï¿½Ü‚ï¿½Ü‚Å‚Ğ‚ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½Ô‚ï¿½
         while (selectedNumbers.Count < 3)
         {
-            //Šm—¦‚©‚çŒó•â‚ğˆê‚Â‘I‚Ô
+            //ï¿½mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â‘Iï¿½ï¿½
             int candidate = GetAbilityNumberByProbability();
 
-            //Šù‚É‘I‚Î‚ê‚Ä‚¢‚ê‚Î‚â‚è’¼‚µ
+            //ï¿½ï¿½ï¿½É‘Iï¿½Î‚ï¿½Ä‚ï¿½ï¿½ï¿½Î‚ï¿½è’¼ï¿½ï¿½
             if (selectedNumbers.Contains(candidate)) continue;
 
-            //OK‚¾‚Á‚½‚ç‘I‘ğˆ‚É“ü‚ê‚é
+            //OKï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½É“ï¿½ï¿½ï¿½ï¿½
             selectedNumbers.Add(candidate);
         }
 
-        // ”Ô†‚©‚çƒXƒNƒŠƒ^ƒuƒ‹ƒIƒuƒWƒFƒNƒg‚ğ•R‚Ã‚¯‚·‚é
+        // ï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½Nï¿½ï¿½ï¿½^ï¿½uï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½Rï¿½Ã‚ï¿½ï¿½ï¿½ï¿½ï¿½
         foreach (int num in selectedNumbers)
         {
-            //ˆù—¿ŠÇ—‚©‚çˆù—¿”Ô†‚ªˆê’v‚·‚é•¨‚ğ’T‚·
+            //ï¿½ï¿½ï¿½ï¿½ï¿½Ç—ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½é•¨ï¿½ï¿½Tï¿½ï¿½
             AbilityData d = Data.abilityData.FirstOrDefault(x => x.DrinkNumber == num);
             if (d != null) currentDisplayedAbilities.Add(d);
         }
 
-        // UI”½‰f
+        // UIï¿½ï¿½ï¿½f
         UpdateAbilityUI();
 
         UI.SetActive(true);
         Cursor.visible = true;
     }
-    //”\—Í‚ğŠm—¦‚ÅŒˆ’è‚·‚éŠÖ”
+    //ï¿½\ï¿½Í‚ï¿½mï¿½ï¿½ï¿½ÅŒï¿½ï¿½è‚·ï¿½ï¿½Öï¿½
     private int GetAbilityNumberByProbability()
     {
-        //’áŠm—¦—p—”ì¬
+        //ï¿½ï¿½mï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ì¬
         int roll = UnityEngine.Random.Range(1, 101);
 
-        //20ˆÈ‰º‚È‚ç’áŠm—¦
+        //20ï¿½È‰ï¿½ï¿½È‚ï¿½ï¿½mï¿½ï¿½
         if (roll <= 20)
         {
-            // ’áŠm—¦: 6”Ô
+            // ï¿½ï¿½mï¿½ï¿½: 6ï¿½ï¿½
             return 6;
         }
-        //20ˆÈ‰ºˆÈŠO‚È‚ç‚Šm—¦
+        //20ï¿½È‰ï¿½ï¿½ÈŠOï¿½È‚ç‚ï¿½mï¿½ï¿½
         else
         {
 
-            // ‚Šm—¦: 0, 1, 2, 3, 4, 5
+            // ï¿½ï¿½ï¿½mï¿½ï¿½: 0, 1, 2, 3, 4, 5
             int[] high = { 0, 1, 2, 3, 4, 5 };
             return high[UnityEngine.Random.Range(0, high.Length)];
 
         }
     }
-    //”\—Íˆù—¿‚ÅUIXV
+    //ï¿½\ï¿½Íˆï¿½ï¿½ï¿½ï¿½ï¿½UIï¿½Xï¿½V
     private void UpdateAbilityUI()
     {
         if (currentDisplayedAbilities.Count < 3) return;
@@ -266,88 +269,91 @@ public class ChoiceUI : MonoBehaviour
     }
     #endregion
 
-    #region ƒCƒxƒ“ƒgƒgƒŠƒK[Eƒ{ƒ^ƒ“ŠÖ”
-    //‘I‘ğˆ1‚ÉƒJ[ƒ\ƒ‹‚ªæ‚Á‚½‚ÌŠÖ”
+    #region ï¿½Cï¿½xï¿½ï¿½ï¿½gï¿½gï¿½ï¿½ï¿½Kï¿½[ï¿½Eï¿½{ï¿½^ï¿½ï¿½ï¿½Öï¿½
+    //ï¿½Iï¿½ï¿½ï¿½1ï¿½ÉƒJï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌŠÖï¿½
     public void Choosing1PointerEnter()
     {
-        //‘I‘ğ’†•\¦
+        //ï¿½Iï¿½ğ’†•\ï¿½ï¿½
         Choosing1.SetActive(true);
     }
-    //‘I‘ğˆ1‚ÌƒJ[ƒ\ƒ‹‚ª~‚è‚½‚ÌŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½1ï¿½ÌƒJï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½~ï¿½è‚½ï¿½ï¿½ï¿½ÌŠÖï¿½
     public void Choosing1PointerExit()
     {
-        //‘I‘ğ’†”ñ•\¦
+        //ï¿½Iï¿½ğ’†”ï¿½\ï¿½ï¿½
         Choosing1.SetActive(false);
     }
-    //‘I‘ğˆ1ƒ{ƒ^ƒ“ŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½1ï¿½{ï¿½^ï¿½ï¿½ï¿½Öï¿½
     public void Choices1Button()
     {
-        Debug.Log("‘I‘ğ : "+ Name1.text);
-        //UI‚ğ•Â‚¶‚é
+        Debug.Log("ï¿½Iï¿½ï¿½ : " + Name1.text);
+        abilityTime.StartAbility(Image1.sprite);
+        //UIï¿½ï¿½Â‚ï¿½ï¿½ï¿½
         CloseUI();
     }
 
-    //‘I‘ğˆ2‚ÉƒJ[ƒ\ƒ‹‚ªæ‚Á‚½‚ÌŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½2ï¿½ÉƒJï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌŠÖï¿½
     public void Choosing2PointerEnter()
     {
-        //‘I‘ğ’†•\¦
+        //ï¿½Iï¿½ğ’†•\ï¿½ï¿½
         Choosing2.SetActive(true);
     }
-    //‘I‘ğˆ2‚ÌƒJ[ƒ\ƒ‹‚ª~‚è‚½‚ÌŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½2ï¿½ÌƒJï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½~ï¿½è‚½ï¿½ï¿½ï¿½ÌŠÖï¿½
     public void Choosing2PointerExit()
     {
-        //‘I‘ğ’†”ñ•\¦
+        //ï¿½Iï¿½ğ’†”ï¿½\ï¿½ï¿½
         Choosing2.SetActive(false);
     }
-    //‘I‘ğˆ2ƒ{ƒ^ƒ“ŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½2ï¿½{ï¿½^ï¿½ï¿½ï¿½Öï¿½
     public void Choices2Button()
     {
-        Debug.Log("‘I‘ğ : "+ Name2.text);
-        //UI‚ğ•Â‚¶‚é
+        Debug.Log("ï¿½Iï¿½ï¿½ : " + Name2.text);
+        abilityTime.StartAbility(Image2.sprite);
+        //UIï¿½ï¿½Â‚ï¿½ï¿½ï¿½
         CloseUI();
     }
 
-    //‘I‘ğˆ3‚ÉƒJ[ƒ\ƒ‹‚ªæ‚Á‚½‚ÌŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½3ï¿½ÉƒJï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌŠÖï¿½
     public void Choosing3PointerEnter()
     {
-        //‘I‘ğ’†•\¦
+        //ï¿½Iï¿½ğ’†•\ï¿½ï¿½
         Choosing3.SetActive(true);
     }
-    //‘I‘ğˆ3‚ÌƒJ[ƒ\ƒ‹‚ª~‚è‚½‚ÌŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½3ï¿½ÌƒJï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½~ï¿½è‚½ï¿½ï¿½ï¿½ÌŠÖï¿½
     public void Choosing3PointerExit()
     {
-        //‘I‘ğ’†”ñ•\¦
+        //ï¿½Iï¿½ğ’†”ï¿½\ï¿½ï¿½
         Choosing3.SetActive(false);
     }
-    //‘I‘ğˆ3ƒ{ƒ^ƒ“ŠÖ”
+    //ï¿½Iï¿½ï¿½ï¿½3ï¿½{ï¿½^ï¿½ï¿½ï¿½Öï¿½
     public void Choices3Button()
     {
-        Debug.Log("‘I‘ğ : "+ Name3.text);
-        //UI‚ğ•Â‚¶‚é
+        Debug.Log("ï¿½Iï¿½ï¿½ : " + Name3.text);
+        abilityTime.StartAbility(Image3.sprite);
+        //UIï¿½ï¿½Â‚ï¿½ï¿½ï¿½
         CloseUI();
     }
     #endregion
 
-    //UI‚ğ•Â‚¶‚éŠÖ”
+    //UIï¿½ï¿½Â‚ï¿½ï¿½ï¿½Öï¿½
     private void CloseUI()
     {
-        //ƒWƒ…[ƒXw“ü‰¹Ä¶
+        //ï¿½Wï¿½ï¿½ï¿½[ï¿½Xï¿½wï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½
         audioSource.PlayOneShot(audioClip);
 
-        //ŠÊ“®ìÄŠJ
+        //ï¿½Ê“ï¿½ï¿½ï¿½ÄŠJ
         kanMove.ActiveMove = true;
         syakaSyaka.ActiveSyaka = true;
 
-        //‘I‘ğ’†”ñ•\¦
+        //ï¿½Iï¿½ğ’†”ï¿½\ï¿½ï¿½
         Choosing1.SetActive(false);
         Choosing2.SetActive(false);
         Choosing3.SetActive(false);
 
-        //ƒJ[ƒ\ƒ‹”ñ•\¦
+        //ï¿½Jï¿½[ï¿½\ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        //UI”ñ•\¦
+        //UIï¿½ï¿½\ï¿½ï¿½
         UI.SetActive(false);
     }
 }

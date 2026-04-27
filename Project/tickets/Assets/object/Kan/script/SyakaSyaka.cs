@@ -14,6 +14,7 @@ public class SyakaSyaka : MonoBehaviour
     public bool JumpUp = false;
     public bool IsActiveFly = false;
     public bool IsActiveFall = false;
+    public bool IsActiveSpace = false;
 
     public bool ActiveSyaka = false;
 
@@ -271,7 +272,7 @@ public class SyakaSyaka : MonoBehaviour
             }
 
             // 飛んでいる最中にスペースキーが押されたら
-            if (Input.GetKeyDown(KeyCode.Space) && IsActiveFly && !IsActiveFall)
+            if (Input.GetKeyDown(KeyCode.Space) && IsActiveFly && !IsActiveFall && IsActiveSpace)
             {
 
 

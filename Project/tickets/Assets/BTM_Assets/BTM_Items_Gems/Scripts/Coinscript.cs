@@ -4,33 +4,48 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Coinscript : MonoBehaviour
 {
-    [Header("æ“¾‚Ìƒp[ƒeƒBƒNƒ‹")]
+    [Header("å–å¾—æ™‚ã®ãƒ‘ãƒ¼ãƒ†ã‚£ã‚¯ãƒ«")]
     public GameObject getEffectPrefab;
+
+    [Header("å–å¾—æ™‚ã®ã‚µã‚¦ãƒ³ãƒ‰")]
+    public AudioClip getSound;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>(); // â† Coin ã® AudioSource ã‚’å–å¾—
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Kan‚Æ‚¢‚¤Tag‚ÌƒIƒuƒWƒFƒNƒg‚ª“–‚½‚é‚ÆÁ‚¦‚é
+        // Kanã¨ã„ã†Tagã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå½“ãŸã‚‹ã¨æ¶ˆãˆã‚‹
         if (other.CompareTag("Kan"))
         {
-            // ƒXƒRƒA‚ğ‘‚â‚·ƒvƒƒOƒ‰ƒ€
+            // ã‚¹ã‚³ã‚¢ã‚’å¢—ã‚„ã™ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
             KanMove kan = other.GetComponent<KanMove>();
             kan.coin += 10;
 
-            // ‚±‚±‚©‚ç‰º ‰‰o
-            // ƒp[ƒeƒBƒNƒ‹‚Ì”­¶
+            // ã“ã“ã§éŸ³ã‚’é³´ã‚‰ã™
+            if (getSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(getSound);
+            }
+
+            // ã“ã“ã‹ã‚‰ä¸‹ æ¼”å‡º
+            // ãƒ‘ãƒ¼ãƒ†ã‚£ã‚¯ãƒ«ã®ç™ºç”Ÿ
             if (getEffectPrefab != null)
             {
                 GameObject effect = Instantiate(getEffectPrefab, transform.position, Quaternion.identity);
             }
 
-            // ƒAƒjƒ[ƒVƒ‡ƒ“
+            // ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³
             StartCoroutine(GetAnime());
         }
     }
 
     IEnumerator GetAnime()
     {
-        // Šl“¾‚ÉƒRƒCƒ“‚ª’µ‚Ë‚ÄÁ‚¦‚é‰‰o‚ÌƒAƒjƒ[ƒVƒ‡ƒ“
+        // ç²å¾—æ™‚ã«ã‚³ã‚¤ãƒ³ãŒè·³ã­ã¦æ¶ˆãˆã‚‹æ¼”å‡ºã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³
 
         float time = 0f;
 

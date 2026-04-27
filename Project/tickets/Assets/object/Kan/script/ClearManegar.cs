@@ -51,7 +51,7 @@ public class ClearManegar : MonoBehaviour
         KanUI.SetActive(true);
         Mathscore[0] = score;
         Mathscore[1] = Kan.coin * 100;
-        Mathscore[2] = (int)Timer.currentTime * 100;
+        Mathscore[2] = (int)(Timer.currentTime * 100);
 
 
         for (int i = 0; i < 750; i++)
@@ -118,6 +118,8 @@ public class ClearManegar : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public IEnumerator GameEnd()
