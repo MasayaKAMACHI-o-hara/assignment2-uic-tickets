@@ -124,6 +124,7 @@ public class ClearManegar : MonoBehaviour
 
     public IEnumerator GameEnd()
     {
+        Debug.Log("a");
         Timer.TimerStop();
         GameUI.SetActive(false);
         Kan.ActiveMove = false;

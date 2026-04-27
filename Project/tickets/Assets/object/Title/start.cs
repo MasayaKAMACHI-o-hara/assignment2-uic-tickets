@@ -17,6 +17,13 @@ public class start : MonoBehaviour
     public CountDown Timer;
     public SyakaSyaka Syaka;
 
+    public void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+
     public void Onclick()
     {
 
