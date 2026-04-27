@@ -18031,9 +18031,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -19317,9 +19325,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -19544,9 +19560,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -20653,9 +20677,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -26551,9 +26583,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -28509,9 +28549,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -35771,9 +35819,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -35937,9 +35993,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -39117,9 +39181,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -39706,6 +39778,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 711663287}
     m_Modifications:
+    - target: {fileID: 2222595119686767367, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6253170517212303077, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: m_Name
       value: Upgrade Vending 6
@@ -39731,9 +39807,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -48945,9 +49029,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -50339,9 +50431,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -52411,9 +52511,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -57286,9 +57394,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -58649,9 +58765,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -60406,6 +60530,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 583123405}
     - target: {fileID: 4593304057032084353, guid: f95da27e1203aa14f87e550c815cff19, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 4593304057032084353, guid: f95da27e1203aa14f87e550c815cff19, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
@@ -60413,6 +60541,10 @@ PrefabInstance:
       propertyPath: abilityTime
       value: 
       objectReference: {fileID: 2025162515}
+    - target: {fileID: 4593304057032084353, guid: f95da27e1203aa14f87e550c815cff19, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 6792772729560815284, guid: f95da27e1203aa14f87e550c815cff19, type: 3}
       propertyPath: m_Name
       value: Choice UI
@@ -66361,9 +66493,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -67067,9 +67207,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -67487,9 +67635,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -67965,9 +68121,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -76343,8 +76507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150e55987fd95674f9d963ab4084ea3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldCanvas: {fileID: 1911615836}
-  scoreUIPrefab: {fileID: 1872062729}
 --- !u!1 &1716200653
 GameObject:
   m_ObjectHideFlags: 0
@@ -76514,9 +76676,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -76604,9 +76774,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -76769,9 +76947,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -77628,9 +77814,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -84552,9 +84746,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -85587,9 +85789,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -86072,9 +86282,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -87916,9 +88134,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -89266,9 +89492,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029893011}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 3111437217425698929, guid: 5f8b2a4023fc2ea4c8d4bb2fbded57f8, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -90072,9 +90306,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 
@@ -92548,9 +92790,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1246966216}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: countDown
+      value: 
+      objectReference: {fileID: 1951965458}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: syakaSyaka
       value: 
       objectReference: {fileID: 1849665484}
+    - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
     - target: {fileID: 8737958606680575393, guid: 1b25a97d8cc61674eb73d4d56b4eb259, type: 3}
       propertyPath: ChoiceScript
       value: 

@@ -3,70 +3,76 @@ using UnityEngine.UI;
 using TMPro;
 public class AbilityVending : MonoBehaviour
 {
-    [Header("�`���̋@�`")]
+    [Header("～能力自販機～")]
 
-    [Header("�l�i")]
+    [Header("値段")]
     [SerializeField] private int Cost;
 
-    [Header("�X�s�[�J�[")]
+    [Header("スピーカー")]
     [SerializeField] private AudioSource audioSource;
 
-    [Header("�R�C��������")]
+    [Header("コイン投入音")]
     [SerializeField] private AudioClip audioClip;
 
-    [Header("�`���̋@UI�`")]
+    [Header("～自販機UI～")]
 
     [Header("UI")]
     [SerializeField] private GameObject AVUI;
 
-    [Header("�l�i�e�L�X�g")]
+    [Header("値段テキスト")]
     [SerializeField] private TextMeshProUGUI CostText;
 
-    [Header("UI�w�i")]
+    [Header("UI背景")]
     [SerializeField] private Image AVUIBG;
 
-    [Header("UI�J���[")]
-    [SerializeField] private Color NotEnoughColor = new Color(0.7f, 0, 0, 0.7f); // ��
-    [SerializeField] private Color EnoughColor = new Color(0, 0.7f, 0, 0.7f);  // ��#
+    [Header("UIカラー")]
+    [SerializeField] private Color NotEnoughColor = new Color(0.7f, 0, 0, 0.7f); // 赤
+    [SerializeField] private Color EnoughColor = new Color(0, 0.7f, 0, 0.7f);  // 緑#
 
-    [Header("�`�I���UI�`")]
+    [Header("～選択肢UI～")]
 
-    [Header("�X�N���v�g")]
+    [Header("スクリプト")]
     [SerializeField] private ChoiceUI ChoiceScript;
 
     [Header("UI")]
     [SerializeField] private GameObject ChoiceUI;
 
-    [Header("�`�ʁ`")]
+    [Header("～缶～")]
 
-    [Header("�X�N���v�g")]
+    [Header("スクリプト")]
     [SerializeField] public KanMove kanMove;
 
-    [Header("�V���J�V���J")]
+    [Header("シャカシャカ")]
     [SerializeField] public SyakaSyaka syakaSyaka;
 
-    //�ʃZ���T�[�G���Abool�֐�
+    [Header("ポーズ")]
+    [SerializeField] public PauseSistem pauseSistem;
+
+    [Header("制限時間")]
+    [SerializeField] public CountDown countDown;
+
+    //缶センサーエリアbool関数
     bool InKanSensorArea;
 
-    //�����ݒ�
+    //初期設定
     void Start()
     {
-        //���̋@UI���\����
+        //自販機UIを非表示に
         AVUI.SetActive(false);
 
-        //�l�i��UI�ɔ��f
-        CostText.text = Cost + "円";
+        //値段をUIに反映
+        CostText.text = Cost + "コイン";
 
-        //�I���UI���\����
+        //選択肢UIを非表示に
         ChoiceUI.SetActive(false);
 
-        //�Z���T�[�G���A�O
+        //センサーエリア外
         InKanSensorArea = false;
 
-        //�J�[�\����\��---------------Debug
+        //カーソル非表示---------------Debug
         Cursor.visible = false;
 
-        // �J�[�\�����ʓ�œ�������
+        // カーソルを画面内で動かせる
         Cursor.lockState = CursorLockMode.Confined;
 
     }
@@ -74,76 +80,78 @@ public class AbilityVending : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //�Z���T�[�G���A��Ȃ�
+        //センサーエリア内なら
         if (InKanSensorArea)
         {
-            //�R�C����������
+            //コインが足りれば
             if (Cost <= kanMove.coin)
             {
-                //���̋@UI��΂�
+                //自販機UIを緑に
                 AVUIBG.color = EnoughColor;
 
-                //F�L�[���������
+                //Fキーを押したら
                 if (Input.GetKeyDown(KeyCode.F))
                 {
-                    //�ʒ�~
+                    //缶停止
                     kanMove.ActiveMove = false;
                     syakaSyaka.ActiveSyaka = false;
+                    pauseSistem.IsActiveESC = false;
+                    countDown.TimerOn = false;
 
-                    //�R�C���������Đ�
+                    //コイン投入音再生
                     audioSource.PlayOneShot(audioClip);
 
-                    //�R�C������
+                    //コイン消費
                     kanMove.coin -= Cost;
 
-                    //�I��UI�̃X�s�[�J�[����̎��̋@�Ɏw��
+                    //選択UIのスピーカーをこの自販機に指定
                     ChoiceScript.audioSource = audioSource;
 
-                    //������w���������Ƃ�`����
-                    ChoiceScript.BuyUpgrade = true;
+                    //強化を購入したことを伝える
+                    ChoiceScript.BuyAbility();
 
-                    // �J�[�\���\��
+                    // カーソル表示
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.None;
 
-                    //���̋@UI��\��
+                    //自販機UI非表示
                     AVUI.SetActive(false);
 
-                    //�I���UI��\����
+                    //選択肢UIを表示に
                     ChoiceUI.SetActive(true);
 
-                    //�Z���T�[��I�t�ɂ��Ĕj��
+                    //センサーをオフにして破壊
                     InKanSensorArea = false;
                     Destroy(gameObject);
                 }
             }
-            //�R�C��������Ȃ����
+            //コインが足りなければ
             else
-                //���̋@UI��Ԃ�
+                //自販機UIを赤に
                 AVUIBG.color = NotEnoughColor;
         }
     }
-    //�Z���T�[�ɓ��������̊֐�
+    //センサーに入った時の関数
     private void OnTriggerEnter(Collider Sensor)
     {
         if (Sensor.CompareTag("Kan"))
         {
-            //���̋@UI�\��
+            //自販機UI表示
             AVUI.SetActive(true);
 
-            //�Z���T�[�G���A��
+            //センサーエリア内
             InKanSensorArea = true;
         }
     }
-    //�Z���T�[����o�����̊֐�
+    //センサーから出た時の関数
     private void OnTriggerExit(Collider Sensor)
     {
         if (Sensor.CompareTag("Kan"))
         {
-            //���̋@UI��\��
+            //自販機UI非表示
             AVUI.SetActive(false);
 
-            //�Z���T�[�G���A�O
+            //センサーエリア外
             InKanSensorArea = false;
         }
     }

@@ -28,6 +28,11 @@ public class CountDown : MonoBehaviour
         TimerOn = false;
     }
 
+    public void AddTime(int time)
+    {
+        currentTime += time;
+    }
+
     void Update()
     {
         if (TimerOn)
