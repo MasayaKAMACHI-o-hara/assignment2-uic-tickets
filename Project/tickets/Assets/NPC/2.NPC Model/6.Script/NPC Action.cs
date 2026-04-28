@@ -136,7 +136,7 @@ public class NPCAction : MonoBehaviour
                 Vector3 kickDirection = Transform.forward;
 
                 // 2. 少し上に浮かせる力を加えると「蹴った感」が出ます（お好みで）
-                kickDirection += Vector3.up * 1f;
+                kickDirection += Vector3.up * 1.5f;
 
                 // 3. 力を加える（速度をリセットしてから加えると安定します）
                 KanRigidbody.linearVelocity = Vector3.zero; // 前の動きをリセット(Unity2023以降はlinearVelocity)
