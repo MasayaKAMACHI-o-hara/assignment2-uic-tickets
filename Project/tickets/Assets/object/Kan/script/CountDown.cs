@@ -35,22 +35,37 @@ public class CountDown : MonoBehaviour
 
     void Update()
     {
+        // 赤くなる
+        if (currentTime <= 10f)
+            timerText.color = Color.red;
+        else
+            timerText.color = Color.white;
+
         if (TimerOn)
         {
             currentTime -= Time.deltaTime;
-            if (currentTime < 0)
+
+            if (currentTime <= 0)
             {
                 currentTime = 0;
+                TimerOn = false;
                 ClearUI.StartCoroutine(ClearUI.GameEnd());
             }
 
             // UIへの表示（ToStringの"F2"は小数点以下2桁まで出すという意味）
             if (timerText != null)
             {
-                timerText.text = "" + currentTime.ToString("F0"); ;
+                int displayTime = Mathf.CeilToInt(currentTime);
+                timerText.text = "" + displayTime.ToString("F0");
             }
 
         }
+    }
+
+    // タイマーを残るようにするやつ
+    public void ShowTimer(bool isShow)
+    {
+        gameObject.SetActive(isShow);
 
     }
 }
