@@ -41,7 +41,7 @@ public class CountDown : MonoBehaviour
             if (currentTime < 0)
             {
                 currentTime = 0;
-                StartCoroutine(ClearUI.GameEnd());
+                ClearUI.StartCoroutine(ClearUI.GameEnd());
             }
 
             // UIへの表示（ToStringの"F2"は小数点以下2桁まで出すという意味）
