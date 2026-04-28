@@ -416,7 +416,7 @@ MonoBehaviour:
   KanAudioSource: {fileID: 0}
   KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
   audioSource: {fileID: -3177127265517086501}
-  kickPower: 30
+  kickPower: 40
   HumanCoffee: 0
 --- !u!95 &4080742193038626755
 Animator:

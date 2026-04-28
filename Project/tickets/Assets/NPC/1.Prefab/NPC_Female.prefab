@@ -922,7 +922,7 @@ MonoBehaviour:
   KanAudioSource: {fileID: 0}
   KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
   audioSource: {fileID: 155604030600423451}
-  kickPower: 30
+  kickPower: 40
   HumanCoffee: 0
 --- !u!95 &5822668513001051936
 Animator:
