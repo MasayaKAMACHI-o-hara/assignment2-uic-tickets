@@ -19,8 +19,8 @@ public class start : MonoBehaviour
 
     public void Start()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+//        Cursor.visible = true;
+//        Cursor.lockState = CursorLockMode.None;
     }
 
 

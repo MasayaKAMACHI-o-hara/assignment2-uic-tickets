@@ -10325,11 +10325,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KanMove
   body: {fileID: 8366870683834519928}
   Camera: {fileID: 0}
+  ClearUI: {fileID: 0}
   Speed: 0
-  MaxSpeed: 2
+  MaxSpeed: 4
   JumpPower: 10
   isGrounded: 1
   isFly: {fileID: 523658111241069574}
+  ActiveMove: 0
+  coin: 0
+  SpeedLv: 0
+  JumpLv: 0
 --- !u!114 &523658111241069574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10350,10 +10355,13 @@ MonoBehaviour:
   JumpUp: 0
   IsActiveFly: 0
   IsActiveFall: 0
+  IsActiveSpace: 0
+  ActiveSyaka: 0
   SyakaPoint: 0
   Syakacount: 0
   SyakaCharge: 0
   SyakaRemove: 0
+  GetSyakaLv: 0
   SyakaE: 1
   SyakaUI: {fileID: 0}
   houkou: {fileID: 2937236853143368172}
@@ -10368,6 +10376,8 @@ MonoBehaviour:
   lastPos: {x: 0, y: 0, z: 0}
   nowPos: {x: 0, y: 0, z: 0}
   SyakaPos: {x: 0, y: 0, z: 0}
+  cola: {fileID: 0}
+  flashcola: {fileID: 0}
 --- !u!1 &6108794879553622920
 GameObject:
   m_ObjectHideFlags: 0
