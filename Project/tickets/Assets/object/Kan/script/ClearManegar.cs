@@ -46,6 +46,7 @@ public class ClearManegar : MonoBehaviour
         syaka.ActiveSyaka = false;
         Pause.IsActiveESC = false;
         Camera.IsActiveClear = true;
+        Timer.ShowTimer(false);
 
         ClearUI.transform.position -= new Vector3(0, 2000, 0);
         KanUI.SetActive(true);
@@ -117,6 +118,7 @@ public class ClearManegar : MonoBehaviour
     public void BuckTitle()
     {
         Time.timeScale = 1f;
+        Timer.ShowTimer(false);
         SceneManager.LoadScene(0);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -143,6 +145,8 @@ public class ClearManegar : MonoBehaviour
         OverBuckButton.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+
+        Timer.ShowTimer(true);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
