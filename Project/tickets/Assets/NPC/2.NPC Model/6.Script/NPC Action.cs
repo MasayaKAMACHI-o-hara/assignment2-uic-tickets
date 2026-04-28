@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,11 +10,19 @@ public class NPCAction : MonoBehaviour
     [Header("移動経由地点のオブジェクト")]
     [SerializeField] private Transform[] wayTransform;
     [SerializeField] private Collider[] wayCollider;
+    [Header("缶")]
+    [SerializeField] private Rigidbody KanRigidbody;
+    [SerializeField] private AudioSource KanAudioSource;
+    [SerializeField] private AudioClip KanAudioClip;
+    [Header("スピーカー")]
+    [SerializeField] private AudioSource audioSource;
     //アニメーションのbool関数
     bool idle = true;    //停止
     bool walk = false;   //歩き
     bool kickNow = false;//蹴り
-
+    [Header("蹴り")]
+    [SerializeField] float kickPower = 30f;
+    [SerializeField] public bool HumanCoffee = false;
     //停止時間カウンター
     float idleTime = 0;
 
@@ -23,7 +32,7 @@ public class NPCAction : MonoBehaviour
     //経由地点のナンバー
     int waypoint = 0;
     //経由地点の要素数
-    int pointMax;//4
+    int pointMax;
 
     //初期設定
     void Start()
@@ -63,12 +72,16 @@ public class NPCAction : MonoBehaviour
                     //最後の経由地点ナンバーなら
                     if (waypoint + 1 == pointMax)
                         waypoint = 0;//初期位置の経由地点ナンバーを指定
-                      //最後以外なら
+                                     //最後以外なら
                     else
                         waypoint++;//次の経由地点ナンバーを指定
 
                     //指定された経由地点の方向を向く
                     Transform.LookAt(wayTransform[waypoint]);
+
+                    //足音再生
+                    audioSource.Play();
+
                 }
             }
             // walk中
@@ -94,12 +107,17 @@ public class NPCAction : MonoBehaviour
             animator.SetBool("idle", true);
             walk = false;
             animator.SetBool("walk", false);
+            //足音停止
+            audioSource.Stop();
         }
     }
 
     //缶発見時関数
     public void OnKanEnter()
     {
+        //足音停止
+        audioSource.Stop();
+
         // キックアニメーションを再生
         animator.SetTrigger("kick");
 
@@ -107,9 +125,33 @@ public class NPCAction : MonoBehaviour
         kickNow = true;
     }
 
-    //アニメーションイベント関数
+    //アニメーションイベント・蹴る関数
+    public void kick()
+    {
+        if (HumanCoffee == false)
+        {
+            if (KanRigidbody != null)
+            {
+                // 1. 飛ばす方向を決定（NPCの正面方向）
+                Vector3 kickDirection = Transform.forward;
+
+                // 2. 少し上に浮かせる力を加えると「蹴った感」が出ます（お好みで）
+                kickDirection += Vector3.up * 1f;
+
+                // 3. 力を加える（速度をリセットしてから加えると安定します）
+                KanRigidbody.linearVelocity = Vector3.zero; // 前の動きをリセット(Unity2023以降はlinearVelocity)
+                KanRigidbody.AddForce(kickDirection.normalized * kickPower, ForceMode.Impulse);
+                KanAudioSource.PlayOneShot(KanAudioClip);
+                Debug.Log("缶を蹴飛ばしました！");
+            }
+        }
+    }
+    //アニメーションイベント・キックアニメーション終了時関数
     public void KickEnd()
     {
+        //足音再生
+        audioSource.Play();
+
         //蹴っていない
         kickNow = false;
     }
