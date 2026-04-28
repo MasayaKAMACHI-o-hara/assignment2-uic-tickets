@@ -35,6 +35,7 @@ public class start : MonoBehaviour
         TiteleLogo.SetActive(false);
         GameUI.SetActive(true);
         Syaka.ActiveSyaka = true;
+        Timer.ShowTimer(true);
 
         Timer.TimerStart();
         Cursor.visible = false;
