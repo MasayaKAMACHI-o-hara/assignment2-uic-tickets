@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class HideIfFar : MonoBehaviour
 {
@@ -26,4 +27,19 @@ public class HideIfFar : MonoBehaviour
             r.enabled = shouldShow;
         }
     }
+
+    public void ExtendVisibleDistance(float extraDistance, float duration)
+    {
+        StartCoroutine(ExtendDistanceCoroutine(extraDistance, duration));
+    }
+
+    private IEnumerator ExtendDistanceCoroutine(float extraDistance, float duration)
+    {
+        float originalDistance = visibleDistance;
+        visibleDistance += extraDistance;
+        yield return new WaitForSeconds(duration);
+        visibleDistance = originalDistance;
+    }
+
+    // ExtendVisibleDistance(9999f, 60f); ”ÍˆÍ‚ğL‚°‚éê‡‚Í‚±‚ê‚ğŒÄ‚Ño‚µ‚Ä‚­‚¾‚³‚¢B1•ªŒã‚ÉŒø‰Ê‚ÍÁ‚¦‚Ü‚·B
 }
