@@ -23,7 +23,7 @@ public class Coinscript : MonoBehaviour
         {
             // スコアを増やすプログラム
             KanMove kan = other.GetComponent<KanMove>();
-            kan.coin += 10;
+            kan.GetCoin();
 
             // ここで音を鳴らす
             if (getSound != null && audioSource != null)

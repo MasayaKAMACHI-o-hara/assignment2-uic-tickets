@@ -31,6 +31,8 @@ public class KanMove : MonoBehaviour
 
     public int coin = 0;//所持コイン
 
+    public bool CoinUp = false;
+
     [Range(0, 5)]
     public int SpeedLv = 0;//スピードレベル
     [Range(0, 5)]
@@ -43,6 +45,15 @@ public class KanMove : MonoBehaviour
     {
         
     }
+
+    public void GetCoin()
+    {
+        if (CoinUp)
+            coin += 20;
+        else
+            coin += 10;
+    }
+
 
     public　void SpeedUp(int L)//自販機によって、スピードLvが上昇する際に実行
     {

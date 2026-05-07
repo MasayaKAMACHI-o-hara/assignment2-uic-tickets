@@ -18,7 +18,7 @@ public class TrashCountTitleUI : MonoBehaviour
 
         if (countText != null)
         {
-            countText.text = foundCount + " / " + 12;
+            countText.text = foundCount + " / " + 13;
         }
     }
 }

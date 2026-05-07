@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\scoreUI_test\scoreUI_rotetion.cs" />
+    <Compile Include="Assets\script\Clash.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Vending and Drink\1.Vending\3.Script\DrinkManager.cs" />
     <Compile Include="Assets\Hash Game studios\Trash Bag &amp; Trash Box\Scripts\Core\Render\HighResScreenshot.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Vending and Drink\1.Vending\3.Script\UpgradeData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\script\TurningPoint.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\object\GameUI\SyakaGEUI.cs" />
     <Compile Include="Assets\Vending and Drink\1.Vending\3.Script\UpgradeVending.cs" />
@@ -137,10 +139,13 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scenes\judging board_scoreUI\judgingbord_score.cs" />
+    <Compile Include="Assets\Vending and Drink\1.Vending\3.Script\AbilityManegar.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\script\CarWarpPoint.cs" />
     <Compile Include="Assets\NPC\2.NPC Model\6.Script\KickSensor.cs" />
+    <Compile Include="Assets\script\CarMove.cs" />
     <Compile Include="Assets\object\Title\start.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\DropMe.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
