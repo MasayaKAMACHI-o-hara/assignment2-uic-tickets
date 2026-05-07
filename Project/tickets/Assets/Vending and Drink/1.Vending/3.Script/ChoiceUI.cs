@@ -61,6 +61,7 @@ public class ChoiceUI : MonoBehaviour
     //スピーカーの指定
     [NonSerialized] public AudioSource audioSource;
 
+    public AbilityManeger abilityManeger;
 
     //排他ペアの定義で {A, B} のどちらか一方が選ばれたらもう一方は出さない
     private readonly int[,] exclusivePairs = { { 2, 3 }, { 6, 7 }, { 8, 9 } };
@@ -325,7 +326,7 @@ public class ChoiceUI : MonoBehaviour
     #endregion
 
     #region ボタン関数
-    //選択肢1ボタン関数
+    //choiceUI更新 
     public void Choices1Button()
     {
         Debug.Log("選択 : " + Name1.text);
@@ -363,25 +364,19 @@ public class ChoiceUI : MonoBehaviour
         //能力購入時
         else if (BoughtAbility)
         {
-            switch (ADrinkNum1)
+
+            if (ADrinkNum1 >= 0 && ADrinkNum1 < 6)
             {
-                case 0:
-                    Debug.Log("ゴミ箱の位置察知"); break;
-                case 1:
-                    Debug.Log("人に当たっても飛ばされない"); break;
-                case 2:
-                    Debug.Log("車に当たってもやられない"); break;
-                case 3:
-                    Debug.Log("コインの取得範囲上昇"); break;
-                case 4:
-                    Debug.Log("コインの取得倍増"); break;
-                case 5:
-                    Debug.Log("発射中にSPACEを押すと降下ができる"); break;
-                case 6:
-                    kanMove.coin += 210; break;
-                default:
-                    break;
+                abilityManeger.GetAbility(ADrinkNum1);
+
             }
+            else if (ADrinkNum1 == 6)
+            {
+                kanMove.coin += 210;
+
+            }
+
+
         }
         BoughtUpgrade = false;
         BoughtAbility = false;
@@ -426,24 +421,15 @@ public class ChoiceUI : MonoBehaviour
         //能力購入時
         else if (BoughtAbility)
         {
-            switch (ADrinkNum2)
+            if (ADrinkNum2 >= 0 && ADrinkNum2 < 6)
             {
-                case 0:
-                    Debug.Log("ゴミ箱の位置察知"); break;
-                case 1:
-                    Debug.Log("人に当たっても飛ばされない"); break;
-                case 2:
-                    Debug.Log("車に当たってもやられない"); break;
-                case 3:
-                    Debug.Log("コインの取得範囲上昇"); break;
-                case 4:
-                    Debug.Log("コインの取得倍増"); break;
-                case 5:
-                    Debug.Log("発射中にSPACEを押すと降下ができる"); break;
-                case 6:
-                    kanMove.coin += 210; break;
-                default:
-                    break;
+                abilityManeger.GetAbility(ADrinkNum2);
+
+            }
+            else if (ADrinkNum2 == 6)
+            {
+                kanMove.coin += 210;
+
             }
         }
         BoughtUpgrade = false;
@@ -489,24 +475,15 @@ public class ChoiceUI : MonoBehaviour
         //能力購入時
         else if (BoughtAbility)
         {
-            switch (ADrinkNum3)
+            if (ADrinkNum3 >= 0 && ADrinkNum3 < 6)
             {
-                case 0:
-                    Debug.Log("ゴミ箱の位置察知"); break;
-                case 1:
-                    Debug.Log("人に当たっても飛ばされない"); break;
-                case 2:
-                    Debug.Log("車に当たってもやられない"); break;
-                case 3:
-                    Debug.Log("コインの取得範囲上昇"); break;
-                case 4:
-                    Debug.Log("コインの取得倍増"); break;
-                case 5:
-                    Debug.Log("発射中にSPACEを押すと降下ができる"); break;
-                case 6:
-                    kanMove.coin += 210; break;
-                default:
-                    break;
+                abilityManeger.GetAbility(ADrinkNum3);
+
+            }
+            else if (ADrinkNum3 == 6)
+            {
+                kanMove.coin += 210;
+
             }
         }
         BoughtUpgrade = false;
