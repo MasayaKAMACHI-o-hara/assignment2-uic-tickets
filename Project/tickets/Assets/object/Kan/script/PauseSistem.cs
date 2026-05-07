@@ -4,7 +4,7 @@ public class PauseSistem : MonoBehaviour
 {
 
     public bool IsActiveESC = false;
-    private bool IsActivePause = false;
+    public bool IsActivePause = false;
 
     public GameObject PauseUI;
     public CountDown Timer;
@@ -23,7 +23,7 @@ public class PauseSistem : MonoBehaviour
     {
         if (IsActivePause)//もし現在ポーズ中なら
         {
-            PauseUI.transform.position += new Vector3(2000, 0, 0);//ポーズ画面表示
+            PauseUI.transform.position += new Vector3(2000, 0, 0);//非表示
             Time.timeScale = 1f;
             IsActivePause = false;
             Cursor.visible = false;
@@ -32,10 +32,12 @@ public class PauseSistem : MonoBehaviour
             Kan.ActiveMove = true;
             Camera.ActiveMove = true;
             Syaka.ActiveSyaka = true;
+            Kan.SE.UnPause();
+            Syaka.SE.UnPause();
         }
         else
         {
-            PauseUI.transform.position -= new Vector3(2000, 0, 0);//非表示
+            PauseUI.transform.position -= new Vector3(2000, 0, 0);//ポーズ画面表示
             Time.timeScale = 0f;
             IsActivePause = true;
             Cursor.visible = true;
@@ -44,6 +46,8 @@ public class PauseSistem : MonoBehaviour
             Kan.ActiveMove = false;
             Camera.ActiveMove = false;
             Syaka.ActiveSyaka = false;
+            Kan.SE.Pause();
+            Syaka.SE.Pause();
         }
     }
 
@@ -54,7 +58,5 @@ public class PauseSistem : MonoBehaviour
         {
             PressESC();
         }
-
-
     }
 }

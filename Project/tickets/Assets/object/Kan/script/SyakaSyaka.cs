@@ -1,3 +1,4 @@
+//syakasyaka
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
@@ -17,6 +18,16 @@ public class SyakaSyaka : MonoBehaviour
     public bool IsActiveSpace = false;
 
     public bool ActiveSyaka = false;
+
+    public AudioSource SE;
+
+    public AudioClip FallSound;
+
+    public AudioClip StartChargeSound;
+    public AudioClip ChargeConpleteSound;
+    public AudioClip ShotSound;
+    public AudioClip SyuwaSound;
+    public AudioClip SyuwaEndSound;
 
     public float SyakaPoint;
     public float Syakacount;
@@ -62,12 +73,12 @@ public class SyakaSyaka : MonoBehaviour
 
     public void GageUp(int L)//自販機によって、ゲージ獲得倍率Lvが上昇する際に実行
     {
-        if(GetSyakaLv < 5)
+        if (GetSyakaLv < 5)
         {
             GetSyakaLv += L;
             if (GetSyakaLv > 5)
                 GetSyakaLv = 5;
-            SyakaE = 1 + (GetSyakaLv*2)/10;//現在のジャンプレベルに合わせてジャンプ力を上昇させる
+            SyakaE = 1 + (GetSyakaLv * 2) / 10;//現在のジャンプレベルに合わせてジャンプ力を上昇させる
         }
     }
 
@@ -93,7 +104,7 @@ public class SyakaSyaka : MonoBehaviour
             int layerMask = ~(1 << LayerMask.NameToLayer("Kan"));
 
             // 最後の引数に layerMask を入れることで、自分（Player）を無視して光線を飛ばせる
-            Syaka = Physics.Raycast(transform.position, Vector3.down, 1.1f, layerMask);
+            Syaka = Physics.Raycast(transform.position, Vector3.down, 0.3f, layerMask);
 
             if (!Syaka && !SyakaStart && !IsActiveFly && !ChargeStart) //もし現在自分の下にオブジェクトがないなら
             {
@@ -144,7 +155,10 @@ public class SyakaSyaka : MonoBehaviour
                     mathZ = StartPos.z - nowPos.z;
                 }
 
-                float MathQ = (mathX / 2) + mathY + (mathZ / 2);
+                float MathQ = (mathX / 4) + mathY + (mathZ / 4);
+                //　シャカゲのたまり方を無理やり半減してほとんど解決かもしれない可能性なきにしもあらず→                MathQ = MathQ / 2;
+
+                Debug.Log("MathQ=" + MathQ);
 
                 if (MathQ < 0)
                 {
@@ -158,6 +172,13 @@ public class SyakaSyaka : MonoBehaviour
                     SyakaPoint = 100;
                 }
                 SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
+
+                if (MathQ * SyakaE >= 10)
+                {
+                    SE.PlayOneShot(FallSound);
+                }
+
+
                 SyakaStart = false;//シャカシャカゲージ貯め終了
             }
 
@@ -182,6 +203,8 @@ public class SyakaSyaka : MonoBehaviour
                     IsActiveFall = false;
                     ColaP.SetActive(false);
                     BubbleP.SetActive(false);
+                    SE.Stop();
+                    SE.PlayOneShot(SyuwaEndSound);
 
                 }
 
@@ -196,9 +219,8 @@ public class SyakaSyaka : MonoBehaviour
                 ChargeEnd = true;
                 // 最新のプロパティで速度をリセット
                 Rb.linearVelocity = Vector3.zero;
-
-                // 回転速度も新しいやつがあるよ
                 Rb.angularVelocity = Vector3.zero;
+                SE.PlayOneShot(StartChargeSound);
             }
 
 
@@ -224,15 +246,21 @@ public class SyakaSyaka : MonoBehaviour
 
                 houkou.SetActive(true);
 
-                if (SyakaPoint >= 1.0f)
+                if (SyakaPoint >= 1.0f)//もしシャカシャカゲージをたまっているなら
                 {
                     SyakaRemove += 1.0f;
-                    if (SyakaRemove > 10.0f)
+                    if (SyakaRemove > 10.0f)//10フレーム毎で
                     {
-                        SyakaPoint -= 1.0f;
-                        SyakaCharge += 1.0f;
-                        SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
+                        SyakaPoint -= 1.0f;//シャカシャカポイントを１減少させる。
+                        SyakaCharge += 1.0f;//１ptチャージする
+                        SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();//UI表記を変更する。
                         SyakaRemove = 0;
+                    }
+
+                    if (SyakaPoint < 1)
+                    {
+                        SE.Stop();
+                        SE.PlayOneShot(ChargeConpleteSound);//チャージが完了したら音を出す。
                     }
                 }
                 else
@@ -269,6 +297,9 @@ public class SyakaSyaka : MonoBehaviour
 
                 // これに強さを掛けるて弾き飛ばす
                 Rb.AddForce(slantDirection * syakaPower);
+                SE.Stop();
+                SE.PlayOneShot(ShotSound);
+                SE.PlayOneShot(SyuwaSound);//発射するときの音を出す
             }
 
             // 飛んでいる最中にスペースキーが押されたら

@@ -25424,6 +25424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsActiveESC: 0
+  IsActivePause: 0
   PauseUI: {fileID: 518705763}
   Timer: {fileID: 1951965458}
   Camera: {fileID: 970514505}
@@ -61149,6 +61150,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: SE
+      value: 
+      objectReference: {fileID: 1849665489}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: cola
       value: 
       objectReference: {fileID: 627718692}
@@ -61165,13 +61170,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 998956382}
     - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: FallSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 273f628fde9d6d24290b43a6f0032bb1, type: 3}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: ShotSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c6c396c2ac5c8742a1b78ac80e29efa, type: 3}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: flashcola
       value: 
       objectReference: {fileID: 1240752668}
     - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: SyuwaSound
+      value: 
+      objectReference: {fileID: 8300000, guid: db536777e79dad448ab1d663a6c7dbdd, type: 3}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: SyakaRootUI
       value: 
       objectReference: {fileID: 658668346}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: SyuwaEndSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 399388e823518c54b8d74b4359403780, type: 3}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: StartChargeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: dc2045a6f3e0582438f85155c75d8a3c, type: 3}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: ChargeConpleteSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 02eb6387efda1e544bba6ea50a5ce605, type: 3}
     - target: {fileID: 2359884204908738987, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: m_LocalPosition.x
       value: -133.51
@@ -61217,6 +61246,10 @@ PrefabInstance:
       value: KAN
       objectReference: {fileID: 0}
     - target: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: SE
+      value: 
+      objectReference: {fileID: 1849665489}
+    - target: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: coin
       value: 100
       objectReference: {fileID: 0}
@@ -61232,6 +61265,10 @@ PrefabInstance:
       propertyPath: MaxSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: JumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c2350477f828ce42967f025f4611409, type: 3}
     - target: {fileID: 8366870683834519928, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: m_CollisionDetection
       value: 1

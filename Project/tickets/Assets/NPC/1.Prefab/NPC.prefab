@@ -412,6 +412,7 @@ MonoBehaviour:
   audioSource: {fileID: 1923112340348111886}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &2017929711907256814
 Animator:
   serializedVersion: 7
@@ -505,10 +506,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -5792,6 +5793,7 @@ MonoBehaviour:
   audioSource: {fileID: 8082730498853640782}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &3274070975380830087
 Animator:
   serializedVersion: 7
@@ -5885,10 +5887,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -7066,6 +7068,7 @@ MonoBehaviour:
   audioSource: {fileID: 7098975444716469804}
   kickPower: 50
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &5706744828815891549
 Animator:
   serializedVersion: 7
@@ -7159,10 +7162,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -10129,6 +10132,7 @@ MonoBehaviour:
   audioSource: {fileID: 4731813250145413505}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &3477955022147155336
 Animator:
   serializedVersion: 7
@@ -10222,10 +10226,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -14348,6 +14352,7 @@ MonoBehaviour:
   audioSource: {fileID: 4011660382524509136}
   kickPower: 50
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &7911732517592673085
 Animator:
   serializedVersion: 7
@@ -14441,10 +14446,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -14829,6 +14834,7 @@ MonoBehaviour:
   audioSource: {fileID: 2217276874705737287}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &681056391630671375
 Animator:
   serializedVersion: 7
@@ -14922,10 +14928,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -15311,6 +15317,7 @@ MonoBehaviour:
   audioSource: {fileID: 3197245423582199780}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &6766322086520924382
 Animator:
   serializedVersion: 7
@@ -15404,10 +15411,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -17749,6 +17756,7 @@ MonoBehaviour:
   audioSource: {fileID: 2806757032722409392}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &6294214358634686103
 Animator:
   serializedVersion: 7
@@ -17842,10 +17850,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -20588,6 +20596,7 @@ MonoBehaviour:
   audioSource: {fileID: 1466613012780248097}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &7001771824885531995
 Animator:
   serializedVersion: 7
@@ -20681,10 +20690,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -21172,6 +21181,7 @@ MonoBehaviour:
   audioSource: {fileID: 8508852274027715898}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &6946779702681354733
 Animator:
   serializedVersion: 7
@@ -21265,10 +21275,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -22286,6 +22296,7 @@ MonoBehaviour:
   audioSource: {fileID: 3804782203021510580}
   kickPower: 50
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &928902576937624032
 Animator:
   serializedVersion: 7
@@ -22379,10 +22390,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -22588,6 +22599,7 @@ MonoBehaviour:
   audioSource: {fileID: 1195819451301808930}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &4727705796197650657
 Animator:
   serializedVersion: 7
@@ -22681,10 +22693,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -23040,6 +23052,7 @@ MonoBehaviour:
   audioSource: {fileID: 6888966995311048863}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &940616737828937259
 Animator:
   serializedVersion: 7
@@ -23133,10 +23146,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -25595,6 +25608,7 @@ MonoBehaviour:
   audioSource: {fileID: 8115097615485405449}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &5891234122537901921
 Animator:
   serializedVersion: 7
@@ -25688,10 +25702,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -26226,6 +26240,7 @@ MonoBehaviour:
   audioSource: {fileID: 8608120353211837440}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &8415044587893879286
 Animator:
   serializedVersion: 7
@@ -26319,10 +26334,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -26710,6 +26725,7 @@ MonoBehaviour:
   audioSource: {fileID: 6877354311476545559}
   kickPower: 50
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &4363901786975497864
 Animator:
   serializedVersion: 7
@@ -26803,10 +26819,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -27752,6 +27768,7 @@ MonoBehaviour:
   audioSource: {fileID: 5340573937470537007}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &8253361372130734834
 Animator:
   serializedVersion: 7
@@ -27845,10 +27862,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -30553,6 +30570,7 @@ MonoBehaviour:
   audioSource: {fileID: 3973714662794146922}
   kickPower: 50
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &3065906854988924501
 Animator:
   serializedVersion: 7
@@ -30646,10 +30664,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -31107,6 +31125,7 @@ MonoBehaviour:
   audioSource: {fileID: 2362746741635973446}
   kickPower: 50
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &3135062725809686837
 Animator:
   serializedVersion: 7
@@ -31200,10 +31219,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -31845,6 +31864,7 @@ MonoBehaviour:
   audioSource: {fileID: 6695430985720505380}
   kickPower: 40
   HumanCoffee: 0
+  pauseSistem: {fileID: 0}
 --- !u!95 &5391087128649577454
 Animator:
   serializedVersion: 7
@@ -31938,10 +31958,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5
+  MinDistance: 2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

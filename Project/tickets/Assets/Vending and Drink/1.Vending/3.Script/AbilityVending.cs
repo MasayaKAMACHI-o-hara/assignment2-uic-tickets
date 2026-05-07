@@ -69,9 +69,6 @@ public class AbilityVending : MonoBehaviour
         //センサーエリア外
         InKanSensorArea = false;
 
-        //カーソル非表示---------------Debug
-        Cursor.visible = false;
-
         // カーソルを画面内で動かせる
         Cursor.lockState = CursorLockMode.Confined;
 

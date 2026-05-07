@@ -1,3 +1,4 @@
+//kanmove
 using UnityEngine;
 
 public class KanMove : MonoBehaviour
@@ -14,6 +15,10 @@ public class KanMove : MonoBehaviour
     public Transform Camera;
 
     public ClearManegar ClearUI;
+
+    public AudioSource SE;
+
+    public AudioClip JumpSound;
 
     public float Speed = 0;
 
@@ -38,12 +43,12 @@ public class KanMove : MonoBehaviour
     [Range(0, 5)]
     public int JumpLv = 0;//ジャンプレベル
 
-     
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     public void GetCoin()
@@ -55,14 +60,14 @@ public class KanMove : MonoBehaviour
     }
 
 
-    public　void SpeedUp(int L)//自販機によって、スピードLvが上昇する際に実行
+    public void SpeedUp(int L)//自販機によって、スピードLvが上昇する際に実行
     {
         if (SpeedLv < 5)
         {
             SpeedLv += L;
             if (SpeedLv > 5)
                 SpeedLv = 5;
-            MaxSpeed = 2*SpeedLv;//現在のスピードレベルに合わせて最高速度を上昇させる
+            MaxSpeed = 2 * SpeedLv;//現在のスピードレベルに合わせて最高速度を上昇させる
         }
     }
 
@@ -80,7 +85,7 @@ public class KanMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ActiveMove)
+        if (ActiveMove)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -140,6 +145,7 @@ public class KanMove : MonoBehaviour
                 if (isGrounded && Input.GetKeyDown(KeyCode.Space))
                 {
                     body.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
+                    SE.PlayOneShot(JumpSound);
                 }
             }
             // カメラの正面方向を取得
@@ -154,7 +160,7 @@ public class KanMove : MonoBehaviour
                 this.body.AddForce(forward * Speed);
 
 
-            if(transform.position.y < -10)
+            if (transform.position.y < -10)
             {
                 StartCoroutine(ClearUI.GameEnd());
             }
@@ -163,5 +169,5 @@ public class KanMove : MonoBehaviour
         }
 
     }
-    
+
 }
