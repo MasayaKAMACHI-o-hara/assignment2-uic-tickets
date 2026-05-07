@@ -4,7 +4,7 @@ public class PauseSistem : MonoBehaviour
 {
 
     public bool IsActiveESC = false;
-    private bool IsActivePause = false;
+    public bool IsActivePause = false;
 
     public GameObject PauseUI;
     public CountDown Timer;
