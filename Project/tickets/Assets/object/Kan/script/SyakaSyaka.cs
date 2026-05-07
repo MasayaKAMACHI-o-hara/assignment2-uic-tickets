@@ -224,13 +224,13 @@ public class SyakaSyaka : MonoBehaviour
 
                 houkou.SetActive(true);
 
-                if (SyakaPoint > 1)
+                if (SyakaPoint >= 1.0f)
                 {
-                    SyakaRemove++;
-                    if (SyakaRemove > 10)
+                    SyakaRemove += 1.0f;
+                    if (SyakaRemove > 10.0f)
                     {
-                        SyakaPoint--;
-                        SyakaCharge++;
+                        SyakaPoint -= 1.0f;
+                        SyakaCharge += 1.0f;
                         SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
                         SyakaRemove = 0;
                     }

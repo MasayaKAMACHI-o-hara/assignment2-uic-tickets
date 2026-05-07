@@ -23,7 +23,7 @@ public class PauseSistem : MonoBehaviour
     {
         if (IsActivePause)//もし現在ポーズ中なら
         {
-            PauseUI.transform.position += new Vector3(2000, 0, 0);//ポーズ画面表示
+            PauseUI.transform.position += new Vector3(2000, 0, 0);//非表示
             Time.timeScale = 1f;
             IsActivePause = false;
             Cursor.visible = false;
@@ -35,7 +35,7 @@ public class PauseSistem : MonoBehaviour
         }
         else
         {
-            PauseUI.transform.position -= new Vector3(2000, 0, 0);//非表示
+            PauseUI.transform.position -= new Vector3(2000, 0, 0);//ポーズ画面表示
             Time.timeScale = 0f;
             IsActivePause = true;
             Cursor.visible = true;
@@ -54,7 +54,5 @@ public class PauseSistem : MonoBehaviour
         {
             PressESC();
         }
-
-
     }
 }

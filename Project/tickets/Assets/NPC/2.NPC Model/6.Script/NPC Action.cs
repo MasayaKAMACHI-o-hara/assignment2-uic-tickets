@@ -141,7 +141,7 @@ public class NPCAction : MonoBehaviour
                 // 3. 力を加える（速度をリセットしてから加えると安定します）
                 KanRigidbody.linearVelocity = Vector3.zero; // 前の動きをリセット(Unity2023以降はlinearVelocity)
                 KanRigidbody.AddForce(kickDirection.normalized * kickPower, ForceMode.Impulse);
-                KanAudioSource.PlayOneShot(KanAudioClip);
+                //KanAudioSource.PlayOneShot(KanAudioClip);
                 Debug.Log("缶を蹴飛ばしました！");
             }
         }
