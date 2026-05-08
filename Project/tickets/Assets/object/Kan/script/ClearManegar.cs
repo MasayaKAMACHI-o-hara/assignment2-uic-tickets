@@ -31,6 +31,7 @@ public class ClearManegar : MonoBehaviour
 
     public int Coin = 0;
     public int time = 180;
+    public bool IsGameOver;
     public KanMove Kan;
     public CameraMove Camera;
     public PauseSistem Pause;
@@ -152,6 +153,7 @@ public class ClearManegar : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        IsGameOver = false;
     }
 
     // Update is called once per frame

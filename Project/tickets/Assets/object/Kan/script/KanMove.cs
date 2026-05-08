@@ -170,6 +170,7 @@ public class KanMove : MonoBehaviour
 
             if (transform.position.y < -10)
             {
+                ClearUI.IsGameOver = true;
                 StartCoroutine(ClearUI.GameEnd());
             }
 
