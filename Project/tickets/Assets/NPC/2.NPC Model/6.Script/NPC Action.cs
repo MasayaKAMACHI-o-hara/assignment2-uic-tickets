@@ -23,6 +23,8 @@ public class NPCAction : MonoBehaviour
     [Header("蹴り")]
     [SerializeField] float kickPower = 30f;
     [SerializeField] public bool HumanCoffee = false;
+    [Header("ポーズ")]
+    [SerializeField] private PauseSistem pauseSistem;
     //停止時間カウンター
     float idleTime = 0;
 
@@ -92,6 +94,18 @@ public class NPCAction : MonoBehaviour
 
                 //経由地点に向かって歩く
                 transform.position += direction * spped * Time.deltaTime;
+
+                //ポーズ中なら
+                if (pauseSistem.IsActivePause)
+                {
+                    //足音一時停止
+                    audioSource.Pause();
+                }
+                else//ポーズ中じゃなければ
+                {
+                    //足音一時停止解除
+                    audioSource.UnPause();
+                }
             }
         }
     }
@@ -141,7 +155,7 @@ public class NPCAction : MonoBehaviour
                 // 3. 力を加える（速度をリセットしてから加えると安定します）
                 KanRigidbody.linearVelocity = Vector3.zero; // 前の動きをリセット(Unity2023以降はlinearVelocity)
                 KanRigidbody.AddForce(kickDirection.normalized * kickPower, ForceMode.Impulse);
-                //KanAudioSource.PlayOneShot(KanAudioClip);
+                KanAudioSource.PlayOneShot(KanAudioClip);
                 Debug.Log("缶を蹴飛ばしました！");
             }
         }
