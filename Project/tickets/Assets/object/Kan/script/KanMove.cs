@@ -1,4 +1,6 @@
+
 //kanmove
+using System.Collections;
 using UnityEngine;
 
 public class KanMove : MonoBehaviour
@@ -17,8 +19,10 @@ public class KanMove : MonoBehaviour
     public ClearManegar ClearUI;
 
     public AudioSource SE;
+    public AudioSource SERoll;
 
     public AudioClip JumpSound;
+    public AudioClip RollSound;
 
     public float Speed = 0;
 
@@ -33,6 +37,8 @@ public class KanMove : MonoBehaviour
     public SyakaSyaka isFly;
 
     public bool ActiveMove = false;
+
+    public bool ActiveSound = false;
 
     public int coin = 0;//所持コイン
 
@@ -81,6 +87,9 @@ public class KanMove : MonoBehaviour
             JumpPower = 10 + JumpLv;//現在のジャンプレベルに合わせてジャンプ力を上昇させる
         }
     }
+
+
+   
 
     // Update is called once per frame
     void Update()
@@ -159,6 +168,11 @@ public class KanMove : MonoBehaviour
             if (body.linearVelocity.magnitude < MaxSpeed)
                 this.body.AddForce(forward * Speed);
 
+       
+            else
+            {
+                SERoll.Stop();
+            }
 
             if (transform.position.y < -10)
             {
