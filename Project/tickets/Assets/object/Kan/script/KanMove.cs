@@ -168,11 +168,6 @@ public class KanMove : MonoBehaviour
             if (body.linearVelocity.magnitude < MaxSpeed)
                 this.body.AddForce(forward * Speed);
 
-       
-            else
-            {
-                SERoll.Stop();
-            }
 
             if (transform.position.y < -10)
             {
