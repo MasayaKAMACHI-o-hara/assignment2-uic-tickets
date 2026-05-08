@@ -4,169 +4,169 @@ using UnityEngine;
 
 public class NPCAction : MonoBehaviour
 {
-    [Header("NPC‚ÌƒIƒuƒWƒFƒNƒg")]
+    [Header("NPCï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½g")]
     [SerializeField] private Transform Transform;
     [SerializeField] private Animator animator;
-    [Header("ˆÚ“®Œo—R’n“_‚ÌƒIƒuƒWƒFƒNƒg")]
+    [Header("ï¿½Ú“ï¿½ï¿½oï¿½Rï¿½nï¿½_ï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½g")]
     [SerializeField] private Transform[] wayTransform;
     [SerializeField] private Collider[] wayCollider;
-    [Header("ŠÊ")]
+    [Header("ï¿½ï¿½")]
     [SerializeField] private Rigidbody KanRigidbody;
     [SerializeField] private AudioSource KanAudioSource;
     [SerializeField] private AudioClip KanAudioClip;
-    [Header("ƒXƒs[ƒJ[")]
+    [Header("ï¿½Xï¿½sï¿½[ï¿½Jï¿½[")]
     [SerializeField] private AudioSource audioSource;
-    //ƒAƒjƒ[ƒVƒ‡ƒ“‚ÌboolŠÖ”
-    bool idle = true;    //’âŽ~
-    bool walk = false;   //•à‚«
-    bool kickNow = false;//R‚è
-    [Header("R‚è")]
+    //ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½boolï¿½Öï¿½
+    bool idle = true;    //ï¿½ï¿½~
+    bool walk = false;   //ï¿½ï¿½ï¿½
+    bool kickNow = false;//ï¿½Rï¿½ï¿½
+    [Header("ï¿½Rï¿½ï¿½")]
     [SerializeField] float kickPower = 30f;
     [SerializeField] public bool HumanCoffee = false;
-    [Header("ƒ|[ƒY")]
+    [Header("ï¿½|ï¿½[ï¿½Y")]
     [SerializeField] private PauseSistem pauseSistem;
-    //’âŽ~ŽžŠÔƒJƒEƒ“ƒ^[
+    //ï¿½ï¿½~ï¿½ï¿½ï¿½ÔƒJï¿½Eï¿½ï¿½ï¿½^ï¿½[
     float idleTime = 0;
 
-    //ˆÚ“®‘¬“x
+    //ï¿½Ú“ï¿½ï¿½ï¿½ï¿½x
     float spped = 1.5f;
 
-    //Œo—R’n“_‚Ìƒiƒ“ƒo[
+    //ï¿½oï¿½Rï¿½nï¿½_ï¿½Ìƒiï¿½ï¿½ï¿½oï¿½[
     int waypoint = 0;
-    //Œo—R’n“_‚Ì—v‘f”
+    //ï¿½oï¿½Rï¿½nï¿½_ï¿½Ì—vï¿½fï¿½ï¿½
     int pointMax;
 
-    //‰ŠúÝ’è
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ý’ï¿½
     void Start()
     {
-        //ƒAƒjƒ[ƒVƒ‡ƒ“‚Ì‰Šúó‘ÔÝ’è
+        //ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½ÔÝ’ï¿½
         animator.SetBool("idle", true);
         animator.SetBool("walk", false);
 
-        //Œo—R’n“_‚Ì—v‘f”‚ðŽæ“¾
+        //ï¿½oï¿½Rï¿½nï¿½_ï¿½Ì—vï¿½fï¿½ï¿½ï¿½ï¿½æ“¾
         pointMax = wayTransform.Length;
     }
 
-    //ƒƒCƒ“ŠÖ”
+    //ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½Öï¿½
     void Update()
     {
-        //R‚Á‚Ä‚¢‚È‚¯‚ê‚Î
+        //ï¿½Rï¿½ï¿½ï¿½Ä‚ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½
         if (!kickNow)
         {
-            // idle’†
+            // idleï¿½ï¿½
             if (idle)
             {
-                //’âŽ~ŽžŠÔƒJƒEƒ“ƒg
+                //ï¿½ï¿½~ï¿½ï¿½ï¿½ÔƒJï¿½Eï¿½ï¿½ï¿½g
                 idleTime += Time.deltaTime;
 
-                //’âŽ~ŽžŠÔ‚ªI‚í‚Á‚½‚ç
+                //ï¿½ï¿½~ï¿½ï¿½ï¿½Ô‚ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 if (idleTime >= 4)
                 {
-                    //ó‘ÔEƒAƒjƒ[ƒVƒ‡ƒ“Ø‚è‘Ö‚¦
+                    //ï¿½ï¿½ÔEï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Ø‚ï¿½Ö‚ï¿½
                     idle = false;
                     animator.SetBool("idle", false);
                     walk = true;
                     animator.SetBool("walk", true);
 
-                    //’âŽ~ŽžŠÔƒŠƒZƒbƒg
+                    //ï¿½ï¿½~ï¿½ï¿½ï¿½Ôƒï¿½ï¿½Zï¿½bï¿½g
                     idleTime = 0;
 
-                    //ÅŒã‚ÌŒo—R’n“_ƒiƒ“ƒo[‚È‚ç
+                    //ï¿½ÅŒï¿½ÌŒoï¿½Rï¿½nï¿½_ï¿½iï¿½ï¿½ï¿½oï¿½[ï¿½È‚ï¿½
                     if (waypoint + 1 == pointMax)
-                        waypoint = 0;//‰ŠúˆÊ’u‚ÌŒo—R’n“_ƒiƒ“ƒo[‚ðŽw’è
-                                     //ÅŒãˆÈŠO‚È‚ç
+                        waypoint = 0;//ï¿½ï¿½ï¿½ï¿½ï¿½Ê’uï¿½ÌŒoï¿½Rï¿½nï¿½_ï¿½iï¿½ï¿½ï¿½oï¿½[ï¿½ï¿½wï¿½ï¿½
+                                     //ï¿½ÅŒï¿½ÈŠOï¿½È‚ï¿½
                     else
-                        waypoint++;//ŽŸ‚ÌŒo—R’n“_ƒiƒ“ƒo[‚ðŽw’è
+                        waypoint++;//ï¿½ï¿½ï¿½ÌŒoï¿½Rï¿½nï¿½_ï¿½iï¿½ï¿½ï¿½oï¿½[ï¿½ï¿½wï¿½ï¿½
 
-                    //Žw’è‚³‚ê‚½Œo—R’n“_‚Ì•ûŒü‚ðŒü‚­
+                    //ï¿½wï¿½è‚³ï¿½ê‚½ï¿½oï¿½Rï¿½nï¿½_ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     Transform.LookAt(wayTransform[waypoint]);
 
-                    //‘«‰¹Ä¶
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½
                     audioSource.Play();
 
                 }
             }
-            // walk’†
+            // walkï¿½ï¿½
             if (walk)
             {
-                //Œo—R’n“_•ûŒü‚ÌƒxƒNƒgƒ‹‚ðŒvŽZ
+                //ï¿½oï¿½Rï¿½nï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Ìƒxï¿½Nï¿½gï¿½ï¿½ï¿½ï¿½vï¿½Z
                 Vector3 direction = (wayTransform[waypoint].position - Transform.position).normalized;
 
-                //Œo—R’n“_‚ÉŒü‚©‚Á‚Ä•à‚­
+                //ï¿½oï¿½Rï¿½nï¿½_ï¿½ÉŒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½
                 transform.position += direction * spped * Time.deltaTime;
 
-                //ƒ|[ƒY’†‚È‚ç
+                //ï¿½|ï¿½[ï¿½Yï¿½ï¿½ï¿½È‚ï¿½
                 if (pauseSistem.IsActivePause)
                 {
-                    //‘«‰¹ˆêŽž’âŽ~
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½êŽžï¿½ï¿½~
                     audioSource.Pause();
                 }
-                else//ƒ|[ƒY’†‚¶‚á‚È‚¯‚ê‚Î
+                else//ï¿½|ï¿½[ï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½
                 {
-                    //‘«‰¹ˆêŽž’âŽ~‰ðœ
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½êŽžï¿½ï¿½~ï¿½ï¿½ï¿½
                     audioSource.UnPause();
                 }
             }
         }
     }
 
-    //Œo—R’n“_“ž’…ŽžŠÖ”
+    //ï¿½oï¿½Rï¿½nï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½
     private void OnTriggerEnter(Collider other)
     {
-        //Œo—R’n“_‚ÉG‚ê‚ê‚Î
+        //ï¿½oï¿½Rï¿½nï¿½_ï¿½ÉGï¿½ï¿½ï¿½ï¿½
         if (other == wayCollider[waypoint])
         {
-            //ó‘ÔEƒAƒjƒ[ƒVƒ‡ƒ“Ø‚è‘Ö‚¦
+            //ï¿½ï¿½ÔEï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Ø‚ï¿½Ö‚ï¿½
             idle = true;
             animator.SetBool("idle", true);
             walk = false;
             animator.SetBool("walk", false);
-            //‘«‰¹’âŽ~
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~
             audioSource.Stop();
         }
     }
 
-    //ŠÊ”­Œ©ŽžŠÖ”
+    //ï¿½Ê”ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½
     public void OnKanEnter()
     {
-        //‘«‰¹’âŽ~
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~
         audioSource.Stop();
 
-        // ƒLƒbƒNƒAƒjƒ[ƒVƒ‡ƒ“‚ðÄ¶
+        // ï¿½Lï¿½bï¿½Nï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½
         animator.SetTrigger("kick");
 
-        //R‚Á‚Ä‚¢‚é
+        //ï¿½Rï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
         kickNow = true;
     }
 
-    //ƒAƒjƒ[ƒVƒ‡ƒ“ƒCƒxƒ“ƒgER‚éŠÖ”
+    //ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½xï¿½ï¿½ï¿½gï¿½Eï¿½Rï¿½ï¿½Öï¿½
     public void kick()
     {
         if (HumanCoffee == false)
         {
             if (KanRigidbody != null)
             {
-                // 1. ”ò‚Î‚·•ûŒü‚ðŒˆ’èiNPC‚Ì³–Ê•ûŒüj
+                // 1. ï¿½ï¿½Î‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iNPCï¿½Ìï¿½ï¿½Ê•ï¿½ï¿½ï¿½ï¿½j
                 Vector3 kickDirection = Transform.forward;
 
-                // 2. ­‚µã‚É•‚‚©‚¹‚é—Í‚ð‰Á‚¦‚é‚ÆuR‚Á‚½Š´v‚ªo‚Ü‚·i‚¨D‚Ý‚Åj
+                // 2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æuï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½oï¿½Ü‚ï¿½ï¿½iï¿½ï¿½ï¿½Dï¿½Ý‚Åj
                 kickDirection += Vector3.up * 1.5f;
 
-                // 3. —Í‚ð‰Á‚¦‚éi‘¬“x‚ðƒŠƒZƒbƒg‚µ‚Ä‚©‚ç‰Á‚¦‚é‚ÆˆÀ’è‚µ‚Ü‚·j
-                KanRigidbody.linearVelocity = Vector3.zero; // ‘O‚Ì“®‚«‚ðƒŠƒZƒbƒg(Unity2023ˆÈ~‚ÍlinearVelocity)
+                // 3. ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½gï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æˆï¿½ï¿½è‚µï¿½Ü‚ï¿½ï¿½j
+                KanRigidbody.linearVelocity = Vector3.zero; // ï¿½Oï¿½Ì“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½g(Unity2023ï¿½È~ï¿½ï¿½linearVelocity)
                 KanRigidbody.AddForce(kickDirection.normalized * kickPower, ForceMode.Impulse);
                 KanAudioSource.PlayOneShot(KanAudioClip);
-                Debug.Log("ŠÊ‚ðR”ò‚Î‚µ‚Ü‚µ‚½I");
+                Debug.Log("ï¿½Ê‚ï¿½Rï¿½ï¿½Î‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½I");
             }
         }
     }
-    //ƒAƒjƒ[ƒVƒ‡ƒ“ƒCƒxƒ“ƒgEƒLƒbƒNƒAƒjƒ[ƒVƒ‡ƒ“I—¹ŽžŠÖ”
+    //ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½xï¿½ï¿½ï¿½gï¿½Eï¿½Lï¿½bï¿½Nï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½
     public void KickEnd()
     {
-        //‘«‰¹Ä¶
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½
         audioSource.Play();
 
-        //R‚Á‚Ä‚¢‚È‚¢
+        //ï¿½Rï¿½ï¿½ï¿½Ä‚ï¿½ï¿½È‚ï¿½
         kickNow = false;
     }
 }

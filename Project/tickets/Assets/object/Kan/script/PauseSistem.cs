@@ -32,6 +32,8 @@ public class PauseSistem : MonoBehaviour
             Kan.ActiveMove = true;
             Camera.ActiveMove = true;
             Syaka.ActiveSyaka = true;
+            Kan.SE.UnPause();
+            Syaka.SE.UnPause();
         }
         else
         {
@@ -44,6 +46,8 @@ public class PauseSistem : MonoBehaviour
             Kan.ActiveMove = false;
             Camera.ActiveMove = false;
             Syaka.ActiveSyaka = false;
+            Kan.SE.Pause();
+            Syaka.SE.Pause();
         }
     }
 
