@@ -47,6 +47,9 @@ public class ChoiceUI : MonoBehaviour
     [Header("制限時間")]
     [SerializeField] public CountDown countDown;
 
+    [Header("アビリティタイマー")]
+    [SerializeField] private AbilityTimeUI abilityTimeUI;
+
     //現在画面に表示されている3つのデータを保持するリスト
     private List<UpgradeData> currentDisplayedUpgrades = new List<UpgradeData>();
     private List<AbilityData> currentDisplayedAbilities = new List<AbilityData>();
@@ -356,7 +359,7 @@ public class ChoiceUI : MonoBehaviour
                 case 9:
                     kanMove.SpeedUp(2); break;
                 case 10:
-                    Debug.Log("スコア上昇"); break;
+                    FindFirstObjectByType<ClearManegar>().ScoreBonusCount++; break;
                 default:
                     break;
             }
@@ -368,6 +371,10 @@ public class ChoiceUI : MonoBehaviour
             if (ADrinkNum1 >= 0 && ADrinkNum1 < 6)
             {
                 abilityManeger.GetAbility(ADrinkNum1);
+
+                abilityTimeUI.StartAbility(
+                    currentDisplayedAbilities[0].Image
+                );
 
             }
             else if (ADrinkNum1 == 6)
@@ -413,7 +420,7 @@ public class ChoiceUI : MonoBehaviour
                 case 9:
                     kanMove.SpeedUp(2); break;
                 case 10:
-                    Debug.Log("スコア上昇"); break;
+                    FindFirstObjectByType<ClearManegar>().ScoreBonusCount++; break;
                 default:
                     break;
             }
@@ -424,6 +431,11 @@ public class ChoiceUI : MonoBehaviour
             if (ADrinkNum2 >= 0 && ADrinkNum2 < 6)
             {
                 abilityManeger.GetAbility(ADrinkNum2);
+
+
+                abilityTimeUI.StartAbility(
+                    currentDisplayedAbilities[1].Image
+                );
 
             }
             else if (ADrinkNum2 == 6)
@@ -467,7 +479,7 @@ public class ChoiceUI : MonoBehaviour
                 case 9:
                     kanMove.SpeedUp(2); break;
                 case 10:
-                    Debug.Log("スコア上昇"); break;
+                    FindFirstObjectByType<ClearManegar>().ScoreBonusCount++; break;
                 default:
                     break;
             }
@@ -478,6 +490,11 @@ public class ChoiceUI : MonoBehaviour
             if (ADrinkNum3 >= 0 && ADrinkNum3 < 6)
             {
                 abilityManeger.GetAbility(ADrinkNum3);
+
+
+                abilityTimeUI.StartAbility(
+                    currentDisplayedAbilities[2].Image
+                );
 
             }
             else if (ADrinkNum3 == 6)

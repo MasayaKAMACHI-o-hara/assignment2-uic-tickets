@@ -38,8 +38,6 @@ public class judgingbord_score : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Kan")) return;
 
-        if (clearManegar.IsGameOver == true) return;
-
         clearManegar.StartCoroutine(clearManegar.GameFinish(scoreValue));
 
         if (hasScored) return;

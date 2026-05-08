@@ -4,7 +4,7 @@ using System.Collections;
 using static UnityEngine.GraphicsBuffer;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class ClearManegar : MonoBehaviour
 {
@@ -31,15 +31,42 @@ public class ClearManegar : MonoBehaviour
 
     public int Coin = 0;
     public int time = 180;
-    public bool IsGameOver;
     public KanMove Kan;
     public CameraMove Camera;
     public PauseSistem Pause;
     public CountDown Timer;
     public SyakaSyaka syaka;
 
+    [Header("効果音")]
+    public AudioSource SE;
+
+    public AudioClip SE1;
+    public AudioClip SE2; // katakata
+    public AudioClip SE3; // Score
+    public AudioClip SE4; // TotalScore
+
+    [Header("スコアボーナス")]
+    public int ScoreBonusCount = 0;
+    public int ScoreBonusPoint = 10000; // !!! OSIRUKO !!!
+
+    //public GameObject BonusUI;
+    //public TextMeshProUGUI BonusText;
+    //public Image BonusIcon;
+
+    void PlaySE(AudioClip clip)
+    {
+        if (SE != null && clip != null)
+        {
+            SE.PlayOneShot(clip);
+        }
+    }
+
+
     public IEnumerator GameFinish(int score)
     {
+        Kan.StopKanSound();
+        PlaySE(SE1);
+
         Timer.TimerStop();
         GameUI.SetActive(false);
         Kan.ActiveMove = false;
@@ -51,22 +78,30 @@ public class ClearManegar : MonoBehaviour
 
         ClearUI.transform.position -= new Vector3(0, 2000, 0);
         KanUI.SetActive(true);
+
         Mathscore[0] = score;
         Mathscore[1] = Kan.coin * 100;
         Mathscore[2] = (int)(Timer.currentTime * 100);
 
+        int bonusScore = ScoreBonusCount * ScoreBonusPoint;
 
         for (int i = 0; i < 750; i++)
         {
             yield return null;
         }
 
-
         for (int i = 0; i < 3; i++)
         {
             ScoreUI[i].SetActive(true);
 
             yield return new WaitForSeconds(0.5f);
+
+            if (SE != null && SE2 != null)
+            {
+                SE.clip = SE2;
+                SE.loop = true;
+                SE.Play();
+            }
 
             for (int j = Mathscore[i]; j > 0; j--)
             {
@@ -91,18 +126,39 @@ public class ClearManegar : MonoBehaviour
                 }
             }
 
+            ScoreText[i].text = Mathscore[i].ToString("D6") + "pt";
+
+            if (SE != null)
+            {
+                SE.Stop();
+                SE.loop = false;
+                SE.clip = null;
+            }
+
+            PlaySE(SE3);
+
             for (int j = 0; j < 200; j++)
             {
                 yield return null;
             }
-
         }
 
-        var Mix = Mathscore[0] + Mathscore[1] + Mathscore[2];
+        //if (ScoreBonusCount > 0)
+        //{
+        //    BonusUI.SetActive(true);
+
+        //    BonusText.text =
+        //        "+" + bonusScore.ToString("D6") + "pt";
+
+        //    yield return new WaitForSeconds(1f);
+        //}
+
+        var Mix = Mathscore[0] + Mathscore[1] + Mathscore[2] + bonusScore;
         ScoreUI[3].SetActive(true);
         ScoreText[3].text = Mix.ToString("D6") + "pt";
 
-        // �n�C�X�R�A�ۑ�
+        PlaySE(SE4);
+
         HighScore.SaveHighScore(Mix);
 
         for (int j = 0; j < 200; j++)
@@ -113,7 +169,6 @@ public class ClearManegar : MonoBehaviour
         TitleBuckButton.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-
     }
 
     public void BuckTitle()
@@ -127,6 +182,9 @@ public class ClearManegar : MonoBehaviour
 
     public IEnumerator GameEnd()
     {
+        Kan.StopKanSound();
+        PlaySE(SE1);
+
         Debug.Log("a");
         Timer.TimerStop();
         GameUI.SetActive(false);
@@ -138,7 +196,7 @@ public class ClearManegar : MonoBehaviour
         OverUI.transform.position -= new Vector3(0, 2000, 0);
         KanOverUI.SetActive(true);
 
-        for(int i = 0;i < 200;i++)
+        for (int i = 0; i < 200; i++)
         {
             yield return null;
         }
@@ -153,7 +211,6 @@ public class ClearManegar : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        IsGameOver = false;
     }
 
     // Update is called once per frame

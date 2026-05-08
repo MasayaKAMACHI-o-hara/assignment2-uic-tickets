@@ -49,7 +49,6 @@ public class CountDown : MonoBehaviour
             {
                 currentTime = 0;
                 TimerOn = false;
-                ClearUI.IsGameOver = true;
                 ClearUI.StartCoroutine(ClearUI.GameEnd());
             }
 

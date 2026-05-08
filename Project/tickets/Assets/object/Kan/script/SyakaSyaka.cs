@@ -65,8 +65,6 @@ public class SyakaSyaka : MonoBehaviour
     public Image cola;
     public Image flashcola;
 
-    [SerializeField]public ClearManegar clearManegar;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -330,11 +328,6 @@ public class SyakaSyaka : MonoBehaviour
                 cola.fillAmount = SyakaPoint / 100f;
                 flashcola.fillAmount = SyakaPoint / 100f;
             }
-        }
-        //ゲームオーバーなら
-        if (clearManegar.IsGameOver)
-        {
-
         }
     }
 

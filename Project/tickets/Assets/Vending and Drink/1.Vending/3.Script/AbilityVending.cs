@@ -87,7 +87,7 @@ public class AbilityVending : MonoBehaviour
                 AVUIBG.color = EnoughColor;
 
                 //Fキーを押したら
-                if (Input.GetKeyDown(KeyCode.F) && pauseSistem.IsActivePause == false)
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     //缶停止
                     kanMove.ActiveMove = false;

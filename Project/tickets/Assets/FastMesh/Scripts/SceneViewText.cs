@@ -9,8 +9,8 @@ namespace FastMesh_Example
         public bool isShow = true;
         string text2 = "These 3D models, all created with \"Fast Mesh - 3D Asset Creation Tool\" (click)"; 
         Color backgroundColor = Color.white;
-        Color textColor = Color.black; 
-    
+        Color textColor = Color.black;
+#if UNITY_EDITOR
         private void OnEnable()
         {
             SceneView.duringSceneGui += OnSceneGUI;
@@ -52,7 +52,11 @@ namespace FastMesh_Example
             // GUILayout.EndArea();
             Handles.EndGUI();
         }
+        
+        #endif
     }
+
+
 }
 
 

@@ -23,6 +23,7 @@ public class KanMove : MonoBehaviour
 
     public AudioClip JumpSound;
     public AudioClip RollSound;
+    public AudioClip ClashSound;
 
     public float Speed = 0;
 
@@ -49,7 +50,18 @@ public class KanMove : MonoBehaviour
     [Range(0, 5)]
     public int JumpLv = 0;//ジャンプレベル
 
+    public void StopKanSound()
+    {
+        if (SE != null)
+        {
+            SE.Stop();
+        }
 
+        if (SERoll != null)
+        {
+            SERoll.Stop();
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -88,7 +100,11 @@ public class KanMove : MonoBehaviour
         }
     }
 
-
+    public void Clash()
+    {
+        gameObject.transform.localScale = new Vector3(0.1590182f, 0.004016032f, 0.1590182f);
+        SE.PlayOneShot(ClashSound);
+    }
    
 
     // Update is called once per frame
@@ -168,10 +184,8 @@ public class KanMove : MonoBehaviour
             if (body.linearVelocity.magnitude < MaxSpeed)
                 this.body.AddForce(forward * Speed);
 
-
             if (transform.position.y < -10)
             {
-                ClearUI.IsGameOver = true;
                 StartCoroutine(ClearUI.GameEnd());
             }
 

@@ -17,6 +17,8 @@ public class PauseSistem : MonoBehaviour
     public AudioClip PauseOn;
     public AudioClip PauseOff;
 
+    public AudioSource carSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,6 +42,7 @@ public class PauseSistem : MonoBehaviour
             Kan.SE.UnPause();
             Syaka.SE.UnPause();
             SEPause.PlayOneShot(PauseOff);
+           
         }
         else
         {
@@ -55,6 +58,7 @@ public class PauseSistem : MonoBehaviour
             Kan.SE.Pause();
             Syaka.SE.Pause();
             SEPause.PlayOneShot(PauseOn);
+          
         }
     }
 

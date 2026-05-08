@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
@@ -20,8 +19,6 @@ public class CarMove : MonoBehaviour
     public MeshRenderer CarColor;
 
     public Material[] ColorID;
-
-    [SerializeField] private PauseSistem pauseSistem;
 
     void Start()
     {
@@ -54,18 +51,6 @@ public class CarMove : MonoBehaviour
             CarSE.volume = Mathf.Clamp01(volume);
 
             if (!CarSE.isPlaying) CarSE.Play();
-
-            //�|�[�Y���Ȃ�
-            if (pauseSistem.IsActivePause)
-            {
-                //�����ꎞ��~
-                CarSE.Pause();
-            }
-            else//�|�[�Y������Ȃ����
-            {
-                //�����ꎞ��~���
-                CarSE.UnPause();
-            }
         }
         else
         {

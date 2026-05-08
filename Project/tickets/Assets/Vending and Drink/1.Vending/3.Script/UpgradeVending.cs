@@ -88,7 +88,7 @@ public class UpgradeVending : MonoBehaviour
                 UVUIBG.color = EnoughColor;
 
                 //FÉLÅ[ÇâüÇµÇΩÇÁ
-                if (Input.GetKeyDown(KeyCode.F) && pauseSistem.IsActivePause == false)
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     //ä í‚é~
                     kanMove.ActiveMove = false;
