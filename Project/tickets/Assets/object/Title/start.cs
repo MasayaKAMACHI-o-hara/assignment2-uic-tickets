@@ -17,15 +17,31 @@ public class start : MonoBehaviour
     public CountDown Timer;
     public SyakaSyaka Syaka;
 
+    public AudioSource TitleBGM;
+    public AudioSource GameBGM;
+
+    //public GameObject gamesetumei;
+
+    public GameObject StartBuckBottown_1;
+    public GameObject StartBuckBottown_2;
+    public GameObject left_Bottown;
+    public GameObject right_Bottown;
+
+
     public void Start()
     {
-//        Cursor.visible = true;
-//        Cursor.lockState = CursorLockMode.None;
+        //        Cursor.visible = true;
+        //        Cursor.lockState = CursorLockMode.None;
     }
 
 
     public void Onclick()
     {
+        if (TitleBGM != null)
+            TitleBGM.Stop();
+
+        if (GameBGM != null)
+            GameBGM.Play();
 
         Kan.ActiveMove = true;
         Camera.ActiveMove = true;
@@ -43,5 +59,57 @@ public class start : MonoBehaviour
 
         gameObject.SetActive(false);
     }
-}
+    public RectTransform gamesetumei;
 
+    private int page = 0; // 現在のページ番号
+    private const int PAGE_WIDTH = 2000; // ページ1枚分の移動量
+
+    public void Onclick_description()
+    {
+        page = 0; // 最初のページへ
+        ShowPage();
+    }
+
+    public void OnClick_Right()
+    {
+        page++;
+        ShowPage();
+    }
+
+    public void OnClick_Left()
+    {
+        page--;
+        if (page < 0) page = 0; // マイナスページに行かないように
+        ShowPage();
+    }
+
+    private void ShowPage()
+    {
+        // ページ番号 × ページ幅 で位置を決める
+        gamesetumei.localPosition = new Vector3(page * -PAGE_WIDTH, 0, 0);
+    }
+
+    public void OnClick_titleBuck()
+    {
+        // ページ番号をリセット
+        page = 0;
+
+        // ゲーム説明UIを元の座標に戻す
+        gamesetumei.localPosition = new Vector3(2000, 2000, 0);
+
+        // タイトルUIを表示
+        StartBuckBottown_1.SetActive(true);
+        StartBuckBottown_2.SetActive(true);
+
+        // ページめくりボタンは非表示
+        //left_Bottown.SetActive(false);
+        //right_Bottown.SetActive(false);
+
+        // BGM切り替え
+        if (TitleBGM != null)
+            TitleBGM.Play();
+
+        if (GameBGM != null)
+            GameBGM.Stop();
+    }
+}
