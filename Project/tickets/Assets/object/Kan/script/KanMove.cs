@@ -19,11 +19,6 @@ public class KanMove : MonoBehaviour
     public ClearManegar ClearUI;
 
     public AudioSource SE;
-    public AudioSource SERoll;
-
-    public AudioClip JumpSound;
-    public AudioClip RollSound;
-    public AudioClip ClashSound;
 
     public float Speed = 0;
 
@@ -39,8 +34,6 @@ public class KanMove : MonoBehaviour
 
     public bool ActiveMove = false;
 
-    public bool ActiveSound = false;
-
     public int coin = 0;//所持コイン
 
     public bool CoinUp = false;
@@ -55,11 +48,6 @@ public class KanMove : MonoBehaviour
         if (SE != null)
         {
             SE.Stop();
-        }
-
-        if (SERoll != null)
-        {
-            SERoll.Stop();
         }
     }
 
@@ -103,7 +91,6 @@ public class KanMove : MonoBehaviour
     public void Clash()
     {
         gameObject.transform.localScale = new Vector3(0.1590182f, 0.004016032f, 0.1590182f);
-        SE.PlayOneShot(ClashSound);
     }
    
 
@@ -170,7 +157,7 @@ public class KanMove : MonoBehaviour
                 if (isGrounded && Input.GetKeyDown(KeyCode.Space))
                 {
                     body.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
-                    SE.PlayOneShot(JumpSound);
+                    SoundManager.PlaySE_KanJump();
                 }
             }
             // カメラの正面方向を取得

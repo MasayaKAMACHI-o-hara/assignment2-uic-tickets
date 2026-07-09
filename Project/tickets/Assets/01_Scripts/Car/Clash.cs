@@ -3,8 +3,6 @@ using UnityEngine;
 public class Clash : MonoBehaviour
 {
     public GameObject Kan;
-    public AudioSource ClashSound;
-
 
     public Transform KanPosition;
 
@@ -25,15 +23,9 @@ public class Clash : MonoBehaviour
         if (other.gameObject == KanPosition.gameObject)
         {
             Debug.Log("缶を引いちゃったよ。");
-            ClashSound.Play();
+            SoundManager.PlaySE_CarHorn();
             Kanscr.Clash();
             Endscr.StartCoroutine(Endscr.GameEnd());
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

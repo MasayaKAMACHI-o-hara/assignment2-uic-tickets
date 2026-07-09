@@ -15,9 +15,6 @@ public class ChoiceUI : MonoBehaviour
     [Header("ポーズ")]
     [SerializeField] public PauseSistem pauseSistem;
 
-    [Header("ジュース購入音")]
-    [SerializeField] private AudioClip audioClip;
-
     [Header("選択UI")]
     [SerializeField] private GameObject UI;
 
@@ -61,8 +58,6 @@ public class ChoiceUI : MonoBehaviour
     //どの自販機で購入したか
     private bool BoughtUpgrade = false;
     private bool BoughtAbility = false;
-    //スピーカーの指定
-    [NonSerialized] public AudioSource audioSource;
 
     public AbilityManeger abilityManeger;
 
@@ -514,7 +509,7 @@ public class ChoiceUI : MonoBehaviour
     private void CloseUI()
     {
         //ジュース購入音再生
-        audioSource.PlayOneShot(audioClip);
+        SoundManager.PlaySE_VendingBuy();
 
         //缶動作再開
         kanMove.ActiveMove = true;
