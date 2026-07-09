@@ -17,9 +17,6 @@ public class start : MonoBehaviour
     public CountDown Timer;
     public SyakaSyaka Syaka;
 
-    public AudioSource TitleBGM;
-    public AudioSource GameBGM;
-
     //public GameObject gamesetumei;
 
     public GameObject StartBuckBottown_1;
@@ -37,11 +34,8 @@ public class start : MonoBehaviour
 
     public void Onclick()
     {
-        if (TitleBGM != null)
-            TitleBGM.Stop();
-
-        if (GameBGM != null)
-            GameBGM.Play();
+        SoundManager.StopBGM_Title();
+        SoundManager.PlayBGM_Game();
 
         Kan.ActiveMove = true;
         Camera.ActiveMove = true;
@@ -104,12 +98,6 @@ public class start : MonoBehaviour
         // ページめくりボタンは非表示
         //left_Bottown.SetActive(false);
         //right_Bottown.SetActive(false);
-
-        // BGM切り替え
-        if (TitleBGM != null)
-            TitleBGM.Play();
-
-        if (GameBGM != null)
-            GameBGM.Stop();
+        
     }
 }

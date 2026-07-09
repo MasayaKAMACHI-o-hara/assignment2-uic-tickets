@@ -1,173 +1,170 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class NPCAction : MonoBehaviour
 {
-    [Header("NPC�̃I�u�W�F�N�g")]
-    [SerializeField] private Transform Transform;
-    [SerializeField] private Animator animator;
-    [Header("�ړ��o�R�n�_�̃I�u�W�F�N�g")]
+    private Animator animator;
+    private AudioSource SE_NPCFootsteps;
+    [Header("缶")]
+    [SerializeField] private Rigidbody KanRigidbody;
+    [Header("ポーズ")]
+    [SerializeField] private PauseSistem pauseSistem;
+    
+    [Header("移動経由地のオブジェクト")]
     [SerializeField] private Transform[] wayTransform;
     [SerializeField] private Collider[] wayCollider;
-    [Header("��")]
-    [SerializeField] private Rigidbody KanRigidbody;
-    [SerializeField] private AudioSource KanAudioSource;
-    [SerializeField] private AudioClip KanAudioClip;
-    [Header("�X�s�[�J�[")]
-    [SerializeField] private AudioSource audioSource;
-    //�A�j���[�V������bool�֐�
-    bool idle = true;    //��~
-    bool walk = false;   //���
-    bool kickNow = false;//�R��
-    [Header("�R��")]
+
+    [Header("蹴り")]
     [SerializeField] float kickPower = 30f;
     [SerializeField] public bool HumanCoffee = false;
-    [Header("�|�[�Y")]
-    [SerializeField] private PauseSistem pauseSistem;
-    //��~���ԃJ�E���^�[
+
+    // アニメーション用bool変数
+    bool idle = true;    // 停止
+    bool walk = false;   // 歩き
+    bool kickNow = false;// 蹴り中
+    
+    // 停止時間カウンター
     float idleTime = 0;
 
-    //�ړ����x
+    // 移動速度
     float spped = 1.5f;
 
-    //�o�R�n�_�̃i���o�[
+    // 経由地のナンバー
     int waypoint = 0;
-    //�o�R�n�_�̗v�f��
+    // 経由地の要素数
     int pointMax;
 
-    //�����ݒ�
+    // 初期設定
     void Start()
     {
-        //�A�j���[�V�����̏�����Ԑݒ�
+        animator = GetComponent<Animator>();
+        SE_NPCFootsteps = GetComponent<AudioSource>();
+        // アニメーションの初期状態設定
         animator.SetBool("idle", true);
         animator.SetBool("walk", false);
 
-        //�o�R�n�_�̗v�f����擾
+        // 経由地の要素数を取得
         pointMax = wayTransform.Length;
     }
 
-    //���C���֐�
+    // メイン関数
     void Update()
     {
-        //�R���Ă��Ȃ����
+        // 蹴っていないとき
         if (!kickNow)
         {
-            // idle��
+            // idle時
             if (idle)
             {
-                //��~���ԃJ�E���g
+                // 停止時間カウント
                 idleTime += Time.deltaTime;
 
-                //��~���Ԃ��I�������
+                // 停止時間が終了したら
                 if (idleTime >= 4)
                 {
-                    //��ԁE�A�j���[�V�����؂�ւ�
+                    // 状態・アニメーション切り替え
                     idle = false;
                     animator.SetBool("idle", false);
                     walk = true;
                     animator.SetBool("walk", true);
 
-                    //��~���ԃ��Z�b�g
+                    // 停止時間リセット
                     idleTime = 0;
 
-                    //�Ō�̌o�R�n�_�i���o�[�Ȃ�
+                    // 最後の経由地ナンバーなら
                     if (waypoint + 1 == pointMax)
-                        waypoint = 0;//�����ʒu�̌o�R�n�_�i���o�[��w��
-                                     //�Ō�ȊO�Ȃ�
+                        waypoint = 0;// 初期位置の経由地ナンバーを指定
+                    // 最後以外なら
                     else
-                        waypoint++;//���̌o�R�n�_�i���o�[��w��
+                        waypoint++;// 次の経由地ナンバーを指定
 
-                    //�w�肳�ꂽ�o�R�n�_�̕��������
-                    Transform.LookAt(wayTransform[waypoint]);
+                    // 指定された経由地の方向を向く
+                    transform.LookAt(wayTransform[waypoint]);
 
-                    //�����Đ�
-                    audioSource.Play();
-
+                    // 音声再生
+                    SE_NPCFootsteps.Play();
                 }
             }
-            // walk��
+            // walk時
             if (walk)
             {
-                //�o�R�n�_�����̃x�N�g����v�Z
-                Vector3 direction = (wayTransform[waypoint].position - Transform.position).normalized;
+                // 経由地までのベクトルを計算
+                Vector3 direction = (wayTransform[waypoint].position - transform.position).normalized;
 
-                //�o�R�n�_�Ɍ������ĕ��
+                // 経由地に向かって歩く
                 transform.position += direction * spped * Time.deltaTime;
 
-                //�|�[�Y���Ȃ�
+                // ポーズ中なら
                 if (pauseSistem.IsActivePause)
                 {
-                    //�����ꎞ��~
-                    audioSource.Pause();
+                    // 音声一時停止
+                    SE_NPCFootsteps.Pause();
                 }
-                else//�|�[�Y������Ȃ����
+                else// ポーズ中ではないとき
                 {
-                    //�����ꎞ��~���
-                    audioSource.UnPause();
+                    // 音声一時停止解除
+                    SE_NPCFootsteps.UnPause();
                 }
             }
         }
     }
 
-    //�o�R�n�_�������֐�
+    // 経由地当たり判定関数
     private void OnTriggerEnter(Collider other)
     {
-        //�o�R�n�_�ɐG����
+        // 経由地に触れたら
         if (other == wayCollider[waypoint])
         {
-            //��ԁE�A�j���[�V�����؂�ւ�
+            // 状態・アニメーション切り替え
             idle = true;
             animator.SetBool("idle", true);
             walk = false;
             animator.SetBool("walk", false);
-            //������~
-            audioSource.Stop();
+            // 音声停止
+            SE_NPCFootsteps.Stop();
         }
     }
 
-    //�ʔ������֐�
+    // 缶当たり判定関数
     public void OnKanEnter()
     {
-        //������~
-        audioSource.Stop();
+        // 音声停止
+        SE_NPCFootsteps.Stop();
 
-        // �L�b�N�A�j���[�V������Đ�
+        // キックアニメーションを再生
         animator.SetTrigger("kick");
 
-        //�R���Ă���
+        // 蹴っている
         kickNow = true;
     }
 
-    //�A�j���[�V�����C�x���g�E�R��֐�
+    // アニメーションイベント・蹴り関数
     public void kick()
     {
         if (HumanCoffee == false)
         {
             if (KanRigidbody != null)
             {
-                // 1. ��΂����������iNPC�̐��ʕ����j
-                Vector3 kickDirection = Transform.forward;
+                //飛ばしたい方向を指定
+                Vector3 kickDirection = transform.forward;
 
-                // 2. ������ɕ�������͂������Ɓu�R�������v���o�܂��i���D�݂Łj
+                //斜め上に飛ばす力を加える
                 kickDirection += Vector3.up * 1.5f;
 
-                // 3. �͂������i���x����Z�b�g���Ă��������ƈ��肵�܂��j
-                KanRigidbody.linearVelocity = Vector3.zero; // �O�̓�������Z�b�g(Unity2023�ȍ~��linearVelocity)
+                //力を加える
+                KanRigidbody.linearVelocity = Vector3.zero; // 前の速度をリセット
                 KanRigidbody.AddForce(kickDirection.normalized * kickPower, ForceMode.Impulse);
-                KanAudioSource.PlayOneShot(KanAudioClip);
-                Debug.Log("�ʂ�R��΂��܂����I");
+                SoundManager.PlaySE_NPCKick();
             }
         }
     }
-    //�A�j���[�V�����C�x���g�E�L�b�N�A�j���[�V�����I�����֐�
+
+    // アニメーションイベント・キックアニメーション終了関数
     public void KickEnd()
     {
-        //�����Đ�
-        audioSource.Play();
+        // 音声再生
+        SE_NPCFootsteps.Play();
 
-        //�R���Ă��Ȃ�
+        // 蹴っていない
         kickNow = false;
     }
 }
-

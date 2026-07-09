@@ -1,19 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
 public class UpgradeVending : MonoBehaviour
 {
     [Header("～強化自販機～")]
 
     [Header("値段")]
     [SerializeField] private int Cost;
-
-    [Header("スピーカー")]
-    [SerializeField] private AudioSource audioSource;
-
-    [Header("コイン投入音")]
-    [SerializeField] private AudioClip audioClip;
 
     [Header("～自販機UI～")]
 
@@ -97,13 +90,10 @@ public class UpgradeVending : MonoBehaviour
                     countDown.TimerOn = false;
 
                     //コイン投入音再生
-                    audioSource.PlayOneShot(audioClip);
+                    SoundManager.PlaySE_VendingCoin();
 
                     //コイン消費
                     kanMove.coin -= Cost;
-
-                    //選択UIのスピーカーをこの自販機に指定
-                    ChoiceScript.audioSource = audioSource;
 
                     //強化を購入したことを伝える
                     ChoiceScript.BuyUpgrade();

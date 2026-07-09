@@ -175,7 +175,7 @@ public class SyakaSyaka : MonoBehaviour
 
                 if (MathQ * SyakaE >= 10)
                 {
-                    SE.PlayOneShot(FallSound);
+                    SoundManager.PlaySE_KanLanding();
                 }
 
 
@@ -203,8 +203,8 @@ public class SyakaSyaka : MonoBehaviour
                     IsActiveFall = false;
                     ColaP.SetActive(false);
                     BubbleP.SetActive(false);
-                    SE.Stop();
-                    SE.PlayOneShot(SyuwaEndSound);
+                    SoundManager.StopAS_Kan();
+                    SoundManager.PlaySE_KanSquirtEnd();
 
                 }
 
@@ -220,7 +220,7 @@ public class SyakaSyaka : MonoBehaviour
                 // 最新のプロパティで速度をリセット
                 Rb.linearVelocity = Vector3.zero;
                 Rb.angularVelocity = Vector3.zero;
-                SE.PlayOneShot(StartChargeSound);
+                SoundManager.PlaySE_KanCharge();
             }
 
 
@@ -259,8 +259,8 @@ public class SyakaSyaka : MonoBehaviour
 
                     if (SyakaPoint < 1)
                     {
-                        SE.Stop();
-                        SE.PlayOneShot(ChargeConpleteSound);//チャージが完了したら音を出す。
+                        SoundManager.StopAS_Kan();
+                        SoundManager.PlaySE_KanChargeComplete();//チャージが完了したら音を出す。
                     }
                 }
                 else
@@ -297,9 +297,10 @@ public class SyakaSyaka : MonoBehaviour
 
                 // これに強さを掛けるて弾き飛ばす
                 Rb.AddForce(slantDirection * syakaPower);
-                SE.Stop();
-                SE.PlayOneShot(ShotSound);
-                SE.PlayOneShot(SyuwaSound);//発射するときの音を出す
+                
+                SoundManager.StopAS_Kan();
+                SoundManager.PlaySE_KanSquirtStart();
+                SoundManager.PlaySE_KanSquirting();//発射するときの音を出す
             }
 
             // 飛んでいる最中にスペースキーが押されたら

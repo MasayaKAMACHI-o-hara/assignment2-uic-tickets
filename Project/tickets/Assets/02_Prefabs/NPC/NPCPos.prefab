@@ -396,8 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 4935077575525061337}
-  animator: {fileID: 2017929711907256814}
   wayTransform:
   - {fileID: 9078059653631259727}
   - {fileID: 2471779355668213641}
@@ -407,9 +405,6 @@ MonoBehaviour:
   - {fileID: 7505268743764526595}
   - {fileID: 6719839277543198349}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 1923112340348111886}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -5775,8 +5770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 6206903224365504655}
-  animator: {fileID: 3274070975380830087}
   wayTransform:
   - {fileID: 6283690197525902659}
   - {fileID: 6566113271363218041}
@@ -5788,9 +5781,6 @@ MonoBehaviour:
   - {fileID: 2761863089906038986}
   - {fileID: 7488207190145224339}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 8082730498853640782}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -7050,8 +7040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 1559235860915471125}
-  animator: {fileID: 5706744828815891549}
   wayTransform:
   - {fileID: 8576723209720693798}
   - {fileID: 1919602691797045680}
@@ -7063,9 +7051,6 @@ MonoBehaviour:
   - {fileID: 2170951277096075343}
   - {fileID: 242178133549703046}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 7098975444716469804}
   kickPower: 50
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -10094,8 +10079,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 7510287993945923263}
-  animator: {fileID: 3477955022147155336}
   wayTransform:
   - {fileID: 978533221979444677}
   - {fileID: 2332204924644424044}
@@ -10127,9 +10110,6 @@ MonoBehaviour:
   - {fileID: 7059370741112007909}
   - {fileID: 6482180928406795949}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 4731813250145413505}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -14334,8 +14314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 3989613266663912565}
-  animator: {fileID: 7911732517592673085}
   wayTransform:
   - {fileID: 6440942425962466281}
   - {fileID: 8586669819487641656}
@@ -14347,9 +14325,6 @@ MonoBehaviour:
   - {fileID: 3720343355079898169}
   - {fileID: 7649284784703154577}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 4011660382524509136}
   kickPower: 50
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -14816,8 +14791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 8232323392604348679}
-  animator: {fileID: 681056391630671375}
   wayTransform:
   - {fileID: 4118945433661019885}
   - {fileID: 995339912368921478}
@@ -14829,9 +14802,6 @@ MonoBehaviour:
   - {fileID: 1662778073780880286}
   - {fileID: 647822605429106494}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 2217276874705737287}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -15301,8 +15271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 403921674089481193}
-  animator: {fileID: 6766322086520924382}
   wayTransform:
   - {fileID: 2687691676808657439}
   - {fileID: 2240279075629482077}
@@ -15312,9 +15280,6 @@ MonoBehaviour:
   - {fileID: 6157130842435021271}
   - {fileID: 8345723796077583618}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 3197245423582199780}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -17738,8 +17703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 1091067471442447776}
-  animator: {fileID: 6294214358634686103}
   wayTransform:
   - {fileID: 8480500392338331934}
   - {fileID: 8013214789478028429}
@@ -17751,9 +17714,6 @@ MonoBehaviour:
   - {fileID: 5627333843679844178}
   - {fileID: 236798491503829719}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 2806757032722409392}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -20576,8 +20536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 1902706851709053523}
-  animator: {fileID: 7001771824885531995}
   wayTransform:
   - {fileID: 1017537637078210344}
   - {fileID: 6265507194185579985}
@@ -20591,9 +20549,6 @@ MonoBehaviour:
   - {fileID: 6613913800781938788}
   - {fileID: 3472783727748278092}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 1466613012780248097}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -21165,8 +21120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 1957769484643249893}
-  animator: {fileID: 6946779702681354733}
   wayTransform:
   - {fileID: 1667526112210331399}
   - {fileID: 9078059653631259727}
@@ -21176,9 +21129,6 @@ MonoBehaviour:
   - {fileID: 4007688248497085893}
   - {fileID: 7505268743764526595}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 8508852274027715898}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -22258,8 +22208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 6230155135767248552}
-  animator: {fileID: 928902576937624032}
   wayTransform:
   - {fileID: 2955815316540223584}
   - {fileID: 3139704223803262319}
@@ -22291,9 +22239,6 @@ MonoBehaviour:
   - {fileID: 6877901399539883211}
   - {fileID: 2239511787355972253}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 3804782203021510580}
   kickPower: 50
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -22581,8 +22526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 1865024429188217814}
-  animator: {fileID: 4727705796197650657}
   wayTransform:
   - {fileID: 7425710504552629134}
   - {fileID: 6502327727451250957}
@@ -22594,9 +22537,6 @@ MonoBehaviour:
   - {fileID: 2103416378728154976}
   - {fileID: 4717334863445883852}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 1195819451301808930}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -23034,8 +22974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 6313016564893352291}
-  animator: {fileID: 940616737828937259}
   wayTransform:
   - {fileID: 4274325453480942028}
   - {fileID: 6626513783152340587}
@@ -23047,9 +22985,6 @@ MonoBehaviour:
   - {fileID: 8534787182875900084}
   - {fileID: 9186526431302703001}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 6888966995311048863}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -25570,8 +25505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 3066196621331918953}
-  animator: {fileID: 5891234122537901921}
   wayTransform:
   - {fileID: 5631089723183258202}
   - {fileID: 2968242652468607430}
@@ -25603,9 +25536,6 @@ MonoBehaviour:
   - {fileID: 5184178452195114063}
   - {fileID: 7653933638388207846}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 8115097615485405449}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -26202,8 +26132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 3221750480374209217}
-  animator: {fileID: 8415044587893879286}
   wayTransform:
   - {fileID: 5481416268133892089}
   - {fileID: 539347356339719023}
@@ -26235,9 +26163,6 @@ MonoBehaviour:
   - {fileID: 7157562197602717772}
   - {fileID: 4525542965014300902}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 8608120353211837440}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -26709,8 +26634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 7358419323354444224}
-  animator: {fileID: 4363901786975497864}
   wayTransform:
   - {fileID: 2471779355668213641}
   - {fileID: 1667526112210331399}
@@ -26720,9 +26643,6 @@ MonoBehaviour:
   - {fileID: 6719839277543198349}
   - {fileID: 4007688248497085893}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 6877354311476545559}
   kickPower: 50
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -27750,8 +27670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 3095132900234009029}
-  animator: {fileID: 8253361372130734834}
   wayTransform:
   - {fileID: 3462448244329566860}
   - {fileID: 1354546368179124371}
@@ -27763,9 +27681,6 @@ MonoBehaviour:
   - {fileID: 959043759122837526}
   - {fileID: 7083375196149666554}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 5340573937470537007}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -30532,8 +30447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 8078790211405371677}
-  animator: {fileID: 3065906854988924501}
   wayTransform:
   - {fileID: 8406075680632086892}
   - {fileID: 5481416268133892089}
@@ -30565,9 +30478,6 @@ MonoBehaviour:
   - {fileID: 306300121872790480}
   - {fileID: 7157562197602717772}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 3973714662794146922}
   kickPower: 50
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -31109,8 +31019,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 8147029450903574141}
-  animator: {fileID: 3135062725809686837}
   wayTransform:
   - {fileID: 682920827401797638}
   - {fileID: 1028720712491570311}
@@ -31120,9 +31028,6 @@ MonoBehaviour:
   - {fileID: 4909860496380247309}
   - {fileID: 8067469276494813038}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 2362746741635973446}
   kickPower: 50
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
@@ -31826,8 +31731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 3574858108694125798}
-  animator: {fileID: 5391087128649577454}
   wayTransform:
   - {fileID: 1332583904893905521}
   - {fileID: 1519581092769609025}
@@ -31859,9 +31762,6 @@ MonoBehaviour:
   - {fileID: 5555666787770491621}
   - {fileID: 8427077008832041858}
   KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 6695430985720505380}
   kickPower: 40
   HumanCoffee: 0
   pauseSistem: {fileID: 0}
