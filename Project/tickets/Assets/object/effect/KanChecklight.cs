@@ -3,8 +3,8 @@ using System.Collections;
 
 public class HideIfFar : MonoBehaviour
 {
-    public Transform target;   // ”»’è‚Ì‘ÎÛiŠÊj
-    public float visibleDistance = 50f; // •\¦‚³‚ê‚é‹——£
+    public Transform target;            // ç›£è¦–ã®å¯¾è±¡ï¼ˆä¸»å½¹ï¼‰
+    public float visibleDistance = 50f; // è¡¨ç¤ºã•ã›ã¦ãŠãè·é›¢
 
     Renderer[] renderers;
 
@@ -15,13 +15,13 @@ public class HideIfFar : MonoBehaviour
 
     void Update()
     {
-        // ‹——£‚Ì”»’è
+        // è·é›¢ã®åˆ¤å®š
         float distance = Vector3.Distance(transform.position, target.position);
 
-        // ˆê’è‚Ì‹——£‚É’B‚µ‚Ä‚¢‚é‚©‚Ì”»’è
+        // è¦å®šã®è·é›¢ã«é”ã—ã¦ã„ã‚‹ã‹ã®åˆ¤å®š
         bool shouldShow = distance <= visibleDistance;
 
-        // ”ñ•\¦
+        // è¡¨ç¤ºãƒ»éè¡¨ç¤ºã®åˆ‡ã‚Šæ›¿ãˆ
         foreach (var r in renderers)
         {
             r.enabled = shouldShow;
@@ -41,5 +41,5 @@ public class HideIfFar : MonoBehaviour
         visibleDistance = originalDistance;
     }
 
-    // ExtendVisibleDistance(9999f, 60f); ”ÍˆÍ‚ğL‚°‚éê‡‚Í‚±‚ê‚ğŒÄ‚Ño‚µ‚Ä‚­‚¾‚³‚¢B1•ªŒã‚ÉŒø‰Ê‚ÍÁ‚¦‚Ü‚·B
+    // ExtendVisibleDistance(9999f, 60f); ç¯„å›²ã‚’åºƒã’ãŸã„å ´åˆã¯ã“ã‚Œã‚’å‘¼ã³å‡ºã—ã¦ãã ã•ã„ã€‚1åˆ†å¾Œã«åŠ¹æœã¯æ¶ˆæ»…ã—ã¾ã™ã€‚
 }
