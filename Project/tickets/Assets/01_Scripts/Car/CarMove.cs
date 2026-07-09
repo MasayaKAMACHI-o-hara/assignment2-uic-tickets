@@ -12,7 +12,6 @@ public class CarMove : MonoBehaviour
     public AudioSource CarSE;
     public float maxDistance = 10f; // 音が消える距離
     public float minDistance = 2f;  // 音が最大になる距離
-    public AudioClip Clash;
     public GameObject[] wheel;
     public GameObject nextpoint;
 

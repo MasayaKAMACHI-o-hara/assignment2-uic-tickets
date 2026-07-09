@@ -8,12 +8,6 @@ public class AbilityVending : MonoBehaviour
     [Header("値段")]
     [SerializeField] private int Cost;
 
-    [Header("スピーカー")]
-    [SerializeField] private AudioSource audioSource;
-
-    [Header("コイン投入音")]
-    [SerializeField] private AudioClip audioClip;
-
     [Header("～自販機UI～")]
 
     [Header("UI")]
@@ -26,8 +20,8 @@ public class AbilityVending : MonoBehaviour
     [SerializeField] private Image AVUIBG;
 
     [Header("UIカラー")]
-    [SerializeField] private Color NotEnoughColor = new Color(0.7f, 0, 0, 0.7f); // 赤
-    [SerializeField] private Color EnoughColor = new Color(0, 0.7f, 0, 0.7f);  // 緑#
+    [SerializeField] private Color NotEnoughColor = new Color(0.7f, 0, 0, 0.7f);//赤
+    [SerializeField] private Color EnoughColor = new Color(0, 0.7f, 0, 0.7f);   //緑
 
     [Header("～選択肢UI～")]
 
@@ -69,12 +63,11 @@ public class AbilityVending : MonoBehaviour
         //センサーエリア外
         InKanSensorArea = false;
 
-        // カーソルを画面内で動かせる
+        //カーソルを画面内で動かせる
         Cursor.lockState = CursorLockMode.Confined;
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         //センサーエリア内なら
@@ -96,13 +89,10 @@ public class AbilityVending : MonoBehaviour
                     countDown.TimerOn = false;
 
                     //コイン投入音再生
-                    audioSource.PlayOneShot(audioClip);
+                    SoundManager.PlaySE_VendingCoin();
 
                     //コイン消費
                     kanMove.coin -= Cost;
-
-                    //選択UIのスピーカーをこの自販機に指定
-                    ChoiceScript.audioSource = audioSource;
 
                     //強化を購入したことを伝える
                     ChoiceScript.BuyAbility();

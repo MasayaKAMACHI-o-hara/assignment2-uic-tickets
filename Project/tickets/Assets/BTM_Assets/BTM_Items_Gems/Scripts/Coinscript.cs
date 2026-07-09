@@ -6,15 +6,7 @@ public class Coinscript : MonoBehaviour
 {
     [Header("取得時のパーティクル")]
     public GameObject getEffectPrefab;
-
-    [Header("取得時のサウンド")]
-    public AudioClip getSound;
-    private AudioSource audioSource;
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>(); // ← Coin の AudioSource を取得
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,10 +18,7 @@ public class Coinscript : MonoBehaviour
             kan.GetCoin();
 
             // ここで音を鳴らす
-            if (getSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(getSound);
-            }
+            SoundManager.PlaySE_Coin();
 
             // ここから下 演出
             // パーティクルの発生
