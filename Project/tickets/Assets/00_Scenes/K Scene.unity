@@ -43379,11 +43379,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7747779765286423926, guid: 2428e7e466b559e43a0e4202eae899ff, type: 3}
   m_PrefabInstance: {fileID: 1459416467}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1464877984 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2195047857915293229, guid: 3122fa0dc60fb0246a1ac1330a6b6d48, type: 3}
-  m_PrefabInstance: {fileID: 854074798312886023}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1469462229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64342,7 +64337,7 @@ PrefabInstance:
     - target: {fileID: 4564525855202542036, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: KanAudioSource
       value: 
-      objectReference: {fileID: 1464877984}
+      objectReference: {fileID: 0}
     - target: {fileID: 5388887196821951406, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -66257,6 +66252,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3392022068119744116, guid: 9a58df8602656774fbbe7ec956d8a181, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4108648414090667079, guid: 9a58df8602656774fbbe7ec956d8a181, type: 3}
       propertyPath: m_Name
       value: Saiwaki Area
