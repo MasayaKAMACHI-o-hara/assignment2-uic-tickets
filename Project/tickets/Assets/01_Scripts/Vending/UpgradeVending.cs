@@ -81,7 +81,7 @@ public class UpgradeVending : MonoBehaviour
                 UVUIBG.color = EnoughColor;
 
                 //Fキーを押したら
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.F) && !pauseSistem.IsActivePause)
                 {
                     //缶停止
                     kanMove.ActiveMove = false;
@@ -115,8 +115,12 @@ public class UpgradeVending : MonoBehaviour
             }
             //コインが足りなければ
             else
+            {
                 //自販機UIを赤に
                 UVUIBG.color = NotEnoughColor;
+                //Fキーを押したら効果音再生
+                if (Input.GetKeyDown(KeyCode.F)) SoundManager.PlaySE_VendingNotCoin();
+            }
         }
     }
     //センサーに入った時の関数

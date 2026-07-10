@@ -18,6 +18,7 @@ public class SoundManager : MonoBehaviour {
     [SerializeField] AudioClip SE_KanLanding;
     [SerializeField] AudioSource SE_Coin;
     [SerializeField] AudioSource SE_VendingCoin;
+    [SerializeField] AudioSource SE_VendingNotCoin;
     [SerializeField] AudioSource SE_VendingBuy;
     [SerializeField] AudioSource SE_NPCKick;
     [SerializeField] AudioSource SE_CarHorn;
@@ -41,6 +42,7 @@ public class SoundManager : MonoBehaviour {
     public static void PlaySE_KanLanding() => Instance.AS_Kan.PlayOneShot(Instance.SE_KanLanding);
     public static void PlaySE_Coin() => Instance.SE_Coin.Play();
     public static void PlaySE_VendingCoin() => Instance.SE_VendingCoin.Play();
+    public static void PlaySE_VendingNotCoin() => Instance.SE_VendingNotCoin.Play();
     public static void PlaySE_VendingBuy() => Instance.SE_VendingBuy.Play();
     public static void PlaySE_NPCKick() => Instance.SE_NPCKick.Play();
     public static void PlaySE_CarHorn() => Instance.SE_CarHorn.Play();

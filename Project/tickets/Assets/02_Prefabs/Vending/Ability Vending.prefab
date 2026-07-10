@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c14b4323c2e279478f69ed697ff1710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cost: 100
+  Cost: 50
   AVUI: {fileID: 0}
   CostText: {fileID: 0}
   AVUIBG: {fileID: 0}

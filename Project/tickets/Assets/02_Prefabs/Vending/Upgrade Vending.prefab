@@ -47,9 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519c1d47e27aa414cb79973b243b7ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cost: 100
-  audioSource: {fileID: 2222595119686767367}
-  audioClip: {fileID: 8300000, guid: 2018223eb60401546aeda859608e2927, type: 3}
+  Cost: 50
   UVUI: {fileID: 0}
   CostText: {fileID: 0}
   UVUIBG: {fileID: 0}
@@ -58,6 +56,9 @@ MonoBehaviour:
   ChoiceScript: {fileID: 0}
   ChoiceUI: {fileID: 0}
   kanMove: {fileID: 0}
+  syakaSyaka: {fileID: 0}
+  pauseSistem: {fileID: 0}
+  countDown: {fileID: 0}
 --- !u!136 &8864554400786877840
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -146,7 +147,6 @@ GameObject:
   - component: {fileID: 7327820124182157921}
   - component: {fileID: 2354613123535152694}
   - component: {fileID: 8339749372575003866}
-  - component: {fileID: 2222595119686767367}
   m_Layer: 0
   m_Name: Upgrade Vending
   m_TagString: Untagged
@@ -244,100 +244,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9, y: 1.8, z: 0.9000001}
   m_Center: {x: 0, y: 0.9, z: -0.000000044703484}
---- !u!82 &2222595119686767367
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6253170517212303077}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
