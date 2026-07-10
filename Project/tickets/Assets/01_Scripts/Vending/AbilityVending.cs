@@ -80,7 +80,7 @@ public class AbilityVending : MonoBehaviour
                 AVUIBG.color = EnoughColor;
 
                 //Fキーを押したら
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.F) && !pauseSistem.IsActivePause)
                 {
                     //缶停止
                     kanMove.ActiveMove = false;
@@ -114,8 +114,12 @@ public class AbilityVending : MonoBehaviour
             }
             //コインが足りなければ
             else
+            {
                 //自販機UIを赤に
                 AVUIBG.color = NotEnoughColor;
+                //Fキーを押したら効果音再生
+                if (Input.GetKeyDown(KeyCode.F)) SoundManager.PlaySE_VendingNotCoin();
+            }
         }
     }
     //センサーに入った時の関数
