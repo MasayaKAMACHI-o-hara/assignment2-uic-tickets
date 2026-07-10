@@ -37,6 +37,8 @@ public class ClearManegar : MonoBehaviour
     public CountDown Timer;
     public SyakaSyaka syaka;
 
+    public bool ActiveOver = false;
+    
     [Header("効果音")]
     public AudioSource SE;
 
@@ -182,30 +184,35 @@ public class ClearManegar : MonoBehaviour
 
     public IEnumerator GameEnd()
     {
-        Kan.StopKanSound();
-        PlaySE(SE1);
-
-        Debug.Log("a");
-        Timer.TimerStop();
-        GameUI.SetActive(false);
-        Kan.ActiveMove = false;
-        Camera.ActiveMove = false;
-        syaka.ActiveSyaka = false;
-        Pause.IsActiveESC = false;
-
-        OverUI.transform.position -= new Vector3(0, 2000, 0);
-        KanOverUI.SetActive(true);
-
-        for (int i = 0; i < 200; i++)
+        if (!ActiveOver)
         {
-            yield return null;
+            Kan.StopKanSound();
+            PlaySE(SE1);
+        
+            Timer.TimerStop();
+            GameUI.SetActive(false);
+            Kan.ActiveMove = false;
+            Camera.ActiveMove = false;
+            syaka.ActiveSyaka = false;
+            Pause.IsActiveESC = false;
+            ActiveOver = true;
+
+            OverUI.transform.position -= new Vector3(0, 2000, 0);
+            KanOverUI.SetActive(true);
+
+            for (int i = 0; i < 200; i++)
+            {
+                yield return null;
+            }
+
+            OverBuckButton.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            Timer.ShowTimer(true);
         }
-
-        OverBuckButton.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-
-        Timer.ShowTimer(true);
+        
+       
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
