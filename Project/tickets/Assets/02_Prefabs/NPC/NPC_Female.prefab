@@ -914,16 +914,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545c87c6ee5ffe24c9984c273e93a7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 3135289867583518760}
-  animator: {fileID: 5822668513001051936}
+  type: 2
+  KanRigidbody: {fileID: 0}
+  pauseSistem: {fileID: 0}
   wayTransform: []
   wayCollider: []
-  KanRigidbody: {fileID: 0}
-  KanAudioSource: {fileID: 0}
-  KanAudioClip: {fileID: 8300000, guid: c8a86e037cf033843a0c9c0297edda73, type: 3}
-  audioSource: {fileID: 155604030600423451}
-  kickPower: 40
-  HumanCoffee: 0
 --- !u!95 &5822668513001051936
 Animator:
   serializedVersion: 7
