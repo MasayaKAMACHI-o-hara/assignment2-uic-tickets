@@ -76,7 +76,9 @@ public class ClearManegar : MonoBehaviour
         Camera.IsActiveClear = true;
         Timer.ShowTimer(false);
 
-        ClearUI.transform.position -= new Vector3(0, 2000, 0);
+        RectTransform clearRect = ClearUI.GetComponent<RectTransform>();
+        clearRect.anchoredPosition3D = Vector3.zero;
+
         KanUI.SetActive(true);
 
         Mathscore[0] = score;
@@ -193,7 +195,9 @@ public class ClearManegar : MonoBehaviour
         syaka.ActiveSyaka = false;
         Pause.IsActiveESC = false;
 
-        OverUI.transform.position -= new Vector3(0, 2000, 0);
+        RectTransform clearRect = ClearUI.GetComponent<RectTransform>();
+        clearRect.anchoredPosition3D = Vector3.zero;
+
         KanOverUI.SetActive(true);
 
         for (int i = 0; i < 200; i++)

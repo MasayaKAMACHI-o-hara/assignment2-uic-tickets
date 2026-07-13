@@ -56,7 +56,7 @@ public class start : MonoBehaviour
     public RectTransform gamesetumei;
 
     private int page = 0; // 現在のページ番号
-    private const int PAGE_WIDTH = 2000; // ページ1枚分の移動量
+    private const int PAGE_WIDTH = 5000; // ページ1枚分の移動量
 
     public void Onclick_description()
     {
