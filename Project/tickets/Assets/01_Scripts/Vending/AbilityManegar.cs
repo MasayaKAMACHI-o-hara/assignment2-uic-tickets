@@ -13,12 +13,6 @@ public class AbilityManeger : MonoBehaviour
     public CapsuleCollider KanAtari;//缶の当たり判定
     public SyakaSyaka syaka;//シャカゲージのスクリプト
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
     public void GetAbility(int id)
     {
         if (!AbilityId[id])
@@ -35,11 +29,13 @@ public class AbilityManeger : MonoBehaviour
             }
             else if (id == 1)
             {
-                Debug.Log("人にあたっても吹き飛ばされないよーん。");
+                Debug.Log("人の蹴る力が増えるよーん。");
+                NPCManager.Instance.humanCoffee = true;
             }
             else if (id == 2)
             {
                 Debug.Log("車にあたってもやられないよーん。");
+                Kan.carInvincible = true;
             }
             else if (id == 3)
             {
@@ -55,7 +51,6 @@ public class AbilityManeger : MonoBehaviour
             {
                 Debug.Log("スペースで降下できるよーん。");
                 syaka.IsActiveSpace = true;
-
             }
 
 
@@ -78,29 +73,29 @@ public class AbilityManeger : MonoBehaviour
 
         if (AbilityTime[id] == 0)
         {
-
-
             if (id == 1)
             {
-                Debug.Log("a人にあたっても吹き飛ばされないよーん。");
+                Debug.Log("人の蹴る力がもどるよーん。");
+                NPCManager.Instance.humanCoffee = false;
             }
             else if (id == 2)
             {
-                Debug.Log("a車にあたってもやられないよーん。");
+                Debug.Log("車にあたったらやられるよーん。");
+                Kan.carInvincible = false;
             }
             else if (id == 3)
             {
-                Debug.Log("aコインの判定を広げるよーん。");
+                Debug.Log("コインの判定もどるよーん。");
                 KanAtari.radius = 0.77f;
             }
             else if (id == 4)
             {
-                Debug.Log("aコインの取得量増やすよーん。");
+                Debug.Log("コインの取得量もどるよーん。");
                 Kan.CoinUp = false;
             }
             else if (id == 5)
             {
-                Debug.Log("aスペースで降下できるよーん。");
+                Debug.Log("スペースで降下できないよーん。");
                 syaka.IsActiveSpace = false;
 
             }
