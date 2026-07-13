@@ -78,7 +78,9 @@ public class ClearManegar : MonoBehaviour
         Camera.IsActiveClear = true;
         Timer.ShowTimer(false);
 
-        ClearUI.transform.position -= new Vector3(0, 2000, 0);
+        RectTransform clearRect = ClearUI.GetComponent<RectTransform>();
+        clearRect.anchoredPosition3D = Vector3.zero;
+
         KanUI.SetActive(true);
 
         Mathscore[0] = score;
@@ -184,7 +186,23 @@ public class ClearManegar : MonoBehaviour
 
     public IEnumerator GameEnd()
     {
-        if (!ActiveOver)
+        Kan.StopKanSound();
+        PlaySE(SE1);
+
+        Debug.Log("a");
+        Timer.TimerStop();
+        GameUI.SetActive(false);
+        Kan.ActiveMove = false;
+        Camera.ActiveMove = false;
+        syaka.ActiveSyaka = false;
+        Pause.IsActiveESC = false;
+
+        RectTransform clearRect = ClearUI.GetComponent<RectTransform>();
+        clearRect.anchoredPosition3D = Vector3.zero;
+
+        KanOverUI.SetActive(true);
+
+        for (int i = 0; i < 200; i++)
         {
             Kan.StopKanSound();
             PlaySE(SE1);
