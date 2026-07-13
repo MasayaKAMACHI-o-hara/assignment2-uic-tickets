@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
-using System;
 public class ChoiceUI : MonoBehaviour
 {
     [Header("缶スクリプト")]
@@ -72,11 +71,6 @@ public class ChoiceUI : MonoBehaviour
         Choosing2.SetActive(false);
         Choosing3.SetActive(false);
     }
-    void Update()
-    {
-
-    }
-
 
     #region 強化飲料選出関数
     //強化自販機を使用したら
@@ -155,7 +149,7 @@ public class ChoiceUI : MonoBehaviour
             {
                 // 高確率: 0, 1, 2, 6, 8, 10
                 int[] high = { 0, 1, 2, 6, 8, 10 };
-                return high[UnityEngine.Random.Range(0, high.Length)];
+                return high[Random.Range(0, high.Length)];
             }
         }
     }

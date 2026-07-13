@@ -12,7 +12,7 @@ public class NPCAction : MonoBehaviour
     [Header("種類")]
     [SerializeField] private NPCType type;
     [Header("缶")]
-    [SerializeField] private Rigidbody KanRigidbody;
+    [SerializeField] public Rigidbody KanRigidbody;
     [Header("ポーズ")]
     [SerializeField] private PauseSistem pauseSistem;
     

@@ -50,6 +50,7 @@ public class SoundManager : MonoBehaviour {
     public static void PlaySE_UIClose() => Instance.SE_UIClose.Play();
     public static void PlaySE_GameOverAndGameClear() => Instance.SE_GameOverAndGameClear.Play();
     public static void PlaySE_ScoreCountUp() => Instance.SE_ScoreCountUp.Play();
+    public static void StopSE_ScoreCountUp() => Instance.SE_ScoreCountUp.Stop();
     public static void PlaySE_ScoreTotal() => Instance.SE_ScoreTotal.Play();
 
 }

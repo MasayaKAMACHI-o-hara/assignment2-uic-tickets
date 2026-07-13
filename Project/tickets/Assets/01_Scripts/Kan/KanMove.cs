@@ -86,6 +86,7 @@ public class KanMove : MonoBehaviour
 
     public void Clash()
     {
+        SoundManager.StopAS_Kan();
         gameObject.transform.localScale = new Vector3(0.1590182f, 0.004016032f, 0.1590182f);
     }
     
