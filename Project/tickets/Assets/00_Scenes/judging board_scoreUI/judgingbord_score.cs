@@ -18,13 +18,15 @@ public class judgingbord_score : MonoBehaviour
     [SerializeField] judgingbord_score_UI scoreUIPrefab; // 頭上などに表示するスコアUIのプレハブ
     [SerializeField] ClearManegar clearManegar;          // ゲームクリアを管理するマネージャー
 
-    
-    
+    public Vector3 scoreOffset = new Vector3(0, 0.8f, 0);
+
     private judgingbord_score_UI scoreUI; // 生成したスコアUIのインスタンス保持用
     private bool hasScored = false;       // すでにスコア（カウント）加算済みかどうかを判定するフラグ
 
     void Start()
     {
+        // Debug.Log("ゴミ箱側:" + scoreOffset); // 座標ログ
+
         // 1. セーブデータ（PlayerPrefs）から、このゴミ箱がすでに発見済みか確認
         if (PlayerPrefs.GetInt(trashID, 0) == 1)
         {
@@ -38,8 +40,11 @@ public class judgingbord_score : MonoBehaviour
         // 3. スコア表示用UIを生成し、初期設定を行う
         scoreUI = Instantiate(scoreUIPrefab, canvasRect);
         scoreUI.targetTran = transform;               // UIの追従対象に自分自身を設定
+
+        scoreUI.scoreOffset = scoreOffset; // ←追加
+
         scoreUI.SetScore(scoreValue);                 // 表示するスコアの値を設定
-        scoreUI.transform.localPosition = new Vector3(0, 100, 0); // 位置の初期化（少し上にずらす）
+        //scoreUI.transform.localPosition = new Vector3(0, 100, 0); // 位置の初期化（少し上にずらす）
         scoreUI.transform.localScale = Vector3.one;   // サイズを1倍に設定
 
         if (hasScored)//もしすでに見つけたごみ箱なら
@@ -52,9 +57,7 @@ public class judgingbord_score : MonoBehaviour
 
     // 別のオブジェクトが衝突（接触）したときに呼ばれる関数
     void OnCollisionEnter(Collision collision)
-    {
-        
-        
+    {   
         // 衝突したオブジェクトのタグが "Kan"（缶）でなければ、何もし処理をせず返す
         if (!collision.gameObject.CompareTag("Kan")) return;
 
