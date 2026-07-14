@@ -43,18 +43,14 @@ public class KanMove : MonoBehaviour
     [Range(0, 5)]
     public int JumpLv = 0;//ジャンプレベル
 
+    public bool carInvincible;
+    
     public void StopKanSound()
     {
         if (SE != null)
         {
             SE.Stop();
         }
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
     }
 
     public void GetCoin()
@@ -90,11 +86,10 @@ public class KanMove : MonoBehaviour
 
     public void Clash()
     {
+        SoundManager.StopAS_Kan();
         gameObject.transform.localScale = new Vector3(0.1590182f, 0.004016032f, 0.1590182f);
     }
-   
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (ActiveMove)
@@ -123,9 +118,8 @@ public class KanMove : MonoBehaviour
                 Speed += 0.05f;
             }
             Vector3 rot = this.transform.eulerAngles;
-
-
-
+            
+            
             if (Input.GetKey(KeyCode.A) && !isFly.IsActiveFly)
             {
                 // Y軸の数値に -0.5
@@ -133,7 +127,6 @@ public class KanMove : MonoBehaviour
 
                 // オブジェクトに反映
                 transform.eulerAngles = rot;
-
             }
 
             if (Input.GetKey(KeyCode.D) && !isFly.IsActiveFly)
@@ -143,7 +136,6 @@ public class KanMove : MonoBehaviour
 
                 // オブジェクトに反映
                 transform.eulerAngles = rot;
-
             }
 
             if (Input.GetKeyDown(KeyCode.Space))
@@ -175,10 +167,6 @@ public class KanMove : MonoBehaviour
             {
                 StartCoroutine(ClearUI.GameEnd());
             }
-
-
         }
-
     }
-
 }

@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class judgingbord_score : MonoBehaviour
 {
@@ -16,6 +18,8 @@ public class judgingbord_score : MonoBehaviour
     [SerializeField] judgingbord_score_UI scoreUIPrefab; // 頭上などに表示するスコアUIのプレハブ
     [SerializeField] ClearManegar clearManegar;          // ゲームクリアを管理するマネージャー
 
+    
+    
     private judgingbord_score_UI scoreUI; // 生成したスコアUIのインスタンス保持用
     private bool hasScored = false;       // すでにスコア（カウント）加算済みかどうかを判定するフラグ
 
@@ -25,6 +29,7 @@ public class judgingbord_score : MonoBehaviour
         if (PlayerPrefs.GetInt(trashID, 0) == 1)
         {
             hasScored = true; // 発見済みならフラグを立てる
+            
         }
 
         // 2. セーブデータから現在のゴミの総発見数を読み込む
@@ -36,6 +41,13 @@ public class judgingbord_score : MonoBehaviour
         scoreUI.SetScore(scoreValue);                 // 表示するスコアの値を設定
         scoreUI.transform.localPosition = new Vector3(0, 100, 0); // 位置の初期化（少し上にずらす）
         scoreUI.transform.localScale = Vector3.one;   // サイズを1倍に設定
+
+        if (hasScored)//もしすでに見つけたごみ箱なら
+        {
+            TextMeshProUGUI a = scoreUI.gameObject.GetComponent<TextMeshProUGUI>();
+            
+            a.color = new Color(1f, 0.15f, 0.34f);//設定した色の文字にする
+        }
     }
 
     // 別のオブジェクトが衝突（接触）したときに呼ばれる関数

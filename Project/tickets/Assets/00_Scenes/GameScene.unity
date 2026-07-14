@@ -30409,7 +30409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5564214462465924865, guid: bb2fbe10985b8584aae4b5849c7a5ee1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.54
+      value: 7.32
       objectReference: {fileID: 0}
     - target: {fileID: 5564214462465924865, guid: bb2fbe10985b8584aae4b5849c7a5ee1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -43378,11 +43378,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7747779765286423926, guid: 2428e7e466b559e43a0e4202eae899ff, type: 3}
   m_PrefabInstance: {fileID: 1459416467}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1464877984 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2195047857915293229, guid: 3122fa0dc60fb0246a1ac1330a6b6d48, type: 3}
-  m_PrefabInstance: {fileID: 854074798312886023}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1469462229
 PrefabInstance:
@@ -64243,6 +64238,14 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 292816336575319995, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 292816336575319995, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 724064951055507651, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64279,10 +64282,34 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 1249759333451481575, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 1249759333451481575, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 1253496105031746821, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: m_Name
       value: NPCPos
       objectReference: {fileID: 0}
+    - target: {fileID: 1277012637371276643, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 1277012637371276643, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 1704541494421358843, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 1704541494421358843, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 2531750170646821355, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64295,6 +64322,22 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 2752394261776565620, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 2752394261776565620, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 2801496463176014408, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 2801496463176014408, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 2832075900342582741, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64319,6 +64362,14 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 3087284883859866095, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 3087284883859866095, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 3420211785082046886, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64331,6 +64382,30 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 4227446878866548852, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 4227446878866548852, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 4348597949035164833, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 4348597949035164833, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 4406394692348098424, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 4406394692348098424, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 4564525855202542036, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64342,7 +64417,31 @@ PrefabInstance:
     - target: {fileID: 4564525855202542036, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: KanAudioSource
       value: 
-      objectReference: {fileID: 1464877984}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894609815321249358, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 4894609815321249358, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 4973040539018021696, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 4973040539018021696, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 4983600644791356661, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 4983600644791356661, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 5388887196821951406, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64415,6 +64514,22 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 6791990655563322516, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 6791990655563322516, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 6916462579225389663, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 6916462579225389663, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 7117230210549131483, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64439,6 +64554,14 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 7747598865659380147, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 7747598865659380147, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 7827671390118097947, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64451,6 +64574,14 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 7835422738791106706, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 7835422738791106706, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 7874785430630124496, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -64463,6 +64594,14 @@ PrefabInstance:
       propertyPath: KanAudioSource
       value: 
       objectReference: {fileID: 5197543312559684623}
+    - target: {fileID: 8101657262843231871, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 8101657262843231871, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 8584958760529428396, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -114.829346
@@ -64503,6 +64642,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8773812617509192832, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 8773812617509192832, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
+    - target: {fileID: 9132894962192368875, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: pauseSistem
+      value: 
+      objectReference: {fileID: 518705767}
+    - target: {fileID: 9132894962192368875, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
+      propertyPath: KanRigidbody
+      value: 
+      objectReference: {fileID: 1849665485}
     - target: {fileID: 9223311634270973115, guid: c2f32f5973d1caa4785d536424d03fd9, type: 3}
       propertyPath: pauseSistem
       value: 
@@ -66756,6 +66911,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 583123403}
+    - target: {fileID: 3607085379872278192, guid: b3c9f725f456d8b4885b45f9419e79d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.191
+      objectReference: {fileID: 0}
     - target: {fileID: 5442964036917838290, guid: b3c9f725f456d8b4885b45f9419e79d0, type: 3}
       propertyPath: scoreValue
       value: 500000

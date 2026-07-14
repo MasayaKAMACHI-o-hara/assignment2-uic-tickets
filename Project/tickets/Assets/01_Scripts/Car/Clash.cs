@@ -20,7 +20,7 @@ public class Clash : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == KanPosition.gameObject)
+        if (other.gameObject == KanPosition.gameObject && !Kanscr.carInvincible)
         {
             Debug.Log("缶を引いちゃったよ。");
             SoundManager.PlaySE_CarHorn();

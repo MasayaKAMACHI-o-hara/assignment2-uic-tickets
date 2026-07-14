@@ -1,29 +1,32 @@
 using UnityEngine;
-
+public enum NPCType
+{
+    Male=1,
+    Female=2,
+    Boy=3
+}
 public class NPCAction : MonoBehaviour
 {
     private Animator animator;
     private AudioSource SE_NPCFootsteps;
+    [Header("種類")]
+    [SerializeField] private NPCType type;
     [Header("缶")]
-    [SerializeField] private Rigidbody KanRigidbody;
+    [SerializeField] public Rigidbody KanRigidbody;
     [Header("ポーズ")]
     [SerializeField] private PauseSistem pauseSistem;
     
     [Header("移動経由地のオブジェクト")]
     [SerializeField] private Transform[] wayTransform;
     [SerializeField] private Collider[] wayCollider;
-
-    [Header("蹴り")]
-    [SerializeField] float kickPower = 30f;
-    [SerializeField] public bool HumanCoffee = false;
-
+    
     // アニメーション用bool変数
     bool idle = true;    // 停止
-    bool walk = false;   // 歩き
-    bool kickNow = false;// 蹴り中
+    bool walk;   // 歩き
+    bool kickNow;// 蹴り中
     
     // 停止時間カウンター
-    float idleTime = 0;
+    float idleTime;
 
     // 移動速度
     float spped = 1.5f;
@@ -140,23 +143,26 @@ public class NPCAction : MonoBehaviour
     // アニメーションイベント・蹴り関数
     public void kick()
     {
-        if (HumanCoffee == false)
+
+        if (KanRigidbody != null)
         {
-            if (KanRigidbody != null)
-            {
-                //飛ばしたい方向を指定
-                Vector3 kickDirection = transform.forward;
+            //飛ばしたい方向を指定
+            Vector3 kickDirection = transform.forward;
 
-                //斜め上に飛ばす力を加える
-                kickDirection += Vector3.up * 1.5f;
+            //斜め上に飛ばす力を加える
+            kickDirection += Vector3.up * 1.5f;
 
-                //力を加える
-                KanRigidbody.linearVelocity = Vector3.zero; // 前の速度をリセット
-                KanRigidbody.AddForce(kickDirection.normalized * kickPower, ForceMode.Impulse);
-                SoundManager.PlaySE_NPCKick();
-            }
+            //力を加える
+            KanRigidbody.linearVelocity = Vector3.zero; // 前の速度をリセット
+            float kickPower = NPCManager.GetKickPower(type);
+            //ヒューマンコーヒー状態なら力を強めに
+            if (NPCManager.Instance.humanCoffee) KanRigidbody.AddForce(kickDirection.normalized * kickPower * NPCManager.Instance.coffeePower, ForceMode.Impulse);
+            //通常の力
+            else KanRigidbody.AddForce(kickDirection.normalized * kickPower, ForceMode.Impulse);
+            SoundManager.PlaySE_NPCKick();
         }
     }
+
 
     // アニメーションイベント・キックアニメーション終了関数
     public void KickEnd()

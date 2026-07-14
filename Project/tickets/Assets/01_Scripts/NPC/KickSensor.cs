@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class KickSensor : MonoBehaviour
 {
+    private NPCAction _action;
+    void Start()
+    {
+        _action = GetComponentInParent<NPCAction>();
+    }
     private void OnTriggerEnter(Collider other)
     {
-        // 相手がプレイヤー（缶）なら、親のスクリプトに通知する
-        if (other.CompareTag("Kan"))
+        if (other.gameObject == _action.KanRigidbody.gameObject.transform.Find("KanMidPos").gameObject)
         {
-            // 親オブジェクトにあるNPCスクリプトの関数を呼ぶ
             SendMessageUpwards("OnKanEnter");
         }
     }
