@@ -21,6 +21,7 @@ public class start : MonoBehaviour
 
     public GameObject StartBuckBottown_1;
     public GameObject StartBuckBottown_2;
+    
     public GameObject left_Bottown;
     public GameObject right_Bottown;
 
@@ -91,13 +92,11 @@ public class start : MonoBehaviour
         // ゲーム説明UIを元の座標に戻す
         gamesetumei.localPosition = new Vector3(2000, 2000, 0);
 
+
         // タイトルUIを表示
         StartBuckBottown_1.SetActive(true);
         StartBuckBottown_2.SetActive(true);
-
-        // ページめくりボタンは非表示
-        //left_Bottown.SetActive(false);
-        //right_Bottown.SetActive(false);
-        
     }
+
+    
 }

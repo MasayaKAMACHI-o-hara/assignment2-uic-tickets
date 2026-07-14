@@ -218,7 +218,7 @@ public class ClearManegar : MonoBehaviour
             OverUI.transform.position -= new Vector3(0, 2000, 0);
             KanOverUI.SetActive(true);
 
-            for (int i = 0; i < 200; i++)
+            for (int j = 0; j < 200; j++)
             {
                 yield return null;
             }
