@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class judgingbord_score_UI : MonoBehaviour
 {
@@ -12,7 +11,8 @@ public class judgingbord_score_UI : MonoBehaviour
     public CanvasGroup canvasGroup;
     public LayerMask obstacleMask;
 
-    public Vector3 scoreOffset = new Vector3(0, 0.8f, 0);
+    public Vector3 scoreOffset = new Vector3(0, 10f, 0); // 10fは仮
+
     public void SetScore(int score)
     {
         scoreText.text = score.ToString();
@@ -23,8 +23,8 @@ public class judgingbord_score_UI : MonoBehaviour
         if (targetTran == null) return;
 
         // 位置を頭上に固定
-        //transform.position = targetTran.position + new Vector3(0, 0.8f, 0);
         transform.position = targetTran.position + scoreOffset;
+
         // カメラ方向を向く（反転しない）
         Vector3 lookDir = transform.position - Camera.main.transform.position;
         transform.rotation = Quaternion.LookRotation(lookDir);
@@ -36,9 +36,9 @@ public class judgingbord_score_UI : MonoBehaviour
         Vector3 dir = (Camera.main.transform.position - targetTran.position).normalized;
         float dist = Vector3.Distance(Camera.main.transform.position, targetTran.position);
 
-        //if (Physics.Raycast(Camera.main.transform.position, -dir, out RaycastHit hit, dist, obstacleMask))
-        //    canvasGroup.alpha = 0;
-        //else
-        //    canvasGroup.alpha = 1;
+        if (Physics.Raycast(Camera.main.transform.position, -dir, out RaycastHit hit, dist, obstacleMask))
+            canvasGroup.alpha = 0;
+        else
+            canvasGroup.alpha = 1;
     }
 }
