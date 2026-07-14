@@ -15,6 +15,7 @@ public class SoundManager : MonoBehaviour {
     [SerializeField] AudioClip SE_KanSquirtStart;
     [SerializeField] AudioClip SE_KanSquirting;
     [SerializeField] AudioClip SE_KanSquirtEnd;
+    [SerializeField] AudioClip SE_KanFall;
     [SerializeField] AudioClip SE_KanLanding;
     [SerializeField] AudioSource SE_Coin;
     [SerializeField] AudioSource SE_VendingCoin;
@@ -39,6 +40,7 @@ public class SoundManager : MonoBehaviour {
     public static void PlaySE_KanSquirtStart() => Instance.AS_Kan.PlayOneShot(Instance.SE_KanSquirtStart);
     public static void PlaySE_KanSquirting() => Instance.AS_Kan.PlayOneShot(Instance.SE_KanSquirting);
     public static void PlaySE_KanSquirtEnd() => Instance.AS_Kan.PlayOneShot(Instance.SE_KanSquirtEnd);
+    public static void PlaySE_KanFall() => Instance.AS_Kan.PlayOneShot(Instance.SE_KanFall);
     public static void PlaySE_KanLanding() => Instance.AS_Kan.PlayOneShot(Instance.SE_KanLanding);
     public static void PlaySE_Coin() => Instance.SE_Coin.Play();
     public static void PlaySE_VendingCoin() => Instance.SE_VendingCoin.Play();
@@ -52,5 +54,4 @@ public class SoundManager : MonoBehaviour {
     public static void PlaySE_ScoreCountUp() => Instance.SE_ScoreCountUp.Play();
     public static void StopSE_ScoreCountUp() => Instance.SE_ScoreCountUp.Stop();
     public static void PlaySE_ScoreTotal() => Instance.SE_ScoreTotal.Play();
-
 }
