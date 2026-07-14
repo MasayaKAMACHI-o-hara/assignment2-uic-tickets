@@ -12,13 +12,6 @@ public class PauseSistem : MonoBehaviour
     public KanMove Kan;
     public SyakaSyaka Syaka;
 
-    public AudioSource SEPause;
-
-    public AudioClip PauseOn;
-    public AudioClip PauseOff;
-
-    public AudioSource carSound;
-
     public Vector2 ShowPosition = Vector2.zero;
     public Vector2 HidePosition = new Vector2(5000f, 0f);
 
@@ -47,7 +40,7 @@ public class PauseSistem : MonoBehaviour
             Syaka.ActiveSyaka = true;
             Kan.SE.UnPause();
             Syaka.SE.UnPause();
-            SEPause.PlayOneShot(PauseOff);
+            SoundManager.PlaySE_UIClose();
            
         }
         else
@@ -63,7 +56,7 @@ public class PauseSistem : MonoBehaviour
             Syaka.ActiveSyaka = false;
             Kan.SE.Pause();
             Syaka.SE.Pause();
-            SEPause.PlayOneShot(PauseOn);
+            SoundManager.PlaySE_UIOpen();
           
         }
     }

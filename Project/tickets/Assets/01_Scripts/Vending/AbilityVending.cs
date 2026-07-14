@@ -123,9 +123,9 @@ public class AbilityVending : MonoBehaviour
         }
     }
     //センサーに入った時の関数
-    private void OnTriggerEnter(Collider Sensor)
+    private void OnTriggerEnter(Collider sensor)
     {
-        if (Sensor.CompareTag("Kan"))
+        if (sensor.gameObject == kanMove.gameObject.transform.Find("KanMidPos").gameObject)
         {
             //自販機UI表示
             AVUI.SetActive(true);
@@ -135,9 +135,9 @@ public class AbilityVending : MonoBehaviour
         }
     }
     //センサーから出た時の関数
-    private void OnTriggerExit(Collider Sensor)
+    private void OnTriggerExit(Collider sensor)
     {
-        if (Sensor.CompareTag("Kan"))
+        if (sensor.gameObject == kanMove.gameObject.transform.Find("KanMidPos").gameObject)
         {
             //自販機UI非表示
             AVUI.SetActive(false);

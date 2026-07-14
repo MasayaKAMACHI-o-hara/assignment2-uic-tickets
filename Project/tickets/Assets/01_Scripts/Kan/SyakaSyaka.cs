@@ -306,8 +306,7 @@ public class SyakaSyaka : MonoBehaviour
             // 飛んでいる最中にスペースキーが押されたら
             if (Input.GetKeyDown(KeyCode.Space) && IsActiveFly && !IsActiveFall && IsActiveSpace)
             {
-
-
+                
                 if (Rb != null)
                 {
                     // 最新のプロパティで速度をリセット
@@ -318,6 +317,8 @@ public class SyakaSyaka : MonoBehaviour
 
                     // 3. (オプション) 勢いよく落としたいなら下向きに力を加える
                     Rb.AddForce(Vector3.down * 10f, ForceMode.Impulse);
+                    
+                    SoundManager.PlaySE_KanFall();
                 }
 
                 IsActiveFall = true;

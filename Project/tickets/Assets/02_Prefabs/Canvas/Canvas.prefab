@@ -1277,10 +1277,6 @@ MonoBehaviour:
   Camera: {fileID: 0}
   Kan: {fileID: 0}
   Syaka: {fileID: 0}
-  SEPause: {fileID: 3209531097635095901}
-  PauseOn: {fileID: 8300000, guid: f798f11cf9dc9da4e971fd03eedd55f6, type: 3}
-  PauseOff: {fileID: 8300000, guid: 9a715e44ed03f7d40a4f6e52f5fbe16f, type: 3}
-  carSound: {fileID: 2321339997218345475, guid: fed35b4e85233c644901dca92ceebff3, type: 3}
   ShowPosition: {x: 0, y: 0}
   HidePosition: {x: 5000, y: 0}
 --- !u!82 &3209531097635095901
@@ -8683,7 +8679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6792772729560815284, guid: f95da27e1203aa14f87e550c815cff19, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7256750647277460897, guid: f95da27e1203aa14f87e550c815cff19, type: 3}
       propertyPath: m_fontSize

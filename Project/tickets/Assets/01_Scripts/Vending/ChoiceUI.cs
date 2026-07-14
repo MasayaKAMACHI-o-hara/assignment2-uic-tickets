@@ -125,8 +125,8 @@ public class ChoiceUI : MonoBehaviour
         //低確率用乱数作成
         int roll1 = UnityEngine.Random.Range(1, 101);
 
-        //20以下なら低確率
-        if (roll1 <= 20)
+        //10以下なら低確率
+        if (roll1 <= 10)
         {
             // 低確率: 4番
             return 4;
@@ -137,14 +137,14 @@ public class ChoiceUI : MonoBehaviour
             //中・高確率用乱数作成
             int roll2 = UnityEngine.Random.Range(1, 101);
 
-            //40以下なら中確率
-            if (roll2 <= 40)
+            //30以下なら中確率
+            if (roll2 <= 30)
             {
                 // 中確率: 3, 5, 7, 9
                 int[] mid = { 3, 5, 7, 9 };
                 return mid[UnityEngine.Random.Range(0, mid.Length)];
             }
-            //40以下以外なら高確率
+            //30以下以外なら高確率
             else
             {
                 // 高確率: 0, 1, 2, 6, 8, 10

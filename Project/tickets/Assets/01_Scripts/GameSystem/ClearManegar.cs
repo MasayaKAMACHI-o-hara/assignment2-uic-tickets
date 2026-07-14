@@ -1,10 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using static UnityEngine.GraphicsBuffer;
-using Unity.Mathematics;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class ClearManegar : MonoBehaviour
 {
@@ -38,36 +35,20 @@ public class ClearManegar : MonoBehaviour
     public SyakaSyaka syaka;
 
     public bool ActiveOver = false;
-    
-    [Header("効果音")]
-    public AudioSource SE;
-
-    public AudioClip SE1;
-    public AudioClip SE2; // katakata
-    public AudioClip SE3; // Score
-    public AudioClip SE4; // TotalScore
 
     [Header("スコアボーナス")]
-    public int ScoreBonusCount = 0;
+    public int ScoreBonusCount;
     public int ScoreBonusPoint = 10000; // !!! OSIRUKO !!!
 
     //public GameObject BonusUI;
     //public TextMeshProUGUI BonusText;
     //public Image BonusIcon;
 
-    void PlaySE(AudioClip clip)
-    {
-        if (SE != null && clip != null)
-        {
-            SE.PlayOneShot(clip);
-        }
-    }
-
 
     public IEnumerator GameFinish(int score)
     {
         Kan.StopKanSound();
-        PlaySE(SE1);
+        SoundManager.PlaySE_GameOverAndGameClear();
 
         Timer.TimerStop();
         GameUI.SetActive(false);
@@ -100,12 +81,7 @@ public class ClearManegar : MonoBehaviour
 
             yield return new WaitForSeconds(0.5f);
 
-            if (SE != null && SE2 != null)
-            {
-                SE.clip = SE2;
-                SE.loop = true;
-                SE.Play();
-            }
+            SoundManager.PlaySE_ScoreCountUp();
 
             for (int j = Mathscore[i]; j > 0; j--)
             {
@@ -132,36 +108,30 @@ public class ClearManegar : MonoBehaviour
 
             ScoreText[i].text = Mathscore[i].ToString("D6") + "pt";
 
-            if (SE != null)
-            {
-                SE.Stop();
-                SE.loop = false;
-                SE.clip = null;
-            }
+            SoundManager.StopSE_ScoreCountUp();
 
-            PlaySE(SE3);
+            SoundManager.PlaySE_GameOverAndGameClear();
 
             for (int j = 0; j < 200; j++)
             {
                 yield return null;
             }
+        } 
+        /*
+        if (ScoreBonusCount > 0)
+        {
+            BonusUI.SetActive(true);
+
+            BonusText.text = "+" + bonusScore.ToString("D6") + "pt";
+
+            yield return new WaitForSeconds(1f);
         }
-
-        //if (ScoreBonusCount > 0)
-        //{
-        //    BonusUI.SetActive(true);
-
-        //    BonusText.text =
-        //        "+" + bonusScore.ToString("D6") + "pt";
-
-        //    yield return new WaitForSeconds(1f);
-        //}
-
+        */
         var Mix = Mathscore[0] + Mathscore[1] + Mathscore[2] + bonusScore;
         ScoreUI[3].SetActive(true);
         ScoreText[3].text = Mix.ToString("D6") + "pt";
 
-        PlaySE(SE4);
+        SoundManager.PlaySE_ScoreTotal();
 
         HighScore.SaveHighScore(Mix);
 
@@ -186,8 +156,8 @@ public class ClearManegar : MonoBehaviour
 
     public IEnumerator GameEnd()
     {
-        Kan.StopKanSound();
-        PlaySE(SE1);
+        SoundManager.StopAS_Kan();
+        SoundManager.PlaySE_GameOverAndGameClear();
 
         Debug.Log("a");
         Timer.TimerStop();
@@ -204,9 +174,6 @@ public class ClearManegar : MonoBehaviour
 
         for (int i = 0; i < 200; i++)
         {
-            Kan.StopKanSound();
-            PlaySE(SE1);
-        
             Timer.TimerStop();
             GameUI.SetActive(false);
             Kan.ActiveMove = false;
@@ -232,11 +199,7 @@ public class ClearManegar : MonoBehaviour
         
        
     }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
+    
 
     // Update is called once per frame
     void Update()

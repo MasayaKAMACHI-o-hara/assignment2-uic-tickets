@@ -184,6 +184,7 @@ MonoBehaviour:
   SE_KanSquirtStart: {fileID: 8300000, guid: 8c6c396c2ac5c8742a1b78ac80e29efa, type: 3}
   SE_KanSquirting: {fileID: 8300000, guid: db536777e79dad448ab1d663a6c7dbdd, type: 3}
   SE_KanSquirtEnd: {fileID: 8300000, guid: 399388e823518c54b8d74b4359403780, type: 3}
+  SE_KanFall: {fileID: 8300000, guid: f57b337627f531149ab3cbacc5a21569, type: 3}
   SE_KanLanding: {fileID: 8300000, guid: 273f628fde9d6d24290b43a6f0032bb1, type: 3}
   SE_Coin: {fileID: 1542609284615170918}
   SE_VendingCoin: {fileID: 4108448635896091012}
