@@ -5,6 +5,7 @@ public class PauseSistem : MonoBehaviour
 
     public bool IsActiveESC = false;
     public bool IsActivePause = false;
+    public bool IsActiveSetting = false;
 
     public GameObject PauseUI;
     public CountDown Timer;
@@ -16,6 +17,7 @@ public class PauseSistem : MonoBehaviour
     public Vector2 HidePosition = new Vector2(5000f, 0f);
 
     private RectTransform pauseRect;
+    public Settings_Manager SMGer;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,6 +29,12 @@ public class PauseSistem : MonoBehaviour
 
     public void PressESC()
     {
+        if (IsActiveSetting)
+        {
+            SMGer.OnClick_SettingBuck();
+            return;
+        }
+        
         if (IsActivePause)//もし現在ポーズ中なら
         {
             pauseRect.anchoredPosition = HidePosition;

@@ -1,6 +1,9 @@
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -19,17 +22,40 @@ public class Settings_Manager : MonoBehaviour
     public Image SEicon;
     public Image BGMicon;
 
+    public TextMeshProUGUI BGMNum;
+    public TextMeshProUGUI SENum;
+    public TextMeshProUGUI CameraNum;
 
+    public CameraMove CameraSCR;
+
+    public GameObject CheckDeleteUI;
+    public GameObject DeleteButtonUI;
+    public GameObject StartBuckButtonUI;
+    public GameObject BuckSettingButtonUI;
+    public PauseSistem pauseSistemSCR;
+    
+    public bool InGame = false;
     public void OpenSetting()
     {
-        transform.localPosition = new Vector2(-4156, 206);
+        transform.localPosition = new Vector2(-4173, 0);
+        if (InGame)
+        {
+            DeleteButtonUI.SetActive(false);
+            StartBuckButtonUI.SetActive(false);
+            BuckSettingButtonUI.SetActive(true);
+            pauseSistemSCR.IsActiveSetting = true;
+        }
+ 
         //oto
-        Debug.Log("open");
     }
 
     public void OnClick_SettingBuck()
     {
         transform.localPosition = new Vector3(4000, 0, 0);
+        if (InGame)
+        {
+            pauseSistemSCR.IsActiveSetting = false;
+        }
     }
 
     public void SliderChangesSE(float Value)
@@ -37,21 +63,89 @@ public class Settings_Manager : MonoBehaviour
         Debug.Log(Value);
         float ChangeVOL = Mathf.Log10(Value) * 20f;
         AUDIO.SetFloat("SE", ChangeVOL);
-      
+        PlayerPrefs.SetFloat("SE", ChangeVOL);
+        
+        var Num = Value * 100f;
+        Num = (int)Num;
+        SENum.text = $"{Num}";
+        if (Num >= 50)
+        {
+            SEicon.sprite = VOLicon[2];
+        }
+        else if (Num == 0)
+        {
+            SEicon.sprite = VOLicon[0];
+        }
+        else
+        {
+            SEicon.sprite = VOLicon[1];
+        }
     }
     public void SliderChangesBGM(float Value)
     {
         Debug.Log(Value);
         float ChangeVOL = Mathf.Log10(Value) * 20f;
         AUDIO.SetFloat("BGM", ChangeVOL);
-       
+        PlayerPrefs.SetFloat("BGM", ChangeVOL);
+        
+        var Num = Value * 100f;
+        Num = (int)Num;
+        BGMNum.text = $"{Num}";
+        if (Num >= 50)
+        {
+            BGMicon.sprite = VOLicon[2];
+        }
+        else if (Num == 0)
+        {
+            BGMicon.sprite = VOLicon[0];
+        }
+        else
+        {
+            BGMicon.sprite = VOLicon[1];
+        }
+    }
+    
+    public void SliderChangesCameraSEN(float Value)
+    {
+        CameraSCR.sensitivity = Value;
+        PlayerPrefs.SetFloat("Camera", CameraSCR.sensitivity);
+        CameraNum.text = $"{Value:F2}";
     }
 
+    public void TestSound()
+    {
+        SoundManager.PlaySE_NPCKick();
+    }
+
+    public void CheckDeleteData()
+    {
+        CheckDeleteUI.SetActive(true);
+        SoundManager.PlaySE_UIOpen();
+    }
+    public void BackDeleteData()
+    {
+        CheckDeleteUI.SetActive(false);
+        SoundManager.PlaySE_UIClose();
+    }
+    public void RunDeleteData()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(0);
+    }
+    
     public void IconChange(float VOL, Image icon)
     {
         if(VOL >= 0.5)
         {
             //icon.sprite = 
         }
+    }
+
+    private void Start()
+    {
+        AUDIO.SetFloat("BGM", PlayerPrefs.GetFloat("BGM"));
+        AUDIO.SetFloat("SE", PlayerPrefs.GetFloat("SE"));
+        if(PlayerPrefs.HasKey("Camera"))
+        CameraSCR.sensitivity = PlayerPrefs.GetFloat("Camera");
     }
 }
