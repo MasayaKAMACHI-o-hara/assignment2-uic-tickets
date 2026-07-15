@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AbilityManegar
       objectReference: {fileID: 0}
+    - target: {fileID: 6743589155328506948, guid: 84e93c7c72eb2104ba44a633225a3e09, type: 3}
+      propertyPath: TrashBox.Array.size
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
