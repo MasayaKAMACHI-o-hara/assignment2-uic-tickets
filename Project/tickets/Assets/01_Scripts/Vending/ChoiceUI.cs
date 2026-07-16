@@ -44,7 +44,7 @@ public class ChoiceUI : MonoBehaviour
     [SerializeField] public CountDown countDown;
 
     [Header("アビリティタイマー")]
-    [SerializeField] private AbilityTimeUI abilityTimeUI;
+    [SerializeField] private AbilityTimeUIManager abilityTimeUIManager;
 
     //現在画面に表示されている3つのデータを保持するリスト
     private List<UpgradeData> currentDisplayedUpgrades = new List<UpgradeData>();
@@ -361,7 +361,7 @@ public class ChoiceUI : MonoBehaviour
             {
                 abilityManeger.GetAbility(ADrinkNum1);
 
-                abilityTimeUI.StartAbility(
+                abilityTimeUIManager.AddAbility(
                     currentDisplayedAbilities[0].Image
                 );
 
@@ -422,7 +422,7 @@ public class ChoiceUI : MonoBehaviour
                 abilityManeger.GetAbility(ADrinkNum2);
 
 
-                abilityTimeUI.StartAbility(
+                abilityTimeUIManager.AddAbility(
                     currentDisplayedAbilities[1].Image
                 );
 
@@ -481,7 +481,7 @@ public class ChoiceUI : MonoBehaviour
                 abilityManeger.GetAbility(ADrinkNum3);
 
 
-                abilityTimeUI.StartAbility(
+                abilityTimeUIManager.AddAbility(
                     currentDisplayedAbilities[2].Image
                 );
 
