@@ -17,8 +17,6 @@ public class Settings_Manager : MonoBehaviour
 
     public Sprite[] VOLicon; 
 
-    public GameObject StartBuckBottown_3;
-
     public Image SEicon;
     public Image BGMicon;
 
@@ -147,5 +145,6 @@ public class Settings_Manager : MonoBehaviour
         AUDIO.SetFloat("SE", PlayerPrefs.GetFloat("SE"));
         if(PlayerPrefs.HasKey("Camera"))
         CameraSCR.sensitivity = PlayerPrefs.GetFloat("Camera");
+        SESlider.value = PlayerPrefs.GetFloat("SE");
     }
 }

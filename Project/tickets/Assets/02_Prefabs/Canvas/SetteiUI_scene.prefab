@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 337.7801}
-  m_SizeDelta: {x: -18, y: 70}
+  m_SizeDelta: {x: -0.0010986, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1190954061789815072
 CanvasRenderer:
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: SliderChangesSE
         m_Mode: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3554673053590869540}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
           m_MethodName: TestSound
           m_Mode: 1
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: OnClick_SettingBuck
         m_Mode: 1
@@ -711,6 +711,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7576247610506038843}
   - {fileID: 381264198313579920}
   - {fileID: 8929971822916960703}
   - {fileID: 6231704381411873865}
@@ -1111,7 +1112,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2920173887075626259}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1124,7 +1125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: 296}
+  m_AnchoredPosition: {x: -190.00073, y: 295.99994}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3074516635781821983
@@ -1294,6 +1295,81 @@ RectTransform:
   m_AnchoredPosition: {x: -4.923126, y: 2.7423}
   m_SizeDelta: {x: -20, y: 4.8318}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &3268600547914674412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7576247610506038843}
+  - component: {fileID: 7834116998769560588}
+  - component: {fileID: 1913520818140923}
+  m_Layer: 5
+  m_Name: Colairast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7576247610506038843
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3268600547914674412}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.379646, y: 3.5564556, z: 3.5564556}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7472513939873670484}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 606, y: -365}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7834116998769560588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3268600547914674412}
+  m_CullTransparentMesh: 1
+--- !u!114 &1913520818140923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3268600547914674412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6e894f2d082492e47ba50806d178acc2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3291989142373012826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,7 +2170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: 432}
+  m_AnchoredPosition: {x: 0.000022888, y: 438}
   m_SizeDelta: {x: 290.5015, y: 118.4376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6512555495159142228
@@ -2287,7 +2363,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: SliderChangesBGM
         m_Mode: 0
@@ -2558,7 +2634,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: BackDeleteData
         m_Mode: 1
@@ -2675,7 +2751,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: SliderChangesCameraSEN
         m_Mode: 0
@@ -3300,8 +3376,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4396311320139173292}
   - component: {fileID: 7565445473420646090}
-  - component: {fileID: 3554673053590869540}
   - component: {fileID: 968426262636247212}
+  - component: {fileID: 5104939421065553554}
   m_Layer: 5
   m_Name: SetteiUI_scene
   m_TagString: Untagged
@@ -3384,7 +3460,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3554673053590869540
+--- !u!222 &968426262636247212
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641348112350606301}
+  m_CullTransparentMesh: 0
+--- !u!114 &5104939421065553554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3393,7 +3477,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7641348112350606301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b311fdf2674403a45a6db237e4281a2d, type: 3}
+  m_Script: {fileID: 11500000, guid: d3523b455224ef146908d25f3e3ed227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SESlider: {fileID: 1658073982022791329}
@@ -3403,7 +3487,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4b9293959beb9f947a9c2ab58fc2aa95, type: 3}
   - {fileID: 21300000, guid: d2b128720ab397c48b8aba95231af12f, type: 3}
   - {fileID: 21300000, guid: 10997dfbcc0934d42b594f645635bb02, type: 3}
-  StartBuckBottown_3: {fileID: 1811901596954631042}
   SEicon: {fileID: 5109033772500039247}
   BGMicon: {fileID: 7992337357430397882}
   BGMNum: {fileID: 3204851777670590885}
@@ -3416,14 +3499,6 @@ MonoBehaviour:
   BuckSettingButtonUI: {fileID: 8889943687423643014}
   pauseSistemSCR: {fileID: 0}
   InGame: 0
---- !u!222 &968426262636247212
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7641348112350606301}
-  m_CullTransparentMesh: 0
 --- !u!1 &8000785640696820421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,7 +3941,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: OnClick_SettingBuck
         m_Mode: 1
@@ -4212,7 +4287,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: CheckDeleteData
         m_Mode: 1
@@ -4483,7 +4558,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3554673053590869540}
+      - m_Target: {fileID: 5104939421065553554}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: RunDeleteData
         m_Mode: 1
