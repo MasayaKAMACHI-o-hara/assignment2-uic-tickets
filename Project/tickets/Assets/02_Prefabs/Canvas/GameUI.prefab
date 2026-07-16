@@ -529,7 +529,6 @@ GameObject:
   - component: {fileID: 4937323071594896432}
   - component: {fileID: 8569138471358497650}
   - component: {fileID: 7298730600159761865}
-  - component: {fileID: 606340639116943990}
   - component: {fileID: 3357590173399927549}
   m_Layer: 5
   m_Name: GoalText
@@ -596,30 +595,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &606340639116943990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657918127359709114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f4d79d0f0d0524ebaa7335269bced7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TiteleLogo: {fileID: 0}
-  GameUI: {fileID: 0}
-  Kan: {fileID: 0}
-  Camera: {fileID: 0}
-  Pause: {fileID: 0}
-  Timer: {fileID: 0}
-  Syaka: {fileID: 0}
-  StartBuckBottown_1: {fileID: 0}
-  StartBuckBottown_2: {fileID: 0}
-  left_Bottown: {fileID: 0}
-  right_Bottown: {fileID: 0}
-  gamesetumei: {fileID: 0}
 --- !u!114 &3357590173399927549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,7 +800,6 @@ GameObject:
   - component: {fileID: 7073183402659335970}
   - component: {fileID: 2810508835834411631}
   - component: {fileID: 4975141955387417696}
-  - component: {fileID: 4658057482374188835}
   - component: {fileID: 950067345741917333}
   - component: {fileID: 2621488145703495087}
   m_Layer: 5
@@ -895,30 +869,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4658057482374188835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2526835176347291825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f4d79d0f0d0524ebaa7335269bced7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TiteleLogo: {fileID: 0}
-  GameUI: {fileID: 0}
-  Kan: {fileID: 0}
-  Camera: {fileID: 0}
-  Pause: {fileID: 0}
-  Timer: {fileID: 0}
-  Syaka: {fileID: 0}
-  StartBuckBottown_1: {fileID: 0}
-  StartBuckBottown_2: {fileID: 0}
-  left_Bottown: {fileID: 0}
-  right_Bottown: {fileID: 0}
-  gamesetumei: {fileID: 0}
 --- !u!114 &950067345741917333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,7 +1336,6 @@ GameObject:
   - component: {fileID: 2762695553380768899}
   - component: {fileID: 1321105542156009342}
   - component: {fileID: 8592074084316603768}
-  - component: {fileID: 4579807350173968070}
   - component: {fileID: 7416153327695680683}
   - component: {fileID: 3305733961641887849}
   m_Layer: 5
@@ -1456,30 +1405,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4579807350173968070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4450420287764653463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f4d79d0f0d0524ebaa7335269bced7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TiteleLogo: {fileID: 0}
-  GameUI: {fileID: 0}
-  Kan: {fileID: 0}
-  Camera: {fileID: 0}
-  Pause: {fileID: 0}
-  Timer: {fileID: 0}
-  Syaka: {fileID: 0}
-  StartBuckBottown_1: {fileID: 0}
-  StartBuckBottown_2: {fileID: 0}
-  left_Bottown: {fileID: 0}
-  right_Bottown: {fileID: 0}
-  gamesetumei: {fileID: 0}
 --- !u!114 &7416153327695680683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1706,7 +1631,6 @@ GameObject:
   - component: {fileID: 6158371091678812662}
   - component: {fileID: 6422262566532373504}
   - component: {fileID: 2952635742183540755}
-  - component: {fileID: 6295326377134952776}
   - component: {fileID: 6835534412398422223}
   m_Layer: 5
   m_Name: coin
@@ -1774,30 +1698,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6295326377134952776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169400247085817052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f4d79d0f0d0524ebaa7335269bced7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TiteleLogo: {fileID: 0}
-  GameUI: {fileID: 0}
-  Kan: {fileID: 0}
-  Camera: {fileID: 0}
-  Pause: {fileID: 0}
-  Timer: {fileID: 0}
-  Syaka: {fileID: 0}
-  StartBuckBottown_1: {fileID: 0}
-  StartBuckBottown_2: {fileID: 0}
-  left_Bottown: {fileID: 0}
-  right_Bottown: {fileID: 0}
-  gamesetumei: {fileID: 0}
 --- !u!114 &6835534412398422223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2359,7 +2259,6 @@ GameObject:
   - component: {fileID: 7328116549075192641}
   - component: {fileID: 301607184495279425}
   - component: {fileID: 5449748168690271712}
-  - component: {fileID: 8685590512286357547}
   - component: {fileID: 7200392979443449432}
   - component: {fileID: 2012760571994635462}
   m_Layer: 5
@@ -2429,30 +2328,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8685590512286357547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8037276566323918411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f4d79d0f0d0524ebaa7335269bced7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TiteleLogo: {fileID: 0}
-  GameUI: {fileID: 0}
-  Kan: {fileID: 0}
-  Camera: {fileID: 0}
-  Pause: {fileID: 0}
-  Timer: {fileID: 0}
-  Syaka: {fileID: 0}
-  StartBuckBottown_1: {fileID: 0}
-  StartBuckBottown_2: {fileID: 0}
-  left_Bottown: {fileID: 0}
-  right_Bottown: {fileID: 0}
-  gamesetumei: {fileID: 0}
 --- !u!114 &7200392979443449432
 MonoBehaviour:
   m_ObjectHideFlags: 0

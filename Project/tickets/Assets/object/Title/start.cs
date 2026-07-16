@@ -25,6 +25,7 @@ public class start : MonoBehaviour
     public GameObject left_Bottown;
     public GameObject right_Bottown;
 
+    public Settings_Manager SettingsM;
 
     public void Start()
     {
@@ -53,6 +54,7 @@ public class start : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         gameObject.SetActive(false);
+        SettingsM.InGame = true;
     }
     public RectTransform gamesetumei;
 
