@@ -4,20 +4,21 @@ using UnityEngine.UI;
 public class AbilityTimeUI : MonoBehaviour
 {
     [Header("ゲージ")]
-    public Image gaugeFill;
+    [SerializeField] private Image gaugeFill;
 
     [Header("中央アイコン")]
-    public Image iconImage;
+    [SerializeField] private Image iconImage;
 
     [Header("アビリティ時間")]
-    public float maxTime = 30f;
+    [SerializeField] private float maxTime = 30f;
 
     private float currentTime;
-    private bool isCounting = false;
+    private bool isCounting;
 
-    void Start()
+    private void Awake()
     {
         currentTime = maxTime;
+        isCounting = false;
 
         if (gaugeFill != null)
         {
@@ -26,33 +27,34 @@ public class AbilityTimeUI : MonoBehaviour
         }
 
         if (iconImage != null)
-            iconImage.enabled = false;
-    }
-
-    void Update()
-    {
-        if (isCounting)
         {
-            currentTime -= Time.deltaTime;
-
-            if (currentTime <= 0)
-            {
-                currentTime = 0;
-                isCounting = false;
-
-                if (gaugeFill != null)
-                    gaugeFill.enabled = false;
-
-                if (iconImage != null)
-                    iconImage.enabled = false;
-            }
-
-            if (gaugeFill != null)
-                gaugeFill.fillAmount = currentTime / maxTime;
+            iconImage.enabled = false;
         }
     }
 
-    // アビリティ30秒開始
+    private void Update()
+    {
+        if (!isCounting)
+            return;
+
+        currentTime -= Time.deltaTime;
+
+        if (currentTime <= 0f)
+        {
+            currentTime = 0f;
+            isCounting = false;
+
+            Destroy(gameObject);
+            return;
+        }
+
+        if (gaugeFill != null)
+        {
+            gaugeFill.fillAmount = currentTime / maxTime;
+        }
+    }
+
+    // アビリティタイマー開始
     public void StartAbility(Sprite abilityIcon)
     {
         currentTime = maxTime;

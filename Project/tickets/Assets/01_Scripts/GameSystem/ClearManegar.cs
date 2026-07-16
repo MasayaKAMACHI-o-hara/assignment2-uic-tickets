@@ -13,16 +13,13 @@ public class ClearManegar : MonoBehaviour
     public GameObject OverUI;
     public GameObject[] ScoreUI;
     public TextMeshProUGUI[] ScoreText;
+    public GameObject BonusUI;
+    public TextMeshProUGUI BonusText;
 
     public GameObject TitleBuckButton;
     public GameObject OverBuckButton;
 
     public int test;
-    public int Goalscore;
-    public int Coinscore;
-    public int Timescore;
-    public int Totalscore;
-
     public int[] Mathscore;
     public int[] Showscore = { 0, 0, 0 };
 
@@ -33,8 +30,6 @@ public class ClearManegar : MonoBehaviour
     public PauseSistem Pause;
     public CountDown Timer;
     public SyakaSyaka syaka;
-
-    public bool ActiveOver = false;
 
     [Header("スコアボーナス")]
     public int ScoreBonusCount;
@@ -104,6 +99,7 @@ public class ClearManegar : MonoBehaviour
                     j -= 1000;
                     yield return null;
                 }
+                
             }
 
             ScoreText[i].text = Mathscore[i].ToString("D6") + "pt";
@@ -116,17 +112,15 @@ public class ClearManegar : MonoBehaviour
             {
                 yield return null;
             }
-        } 
-        /*
-        if (ScoreBonusCount > 0)
-        {
-            BonusUI.SetActive(true);
-
-            BonusText.text = "+" + bonusScore.ToString("D6") + "pt";
-
-            yield return new WaitForSeconds(1f);
         }
-        */
+
+        if (ScoreBonusCount >= 1)
+        {
+            BonusText.text =ScoreBonusPoint.ToString("D6");
+            BonusUI.SetActive(true);
+            SoundManager.PlaySE_ScoreBonus();
+            yield return new WaitForSeconds(0.5f);
+        }
         var Mix = Mathscore[0] + Mathscore[1] + Mathscore[2] + bonusScore;
         ScoreUI[3].SetActive(true);
         ScoreText[3].text = Mix.ToString("D6") + "pt";
@@ -180,7 +174,6 @@ public class ClearManegar : MonoBehaviour
             Camera.ActiveMove = false;
             syaka.ActiveSyaka = false;
             Pause.IsActiveESC = false;
-            ActiveOver = true;
 
             OverUI.transform.position -= new Vector3(0, 2000, 0);
             KanOverUI.SetActive(true);
