@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 
 public class SyakaSyaka : MonoBehaviour
@@ -61,14 +62,38 @@ public class SyakaSyaka : MonoBehaviour
     public Vector3 nowPos;
     public Vector3 SyakaPos;
 
-    // syakasyakaUIのゲージを動かすためのやつ
+    [Header("シャカシャカゲージUI")]
+    [Tooltip("現在値を表示するメインゲージ。増加時に滑らかに伸びます")]
     public Image cola;
+
+    [Tooltip("獲得した増加分を先に表示するゲージ。メインゲージより背面に配置してください")]
     public Image flashcola;
+
+    [Min(0.01f)]
+    public float gaugeIncreaseDuration = 0.35f;
+
+    [Min(0f)]
+    public float gainGaugeHoldTime = 0.08f;
+
+    [Min(0f)]
+    [Tooltip("flashcolaを実際の値より何ポイント先まで表示するか")]
+    public float flashColaVisualBonus = 2f;
+
+    private Coroutine gaugeIncreaseCoroutine;
+    private TextMeshProUGUI syakaPointText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SyakaE = 1.0f;
+
+        if (SyakaUI != null)
+        {
+            syakaPointText = SyakaUI.GetComponent<TextMeshProUGUI>();
+        }
+
+        UpdateSyakaPointText();
+        UpdateSyakaGaugeInstant();
     }
 
     public void GageUp(int L)//自販機によって、ゲージ獲得倍率Lvが上昇する際に実行
@@ -84,12 +109,7 @@ public class SyakaSyaka : MonoBehaviour
 
     public void SyakaGageHeal(int value)//シャカシャカゲージを回復する際に実行
     {
-        SyakaPoint += value;//ゲージにvalue分数値を加える
-        if (SyakaPoint > 100)//ゲージの最大値は100
-        {
-            SyakaPoint = 100;
-        }
-        SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
+        AddSyakaPoint(value);
     }
 
     // Update is called once per frame
@@ -166,14 +186,10 @@ public class SyakaSyaka : MonoBehaviour
                 }
 
 
-                SyakaPoint += MathQ * SyakaE;//ポイントに獲得倍率の数値を掛けた数を総計する。
-                if (SyakaPoint > 100)//ゲージの最大値は100
-                {
-                    SyakaPoint = 100;
-                }
-                SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();
+                float gainedSyakaPoint = MathQ * SyakaE;
+                AddSyakaPoint(gainedSyakaPoint);
 
-                if (MathQ * SyakaE >= 10)
+                if (gainedSyakaPoint >= 10)
                 {
                     SoundManager.PlaySE_KanLanding();
                 }
@@ -252,8 +268,12 @@ public class SyakaSyaka : MonoBehaviour
                     if (SyakaRemove > 10.0f)//10フレーム毎で
                     {
                         SyakaPoint -= 1.0f;//シャカシャカポイントを１減少させる。
+                        SyakaPoint = Mathf.Clamp(SyakaPoint, 0f, 100f);
                         SyakaCharge += 1.0f;//１ptチャージする
-                        SyakaUI.GetComponent<TextMeshProUGUI>().text = Mathf.FloorToInt(SyakaPoint).ToString();//UI表記を変更する。
+
+                        // 消費時は数値もゲージも即座に反映する
+                        UpdateSyakaPointText();
+                        UpdateSyakaGaugeInstant();
                         SyakaRemove = 0;
                     }
 
@@ -297,7 +317,7 @@ public class SyakaSyaka : MonoBehaviour
 
                 // これに強さを掛けるて弾き飛ばす
                 Rb.AddForce(slantDirection * syakaPower);
-                
+
                 SoundManager.StopAS_Kan();
                 SoundManager.PlaySE_KanSquirtStart();
                 SoundManager.PlaySE_KanSquirting();//発射するときの音を出す
@@ -306,7 +326,7 @@ public class SyakaSyaka : MonoBehaviour
             // 飛んでいる最中にスペースキーが押されたら
             if (Input.GetKeyDown(KeyCode.Space) && IsActiveFly && !IsActiveFall && IsActiveSpace)
             {
-                
+
                 if (Rb != null)
                 {
                     // 最新のプロパティで速度をリセット
@@ -317,20 +337,159 @@ public class SyakaSyaka : MonoBehaviour
 
                     // 3. (オプション) 勢いよく落としたいなら下向きに力を加える
                     Rb.AddForce(Vector3.down * 10f, ForceMode.Impulse);
-                    
+
                     SoundManager.PlaySE_KanFall();
                 }
 
                 IsActiveFall = true;
             }
 
-            // コーラのゲージ変動
-            if (cola != null && flashcola != null)
-            {
-                cola.fillAmount = SyakaPoint / 100f;
-                flashcola.fillAmount = SyakaPoint / 100f;
-            }
         }
+    }
+
+    /// <summary>
+    /// シャカシャカポイントを加算します。
+    /// 数値は即座に更新し、ゲージだけ滑らかに増加させます。
+    /// </summary>
+    private void AddSyakaPoint(float amount)
+    {
+        if (amount <= 0f)
+        {
+            return;
+        }
+
+        float beforePoint = SyakaPoint;
+        SyakaPoint = Mathf.Clamp(SyakaPoint + amount, 0f, 100f);
+
+        // 数字は一瞬で新しい値にする
+        UpdateSyakaPointText();
+
+        if (SyakaPoint > beforePoint)
+        {
+            PlaySyakaGaugeIncreaseAnimation();
+        }
+    }
+
+    /// <summary>
+    /// メインゲージを現在の表示位置から最新値まで滑らかに増加させます。
+    /// flashcolaは先に最新値まで表示されるため、増加した範囲が一瞬見えます。
+    /// </summary>
+    private void PlaySyakaGaugeIncreaseAnimation()
+    {
+        float targetRate = GetSyakaGaugeRate();
+        float flashTargetRate = GetFlashColaGaugeRate();
+
+        if (cola == null)
+        {
+            if (flashcola != null)
+            {
+                flashcola.fillAmount = flashTargetRate;
+                flashcola.enabled = true;
+            }
+            return;
+        }
+
+        if (gaugeIncreaseCoroutine != null)
+        {
+            StopCoroutine(gaugeIncreaseCoroutine);
+        }
+
+        gaugeIncreaseCoroutine = StartCoroutine(
+            AnimateSyakaGaugeIncrease(cola.fillAmount, targetRate, flashTargetRate)
+        );
+    }
+
+    private IEnumerator AnimateSyakaGaugeIncrease(float startRate, float targetRate, float flashTargetRate)
+    {
+        startRate = Mathf.Clamp01(startRate);
+        targetRate = Mathf.Clamp01(targetRate);
+        flashTargetRate = Mathf.Clamp01(flashTargetRate);
+
+        // flashcolaは実際の値より少し先まで表示する
+        if (flashcola != null)
+        {
+            flashcola.fillAmount = flashTargetRate;
+            flashcola.enabled = true;
+        }
+
+        float duration = Mathf.Max(0.01f, gaugeIncreaseDuration);
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+
+            // 最初と最後が自然になる補間
+            float smoothT = t * t * (3f - 2f * t);
+            cola.fillAmount = Mathf.Lerp(startRate, targetRate, smoothT);
+            yield return null;
+        }
+
+        cola.fillAmount = targetRate;
+
+        if (gainGaugeHoldTime > 0f)
+        {
+            yield return new WaitForSeconds(gainGaugeHoldTime);
+        }
+
+        if (flashcola != null)
+        {
+            // アニメーション終了後も、見た目だけ常に指定ポイント分先を表示する
+            flashcola.fillAmount = GetFlashColaGaugeRate();
+            flashcola.enabled = true;
+        }
+
+        gaugeIncreaseCoroutine = null;
+    }
+
+    /// <summary>
+    /// 消費時や初期化時に、ゲージを現在値へ即座に合わせます。
+    /// </summary>
+    private void UpdateSyakaGaugeInstant()
+    {
+        if (gaugeIncreaseCoroutine != null)
+        {
+            StopCoroutine(gaugeIncreaseCoroutine);
+            gaugeIncreaseCoroutine = null;
+        }
+
+        float rate = GetSyakaGaugeRate();
+
+        if (cola != null)
+        {
+            cola.fillAmount = rate;
+        }
+
+        if (flashcola != null)
+        {
+            flashcola.fillAmount = GetFlashColaGaugeRate();
+            flashcola.enabled = true;
+        }
+    }
+
+    private void UpdateSyakaPointText()
+    {
+        if (syakaPointText == null && SyakaUI != null)
+        {
+            syakaPointText = SyakaUI.GetComponent<TextMeshProUGUI>();
+        }
+
+        if (syakaPointText != null)
+        {
+            syakaPointText.text = Mathf.FloorToInt(SyakaPoint).ToString();
+        }
+    }
+
+    private float GetSyakaGaugeRate()
+    {
+        return Mathf.Clamp01(SyakaPoint / 100f);
+    }
+
+    private float GetFlashColaGaugeRate()
+    {
+        // 数値自体は変えず、flashcolaの見た目だけ先に表示する
+        return Mathf.Clamp01((SyakaPoint + flashColaVisualBonus) / 100f);
     }
 
     void FixedUpdate()

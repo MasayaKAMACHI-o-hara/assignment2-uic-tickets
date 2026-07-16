@@ -10326,6 +10326,7 @@ MonoBehaviour:
   body: {fileID: 8366870683834519928}
   Camera: {fileID: 0}
   ClearUI: {fileID: 0}
+  SE: {fileID: 0}
   Speed: 0
   MaxSpeed: 4
   JumpPower: 10
@@ -10333,8 +10334,10 @@ MonoBehaviour:
   isFly: {fileID: 523658111241069574}
   ActiveMove: 0
   coin: 0
+  CoinUp: 0
   SpeedLv: 0
   JumpLv: 0
+  carInvincible: 0
 --- !u!114 &523658111241069574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10357,6 +10360,13 @@ MonoBehaviour:
   IsActiveFall: 0
   IsActiveSpace: 0
   ActiveSyaka: 0
+  SE: {fileID: 0}
+  FallSound: {fileID: 0}
+  StartChargeSound: {fileID: 0}
+  ChargeConpleteSound: {fileID: 0}
+  ShotSound: {fileID: 0}
+  SyuwaSound: {fileID: 0}
+  SyuwaEndSound: {fileID: 0}
   SyakaPoint: 0
   Syakacount: 0
   SyakaCharge: 0
@@ -10378,6 +10388,9 @@ MonoBehaviour:
   SyakaPos: {x: 0, y: 0, z: 0}
   cola: {fileID: 0}
   flashcola: {fileID: 0}
+  gaugeIncreaseDuration: 0.35
+  gainGaugeHoldTime: 1
+  flashColaVisualBonus: 2
 --- !u!1 &6108794879553622920
 GameObject:
   m_ObjectHideFlags: 0
