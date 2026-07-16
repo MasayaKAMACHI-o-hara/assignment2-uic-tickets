@@ -20,38 +20,23 @@ public class AbilityManeger : MonoBehaviour
             AbilityId[id] = true;
             AbilityTime[id] = 60;
 
+            //ゴミ箱位置矢印
             if (id == 0)
             {
-                for (int i = 0; i < 15; i++)
-                {
-                    TrashBox[i].ExtendVisibleDistance(9999f, 60f);
-                }
+                for (int i = 0; i < 15; i++) TrashBox[i].ExtendVisibleDistance(9999f, 60f);
+                TrashBoxSearch.ActivePosiGingerAle(true);
             }
-            else if (id == 1)
-            {
-                Debug.Log("人の蹴る力が増えるよーん。");
-                NPCManager.Instance.humanCoffee = true;
-            }
-            else if (id == 2)
-            {
-                Debug.Log("車にあたってもやられないよーん。");
-                Kan.carInvincible = true;
-            }
-            else if (id == 3)
-            {
-                Debug.Log("コインの判定を広げるよーん。");
-                KanAtari.radius = 20;
-            }
-            else if (id == 4)
-            {
-                Debug.Log("コインの取得量増やすよーん。");
-                Kan.CoinUp = true;
-            }
-            else if (id == 5)
-            {
-                Debug.Log("スペースで降下できるよーん。");
-                syaka.IsActiveSpace = true;
-            }
+            //人の蹴る力
+            else if (id == 1) NPCManager.Instance.humanCoffee = true;
+            //車無敵
+            else if (id == 2) Kan.carInvincible = true;
+            //コイン取得範囲
+            else if (id == 3) KanAtari.radius = 20;
+            //コイン取得倍率
+            else if (id == 4) Kan.CoinUp = true;
+            //SPACEキー落下
+            else if (id == 5) syaka.IsActiveSpace = true;
+            
 
 
 
@@ -73,32 +58,18 @@ public class AbilityManeger : MonoBehaviour
 
         if (AbilityTime[id] == 0)
         {
-            if (id == 1)
-            {
-                Debug.Log("人の蹴る力がもどるよーん。");
-                NPCManager.Instance.humanCoffee = false;
-            }
-            else if (id == 2)
-            {
-                Debug.Log("車にあたったらやられるよーん。");
-                Kan.carInvincible = false;
-            }
-            else if (id == 3)
-            {
-                Debug.Log("コインの判定もどるよーん。");
-                KanAtari.radius = 0.77f;
-            }
-            else if (id == 4)
-            {
-                Debug.Log("コインの取得量もどるよーん。");
-                Kan.CoinUp = false;
-            }
-            else if (id == 5)
-            {
-                Debug.Log("スペースで降下できないよーん。");
-                syaka.IsActiveSpace = false;
-
-            }
+            //ゴミ箱位置矢印
+            if (id == 0) TrashBoxSearch.ActivePosiGingerAle(false);
+            //人の蹴る力
+            else if (id == 1) NPCManager.Instance.humanCoffee = false;
+            //車無敵
+            else if (id == 2) Kan.carInvincible = false;
+            //コイン取得範囲
+            else if (id == 3) KanAtari.radius = 0.77f;
+            //コイン取得倍率
+            else if (id == 4) Kan.CoinUp = false;
+            //SPACEキー落下
+            else if (id == 5) syaka.IsActiveSpace = false;
 
             AbilityId[id] = false;
         }
