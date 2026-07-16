@@ -103,6 +103,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -262,7 +263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7085744325173416444}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -467.9256, y: 50.195354, z: 43.279247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -511,7 +512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 2 (4)
+      value: Trash box 3
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -704,7 +705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL
+      value: Trash box 4
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -893,7 +894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 2 (1)
+      value: Trash box 6
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -1082,7 +1083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL
+      value: Trash box 1
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -1271,7 +1272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 3
+      value: Trash box 14
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -1528,7 +1529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -36.032
+      value: -35.965
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1536,31 +1537,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.72262347
+      value: 0.683527
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.61921644
+      value: 0.66212124
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.23992842
+      value: 0.25118098
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.19188736
+      value: -0.17690244
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 80.751
+      value: 83.733
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 42.757
+      value: 91.571
       objectReference: {fileID: 0}
     - target: {fileID: 864554727416340644, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.08
+      value: 56.277
       objectReference: {fileID: 0}
     - target: {fileID: 3518115086674652491, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_IsTrigger
@@ -1596,7 +1597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 2 (5)
+      value: Trash box 7
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -1612,7 +1613,7 @@ PrefabInstance:
       objectReference: {fileID: 4626801863825165480}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: scoreValue
-      value: 150000
+      value: 450000
       objectReference: {fileID: 0}
     - target: {fileID: 8454166025912059741, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2119,7 +2120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 2 (2)
+      value: Trash box 5
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -2612,7 +2613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 3 (2)
+      value: Trash box 13
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -2628,7 +2629,7 @@ PrefabInstance:
       objectReference: {fileID: 4626801863825165480}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: scoreValue
-      value: 222222
+      value: 500000
       objectReference: {fileID: 0}
     - target: {fileID: 8454166025912059741, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2941,7 +2942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 2
+      value: Trash box 10
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -3266,7 +3267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 2
+      value: Trash box 8
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -3459,7 +3460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 3
+      value: Trash box 12
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -4638,23 +4639,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4772,7 +4773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 2 (3)
+      value: Trash box 9
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -5025,15 +5026,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 563614555944590548, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
+      value: 0.2198736
       objectReference: {fileID: 0}
     - target: {fileID: 563614555944590548, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
+      value: 0.2198736
       objectReference: {fileID: 0}
     - target: {fileID: 563614555944590548, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
+      value: 0.764151
       objectReference: {fileID: 0}
     - target: {fileID: 1612814235327137384, guid: 7959140646dbb3145b92926f53ab0e8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5311,7 +5312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL
+      value: Trash box 2
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -5504,7 +5505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 3 (1)
+      value: Trash box 11
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
@@ -5512,7 +5513,7 @@ PrefabInstance:
       objectReference: {fileID: 4895966648625912529, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: trashID
-      value: 8
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: canvasRect
@@ -5520,7 +5521,7 @@ PrefabInstance:
       objectReference: {fileID: 4626801863825165480}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: scoreValue
-      value: 33333
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 8454166025912059741, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_LocalScale.x
@@ -5705,7 +5706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828071648020476770, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: m_Name
-      value: Trash box 2 AL 3
+      value: Trash box 15
       objectReference: {fileID: 0}
     - target: {fileID: 7784044172503042068, guid: 62bdc35c0ddd7d546be63554804a5184, type: 3}
       propertyPath: Kan
