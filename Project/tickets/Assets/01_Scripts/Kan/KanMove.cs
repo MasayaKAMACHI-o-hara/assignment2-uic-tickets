@@ -22,7 +22,7 @@ public class KanMove : MonoBehaviour
 
     public float Speed = 0;
 
-    [Range(4, 10)]
+    [Range(4, 12)]
     public float MaxSpeed = 4f;
 
     [Range(10, 15)]
@@ -64,12 +64,15 @@ public class KanMove : MonoBehaviour
 
     public void SpeedUp(int L)//自販機によって、スピードLvが上昇する際に実行
     {
+      
         if (SpeedLv < 5)
         {
             SpeedLv += L;
+            
             if (SpeedLv > 5)
                 SpeedLv = 5;
-            MaxSpeed = 2 * SpeedLv;//現在のスピードレベルに合わせて最高速度を上昇させる
+            MaxSpeed = 2 * SpeedLv +4;//現在のスピードレベルに合わせて最高速度を上昇させる
+           
         }
     }
 

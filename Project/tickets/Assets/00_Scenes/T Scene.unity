@@ -66903,7 +66903,8 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1545160527257422941, guid: e44a067e6f91ef345881167f51494e72, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44a067e6f91ef345881167f51494e72, type: 3}
@@ -67251,6 +67252,10 @@ PrefabInstance:
       propertyPath: StartChargeSound
       value: 
       objectReference: {fileID: 8300000, guid: dc2045a6f3e0582438f85155c75d8a3c, type: 3}
+    - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
+      propertyPath: gaugeAnimationTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 523658111241069574, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
       propertyPath: ChargeConpleteSound
       value: 
