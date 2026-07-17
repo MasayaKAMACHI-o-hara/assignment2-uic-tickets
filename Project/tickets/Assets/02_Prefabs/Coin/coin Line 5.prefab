@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 324256194585683641}
-  - component: {fileID: 3733526831256627484}
-  - component: {fileID: 1456019025252326870}
   - component: {fileID: 1131468089143494037}
   - component: {fileID: 2893276350315265444}
+  - component: {fileID: 3733526831256627484}
+  - component: {fileID: 1456019025252326870}
   - component: {fileID: 8834585255121501431}
   m_Layer: 0
   m_Name: Coin (3)
@@ -36,6 +36,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1615437791218680861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1131468089143494037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095551079062420483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 200
+  isFloating: 1
+  useEasingForFloating: 1
+  floatHeight: 0
+  floatSpeed: 0.4
+  startScale: {x: 1, y: 1, z: 1}
+  endScale: {x: 0.3, y: 0.3, z: 0.3}
+  isScaling: 1
+  useEasingForScaling: 1
+  scaleLerpSpeed: 1.11
+--- !u!114 &2893276350315265444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095551079062420483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!33 &3733526831256627484
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -89,45 +128,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1131468089143494037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095551079062420483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRotating: 1
-  rotateX: 0
-  rotateY: 1
-  rotateZ: 0
-  rotationSpeed: 200
-  isFloating: 1
-  useEasingForFloating: 1
-  floatHeight: 0
-  floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 0.3, y: 0.3, z: 0.3}
-  isScaling: 1
-  useEasingForScaling: 1
-  scaleLerpSpeed: 1.11
---- !u!114 &2893276350315265444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095551079062420483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!136 &8834585255121501431
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -196,9 +196,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6561451116488575690}
+  - component: {fileID: 5819425289189272038}
   - component: {fileID: 7827588838513657199}
   - component: {fileID: 5423980858400551333}
-  - component: {fileID: 5819425289189272038}
   - component: {fileID: 8599610081028329943}
   - component: {fileID: 2732497741278089348}
   m_Layer: 0
@@ -223,6 +223,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1615437791218680861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5819425289189272038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784070710042562672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 200
+  isFloating: 1
+  useEasingForFloating: 1
+  floatHeight: 0
+  floatSpeed: 0.4
+  startScale: {x: 1, y: 1, z: 1}
+  endScale: {x: 0.3, y: 0.3, z: 0.3}
+  isScaling: 1
+  useEasingForScaling: 1
+  scaleLerpSpeed: 1.11
 --- !u!33 &7827588838513657199
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -276,32 +302,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5819425289189272038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5784070710042562672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRotating: 1
-  rotateX: 0
-  rotateY: 1
-  rotateZ: 0
-  rotationSpeed: 200
-  isFloating: 1
-  useEasingForFloating: 1
-  floatHeight: 0
-  floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 0.3, y: 0.3, z: 0.3}
-  isScaling: 1
-  useEasingForScaling: 1
-  scaleLerpSpeed: 1.11
 --- !u!114 &8599610081028329943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,10 +347,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8790768391829443325}
-  - component: {fileID: 5643237741542432088}
-  - component: {fileID: 7616776204680833426}
   - component: {fileID: 8228956368620532177}
   - component: {fileID: 6171641841949231584}
+  - component: {fileID: 5643237741542432088}
+  - component: {fileID: 7616776204680833426}
   - component: {fileID: 511766002492344499}
   m_Layer: 0
   m_Name: Coin (4)
@@ -374,6 +374,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1615437791218680861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8228956368620532177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8265448827008944199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 200
+  isFloating: 1
+  useEasingForFloating: 1
+  floatHeight: 0
+  floatSpeed: 0.4
+  startScale: {x: 1, y: 1, z: 1}
+  endScale: {x: 0.3, y: 0.3, z: 0.3}
+  isScaling: 1
+  useEasingForScaling: 1
+  scaleLerpSpeed: 1.11
+--- !u!114 &6171641841949231584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8265448827008944199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!33 &5643237741542432088
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -427,45 +466,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8228956368620532177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8265448827008944199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRotating: 1
-  rotateX: 0
-  rotateY: 1
-  rotateZ: 0
-  rotationSpeed: 200
-  isFloating: 1
-  useEasingForFloating: 1
-  floatHeight: 0
-  floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 0.3, y: 0.3, z: 0.3}
-  isScaling: 1
-  useEasingForScaling: 1
-  scaleLerpSpeed: 1.11
---- !u!114 &6171641841949231584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8265448827008944199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!136 &511766002492344499
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -498,10 +498,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8948055283827589297}
-  - component: {fileID: 5440976490593701652}
-  - component: {fileID: 7811154919175896030}
   - component: {fileID: 8638420504269595549}
   - component: {fileID: 5797511609894198188}
+  - component: {fileID: 5440976490593701652}
+  - component: {fileID: 7811154919175896030}
   - component: {fileID: 200654197892160255}
   m_Layer: 0
   m_Name: Coin
@@ -525,6 +525,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1615437791218680861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8638420504269595549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8603617411665074699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 200
+  isFloating: 1
+  useEasingForFloating: 1
+  floatHeight: 0
+  floatSpeed: 0.4
+  startScale: {x: 1, y: 1, z: 1}
+  endScale: {x: 0.3, y: 0.3, z: 0.3}
+  isScaling: 1
+  useEasingForScaling: 1
+  scaleLerpSpeed: 1.11
+--- !u!114 &5797511609894198188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8603617411665074699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!33 &5440976490593701652
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -578,45 +617,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8638420504269595549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8603617411665074699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRotating: 1
-  rotateX: 0
-  rotateY: 1
-  rotateZ: 0
-  rotationSpeed: 200
-  isFloating: 1
-  useEasingForFloating: 1
-  floatHeight: 0
-  floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 0.3, y: 0.3, z: 0.3}
-  isScaling: 1
-  useEasingForScaling: 1
-  scaleLerpSpeed: 1.11
---- !u!114 &5797511609894198188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8603617411665074699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!136 &200654197892160255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -649,10 +649,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8395641614063387973}
-  - component: {fileID: 4840406451492178656}
-  - component: {fileID: 7262163578539720234}
   - component: {fileID: 9173686076619171433}
   - component: {fileID: 6402510464518446680}
+  - component: {fileID: 4840406451492178656}
+  - component: {fileID: 7262163578539720234}
   - component: {fileID: 749412427051310859}
   m_Layer: 0
   m_Name: Coin (1)
@@ -676,6 +676,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1615437791218680861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9173686076619171433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9207784520236670975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 200
+  isFloating: 1
+  useEasingForFloating: 1
+  floatHeight: 0
+  floatSpeed: 0.4
+  startScale: {x: 1, y: 1, z: 1}
+  endScale: {x: 0.3, y: 0.3, z: 0.3}
+  isScaling: 1
+  useEasingForScaling: 1
+  scaleLerpSpeed: 1.11
+--- !u!114 &6402510464518446680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9207784520236670975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!33 &4840406451492178656
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -729,45 +768,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9173686076619171433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9207784520236670975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRotating: 1
-  rotateX: 0
-  rotateY: 1
-  rotateZ: 0
-  rotationSpeed: 200
-  isFloating: 1
-  useEasingForFloating: 1
-  floatHeight: 0
-  floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 0.3, y: 0.3, z: 0.3}
-  isScaling: 1
-  useEasingForScaling: 1
-  scaleLerpSpeed: 1.11
---- !u!114 &6402510464518446680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9207784520236670975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30963f59eca354d4a9b4c7c58bff7028, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  getEffectPrefab: {fileID: 7665095593296487947, guid: f63bd48c6a0c06841b92838d95e74116, type: 3}
 --- !u!136 &749412427051310859
 CapsuleCollider:
   m_ObjectHideFlags: 0
