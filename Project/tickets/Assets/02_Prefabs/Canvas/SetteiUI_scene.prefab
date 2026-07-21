@@ -3500,6 +3500,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7641348112350606301}
   m_CullTransparentMesh: 0
+--- !u!114 &5104939421065553554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641348112350606301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4f9aa6601414345a8c26724230c192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SESlider: {fileID: 1658073982022791329}
+  BGMSlider: {fileID: 5962367175183145312}
+  CameraSlider: {fileID: 7262846580600126789}
+  AUDIO: {fileID: 24100000, guid: f62b61ca103871941bd02520095f2976, type: 2}
+  VOLicon:
+  - {fileID: 21300000, guid: 4b9293959beb9f947a9c2ab58fc2aa95, type: 3}
+  - {fileID: 21300000, guid: d2b128720ab397c48b8aba95231af12f, type: 3}
+  - {fileID: 21300000, guid: 10997dfbcc0934d42b594f645635bb02, type: 3}
+  SEicon: {fileID: 5109033772500039247}
+  BGMicon: {fileID: 7992337357430397882}
+  BGMNum: {fileID: 3204851777670590885}
+  SENum: {fileID: 1769310043595123956}
+  CameraNum: {fileID: 2241025063361985576}
+  CameraSCR: {fileID: 0}
+  CheckDeleteUI: {fileID: 8000785640696820421}
+  DeleteButtonUI: {fileID: 9025964236699095415}
+  StartBuckButtonUI: {fileID: 1811901596954631042}
+  BuckSettingButtonUI: {fileID: 8889943687423643014}
+  pauseSistemSCR: {fileID: 0}
+  InGame: 0
 --- !u!1 &8000785640696820421
 GameObject:
   m_ObjectHideFlags: 0
