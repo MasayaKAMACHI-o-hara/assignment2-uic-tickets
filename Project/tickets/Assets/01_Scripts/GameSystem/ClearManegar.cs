@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ClearManegar : MonoBehaviour
 {
     public GameObject ClearUI;
-
     public GameObject KanUI;
     public GameObject KanOverUI;
     public GameObject GameUI;
@@ -34,12 +33,7 @@ public class ClearManegar : MonoBehaviour
     [Header("スコアボーナス")]
     public int ScoreBonusCount;
     public int ScoreBonusPoint = 10000; // !!! OSIRUKO !!!
-
-    //public GameObject BonusUI;
-    //public TextMeshProUGUI BonusText;
-    //public Image BonusIcon;
-
-
+    
     public IEnumerator GameFinish(int score)
     {
         Kan.StopKanSound();
@@ -164,8 +158,6 @@ public class ClearManegar : MonoBehaviour
         RectTransform clearRect = ClearUI.GetComponent<RectTransform>();
         clearRect.anchoredPosition3D = Vector3.zero;
 
-        KanOverUI.SetActive(true);
-
         for (int i = 0; i < 200; i++)
         {
             Timer.TimerStop();
@@ -175,8 +167,7 @@ public class ClearManegar : MonoBehaviour
             syaka.ActiveSyaka = false;
             Pause.IsActiveESC = false;
 
-            OverUI.transform.position -= new Vector3(0, 2000, 0);
-            KanOverUI.SetActive(true);
+            OverUI.SetActive(true);
 
             for (int j = 0; j < 200; j++)
             {
