@@ -23,7 +23,7 @@ public class AbilityManeger : MonoBehaviour
             //ゴミ箱位置矢印
             if (id == 0)
             {
-                for (int i = 0; i < 15; i++) TrashBox[i].ExtendVisibleDistance(9999f, 60f);
+                //for (int i = 0; i < 15; i++) TrashBox[i].ExtendVisibleDistance(9999f, 60f);
                 TrashBoxSearch.ActivePosiGingerAle(true);
             }
             //人の蹴る力

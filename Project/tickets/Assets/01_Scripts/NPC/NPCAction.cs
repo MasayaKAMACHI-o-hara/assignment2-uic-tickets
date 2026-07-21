@@ -110,6 +110,7 @@ public class NPCAction : MonoBehaviour
             }
         }
     }
+  
 
     // 経由地当たり判定関数
     private void OnTriggerEnter(Collider other)

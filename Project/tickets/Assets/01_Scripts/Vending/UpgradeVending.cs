@@ -45,6 +45,8 @@ public class UpgradeVending : MonoBehaviour
     [Header("制限時間")]
     [SerializeField] public CountDown countDown;
 
+    public string STR;
+
     //缶センサーエリアbool関数
     bool InKanSensorArea;
 
@@ -55,16 +57,13 @@ public class UpgradeVending : MonoBehaviour
         UVUI.SetActive(false);
 
         //値段をUIに反映
-        CostText.text = Cost + "コイン";
+        CostText.text = Cost + STR;
 
         //選択肢UIを非表示に
         ChoiceUI.SetActive(false);
 
         //センサーエリア外
         InKanSensorArea = false;
-
-        // カーソルを画面内で動かせる
-        Cursor.lockState = CursorLockMode.Confined;
     }
 
     // Update is called once per frame

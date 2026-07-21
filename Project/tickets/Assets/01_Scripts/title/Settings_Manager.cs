@@ -12,6 +12,7 @@ public class Settings_Manager : MonoBehaviour
 
     public Slider SESlider;
     public Slider BGMSlider;
+    public Slider CameraSlider;
 
     public AudioMixer AUDIO;
 
@@ -33,9 +34,37 @@ public class Settings_Manager : MonoBehaviour
     public PauseSistem pauseSistemSCR;
     
     public bool InGame = false;
+    
+    private void Start()
+    {
+        if(PlayerPrefs.HasKey("BGM"))
+            AUDIO.SetFloat("BGM", PlayerPrefs.GetFloat("BGM"));
+        if(PlayerPrefs.HasKey("SE"))
+            AUDIO.SetFloat("SE", PlayerPrefs.GetFloat("SE"));
+        if(PlayerPrefs.HasKey("Camera"))
+            CameraSCR.sensitivity = PlayerPrefs.GetFloat("Camera");
+        Debug.Log($"{(int)(PlayerPrefs.GetFloat("BGMInt")* 100)}");
+ 
+        if (PlayerPrefs.HasKey("SEInt"))
+        {
+            SESlider.value = PlayerPrefs.GetFloat("SEInt");
+            SENum.text = $"{(int)(PlayerPrefs.GetFloat("SEInt")* 100)}";
+        }
+         if (PlayerPrefs.HasKey("BGMInt"))
+        {
+            BGMSlider.value = PlayerPrefs.GetFloat("BGMInt"); 
+            BGMNum.text = $"{(int)(PlayerPrefs.GetFloat("BGMInt")* 100)}";
+        } 
+         if (PlayerPrefs.HasKey("CameraInt"))
+        {
+            CameraSlider.value = PlayerPrefs.GetFloat("CameraInt"); 
+            CameraNum.text = $"{PlayerPrefs.GetFloat("CameraInt"):F2}";
+        }
+    }
+    
     public void OpenSetting()
     {
-        transform.localPosition = new Vector2(-4173, 0);
+        transform.localPosition = new Vector2(-2857, 0);
         if (InGame)
         {
             DeleteButtonUI.SetActive(false);
@@ -62,6 +91,7 @@ public class Settings_Manager : MonoBehaviour
         float ChangeVOL = Mathf.Log10(Value) * 20f;
         AUDIO.SetFloat("SE", ChangeVOL);
         PlayerPrefs.SetFloat("SE", ChangeVOL);
+        PlayerPrefs.SetFloat("SEInt", Value);
         
         var Num = Value * 100f;
         Num = (int)Num;
@@ -85,6 +115,7 @@ public class Settings_Manager : MonoBehaviour
         float ChangeVOL = Mathf.Log10(Value) * 20f;
         AUDIO.SetFloat("BGM", ChangeVOL);
         PlayerPrefs.SetFloat("BGM", ChangeVOL);
+        PlayerPrefs.SetFloat("BGMInt", Value);
         
         var Num = Value * 100f;
         Num = (int)Num;
@@ -107,6 +138,7 @@ public class Settings_Manager : MonoBehaviour
     {
         CameraSCR.sensitivity = Value;
         PlayerPrefs.SetFloat("Camera", CameraSCR.sensitivity);
+        PlayerPrefs.SetFloat("CameraInt", Value);
         CameraNum.text = $"{Value:F2}";
     }
 
@@ -130,21 +162,6 @@ public class Settings_Manager : MonoBehaviour
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(0);
     }
-    
-    public void IconChange(float VOL, Image icon)
-    {
-        if(VOL >= 0.5)
-        {
-            //icon.sprite = 
-        }
-    }
 
-    private void Start()
-    {
-        AUDIO.SetFloat("BGM", PlayerPrefs.GetFloat("BGM"));
-        AUDIO.SetFloat("SE", PlayerPrefs.GetFloat("SE"));
-        if(PlayerPrefs.HasKey("Camera"))
-        CameraSCR.sensitivity = PlayerPrefs.GetFloat("Camera");
-        SESlider.value = PlayerPrefs.GetFloat("SE");
-    }
+   
 }
