@@ -29,9 +29,17 @@ public class AbilityManeger : MonoBehaviour
             //人の蹴る力
             else if (id == 1) NPCManager.Instance.humanCoffee = true;
             //車無敵
-            else if (id == 2) Kan.carInvincible = true;
+            else if (id == 2)
+            {
+                Kan.carInvincible = true;
+                Kan.CarBarrier.SetActive(true);
+            }
             //コイン取得範囲
-            else if (id == 3) KanAtari.radius = 20;
+            else if (id == 3)
+            {
+                KanAtari.radius = 20;
+                Kan.HaniUp = true;
+            }
             //コイン取得倍率
             else if (id == 4) Kan.CoinUp = true;
             //SPACEキー落下
@@ -63,9 +71,18 @@ public class AbilityManeger : MonoBehaviour
             //人の蹴る力
             else if (id == 1) NPCManager.Instance.humanCoffee = false;
             //車無敵
-            else if (id == 2) Kan.carInvincible = false;
+            else if (id == 2)
+            {
+                Kan.carInvincible = false;
+                Kan.CarBarrier.SetActive(false);
+            }
             //コイン取得範囲
-            else if (id == 3) KanAtari.radius = 0.77f;
+            else if (id == 3)
+            {
+                KanAtari.radius = 0.77f;
+                Kan.HaniObject.SetActive(false);
+                Kan.HaniUp = false;
+            }
             //コイン取得倍率
             else if (id == 4) Kan.CoinUp = false;
             //SPACEキー落下
