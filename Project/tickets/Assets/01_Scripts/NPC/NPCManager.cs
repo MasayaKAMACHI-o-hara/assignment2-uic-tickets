@@ -15,4 +15,10 @@ public class NPCManager : MonoBehaviour
         else if  (type == NPCType.Boy) Instance.kickPower = 50f;
         return Instance.kickPower;
     }
+    public static void ChangeMaterial(SkinnedMeshRenderer mesh)
+    {
+        if (Instance.humanCoffee) mesh.material.EnableKeyword("_EMISSION");
+        else mesh.material.DisableKeyword("_EMISSION");
+    }
+    
 }
