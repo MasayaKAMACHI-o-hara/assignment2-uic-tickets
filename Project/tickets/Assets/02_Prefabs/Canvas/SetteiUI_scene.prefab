@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6015363672539048180}
   m_Layer: 5
-  m_Name: Kando
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 1658073982022791329}
   - component: {fileID: 6858994303084132009}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SE Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,7 +708,7 @@ RectTransform:
   m_GameObject: {fileID: 1996726129500516465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3728244, y: 1.3728244, z: 1.3728244}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7576247610506038843}
@@ -723,10 +723,10 @@ RectTransform:
   - {fileID: 311848750245271664}
   m_Father: {fileID: 4396311320139173292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 4000, y: 0}
-  m_SizeDelta: {x: 2692, y: 1588}
+  m_SizeDelta: {x: 148, y: 1588}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6957400929143181008
 CanvasRenderer:
@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 5109033772500039247}
   - component: {fileID: 2635750376517719914}
   m_Layer: 5
-  m_Name: soundicon_1
+  m_Name: SE Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1744,7 +1744,7 @@ GameObject:
   - component: {fileID: 7992337357430397882}
   - component: {fileID: 7260021394972656852}
   m_Layer: 5
-  m_Name: soundicon_2
+  m_Name: BGM Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1874,7 +1874,7 @@ GameObject:
   - component: {fileID: 1968809663866430645}
   - component: {fileID: 2241025063361985576}
   m_Layer: 5
-  m_Name: Kandoint
+  m_Name: Camera Num
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2284,7 +2284,7 @@ GameObject:
   - component: {fileID: 6357714558888373603}
   - component: {fileID: 5962367175183145312}
   m_Layer: 5
-  m_Name: Slider (1)
+  m_Name: BGM Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2672,7 +2672,7 @@ GameObject:
   - component: {fileID: 735832202331572354}
   - component: {fileID: 7262846580600126789}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Camera Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2950,7 +2950,7 @@ GameObject:
   - component: {fileID: 6693071182250980708}
   - component: {fileID: 1769310043595123956}
   m_Layer: 5
-  m_Name: SEint
+  m_Name: SE Num
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3164,7 +3164,7 @@ GameObject:
   - component: {fileID: 6932391164098168947}
   - component: {fileID: 3204851777670590885}
   m_Layer: 5
-  m_Name: BGMint
+  m_Name: BGM Num
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3375,9 +3375,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4396311320139173292}
+  - component: {fileID: 5104939421065553554}
   - component: {fileID: 7565445473420646090}
   - component: {fileID: 968426262636247212}
-  - component: {fileID: 5104939421065553554}
   m_Layer: 5
   m_Name: SetteiUI_scene
   m_TagString: Untagged
@@ -3392,9 +3392,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7641348112350606301}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4113891, y: 0.46811968, z: 0.4113891}
+  m_LocalScale: {x: 0.71486807, y: 0.81344837, z: 0.71486807}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7472513939873670484}
@@ -3405,6 +3405,38 @@ RectTransform:
   m_AnchoredPosition: {x: 1057.3992, y: 540.4601}
   m_SizeDelta: {x: 2544.427, y: 1588}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5104939421065553554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641348112350606301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 514a69fe42379814684627ac33fe906a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SESlider: {fileID: 1658073982022791329}
+  BGMSlider: {fileID: 5962367175183145312}
+  CameraSlider: {fileID: 7262846580600126789}
+  AUDIO: {fileID: 24100000, guid: f62b61ca103871941bd02520095f2976, type: 2}
+  VOLIcon:
+  - {fileID: 21300000, guid: 4b9293959beb9f947a9c2ab58fc2aa95, type: 3}
+  - {fileID: 21300000, guid: d2b128720ab397c48b8aba95231af12f, type: 3}
+  - {fileID: 21300000, guid: 10997dfbcc0934d42b594f645635bb02, type: 3}
+  SEIcon: {fileID: 5109033772500039247}
+  BGMIcon: {fileID: 7992337357430397882}
+  BGMNum: {fileID: 3204851777670590885}
+  SENum: {fileID: 1769310043595123956}
+  CameraNum: {fileID: 2241025063361985576}
+  CameraSCR: {fileID: 0}
+  CheckDeleteUI: {fileID: 8000785640696820421}
+  DeleteButtonUI: {fileID: 9025964236699095415}
+  StartBuckButtonUI: {fileID: 1811901596954631042}
+  BuckSettingButtonUI: {fileID: 8889943687423643014}
+  pauseSistemSCR: {fileID: 0}
+  InGame: 0
 --- !u!212 &7565445473420646090
 SpriteRenderer:
   m_ObjectHideFlags: 0
