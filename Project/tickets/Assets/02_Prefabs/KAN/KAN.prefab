@@ -10580,7 +10580,7 @@ MonoBehaviour:
   Syakacount: 0
   SyakaCharge: 0
   SyakaRemove: 0
-  GetSyakaLv: 0
+  GetSyakaLv: 1
   SyakaE: 1
   SyakaUI: {fileID: 0}
   houkou: {fileID: 2937236853143368172}
@@ -10597,6 +10597,9 @@ MonoBehaviour:
   SyakaPos: {x: 0, y: 0, z: 0}
   cola: {fileID: 0}
   flashcola: {fileID: 0}
+  gaugeIncreaseDuration: 0.35
+  gainGaugeHoldTime: 0.08
+  flashColaVisualBonus: 2
 --- !u!1 &6075263369822665849
 GameObject:
   m_ObjectHideFlags: 0

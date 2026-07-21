@@ -26,11 +26,10 @@ public class start : MonoBehaviour
     public GameObject right_Bottown;
 
     public Settings_Manager SettingsM;
-
-    public void Start()
+    void Start()
     {
-        //        Cursor.visible = true;
-        //        Cursor.lockState = CursorLockMode.None;
+              Cursor.visible = true;
+              Cursor.lockState = CursorLockMode.None;
     }
 
 

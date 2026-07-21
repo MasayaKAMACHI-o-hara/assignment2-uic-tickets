@@ -64,7 +64,7 @@ public class AbilityVending : MonoBehaviour
         InKanSensorArea = false;
 
         //カーソルを画面内で動かせる
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.lockState = CursorLockMode.Confined;
 
     }
 
