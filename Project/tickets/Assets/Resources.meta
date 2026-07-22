@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/tickets/Assets/Resources.meta
 guid: 2b06cd59f5ff2fb478202b4e7f2370be
+========
+guid: 72589719770b04ead999af902c0459f8
+>>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69):Project/tickets/Assets/99_AssetStore/Sky.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

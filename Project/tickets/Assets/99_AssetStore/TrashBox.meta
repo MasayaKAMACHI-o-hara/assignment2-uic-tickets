@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/TrashBox.meta
 guid: 05aa4ff5e1077884c947c73411f54860
 ========
 guid: 4392334f044e44affbf9f5162eb718ae
 >>>>>>>> parent of 92ed09a (Merge branch 'main' into TIKS-66):Project/tickets/Assets/99_AssetStore/Sky/_AllSkyFreeDemoEnvironment.meta
+=======
+guid: 05aa4ff5e1077884c947c73411f54860
+>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

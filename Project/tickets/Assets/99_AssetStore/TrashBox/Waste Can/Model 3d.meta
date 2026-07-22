@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/TrashBox/Waste Can/Model 3d.meta
 guid: b6ddb5353fe13ae468da2fa2afccf37a
+========
+guid: 22cad24b7166e0943819f75145ac0aa1
+>>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69):Project/tickets/Assets/99_AssetStore/Coin/BTM_Items_Gems/Scripts.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

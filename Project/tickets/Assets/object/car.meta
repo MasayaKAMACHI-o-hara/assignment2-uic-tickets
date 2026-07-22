@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/tickets/Assets/object/car.meta
 guid: 5d8857f79833bae4899aa0e63e484de3
+========
+guid: 4392334f044e44affbf9f5162eb718ae
+>>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69):Project/tickets/Assets/99_AssetStore/Sky/_AllSkyFreeDemoEnvironment.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
