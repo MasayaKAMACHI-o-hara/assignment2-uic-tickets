@@ -16,10 +16,10 @@ public class Settings_Manager : MonoBehaviour
 
     public AudioMixer AUDIO;
 
-    public Sprite[] VOLIcon; 
+    public Sprite[] VOLicon; 
 
-    public Image SEIcon;
-    public Image BGMIcon;
+    public Image SEicon;
+    public Image BGMicon;
 
     public TextMeshProUGUI BGMNum;
     public TextMeshProUGUI SENum;
@@ -98,15 +98,15 @@ public class Settings_Manager : MonoBehaviour
         SENum.text = $"{Num}";
         if (Num >= 50)
         {
-            SEIcon.sprite = VOLIcon[2];
+            SEicon.sprite = VOLicon[2];
         }
         else if (Num == 0)
         {
-            SEIcon.sprite = VOLIcon[0];
+            SEicon.sprite = VOLicon[0];
         }
         else
         {
-            SEIcon.sprite = VOLIcon[1];
+            SEicon.sprite = VOLicon[1];
         }
     }
     public void SliderChangesBGM(float Value)
@@ -122,15 +122,15 @@ public class Settings_Manager : MonoBehaviour
         BGMNum.text = $"{Num}";
         if (Num >= 50)
         {
-            BGMIcon.sprite = VOLIcon[2];
+            BGMicon.sprite = VOLicon[2];
         }
         else if (Num == 0)
         {
-            BGMIcon.sprite = VOLIcon[0];
+            BGMicon.sprite = VOLicon[0];
         }
         else
         {
-            BGMIcon.sprite = VOLIcon[1];
+            BGMicon.sprite = VOLicon[1];
         }
     }
     

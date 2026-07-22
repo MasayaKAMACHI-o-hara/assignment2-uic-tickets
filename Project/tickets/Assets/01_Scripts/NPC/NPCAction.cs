@@ -9,7 +9,6 @@ public class NPCAction : MonoBehaviour
 {
     private Animator animator;
     private AudioSource SE_NPCFootsteps;
-    private SkinnedMeshRenderer mesh;
     [Header("種類")]
     [SerializeField] private NPCType type;
     [Header("缶")]
@@ -42,7 +41,6 @@ public class NPCAction : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         SE_NPCFootsteps = GetComponent<AudioSource>();
-        mesh = GetComponentInChildren<SkinnedMeshRenderer>();
         // アニメーションの初期状態設定
         animator.SetBool("idle", true);
         animator.SetBool("walk", false);
@@ -54,7 +52,6 @@ public class NPCAction : MonoBehaviour
     // メイン関数
     void Update()
     {
-        NPCManager.ChangeMaterial(mesh);
         // 蹴っていないとき
         if (!kickNow)
         {
@@ -167,6 +164,7 @@ public class NPCAction : MonoBehaviour
         }
     }
 
+
     // アニメーションイベント・キックアニメーション終了関数
     public void KickEnd()
     {
@@ -176,6 +174,4 @@ public class NPCAction : MonoBehaviour
         // 蹴っていない
         kickNow = false;
     }
-
-
 }
