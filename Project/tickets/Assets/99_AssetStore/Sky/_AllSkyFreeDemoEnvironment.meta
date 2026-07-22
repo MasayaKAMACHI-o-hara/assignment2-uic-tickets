@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/_AllSkyFreeDemoEnvironment.meta
 guid: 4392334f044e44affbf9f5162eb718ae
+========
+guid: 72589719770b04ead999af902c0459f8
+>>>>>>>> parent of 92ed09a (Merge branch 'main' into TIKS-66):Project/tickets/Assets/99_AssetStore/Sky.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

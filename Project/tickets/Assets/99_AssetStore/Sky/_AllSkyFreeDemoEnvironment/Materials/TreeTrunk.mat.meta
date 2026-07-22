@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/_AllSkyFreeDemoEnvironment/Materials/TreeTrunk.mat.meta
 guid: dfe5f2a08ecbab7428867dd0de417c99
 NativeFormatImporter:
+========
+guid: 8ee0fa33343ba264ba1901103248849e
+PrefabImporter:
+>>>>>>>> parent of 92ed09a (Merge branch 'main' into TIKS-66):Project/tickets/Assets/02_Prefabs/gameDiscription/DescriptionUI_scene.prefab.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

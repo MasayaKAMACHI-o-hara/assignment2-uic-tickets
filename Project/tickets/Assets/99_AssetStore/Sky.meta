@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky.meta
 guid: 72589719770b04ead999af902c0459f8
+========
+guid: 22cad24b7166e0943819f75145ac0aa1
+>>>>>>>> parent of 92ed09a (Merge branch 'main' into TIKS-66):Project/tickets/Assets/99_AssetStore/Coin/BTM_Items_Gems/Scripts.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
