@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Coin/BTM_Items_Gems/Scripts.meta
 guid: 22cad24b7166e0943819f75145ac0aa1
 ========
@@ -15,6 +16,17 @@ guid: 22cad24b7166e0943819f75145ac0aa1
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
+=======
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/Cartoon Base BlueSky.meta
+guid: 9f633969e0c5e4bfeba8bb43b5348d81
+========
+guid: 22cad24b7166e0943819f75145ac0aa1
+>>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理):Project/tickets/Assets/99_AssetStore/Coin/BTM_Items_Gems/Scripts.meta
+folderAsset: yes
+timeCreated: 1557585925
+licenseType: Store
+DefaultImporter:
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
   userData: 
   assetBundleName: 
   assetBundleVariant: 

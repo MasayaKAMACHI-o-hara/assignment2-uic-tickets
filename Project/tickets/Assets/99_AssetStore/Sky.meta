@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky.meta
 guid: 72589719770b04ead999af902c0459f8
 ========
@@ -15,6 +16,17 @@ guid: 72589719770b04ead999af902c0459f8
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
+=======
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/Cartoon Base NightSky.meta
+guid: edfd7568a47754e23b20068c1847c5fb
+========
+guid: 72589719770b04ead999af902c0459f8
+>>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理):Project/tickets/Assets/99_AssetStore/Sky.meta
+folderAsset: yes
+timeCreated: 1557585935
+licenseType: Store
+DefaultImporter:
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/TrashBox.meta
 guid: 05aa4ff5e1077884c947c73411f54860
 ========
@@ -8,6 +9,9 @@ guid: 4392334f044e44affbf9f5162eb718ae
 =======
 guid: 05aa4ff5e1077884c947c73411f54860
 >>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69)
+=======
+guid: 05aa4ff5e1077884c947c73411f54860
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

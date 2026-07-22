@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/_AllSkyFreeDemoEnvironment/Materials/TreeTrunk.mat.meta
 guid: dfe5f2a08ecbab7428867dd0de417c99
 NativeFormatImporter:
@@ -11,6 +12,10 @@ PrefabImporter:
 guid: dfe5f2a08ecbab7428867dd0de417c99
 NativeFormatImporter:
 >>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69)
+=======
+guid: dfe5f2a08ecbab7428867dd0de417c99
+NativeFormatImporter:
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 
