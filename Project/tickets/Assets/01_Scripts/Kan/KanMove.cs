@@ -45,10 +45,6 @@ public class KanMove : MonoBehaviour
 
     public bool carInvincible;
     
-    public bool HaniUp = false;
-    public GameObject HaniObject;
-    public GameObject CarBarrier;
-    
     public void StopKanSound()
     {
         if (SE != null)
@@ -175,13 +171,5 @@ public class KanMove : MonoBehaviour
                 StartCoroutine(ClearUI.GameEnd());
             }
         }
-
-        if (HaniUp)
-        {
-            HaniObject.SetActive(true);
-            var hani = this.gameObject.transform.position;
-            HaniObject.transform.position = new Vector3(hani.x, hani.y-0.08f, hani.z);
-        }
-        
     }
 }

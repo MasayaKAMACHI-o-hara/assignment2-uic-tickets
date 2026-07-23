@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Coin/BTM_Items_Gems/Scripts.meta
+guid: 22cad24b7166e0943819f75145ac0aa1
+========
+guid: 9c9908bbdda726f469ccc1bdb04221ad
+>>>>>>>> parent of 92ed09a (Merge branch 'main' into TIKS-66):Project/tickets/Assets/02_Prefabs/gameDiscription.meta
+=======
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/TrashBox/Waste Can/Model 3d.meta
+guid: b6ddb5353fe13ae468da2fa2afccf37a
+========
+guid: 22cad24b7166e0943819f75145ac0aa1
+>>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69):Project/tickets/Assets/99_AssetStore/Coin/BTM_Items_Gems/Scripts.meta
+>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69)
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+=======
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/Cartoon Base BlueSky.meta
+guid: 9f633969e0c5e4bfeba8bb43b5348d81
+========
+guid: 22cad24b7166e0943819f75145ac0aa1
+>>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理):Project/tickets/Assets/99_AssetStore/Coin/BTM_Items_Gems/Scripts.meta
+folderAsset: yes
+timeCreated: 1557585925
+licenseType: Store
+DefaultImporter:
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

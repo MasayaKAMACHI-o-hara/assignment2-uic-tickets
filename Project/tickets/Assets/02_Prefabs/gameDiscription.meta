@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/TrashBox/Waste Can.meta
+guid: ef7e443939a0ee14e8b43661b62ce81b
+========
+guid: 9c9908bbdda726f469ccc1bdb04221ad
+>>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69):Project/tickets/Assets/02_Prefabs/gameDiscription.meta
+=======
+<<<<<<<< HEAD:Project/tickets/Assets/object/coin.meta
+guid: e2d393a05ea966e4eab25375d9feeb84
+========
+guid: 9c9908bbdda726f469ccc1bdb04221ad
+>>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理):Project/tickets/Assets/02_Prefabs/gameDiscription.meta
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
