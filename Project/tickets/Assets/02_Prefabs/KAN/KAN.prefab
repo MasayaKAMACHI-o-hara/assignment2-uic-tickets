@@ -10571,11 +10571,6 @@ MonoBehaviour:
   ActiveSyaka: 0
   SE: {fileID: 0}
   FallSound: {fileID: 0}
-  StartChargeSound: {fileID: 0}
-  ChargeConpleteSound: {fileID: 0}
-  ShotSound: {fileID: 0}
-  SyuwaSound: {fileID: 0}
-  SyuwaEndSound: {fileID: 0}
   SyakaPoint: 0
   Syakacount: 0
   SyakaCharge: 0

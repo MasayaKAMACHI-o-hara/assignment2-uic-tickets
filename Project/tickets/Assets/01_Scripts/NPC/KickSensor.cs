@@ -11,7 +11,7 @@ public class KickSensor : MonoBehaviour
     {
         if (other.gameObject == _action.KanRigidbody.gameObject.transform.Find("KanMidPos").gameObject)
         {
-            SendMessageUpwards("OnKanEnter");
+            _action.OnKanEnter();
         }
     }
 }
