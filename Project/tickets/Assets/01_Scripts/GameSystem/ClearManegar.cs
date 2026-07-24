@@ -8,7 +8,6 @@ public class ClearManegar : MonoBehaviour
     public GameObject ClearUI;
 
     public GameObject KanUI;
-    public GameObject KanOverUI;
     public GameObject GameUI;
     public GameObject OverUI;
     public GameObject[] ScoreUI;
@@ -18,13 +17,10 @@ public class ClearManegar : MonoBehaviour
 
     public GameObject TitleBuckButton;
     public GameObject OverBuckButton;
-
-    public int test;
+    
     public int[] Mathscore;
     public int[] Showscore = { 0, 0, 0 };
-
-    public int Coin = 0;
-    public int time = 180;
+    
     public KanMove Kan;
     public CameraMove Camera;
     public PauseSistem Pause;
@@ -33,12 +29,7 @@ public class ClearManegar : MonoBehaviour
 
     [Header("スコアボーナス")]
     public int ScoreBonusCount;
-    public int ScoreBonusPoint = 10000; // !!! OSIRUKO !!!
-
-    //public GameObject BonusUI;
-    //public TextMeshProUGUI BonusText;
-    //public Image BonusIcon;
-
+    public int ScoreBonusPoint = 10000;
 
     public IEnumerator GameFinish(int score)
     {
@@ -163,8 +154,6 @@ public class ClearManegar : MonoBehaviour
 
         RectTransform clearRect = ClearUI.GetComponent<RectTransform>();
         clearRect.anchoredPosition3D = Vector3.zero;
-
-        KanOverUI.SetActive(true);
 
         for (int i = 0; i < 200; i++)
         {

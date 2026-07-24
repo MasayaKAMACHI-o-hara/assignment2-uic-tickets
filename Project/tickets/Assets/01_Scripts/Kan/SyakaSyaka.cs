@@ -24,12 +24,6 @@ public class SyakaSyaka : MonoBehaviour
 
     public AudioClip FallSound;
 
-    public AudioClip StartChargeSound;
-    public AudioClip ChargeConpleteSound;
-    public AudioClip ShotSound;
-    public AudioClip SyuwaSound;
-    public AudioClip SyuwaEndSound;
-
     public float SyakaPoint;
     public float Syakacount;
     public float SyakaCharge;
