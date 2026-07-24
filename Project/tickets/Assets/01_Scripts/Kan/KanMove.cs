@@ -38,12 +38,16 @@ public class KanMove : MonoBehaviour
 
     public bool CoinUp = false;
 
+    public GameObject CoinHaniObject;
+    public GameObject CarBarrierObject;
+
     [Range(0, 5)]
     public int SpeedLv = 0;//スピードレベル
     [Range(0, 5)]
     public int JumpLv = 0;//ジャンプレベル
 
     public bool carInvincible;
+    public bool CoinhaniOn;
     
     public void StopKanSound()
     {
@@ -171,5 +175,12 @@ public class KanMove : MonoBehaviour
                 StartCoroutine(ClearUI.GameEnd());
             }
         }
+
+        if (CoinhaniOn)
+        {
+            var kanPos = this.transform.position;
+            CoinHaniObject.transform.position = new Vector3(kanPos.x, kanPos.y-0.08f, kanPos.z);
+        }
+        
     }
 }

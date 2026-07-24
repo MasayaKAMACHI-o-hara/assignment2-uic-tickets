@@ -17,7 +17,7 @@ public class PauseSistem : MonoBehaviour
     public Vector2 HidePosition = new Vector2(5000f, 0f);
 
     private RectTransform pauseRect;
-    public Settings_Manager SMGer;
+    public SettingManager SMGer;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

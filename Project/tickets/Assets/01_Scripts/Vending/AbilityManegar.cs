@@ -29,9 +29,18 @@ public class AbilityManeger : MonoBehaviour
             //人の蹴る力
             else if (id == 1) NPCManager.Instance.humanCoffee = true;
             //車無敵
-            else if (id == 2) Kan.carInvincible = true;
+            else if (id == 2)
+            {
+                Kan.carInvincible = true;
+                Kan.CarBarrierObject.SetActive(true);
+            }
             //コイン取得範囲
-            else if (id == 3) KanAtari.radius = 20;
+            else if (id == 3)
+            {
+                KanAtari.radius = 20;
+                Kan.CoinHaniObject.SetActive(true);
+                Kan.CoinhaniOn = true;
+            }
             //コイン取得倍率
             else if (id == 4) Kan.CoinUp = true;
             //SPACEキー落下
@@ -55,19 +64,36 @@ public class AbilityManeger : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         AbilityTime[id]--;
+      
 
-        if (AbilityTime[id] == 0)
+        if (AbilityTime[id] <= 0)
         {
+           Debug.Log("yobidasaretayo" + id);
             //ゴミ箱位置矢印
-            if (id == 0) TrashBoxSearch.ActivePosiGingerAle(false);
+            if (id == 0)
+            {
+                TrashBoxSearch.ActivePosiGingerAle(false);
+            }
             //人の蹴る力
             else if (id == 1) NPCManager.Instance.humanCoffee = false;
             //車無敵
-            else if (id == 2) Kan.carInvincible = false;
+            else if (id == 2)
+            {
+                Kan.carInvincible = false;
+                Kan.CarBarrierObject.SetActive(false);
+            }
             //コイン取得範囲
-            else if (id == 3) KanAtari.radius = 0.77f;
+            else if (id == 3)
+            {
+                KanAtari.radius = 0.77f;
+                Kan.CoinHaniObject.SetActive(false);
+                Kan.CoinhaniOn = false;
+            }
             //コイン取得倍率
-            else if (id == 4) Kan.CoinUp = false;
+            else if (id == 4)
+            {
+                Kan.CoinUp = false;
+            }
             //SPACEキー落下
             else if (id == 5) syaka.IsActiveSpace = false;
 
@@ -80,7 +106,7 @@ public class AbilityManeger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 1; i < 6; i++)
+        for (int i = 0; i < 6; i++)
         {
 
             if (AbilityTime[i] > 0 && !AbilityTimer[i])

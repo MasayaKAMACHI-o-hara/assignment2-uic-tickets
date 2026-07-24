@@ -29,6 +29,7 @@ public class SoundManager : MonoBehaviour {
     [SerializeField] AudioSource SE_ScoreCountUp;
     [SerializeField] AudioSource SE_ScoreBonus;
     [SerializeField] AudioSource SE_ScoreTotal;
+    [SerializeField] AudioSource SE_SettingOpen;
     
     private void Start() => BGM_Title.Play();
     public static void StopBGM_Title() => Instance.BGM_Title.Stop();
@@ -56,4 +57,5 @@ public class SoundManager : MonoBehaviour {
     public static void StopSE_ScoreCountUp() => Instance.SE_ScoreCountUp.Stop();
     public static void PlaySE_ScoreBonus() => Instance.SE_ScoreBonus.Play();
     public static void PlaySE_ScoreTotal() => Instance.SE_ScoreTotal.Play();
+    public static void PlaySE_SettingOpen() => Instance.SE_SettingOpen.Play();
 }

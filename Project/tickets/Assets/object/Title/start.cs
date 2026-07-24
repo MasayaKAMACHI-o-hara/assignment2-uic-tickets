@@ -25,7 +25,7 @@ public class start : MonoBehaviour
     public GameObject left_Bottown;
     public GameObject right_Bottown;
 
-    public Settings_Manager SettingsM;
+    public SettingManager SettingsM;
     void Start()
     {
               Cursor.visible = true;
