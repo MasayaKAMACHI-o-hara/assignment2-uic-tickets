@@ -17,6 +17,8 @@ public class NPCAction : MonoBehaviour
     [Header("ポーズ")]
     [SerializeField] private PauseSistem pauseSistem;
     
+    [Header("二番目メッシュ")]
+    [SerializeField] private SkinnedMeshRenderer mesh2;
     [Header("移動経由地のオブジェクト")]
     [SerializeField] private Transform[] wayTransform;
     [SerializeField] private Collider[] wayCollider;
@@ -55,7 +57,7 @@ public class NPCAction : MonoBehaviour
     void Update()
     {
         NPCManager.ChangeMaterial(mesh);
-        
+        if(type == NPCType.Boy)NPCManager.ChangeMaterial(mesh2);
         // 蹴っていないとき
         if (!kickNow)
         {
