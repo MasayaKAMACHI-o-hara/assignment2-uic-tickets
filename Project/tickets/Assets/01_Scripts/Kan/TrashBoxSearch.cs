@@ -36,7 +36,14 @@ public class TrashBoxSearch : MonoBehaviour
 
     void Update()
     {   //表示/非表示切り替え
-        if (posiGingerAle)arrows.SetActive(true);
+        if (posiGingerAle)
+        { 
+            arrows.SetActive(true);
+        }
+        else
+        {
+            arrows.SetActive(false);
+        }
         
         //三番目までの距離を指定
         var nearest = trashBoxes

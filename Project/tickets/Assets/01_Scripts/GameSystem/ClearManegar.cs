@@ -175,8 +175,7 @@ public class ClearManegar : MonoBehaviour
             syaka.ActiveSyaka = false;
             Pause.IsActiveESC = false;
 
-            OverUI.transform.position -= new Vector3(0, 2000, 0);
-            KanOverUI.SetActive(true);
+            OverUI.SetActive(true);
 
             for (int j = 0; j < 200; j++)
             {

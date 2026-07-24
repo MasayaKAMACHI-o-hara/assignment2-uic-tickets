@@ -1,13 +1,10 @@
-using System;
-using TMPro;
 using UnityEngine;
+using TMPro;
 using UnityEngine.Audio;
-using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
-public class Settings_Manager : MonoBehaviour
+public class SettingManager : MonoBehaviour
 {
 
     public Slider SESlider;
@@ -73,7 +70,7 @@ public class Settings_Manager : MonoBehaviour
             pauseSistemSCR.IsActiveSetting = true;
         }
  
-        //oto
+        SoundManager.PlaySE_SettingOpen();
     }
 
     public void OnClick_SettingBuck()
@@ -83,6 +80,7 @@ public class Settings_Manager : MonoBehaviour
         {
             pauseSistemSCR.IsActiveSetting = false;
         }
+        SoundManager.PlaySE_UIClose();
     }
 
     public void SliderChangesSE(float Value)

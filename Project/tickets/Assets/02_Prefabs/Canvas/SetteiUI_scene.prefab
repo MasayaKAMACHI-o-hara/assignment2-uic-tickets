@@ -204,8 +204,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: SliderChangesSE
         m_Mode: 0
         m_Arguments:
@@ -233,7 +233,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5104939421065553554}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
           m_MethodName: TestSound
           m_Mode: 1
@@ -579,8 +579,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: OnClick_SettingBuck
         m_Mode: 1
         m_Arguments:
@@ -2363,8 +2363,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: SliderChangesBGM
         m_Mode: 0
         m_Arguments:
@@ -2634,8 +2634,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: BackDeleteData
         m_Mode: 1
         m_Arguments:
@@ -2751,8 +2751,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: SliderChangesCameraSEN
         m_Mode: 0
         m_Arguments:
@@ -3376,8 +3376,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4396311320139173292}
   - component: {fileID: 7565445473420646090}
+  - component: {fileID: 4320948812667109099}
   - component: {fileID: 968426262636247212}
-  - component: {fileID: 5104939421065553554}
   m_Layer: 5
   m_Name: SetteiUI_scene
   m_TagString: Untagged
@@ -3460,15 +3460,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!222 &968426262636247212
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7641348112350606301}
-  m_CullTransparentMesh: 0
---- !u!114 &5104939421065553554
+--- !u!114 &4320948812667109099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3477,7 +3469,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7641348112350606301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 614ebd8189a6de249bebe4fcfe6cda54, type: 3}
+  m_Script: {fileID: 11500000, guid: 575a591814d9023468713e9d37c05a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SESlider: {fileID: 1658073982022791329}
@@ -3500,6 +3492,14 @@ MonoBehaviour:
   BuckSettingButtonUI: {fileID: 8889943687423643014}
   pauseSistemSCR: {fileID: 0}
   InGame: 0
+--- !u!222 &968426262636247212
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641348112350606301}
+  m_CullTransparentMesh: 0
 --- !u!1 &8000785640696820421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,8 +3942,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: OnClick_SettingBuck
         m_Mode: 1
         m_Arguments:
@@ -4288,8 +4288,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: CheckDeleteData
         m_Mode: 1
         m_Arguments:
@@ -4559,8 +4559,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5104939421065553554}
-        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+      - m_Target: {fileID: 4320948812667109099}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: RunDeleteData
         m_Mode: 1
         m_Arguments:
