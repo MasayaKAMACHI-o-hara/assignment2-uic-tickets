@@ -411,6 +411,8 @@ MonoBehaviour:
   type: 1
   KanRigidbody: {fileID: 0}
   pauseSistem: {fileID: 0}
+  powerUpMaterial: {fileID: 2100000, guid: 2f960f4cf7c5ffe4ea66b69ef6367bcc, type: 2}
+  mesh2_Boy: {fileID: 0}
   wayTransform: []
   wayCollider: []
 --- !u!95 &4080742193038626755

@@ -1574,7 +1574,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClearUI: {fileID: 6265876092577089935}
   KanUI: {fileID: 7674774044972944489}
-  KanOverUI: {fileID: 0}
   GameUI: {fileID: 0}
   OverUI: {fileID: 0}
   ScoreUI:
@@ -1591,11 +1590,8 @@ MonoBehaviour:
   BonusText: {fileID: 438495910419082341}
   TitleBuckButton: {fileID: 4116602065238307544}
   OverBuckButton: {fileID: 1937899906146694454}
-  test: 1000
   Mathscore: 000000000000000000000000
   Showscore: 000000000000000000000000
-  Coin: 0
-  time: 180
   Kan: {fileID: 0}
   Camera: {fileID: 0}
   Pause: {fileID: 0}
