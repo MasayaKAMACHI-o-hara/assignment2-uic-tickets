@@ -9,16 +9,20 @@ public class NPCAction : MonoBehaviour
 {
     private Animator animator;
     private AudioSource SE_NPCFootsteps;
-    private SkinnedMeshRenderer mesh;
+    private Material nomalMaterial;
+    
     [Header("種類")]
     [SerializeField] private NPCType type;
     [Header("缶")]
     [SerializeField] public Rigidbody KanRigidbody;
     [Header("ポーズ")]
     [SerializeField] private PauseSistem pauseSistem;
-    
-    [Header("二番目メッシュ")]
-    [SerializeField] private SkinnedMeshRenderer mesh2;
+    [Header("マテリアル関係")]
+    [Tooltip("強化マテリアル")][SerializeField]
+    private Material powerUpMaterial;
+    [Tooltip("メッシュ")]
+    private SkinnedMeshRenderer mesh;
+    [SerializeField] private SkinnedMeshRenderer mesh2_Boy;
     [Header("移動経由地のオブジェクト")]
     [SerializeField] private Transform[] wayTransform;
     [SerializeField] private Collider[] wayCollider;
@@ -39,11 +43,12 @@ public class NPCAction : MonoBehaviour
     // 経由地の要素数
     int pointMax;
 
-    // 初期設定
     void Start()
     {
+        // コンポーネント値代入
         animator = GetComponent<Animator>();
         SE_NPCFootsteps = GetComponent<AudioSource>();
+        nomalMaterial = GetComponentInChildren<SkinnedMeshRenderer>().material;
         mesh = GetComponentInChildren<SkinnedMeshRenderer>();
         // アニメーションの初期状態設定
         animator.SetBool("idle", true);
@@ -53,11 +58,18 @@ public class NPCAction : MonoBehaviour
         pointMax = wayTransform.Length;
     }
 
-    // メイン関数
     void Update()
     {
-        NPCManager.ChangeMaterial(mesh);
-        if(type == NPCType.Boy)NPCManager.ChangeMaterial(mesh2);
+        if (NPCManager.Instance.humanCoffee)
+        {
+            mesh.material = powerUpMaterial;
+            if(type == NPCType.Boy)mesh2_Boy.material = powerUpMaterial;
+        }
+        else
+        {
+            mesh.material = nomalMaterial;
+            if(type == NPCType.Boy)mesh2_Boy.material = nomalMaterial;
+        }
         // 蹴っていないとき
         if (!kickNow)
         {
@@ -116,7 +128,7 @@ public class NPCAction : MonoBehaviour
             }
         }
     }
-    // 経由地当たり判定関数
+    
     private void OnTriggerEnter(Collider other)
     {
         // 経由地に触れたら
@@ -131,8 +143,8 @@ public class NPCAction : MonoBehaviour
             SE_NPCFootsteps.Stop();
         }
     }
-
-    // 缶当たり判定関数
+    
+    [Tooltip("缶接近時関数")]
     public void OnKanEnter()
     {
         // 音声停止
@@ -144,11 +156,10 @@ public class NPCAction : MonoBehaviour
         // 蹴っている
         kickNow = true;
     }
-
-    // アニメーションイベント・蹴り関数
+    
+    [Tooltip("缶蹴り関数<AnimationEvent>")]
     public void kick()
     {
-
         if (KanRigidbody != null)
         {
             //飛ばしたい方向を指定
@@ -168,8 +179,7 @@ public class NPCAction : MonoBehaviour
         }
     }
 
-
-    // アニメーションイベント・キックアニメーション終了関数
+    [Tooltip("アニメ終了時関数<AnimationEvent>")]
     public void KickEnd()
     {
         // 音声再生

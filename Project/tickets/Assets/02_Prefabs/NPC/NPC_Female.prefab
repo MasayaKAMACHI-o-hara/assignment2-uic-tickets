@@ -917,6 +917,8 @@ MonoBehaviour:
   type: 2
   KanRigidbody: {fileID: 0}
   pauseSistem: {fileID: 0}
+  powerUpMaterial: {fileID: 2100000, guid: ae5fdb6f629506b4aaeb2d32fbda3b3b, type: 2}
+  mesh2_Boy: {fileID: 0}
   wayTransform: []
   wayCollider: []
 --- !u!95 &5822668513001051936
@@ -1163,7 +1165,7 @@ GameObject:
   - component: {fileID: 3709541552372647148}
   - component: {fileID: 6981538416806979653}
   m_Layer: 0
-  m_Name: casual_Female_G
+  m_Name: NPC_Female
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,7 +1,22 @@
 fileFormatVersion: 2
-guid: 9dd5db11be8af4142b9419b1a441f033
+<<<<<<< HEAD
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/_AllSkyFreeDemoEnvironment/Materials/Landscape.mat.meta
+guid: d2f32b7ee9867754ea7899c973f3c0dc
+=======
+<<<<<<<< HEAD:Project/tickets/Assets/99_AssetStore/Sky/_AllSkyFreeDemoEnvironment/Materials/TreeLeaves.mat.meta
+guid: 0b5fdd431e3f59c42a4a37b006ef4740
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
+NativeFormatImporter:
+========
+guid: 8ee0fa33343ba264ba1901103248849e
 PrefabImporter:
+<<<<<<< HEAD
+>>>>>>>> parent of 7f042c7 (Merge pull request #30 from MasayaKAMACHI-o-hara/TIKS-69):Project/tickets/Assets/02_Prefabs/gameDiscription/DescriptionUI_scene.prefab.meta
+=======
+>>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理):Project/tickets/Assets/02_Prefabs/gameDiscription/DescriptionUI_scene.prefab.meta
+>>>>>>> parent of e8b0251 (NPCパワーアップ効果視覚化・ゲームオーバーUI修正・データ整理)
   externalObjects: {}
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

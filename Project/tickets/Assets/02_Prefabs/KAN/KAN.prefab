@@ -9857,7 +9857,22 @@ MonoBehaviour:
   - {fileID: 8141370330772983980}
   - {fileID: 307576764524149385}
   - {fileID: 4216621137019730014}
-  trashBoxes: []
+  trashBoxes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   maxDistance: 100
   minDistance: 0
 --- !u!1 &2893268710558288218
@@ -9992,7 +10007,7 @@ GameObject:
   - component: {fileID: 9021318661581182634}
   - component: {fileID: 8201675922997490942}
   m_Layer: 6
-  m_Name: Cylinder (1)
+  m_Name: KanMidPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10380,12 +10395,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2359884204908738987}
+  - component: {fileID: 4895966648625912529}
+  - component: {fileID: 523658111241069574}
   - component: {fileID: 5906656791339287530}
   - component: {fileID: 5655555173186885554}
   - component: {fileID: 2686740536173317400}
   - component: {fileID: 8366870683834519928}
-  - component: {fileID: 4895966648625912529}
-  - component: {fileID: 523658111241069574}
+  - component: {fileID: 6703124900960047617}
   m_Layer: 6
   m_Name: KAN
   m_TagString: Kan
@@ -10403,7 +10419,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.70582205, w: 0.70838916}
   m_LocalPosition: {x: -0.02, y: 8.65, z: -4.4}
-  m_LocalScale: {x: 0.15901819, y: 0.12882221, z: 0.15901819}
+  m_LocalScale: {x: 0.15901817, y: 0.12882222, z: 0.15901819}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7324715222280532873}
@@ -10418,6 +10434,84 @@ Transform:
   - {fileID: 6744387795048768327}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.792}
+--- !u!114 &4895966648625912529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692203835068401134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35ea97ca35af9e4c9d0db50076107be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KanMove
+  body: {fileID: 8366870683834519928}
+  Camera: {fileID: 0}
+  ClearUI: {fileID: 0}
+  SE: {fileID: 6703124900960047617}
+  Speed: 0
+  MaxSpeed: 4
+  JumpPower: 10
+  isGrounded: 1
+  isFly: {fileID: 523658111241069574}
+  ActiveMove: 0
+  coin: 100
+  CoinUp: 0
+  CoinHaniObject: {fileID: 0}
+  CarBarrierObject: {fileID: 7930813035627039648}
+  SpeedLv: 1
+  JumpLv: 1
+  carInvincible: 0
+  CoinhaniOn: 0
+--- !u!114 &523658111241069574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692203835068401134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcae1aaba7b74b243b2f0793ee061878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SyakaSyaka
+  Syaka: 0
+  SyakaFly: 0
+  SyakaStart: 0
+  ChargeStart: 0
+  ChargeEnd: 0
+  JumpUp: 0
+  IsActiveFly: 0
+  IsActiveFall: 0
+  IsActiveSpace: 0
+  ActiveSyaka: 0
+  SE: {fileID: 6703124900960047617}
+  FallSound: {fileID: 8300000, guid: 273f628fde9d6d24290b43a6f0032bb1, type: 3}
+  SyakaPoint: 0
+  Syakacount: 0
+  SyakaCharge: 0
+  SyakaRemove: 0
+  GetSyakaLv: 1
+  SyakaE: 1
+  SyakaUI: {fileID: 0}
+  houkou: {fileID: 2937236853143368172}
+  ChargeP: {fileID: 8410485967885782797}
+  ColaP: {fileID: 1257794494718168983}
+  BubbleP: {fileID: 2408861158415795127}
+  Camera: {fileID: 0}
+  Rb: {fileID: 8366870683834519928}
+  sensitivity: 3
+  StartPos: {x: 0, y: 0, z: 0}
+  MidPos: {x: 0, y: 0, z: 0}
+  lastPos: {x: 0, y: 0, z: 0}
+  nowPos: {x: 0, y: 0, z: 0}
+  SyakaPos: {x: 0, y: 0, z: 0}
+  cola: {fileID: 0}
+  flashcola: {fileID: 0}
+  gaugeIncreaseDuration: 0.35
+  gainGaugeHoldTime: 0.08
+  flashColaVisualBonus: 2
 --- !u!33 &5906656791339287530
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10521,83 +10615,103 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &4895966648625912529
-MonoBehaviour:
+--- !u!82 &6703124900960047617
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4692203835068401134}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a35ea97ca35af9e4c9d0db50076107be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KanMove
-  body: {fileID: 8366870683834519928}
-  Camera: {fileID: 0}
-  ClearUI: {fileID: 0}
-  SE: {fileID: 0}
-  Speed: 0
-  MaxSpeed: 4
-  JumpPower: 10
-  isGrounded: 1
-  isFly: {fileID: 523658111241069574}
-  ActiveMove: 0
-  coin: 0
-  CoinUp: 0
-  CoinHaniObject: {fileID: 0}
-  CarBarrierObject: {fileID: 7930813035627039648}
-  SpeedLv: 0
-  JumpLv: 0
-  carInvincible: 0
---- !u!114 &523658111241069574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4692203835068401134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcae1aaba7b74b243b2f0793ee061878, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SyakaSyaka
-  Syaka: 0
-  SyakaFly: 0
-  SyakaStart: 0
-  ChargeStart: 0
-  ChargeEnd: 0
-  JumpUp: 0
-  IsActiveFly: 0
-  IsActiveFall: 0
-  IsActiveSpace: 0
-  ActiveSyaka: 0
-  SE: {fileID: 0}
-  FallSound: {fileID: 0}
-  SyakaPoint: 0
-  Syakacount: 0
-  SyakaCharge: 0
-  SyakaRemove: 0
-  GetSyakaLv: 1
-  SyakaE: 1
-  SyakaUI: {fileID: 0}
-  houkou: {fileID: 2937236853143368172}
-  ChargeP: {fileID: 8410485967885782797}
-  ColaP: {fileID: 1257794494718168983}
-  BubbleP: {fileID: 2408861158415795127}
-  Camera: {fileID: 0}
-  Rb: {fileID: 8366870683834519928}
-  sensitivity: 3
-  StartPos: {x: 0, y: 0, z: 0}
-  MidPos: {x: 0, y: 0, z: 0}
-  lastPos: {x: 0, y: 0, z: 0}
-  nowPos: {x: 0, y: 0, z: 0}
-  SyakaPos: {x: 0, y: 0, z: 0}
-  cola: {fileID: 0}
-  flashcola: {fileID: 0}
-  gaugeIncreaseDuration: 0.35
-  gainGaugeHoldTime: 0.08
-  flashColaVisualBonus: 2
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.486
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6075263369822665849
 GameObject:
   m_ObjectHideFlags: 0
@@ -10884,7 +10998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6744387795048768327
 Transform:
   m_ObjectHideFlags: 0
