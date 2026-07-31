@@ -14,6 +14,8 @@ public class KanMove : MonoBehaviour
 
     public Rigidbody body;
 
+    public GameObject effect;
+    
     public Transform Camera;
 
     public ClearManegar ClearUI;
@@ -94,6 +96,7 @@ public class KanMove : MonoBehaviour
     public void Clash()
     {
         SoundManager.StopAS_Kan();
+        effect.SetActive(false);
         gameObject.transform.localScale = new Vector3(0.1590182f, 0.004016032f, 0.1590182f);
     }
     
