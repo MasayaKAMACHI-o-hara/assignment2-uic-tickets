@@ -314,6 +314,11 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &476972780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1523099980218980764, guid: e44a067e6f91ef345881167f51494e72, type: 3}
+  m_PrefabInstance: {fileID: 5427519528482245540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &489664485
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +384,11 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &577975602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5858114859670737703, guid: e44a067e6f91ef345881167f51494e72, type: 3}
+  m_PrefabInstance: {fileID: 5427519528482245540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &583123403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2359884204908738987, guid: 06a35645ff309c644b1efc0236fa2a58, type: 3}
@@ -4520,6 +4530,14 @@ PrefabInstance:
       propertyPath: Camera
       value: 
       objectReference: {fileID: 970514505}
+    - target: {fileID: 2395906791897526869, guid: e44a067e6f91ef345881167f51494e72, type: 3}
+      propertyPath: StartBuckBottown_1
+      value: 
+      objectReference: {fileID: 476972780}
+    - target: {fileID: 2395906791897526869, guid: e44a067e6f91ef345881167f51494e72, type: 3}
+      propertyPath: StartBuckBottown_2
+      value: 
+      objectReference: {fileID: 577975602}
     - target: {fileID: 2592396153680811617, guid: e44a067e6f91ef345881167f51494e72, type: 3}
       propertyPath: m_Pivot.x
       value: 0
